@@ -1,3 +1,10 @@
+/* Google Play Logo maximale Breite */
+.google-play-img {
+    max-width: 340px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
 .footer-keywords {
     text-align: center;
     display: block;
@@ -218,7 +225,7 @@ h1, h2, h3 {
 h1 {
     font-size: 72px;
     line-height: 1.08;
-    margin-bottom: 144px;
+    margin-bottom: 32px;
     background: linear-gradient(90deg, #fff 30%, #9d50bb 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -448,7 +455,8 @@ footer .download-link {
 @media (max-width: 768px) {
     header { padding: 60px 0; }
     .container { gap: 10px; }
-    .mockup-container { margin-top: 40px; }
+    .mockup-container { margin-top: 40px; flex-direction: column !important; }
+    .mockup-img { margin-left: auto; margin-right: auto; display: block; }
     .card { padding: 20px; }
 }
 
