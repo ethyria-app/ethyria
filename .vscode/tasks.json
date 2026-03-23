@@ -5,6 +5,11 @@
 			"label": "Open index.de.html in browser",
 			"type": "shell",
 			"command": "start index.de.html"
+		},
+		{
+			"label": "Open index.marketlaunch.de.html in browser",
+			"type": "shell",
+			"command": "start index.marketlaunch.de.html"
 		}
 	]
 }
