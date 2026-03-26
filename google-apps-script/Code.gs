@@ -130,75 +130,150 @@ function sendWelcomeEmail_(email, locale) {
 
 function getEmailTemplate_(locale) {
   const downloadUrl = CONFIG.downloadUrl;
-  const templates = {
+  const logoUrl = "https://ostyles.github.io/ethyria/assets/Ethyria_symbol.png";
+  const siteUrl = "https://ostyles.github.io/ethyria/";
+
+  const i18n = {
     de: {
-      subject: "Danke fuer deine Ethyria Anmeldung",
-      text:
-        "Danke fuer deine Anmeldung zu Ethyria.\n\nDein Download-Link:\n" +
-        downloadUrl +
-        "\n\nWir freuen uns, dass du zu den ersten Nutzern gehoerst.\n\nLiebe Gruesse\nEthyria",
-      html:
-        '<p>Danke fuer deine Anmeldung zu <strong>Ethyria</strong>.</p><p>Hier ist dein Download-Link:</p><p><a href="' +
-        downloadUrl +
-        '">' +
-        downloadUrl +
-        "</a></p><p>Wir freuen uns, dass du zu den ersten Nutzern gehoerst.</p><p>Liebe Gruesse<br>Ethyria</p>",
+      subject: "Willkommen bei Ethyria — Dein Beta-Zugang",
+      greeting: "Willkommen bei Ethyria!",
+      thankYou:
+        "Danke, dass du dich fuer die Beta angemeldet hast. Du gehoerst zu den Ersten, die Ethyria erleben duerfen.",
+      downloadLabel: "Beta-APK herunterladen",
+      howTo:
+        "So gehts: Lade die APK herunter, erlaube die Installation aus unbekannten Quellen und starte Ethyria.",
+      closing: "Wir freuen uns auf dein Feedback!",
+      signoff: "Liebe Gruesse",
     },
     fr: {
-      subject: "Merci pour votre inscription a Ethyria",
-      text:
-        "Merci pour votre inscription a Ethyria.\n\nVotre lien de telechargement :\n" +
-        downloadUrl +
-        "\n\nNous sommes ravis de vous compter parmi les premiers utilisateurs.\n\nA bientot\nEthyria",
-      html:
-        '<p>Merci pour votre inscription a <strong>Ethyria</strong>.</p><p>Voici votre lien de telechargement :</p><p><a href="' +
-        downloadUrl +
-        '">' +
-        downloadUrl +
-        "</a></p><p>Nous sommes ravis de vous compter parmi les premiers utilisateurs.</p><p>A bientot<br>Ethyria</p>",
+      subject: "Bienvenue sur Ethyria — Votre acces beta",
+      greeting: "Bienvenue sur Ethyria !",
+      thankYou:
+        "Merci de vous etre inscrit a la beta. Vous faites partie des premiers a decouvrir Ethyria.",
+      downloadLabel: "Telecharger la beta APK",
+      howTo:
+        "Comment faire : telechargez l'APK, autorisez l'installation depuis des sources inconnues et lancez Ethyria.",
+      closing: "Nous avons hate de recevoir vos retours !",
+      signoff: "A bientot",
     },
     es: {
-      subject: "Gracias por unirte a Ethyria",
-      text:
-        "Gracias por registrarte en Ethyria.\n\nTu enlace de descarga:\n" +
-        downloadUrl +
-        "\n\nNos alegra mucho tenerte entre los primeros usuarios.\n\nUn saludo\nEthyria",
-      html:
-        '<p>Gracias por registrarte en <strong>Ethyria</strong>.</p><p>Aqui tienes tu enlace de descarga:</p><p><a href="' +
-        downloadUrl +
-        '">' +
-        downloadUrl +
-        "</a></p><p>Nos alegra mucho tenerte entre los primeros usuarios.</p><p>Un saludo<br>Ethyria</p>",
+      subject: "Bienvenido a Ethyria — Tu acceso beta",
+      greeting: "Bienvenido a Ethyria!",
+      thankYou:
+        "Gracias por registrarte en la beta. Eres de los primeros en probar Ethyria.",
+      downloadLabel: "Descargar beta APK",
+      howTo:
+        "Como funciona: descarga el APK, permite la instalacion desde fuentes desconocidas e inicia Ethyria.",
+      closing: "Esperamos tu feedback!",
+      signoff: "Un saludo",
     },
     ru: {
-      subject: "Spasibo za registratsiyu v Ethyria",
-      text:
-        "Spasibo za registratsiyu v Ethyria.\n\nVasha ssylka dlya skachivaniya:\n" +
-        downloadUrl +
-        "\n\nMy rady videt vas sredi pervykh polzovateley.\n\nS uvazheniem\nEthyria",
-      html:
-        '<p>Spasibo za registratsiyu v <strong>Ethyria</strong>.</p><p>Vot vasha ssylka dlya skachivaniya:</p><p><a href="' +
-        downloadUrl +
-        '">' +
-        downloadUrl +
-        "</a></p><p>My rady videt vas sredi pervykh polzovateley.</p><p>S uvazheniem<br>Ethyria</p>",
+      subject: "Dobro pozhalovat v Ethyria — Vash beta-dostup",
+      greeting: "Dobro pozhalovat v Ethyria!",
+      thankYou:
+        "Spasibo za registratsiyu v beta-versii. Vy sredi pervykh, kto ispytaet Ethyria.",
+      downloadLabel: "Skachat beta APK",
+      howTo:
+        "Kak nachat: skachayte APK, razreshite ustanovku iz neizvestnykh istochnikov i zapustite Ethyria.",
+      closing: "Zhdyom vashikh otzyvov!",
+      signoff: "S uvazheniem",
     },
     en: {
-      subject: "Thanks for joining Ethyria",
-      text:
-        "Thanks for joining Ethyria.\n\nYour download link:\n" +
-        downloadUrl +
-        "\n\nWe are excited to have you among our first users.\n\nBest regards\nEthyria",
-      html:
-        '<p>Thanks for joining <strong>Ethyria</strong>.</p><p>Here is your download link:</p><p><a href="' +
-        downloadUrl +
-        '">' +
-        downloadUrl +
-        "</a></p><p>We are excited to have you among our first users.</p><p>Best regards<br>Ethyria</p>",
+      subject: "Welcome to Ethyria — Your Beta Access",
+      greeting: "Welcome to Ethyria!",
+      thankYou:
+        "Thanks for signing up for the beta. You are among the first to experience Ethyria.",
+      downloadLabel: "Download Beta APK",
+      howTo:
+        "How to start: download the APK, allow installation from unknown sources, and launch Ethyria.",
+      closing: "We look forward to your feedback!",
+      signoff: "Best regards",
     },
   };
 
-  return templates[locale] || templates.en;
+  const t = i18n[locale] || i18n.en;
+
+  const text = [
+    t.greeting,
+    "",
+    t.thankYou,
+    "",
+    t.downloadLabel + ": " + downloadUrl,
+    "",
+    t.howTo,
+    "",
+    t.closing,
+    "",
+    t.signoff,
+    "Ethyria",
+  ].join("\n");
+
+  const html = [
+    '<!DOCTYPE html><html><head><meta charset="utf-8"></head>',
+    '<body style="margin:0;padding:0;background-color:#0d0d1a;font-family:Arial,Helvetica,sans-serif;">',
+    '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#0d0d1a;">',
+    '<tr><td align="center" style="padding:30px 10px;">',
+
+    // Card
+    '<table role="presentation" width="560" cellpadding="0" cellspacing="0" style="max-width:560px;width:100%;background-color:#1a1a2e;border-radius:16px;overflow:hidden;">',
+
+    // Logo header
+    '<tr><td align="center" style="padding:32px 20px 16px;">',
+    '<img src="' +
+      logoUrl +
+      '" alt="Ethyria" width="80" height="80" style="display:block;border:0;border-radius:16px;" />',
+    "</td></tr>",
+
+    // Greeting
+    '<tr><td align="center" style="padding:0 30px 8px;">',
+    '<h1 style="margin:0;font-size:22px;color:#ffffff;">' +
+      t.greeting +
+      "</h1>",
+    "</td></tr>",
+
+    // Thank you text
+    '<tr><td style="padding:8px 30px 24px;font-size:15px;line-height:1.6;color:#c0c0d0;">',
+    t.thankYou,
+    "</td></tr>",
+
+    // Download button
+    '<tr><td align="center" style="padding:0 30px 24px;">',
+    '<a href="' +
+      downloadUrl +
+      '" style="display:inline-block;padding:14px 36px;background:linear-gradient(135deg,#6c3ce0,#a855f7);color:#ffffff;font-size:16px;font-weight:bold;text-decoration:none;border-radius:30px;">',
+    t.downloadLabel + " &darr;",
+    "</a>",
+    "</td></tr>",
+
+    // How-to hint
+    '<tr><td style="padding:0 30px 24px;font-size:13px;line-height:1.5;color:#8888a0;">',
+    t.howTo,
+    "</td></tr>",
+
+    // Divider
+    '<tr><td style="padding:0 30px;"><hr style="border:none;border-top:1px solid #2a2a3e;margin:0;"></td></tr>',
+
+    // Closing
+    '<tr><td style="padding:20px 30px 12px;font-size:14px;color:#c0c0d0;">',
+    t.closing,
+    "</td></tr>",
+    '<tr><td style="padding:0 30px 28px;font-size:14px;color:#c0c0d0;">',
+    t.signoff + '<br><strong style="color:#a855f7;">Ethyria</strong>',
+    "</td></tr>",
+
+    // Footer
+    '<tr><td align="center" style="padding:16px 30px 20px;font-size:11px;color:#555570;">',
+    '<a href="' +
+      siteUrl +
+      '" style="color:#7c5ce0;text-decoration:none;">ostyles.github.io/ethyria</a>',
+    "</td></tr>",
+
+    "</table>",
+    "</td></tr></table>",
+    "</body></html>",
+  ].join("");
+
+  return { subject: t.subject, text: text, html: html };
 }
 
 function normalizeEmail_(value) {
