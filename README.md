@@ -1,8 +1,8 @@
-# Dreamzzz Landing Page
+# Ethyria Landing Page
 
 Dream Analysis and more
 
-Dies ist die statische Landingpage für die Dreamzzz-App.
+Dies ist die statische Landingpage für die Ethyria-App.
 
 ## Nutzung
 

@@ -1,0 +1,108 @@
+/* ETHYRIA Brand Style Guide 
+   Basierend auf Status Report 1.0 & Vision-Update
+*/
+
+@font-face {
+    font-family: 'Arista Pro Fat';
+    src: url('fonts/Arista-Pro-Fat-trial.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    /* Brand Colors */
+    --ethyria-dark: #100C1F;
+    --ethyria-indigo: #08134E;
+    --ethyria-blue: #001A79;
+    --ethyria-cyan: #01BFFF;
+    --ethyria-accent: #3184FF;
+    --ethyria-purple: #5458FB;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, var(--ethyria-dark) 0%, var(--ethyria-indigo) 50%, var(--ethyria-blue) 100%);
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+/* Typography */
+.brand-logo {
+    font-family: 'Arista Pro Fat', sans-serif;
+    letter-spacing: 2px;
+}
+
+.ethyria-gradient-text {
+    background: linear-gradient(90deg, var(--ethyria-cyan) 0%, var(--ethyria-accent) 50%, var(--ethyria-purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Layout Components */
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(1, 191, 255, 0.1);
+    border: 1px solid rgba(1, 191, 255, 0.3);
+}
+
+/* Buttons */
+.glow-button {
+    background: var(--ethyria-accent);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 0 15px rgba(49, 132, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 25px rgba(1, 191, 255, 0.7);
+    transform: scale(1.05);
+    background: var(--ethyria-cyan);
+}
+
+/* Animations for Vision Board */
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 5px rgba(1, 191, 255, 0.2); }
+    50% { box-shadow: 0 0 20px rgba(1, 191, 255, 0.5); }
+    100% { box-shadow: 0 0 5px rgba(1, 191, 255, 0.2); }
+}
+
+.vision-preview {
+    animation: pulseGlow 4s infinite ease-in-out;
+    border-radius: 20px;
+}
+
+/* Background Elements */
+.bg-blob {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(49, 132, 255, 0.15) 0%, rgba(0,0,0,0) 70%);
+    z-index: -1;
+    filter: blur(50px);
+}

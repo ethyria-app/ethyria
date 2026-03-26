@@ -1,121 +1,175 @@
-/* Top Navigation Styles */
-.top-nav {
+/* Gradient icon effect for feature icons (PNG) */
+/* Gradient icon effect for feature icons (PNG) */
+/* Gradient icon effect for feature icons (PNG) */
+.icon-gradient-bg.icon-feature {
+    background: linear-gradient(135deg, #9d50bb 0%, #6e48aa 100%);
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    background-clip: border-box;
+    position: relative;
+    /* Fallback for no mask support */
+    background-color: #9d50bb;
+}
+.icon-gradient-bg.icon-feature[data-icon="traumanalyse"] {
+    -webkit-mask-image: url("assets/dreamzzz-logo.png");
+    mask-image: url("assets/dreamzzz-logo.png");
+}
+.icon-gradient-bg.icon-feature[data-icon="traumtagebuch"] {
+    -webkit-mask-image: url("assets/book.png");
+    mask-image: url("assets/book.png");
+}
+.icon-gradient-bg.icon-feature[data-icon="aether"] {
+    -webkit-mask-image: url("assets/cloud.png");
+    mask-image: url("assets/cloud.png");
+}
+/* Responsive screenshot sizing */
+.screenshot-img {
+    width: 90vw;
+    max-width: 320px;
+    height: auto;
+}
+@media (min-width: 768px) {
+    .screenshot-img {
+        max-width: 340px;
+    }
+}
+.screenshot-img {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10%;
-    box-sizing: border-box;
-    margin-bottom: 2rem;
-    min-height: 150px;
-    margin-top: 8px;
-}
-.nav-logo {
-    flex: 0 0 auto;
-    display: flex;
-    align-items: center;
-}
-.logo-img-nav {
-    height: 150px;
-    width: auto;
-    max-width: 100%;
-    object-fit: contain;
-    display: block;
-    padding: 0;
-}
-.nav-flags {
-    display: flex;
-    gap: 0.75rem;
-    flex: 0 0 auto;
-    align-items: center;
-}
-.nav-flags img {
-    height: 28px;
-    width: auto;
-    border-radius: 4px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-    transition: transform 0.15s;
-}
-.nav-flags img:hover {
-    transform: scale(1.08);
-}
-@media (max-width: 600px) {
-    .top-nav {
-        padding: 0 4vw;
-        margin-bottom: 1.2rem;
-        min-height: 80px;
-        margin-top: 4px;
-    }
-    .logo-img-nav {
-        height: 150px;
-        width: auto;
-        max-width: 100%;
-        padding: 0;
-    }
-    .nav-flags img {
-        height: 22px;
-    }
-}
-/* FAQ Accordion Redesign */
-#faq details {
-    width: 80%;
+    max-width: 340px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-    border: none !important;
-    box-shadow: none !important;
 }
-#faq details[open] summary {
-    color: #fff !important;
-    background: var(--accent-purple) !important;
-    border: none !important;
-    box-shadow: none !important;
+/* === Custom Font Faces === */
+@font-face {
+    font-family: 'Poppins';
+    src: url('poppins_bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
-#faq summary {
-    border: none !important;
-    background: transparent !important;
-    color: #fff !important;
-    transition: background 0.2s;
+@font-face {
+    font-family: 'Poppins';
+    src: url('poppins_semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
 }
-#faq summary:focus {
-    outline: none !important;
-    background: var(--accent-purple) !important;
-    color: #fff !important;
+@font-face {
+    font-family: 'Poppins';
+    src: url('poppins_regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
-@media (max-width: 1024px) {
-    .mockup-container {
-        flex-direction: column !important;
-    }
-    .mockup-img {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
+@font-face {
+    font-family: 'Inter';
+    src: url('inter_variable.ttf') format('truetype'),
+         url('inter_regular.ttf') format('truetype'),
+         url('inter_medium.ttf') format('truetype');
+    font-weight: 400 700;
+    font-style: normal;
 }
-/* Google Play Logo maximale Breite */
-.google-play-img {
-    max-width: 340px;
+/* Top Navigation Styles */
+/* Layout & Spacing: Golden Ratio & Standardized Rhythm */
+.container {
     width: 100%;
-    height: auto;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+.header, .main, .sidebar, .trust-section, .content-hub, .professionals-section, .download-section, .social-proof {
+    margin-bottom: 55px;
+}
+
+.hero, .main, .sidebar, .trust-section, .content-hub, .professionals-section, .download-section, .social-proof {
+    padding-top: 55px;
+    padding-bottom: 34px;
+}
+
+.card, .testimonial-card {
+    background: rgba(255,255,255,0.04);
+    border-radius: 18px;
+    padding: 21px 21px 13px 21px;
+    margin-bottom: 21px;
+    max-width: 420px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cta-button, .sticky-download-btn {
     display: inline-block;
+    background: linear-gradient(90deg, #6e7bf7 0%, #b16cf7 100%);
+    color: #fff;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.18rem;
+    border: none;
+    border-radius: 8px;
+    padding: 1em 2.2em;
+    margin: 0 0 21px 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px 0 rgba(110,123,247,0.08);
 }
-.footer-keywords {
+
+.cta-button:hover, .sticky-download-btn:hover {
+    background: linear-gradient(90deg, #b16cf7 0%, #6e7bf7 100%);
+    box-shadow: 0 4px 16px 0 rgba(110,123,247,0.13);
+}
+
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    background: transparent;
+    box-shadow: none;
+    margin-bottom: 34px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-flags {
+    display: flex;
+    gap: 18px;
+}
+
+.hero-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+.teaser-result {
+    margin-top: 21px;
+    min-height: 48px;
+    color: #fff;
     text-align: center;
-    display: block;
+    opacity: 0.85;
 }
-.footer-link {
-    display: inline-block;
-    margin: 0 8px 8px 8px;
-    text-align: center;
+
+.press-logos {
+    margin-top: 34px;
 }
-.highlight-text {
-    padding-top: 72px !important;
-    padding-bottom: 14px !important;
-}
-/* Utility-Klasse für exakt 72px Padding unten */
-.padding-72 {
-    padding-bottom: 72px !important;
-}
-/* Gradient-Underline-Link-Effekt */
+
+/* Remove all inline margin/padding overrides in HTML for spacing. Use only these CSS rules for layout. */
+
+/* Responsive adjustments ...existing code... */
 a, .footer-link {
     position: relative;
     color: #fff;
@@ -285,7 +339,7 @@ a:hover::after, .footer-link:hover::after {
 }
 
 body {
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: 'Inter';
     color: var(--text-light);
     background: var(--gradient);
     margin: 0;
@@ -296,6 +350,14 @@ body {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 16px;
+}
+
+.top-nav .container,
+header .container {
+    height: 150px;
+    min-height: 150px;
+    max-height: 150px;
+    box-sizing: border-box;
 }
 
 section, header, footer {
@@ -461,8 +523,9 @@ header {
     align-items: center;
 }
 
+/* Headlines use only Poppins */
 h1, h2, h3 {
-    font-family: 'Poppins', 'Inter', Arial, sans-serif;
+    font-family: 'Poppins';
     font-weight: 700;
     letter-spacing: -0.5px;
     text-align: center;
@@ -568,7 +631,9 @@ h1 {
 }
 
 .card h3 {
-    font-family: 'Poppins', 'Inter', Arial, sans-serif;
+    font-family: 'Poppins';
+        font-family: 'Poppins';
+        font-family: 'Poppins';
     font-weight: 900;
     font-size: 32px;
     line-height: 1.1;

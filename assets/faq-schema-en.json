@@ -4,7 +4,7 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is Dreamzzz really free?",
+      "name": "Is Ethyria really free?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, the app is 100% free, contains no ads, and provides full AI-powered dream analysis without hidden costs."
@@ -23,7 +23,23 @@
       "name": "How does the AI dream analysis work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dreamzzz uses advanced AI models to interpret your dreams based on psychological methods like C.G. Jung and Sigmund Freud."
+        "text": "Ethyria uses advanced AI models to interpret your dreams based on psychological methods like C.G. Jung and Sigmund Freud."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which analysis modes does Ethyria offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ethyria offers 5 analysis perspectives: Symbol Analysis, Emotion Profile, Pattern Recognition, Scientific Classification, and an Overall Synthesis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which devices is Ethyria available on?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ethyria is currently available for Android. An iOS version is in development."
       }
     }
   ]
