@@ -4,6 +4,8 @@
   "description": "Dream Analysis and more",
   "main": "index.js",
   "scripts": {
+    "dev": "npx @tailwindcss/cli -i input.css -o assets/tailwind.min.css --watch",
+    "build": "npx @tailwindcss/cli -i input.css -o assets/tailwind.min.css --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

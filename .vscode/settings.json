@@ -1,0 +1,40 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "editor.wordWrap": "on",
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+
+  "tailwindCSS.experimental.configFile": "input.css",
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript"
+  },
+
+  "files.associations": {
+    "*.gs": "javascript"
+  },
+  "files.exclude": {
+    "old_sites": true,
+    "node_modules": true
+  },
+
+  "emmet.includeLanguages": {
+    "javascript": "html"
+  },
+
+  "liveServer.settings.root": "/",
+  "liveServer.settings.port": 5500,
+
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

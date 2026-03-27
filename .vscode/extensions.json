@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "ritwickdey.LiveServer",
+    "esbenp.prettier-vscode",
+    "ecmel.vscode-html-css",
+    "formulahendry.auto-rename-tag",
+    "kisstkondoros.vscode-gutter-preview",
+    "eamodio.gitlens",
+    "pranaygp.vscode-css-peek",
+    "christian-kohler.path-intellisense"
+  ]
+}
