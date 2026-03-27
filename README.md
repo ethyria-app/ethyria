@@ -4,7 +4,7 @@ Multilingual static landing page for Ethyria, focused on AI dream interpretation
 
 ## Live Site
 
-- Production URL: https://ostyles.github.io/ethyria/
+- Production URL: <https://ostyles.github.io/ethyria/>
 
 ## Local Usage
 
@@ -39,3 +39,6 @@ Multilingual static landing page for Ethyria, focused on AI dream interpretation
 ## Operations
 
 - See `SEO_OPERATIONS.md` for the search indexing, validation, and monitoring workflow.
+- See `SEO_KEYWORD_MAP.md` for multilingual keyword clusters and content targeting.
+- See `SEO_QA_CHECKLIST.md` for pre-push and post-deploy SEO validation.
+- See `OFFPAGE_AUTHORITY_PLAN.md` for external authority-building workstreams.
