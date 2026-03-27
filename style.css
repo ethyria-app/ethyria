@@ -397,10 +397,16 @@ h6 {
 .floating-beta-cta {
   position: fixed;
   left: 50%;
-  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  bottom: calc(2.75rem + env(safe-area-inset-bottom, 0px));
   transform: translateX(-50%);
   z-index: 50;
-  width: min(calc(100vw - 2rem - env(safe-area-inset-left, 0px) - env(safe-area-inset-right, 0px)), 30rem);
+  width: min(
+    calc(
+      100vw - 2rem - env(safe-area-inset-left, 0px) -
+        env(safe-area-inset-right, 0px)
+    ),
+    30rem
+  );
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
@@ -435,13 +441,13 @@ h6 {
 
 @media (max-width: 640px) {
   body {
-    padding-bottom: calc(9rem + env(safe-area-inset-bottom, 0px));
+    padding-bottom: calc(11rem + env(safe-area-inset-bottom, 0px));
   }
 
   .floating-beta-cta {
     left: max(0.625rem, env(safe-area-inset-left, 0px));
     right: max(0.625rem, env(safe-area-inset-right, 0px));
-    bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+    bottom: calc(3rem + env(safe-area-inset-bottom, 0px));
     transform: none;
     width: auto;
     padding: 0.95rem 1.15rem;
