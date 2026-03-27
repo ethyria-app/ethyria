@@ -23,13 +23,11 @@ Multilingual static landing page for Ethyria, focused on AI dream interpretation
 - `assets/` – static assets, OG images, scripts, and fonts
 - `robots.txt` – crawler directives
 - `sitemap.xml` – multilingual sitemap with hreflang alternates
-- `old_sites/` – archived legacy landing pages kept out of indexing
 
 ## SEO Notes
 
 - Canonical production domain is `https://ostyles.github.io/ethyria/`.
 - Every localized page carries its own canonical, hreflang, Open Graph, Twitter, and JSON-LD metadata.
-- Archived pages under `old_sites/` are intentionally marked `noindex` and blocked in `robots.txt` to avoid duplicate-content competition.
 - When metadata changes are shipped, update `sitemap.xml` `lastmod` values and re-submit the sitemap in search tools.
 
 ## Deployment

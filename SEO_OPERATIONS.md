@@ -63,7 +63,6 @@ Live pages to update when tokens are available:
 3. Confirm localized `title`, `description`, canonical, hreflang, Open Graph, and Twitter tags on all language pages.
 4. Confirm `robots.txt` still points to the live sitemap.
 5. Confirm `sitemap.xml` includes all live language URLs and fresh `lastmod` values.
-6. Confirm `old_sites/` remains blocked and `noindex`.
 
 ## Content Governance
 
