@@ -112,7 +112,7 @@ body {
   overflow-x: clip;
   width: 100%;
   max-width: 100%;
-  padding-bottom: calc(8rem + env(safe-area-inset-bottom, 0px));
+  padding-bottom: calc(6rem + env(safe-area-inset-bottom, 0px));
 }
 
 body::before {
@@ -371,6 +371,54 @@ h6 {
   line-height: var(--ethyria-body-line-height) !important;
 }
 
+#features .grid > .glass-card > div:last-child {
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+#features .grid > .glass-card:nth-child(1) > div:last-child {
+  color: #06b6d4;
+  border-top-color: rgba(6, 182, 212, 0.3);
+}
+
+#features .grid > .glass-card:nth-child(2) > div:last-child {
+  color: #c084fc;
+  border-top-color: rgba(192, 132, 252, 0.3);
+}
+
+#features .grid > .glass-card:nth-child(3) > div:last-child {
+  color: #60a5fa;
+  border-top-color: rgba(96, 165, 250, 0.3);
+}
+
+#features .grid > .glass-card:nth-child(4) > div:last-child {
+  color: #818cf8;
+  border-top-color: rgba(129, 140, 248, 0.3);
+}
+
+#features .grid > .glass-card:nth-child(5) > div:last-child {
+  color: #67e8f9;
+  border-top-color: rgba(103, 232, 249, 0.3);
+}
+
+#beta {
+  padding-top: clamp(4rem, 6vw, 5rem) !important;
+  padding-bottom: clamp(2.25rem, 4vw, 3rem) !important;
+}
+
+#beta .glass-card > span:first-child {
+  font-size: 2rem !important;
+  line-height: 1 !important;
+  margin-top: 0.1rem !important;
+  flex-shrink: 0;
+}
+
+#download {
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
 .glow-button {
   background: var(--ethyria-accent);
   color: white;
@@ -392,7 +440,7 @@ h6 {
 .google-play-badge {
   width: min(100%, 18rem);
   height: auto;
-  margin: 0.85rem auto 0;
+  margin: 0.45rem auto 0;
   display: block;
   border-radius: 1rem;
   box-shadow: 0 18px 34px rgba(0, 0, 0, 0.26);
@@ -487,7 +535,7 @@ h6 {
 
 @media (max-width: 640px) {
   body {
-    padding-bottom: calc(11rem + env(safe-area-inset-bottom, 0px));
+    padding-bottom: calc(8.75rem + env(safe-area-inset-bottom, 0px));
   }
 
   .floating-beta-cta {
