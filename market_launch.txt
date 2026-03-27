@@ -897,7 +897,7 @@ Das Ziel ist es, in der ersten Woche überall präsent zu sein.
 
 [ ] E-Mail-Automation: Sind die 3 Hype-Mails (Teaser, Launch, Last Call) korrekt segmentiert und terminiert?
 
-[ ] AEO-Check (Answer Engine Optimization): Suche nach „Was bedeutet [Symbol X] im Traum 2026?“ – Erscheint deine Dreamzzz-Landingpage als Antwort-Quelle?
+[ ] AEO-Check (Answer Engine Optimization): Suche nach „Was bedeutet [Symbol X] im Traum 2026?“ – Erscheint deine Ethyria-Landingpage als Antwort-Quelle?
 
 IV. Community & Customer Success (Retention)
 Der Launch ist erst der Anfang. Die ersten Nutzer müssen zu Fans werden.

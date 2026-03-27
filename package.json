@@ -1,5 +1,5 @@
 {
-  "name": "dreamzzzlanding",
+  "name": "ethyria-landing-page",
   "version": "1.0.0",
   "description": "Multilingual static landing page for Ethyria AI dream interpretation and dream journaling",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/omcstolz-svg/dreamzzz-landing.git"
+    "url": "git+https://github.com/ostyles/ethyria.git"
   },
   "keywords": [
     "ethyria",
@@ -24,7 +24,7 @@
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/omcstolz-svg/dreamzzz-landing/issues"
+    "url": "https://github.com/ostyles/ethyria/issues"
   },
   "homepage": "https://ostyles.github.io/ethyria/",
   "devDependencies": {
