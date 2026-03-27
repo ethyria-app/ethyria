@@ -2483,7 +2483,6 @@
     <!-- Beta Signup Section -->
     <section id="beta" class="container mx-auto px-6 py-32 relative z-10">
       <div class="max-w-2xl mx-auto text-center">
-        <!-- Status Badge -->
         <div
           class="inline-flex items-center gap-2 px-4 py-1.5 border border-cyan-500/30 rounded-full text-[10px] tracking-[0.25em] uppercase mb-10 text-cyan-400"
         >
@@ -2502,10 +2501,11 @@
           Tus sueños. Científicamente descifrados.
         </p>
         <p class="text-lg text-gray-400 mb-4 leading-relaxed max-w-3xl mx-auto">
-          Buscamos 100 pioneros que quieran construir con nosotros el futuro del análisis digital de sueños. Como agradecimiento por tu confianza temprana, te damos acceso completo a nuestra tecnología.
+          Buscamos 100 pioneros que quieran construir con nosotros el futuro del
+          análisis digital de sueños. Como agradecimiento por tu confianza
+          temprana, te damos acceso completo a nuestra tecnología.
         </p>
 
-        <!-- Scarcity Bar -->
         <div class="my-8 max-w-sm mx-auto">
           <div class="flex justify-between text-xs text-gray-500 mb-2">
             <span>Plazas tomadas</span>
@@ -2522,10 +2522,61 @@
           </p>
         </div>
 
-        <!-- Email Form -->
+        <div class="mb-8 mt-12">
+          <h3 class="text-2xl font-bold mb-6">Tu paquete de inicio:</h3>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto mb-16"
+          >
+            <div
+              class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
+            >
+              <span class="text-base mt-0.5">🎁</span>
+              <span>30 días de Ethyria Premium gratis.</span>
+            </div>
+            <div
+              class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
+            >
+              <span class="text-base mt-0.5">🛠️</span>
+              <span>Todas las funciones de análisis y herramientas PaaS incluidas.</span>
+            </div>
+            <div
+              class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
+            >
+              <span class="text-base mt-0.5">🔎</span>
+              <span>Sin suscripción, sin trampa, total transparencia.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto mb-16">
+          <h3 class="text-2xl font-bold mb-6">Consigue otro mes gratis:</h3>
+          <p class="text-base text-gray-400 mb-6 leading-relaxed">
+            Activaremos otros 30 días de Premium si después de tu prueba nos
+            apoyas brevemente:
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div
+              class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
+            >
+              <span class="text-base mt-0.5">⭐</span>
+              <span>Envíanos una breve valoración de tu experiencia.</span>
+            </div>
+            <div
+              class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
+            >
+              <span class="text-base mt-0.5">📝</span>
+              <span>Completa nuestro cuestionario de 2 minutos.</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-sm text-gray-300 max-w-2xl mx-auto mb-4 leading-relaxed">
+          Introduce aquí tu dirección de correo electrónico y recibirás tu
+          enlace de descarga exclusivo en tu bandeja de entrada personal.
+        </p>
         <form
           onsubmit="handleBetaSignup(event)"
-          class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-4"
+          class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mt-8 mb-4"
         >
           <input
             type="email"
@@ -2538,100 +2589,70 @@
           />
           <input
             type="text"
-            <div class="mb-8 mt-12">
-              <h3 class="text-2xl font-bold mb-6">Tu paquete de inicio:</h3>
-              <div
-                class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto mb-16"
-              >
-                <div
-                  class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
-                >
-                  <span class="text-base mt-0.5">🎁</span>
-                  <span>30 días de Ethyria Premium gratis.</span>
-                </div>
-                <div
-                  class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
-                >
-                  <span class="text-base mt-0.5">🛠️</span>
-                  <span>Todas las funciones de análisis y herramientas PaaS incluidas.</span>
-                </div>
-                <div
-                  class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
-                >
-                  <span class="text-base mt-0.5">🔎</span>
-                  <span>Sin suscripción, sin trampa, total transparencia.</span>
-                </div>
-              </div>
-            </div>
+            name="website"
+            tabindex="-1"
+            autocomplete="off"
+            class="hidden"
+            aria-hidden="true"
+          />
+          <button type="submit" class="glow-button whitespace-nowrap">
+            Obtener Acceso →
+          </button>
+        </form>
+        <div
+          id="betaStatus"
+          class="hidden text-sm mb-4"
+          aria-live="polite"
+        ></div>
+        <div class="max-w-md mx-auto mb-4 text-sm text-gray-300 space-y-2">
+          <p>• Con un valor de 7,99 € al mes</p>
+          <p>• No se necesita tarjeta de crédito</p>
+          <p>• 100 % gratis hasta el final del período de prueba</p>
+        </div>
+        <p class="text-sm text-gray-400 max-w-md mx-auto">
+          Próximamente también en Google Play Store.
+        </p>
+        <div class="google-play-badge" aria-label="Próximamente en Google Play">
+          <svg class="google-play-badge__icon" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M8 6l30.5 26L8 58z" fill="#00d1ff" />
+            <path d="M38.5 32L47 24.8 58 18 58 46 47 39.2z" fill="#8b5cf6" />
+            <path d="M8 6l39 22.8L58 18 20.4 0.8A8 8 0 0 0 8 6z" fill="#34d399" />
+            <path d="M8 58l39-22.8L58 46 20.4 63.2A8 8 0 0 1 8 58z" fill="#f59e0b" />
+          </svg>
+          <div class="google-play-badge__text">
+            <span class="google-play-badge__eyebrow">Próximamente en</span>
+            <span class="google-play-badge__title">Google Play</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="max-w-3xl mx-auto mb-16">
-              <h3 class="text-2xl font-bold mb-6">
-                Consigue otro mes gratis:
-              </h3>
-              <p class="text-base text-gray-400 mb-6 leading-relaxed">
-                Activaremos otros 30 días de Premium si después de tu prueba nos apoyas brevemente:
-              </p>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div
-                  class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
-                >
-                  <span class="text-base mt-0.5">⭐</span>
-                  <span>Envíanos una breve valoración de tu experiencia.</span>
-                </div>
-                <div
-                  class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
-                >
-                  <span class="text-base mt-0.5">📝</span>
-                  <span>Completa nuestro cuestionario de 2 minutos.</span>
-                </div>
-              </div>
-            </div>
+    <footer id="download" class="border-t border-white/5 py-8 text-center">
+      <div class="text-gray-600 text-xs tracking-widest uppercase">
+        Ethyria AI — Beta v3.0 · Solo para testers invitados · ethyria.app
+      </div>
+    </footer>
 
-            <form
-              onsubmit="handleBetaSignup(event)"
-              class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mt-8 mb-4"
-            >
-              <input
-                type="email"
-                id="betaEmail"
-                name="email"
-                required
-                autocomplete="email"
-                placeholder="tu@email.com"
-                class="flex-1 px-5 py-4 rounded-full bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-cyan-500/50 focus:bg-white/8 transition text-sm"
-              />
-              <input
-                type="text"
-                name="website"
-                tabindex="-1"
-                autocomplete="off"
-                class="hidden"
-                aria-hidden="true"
-              />
-              <button type="submit" class="glow-button whitespace-nowrap">
-                Obtener Acceso →
-              </button>
-            </form>
-            <div
-              id="betaStatus"
-              class="hidden text-sm mb-4"
-              aria-live="polite"
-            ></div>
+    <script src="assets/beta-signup.js"></script>
+    <script>
+      window.ethyriaBetaConfig = {
+        endpoint:
+          "https://script.google.com/macros/s/AKfycbys9llscb8Gm0yHTyXeSHJSv71BEAwewi66ePs9S7uwYMvhuyn35pE7-3ALusDjxjLh/exec",
         locale: "es",
         sourcePage: "index.es.html",
         messages: {
           success:
             "Tu email se ha guardado correctamente. Revisa ahora tu bandeja de entrada.",
           alreadyRegistered:
-            "Este email ya esta en la lista. Revisa tu bandeja de entrada.",
+            "Este email ya está en la lista. Revisa tu bandeja de entrada.",
           savedNoEmail:
-            "Tu email se ha guardado, pero el correo automatico aun no pudo enviarse.",
-          invalidEmail: "Introduce una direccion de email valida.",
+            "Tu email se ha guardado, pero el correo automático aún no pudo enviarse.",
+          invalidEmail: "Introduce una dirección de email válida.",
           sending: "Guardando tu plaza...",
           error:
-            "No hemos podido guardar tu email ahora mismo. Intentalo de nuevo en un momento.",
+            "No hemos podido guardar tu email ahora mismo. Inténtalo de nuevo en un momento.",
           setup:
-            "El formulario aun no esta activo. Anade primero la URL de Apps Script.",
+            "El formulario aún no está activo. Añade primero la URL de Apps Script.",
           buttonIdle: "Obtener Acceso →",
           buttonLoading: "Guardando...",
         },

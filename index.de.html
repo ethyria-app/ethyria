@@ -2555,6 +2555,10 @@
         </div>
 
         <!-- Email Form -->
+        <p class="text-sm text-gray-300 max-w-2xl mx-auto mb-4 leading-relaxed">
+          Trage hier deine E-Mail-Adresse ein und du bekommst deinen exklusiven
+          Download-Link in dein persönliches Postfach.
+        </p>
         <form
           onsubmit="handleBetaSignup(event)"
           class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mt-8 mb-4"
@@ -2585,6 +2589,26 @@
           class="hidden text-sm mb-4"
           aria-live="polite"
         ></div>
+        <div class="max-w-md mx-auto mb-4 text-sm text-gray-300 space-y-2">
+          <p>• Im Wert von 7,99 € pro Monat</p>
+          <p>• Keine Kreditkarte benötigt</p>
+          <p>• 100 % kostenlos bis zum Ablauf der Testphase</p>
+        </div>
+        <p class="text-sm text-gray-400 max-w-md mx-auto">
+          Bald auch im Google Play Store verfügbar.
+        </p>
+        <div class="google-play-badge" aria-label="Bald bei Google Play verfügbar">
+          <svg class="google-play-badge__icon" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M8 6l30.5 26L8 58z" fill="#00d1ff" />
+            <path d="M38.5 32L47 24.8 58 18 58 46 47 39.2z" fill="#8b5cf6" />
+            <path d="M8 6l39 22.8L58 18 20.4 0.8A8 8 0 0 0 8 6z" fill="#34d399" />
+            <path d="M8 58l39-22.8L58 46 20.4 63.2A8 8 0 0 1 8 58z" fill="#f59e0b" />
+          </svg>
+          <div class="google-play-badge__text">
+            <span class="google-play-badge__eyebrow">Demnächst bei</span>
+            <span class="google-play-badge__title">Google Play</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -2605,12 +2629,12 @@
         sourcePage: "index.de.html",
         messages: {
           success:
-            "Deine E-Mail wurde erfolgreich aufgenommen. Pruefe jetzt deinen Posteingang.",
+            "Deine E-Mail wurde erfolgreich aufgenommen. Prüfe jetzt deinen Posteingang.",
           alreadyRegistered:
-            "Diese E-Mail ist bereits eingetragen. Bitte pruefe deinen Posteingang.",
+            "Diese E-Mail ist bereits eingetragen. Bitte prüfe deinen Posteingang.",
           savedNoEmail:
             "Deine E-Mail wurde gespeichert, aber die automatische Mail konnte noch nicht gesendet werden.",
-          invalidEmail: "Bitte gib eine gueltige E-Mail-Adresse ein.",
+          invalidEmail: "Bitte gib eine gültige E-Mail-Adresse ein.",
           sending: "Dein Platz wird gespeichert...",
           error:
             "Deine E-Mail konnte gerade nicht gespeichert werden. Bitte versuche es gleich noch einmal.",

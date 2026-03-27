@@ -2559,6 +2559,10 @@
           </div>
         </div>
 
+        <p class="text-sm text-gray-300 max-w-2xl mx-auto mb-4 leading-relaxed">
+          Введите здесь свой адрес электронной почты, и вы получите эксклюзивную
+          ссылку для скачивания в свой личный почтовый ящик.
+        </p>
         <form
           onsubmit="handleBetaSignup(event)"
           class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mt-8 mb-4"
@@ -2589,6 +2593,26 @@
           class="hidden text-sm mb-4"
           aria-live="polite"
         ></div>
+        <div class="max-w-md mx-auto mb-4 text-sm text-gray-300 space-y-2">
+          <p>• На сумму 7,99 € в месяц</p>
+          <p>• Кредитная карта не требуется</p>
+          <p>• 100 % бесплатно до окончания пробного периода</p>
+        </div>
+        <p class="text-sm text-gray-400 max-w-md mx-auto">
+          Скоро также в Google Play Store.
+        </p>
+        <div class="google-play-badge" aria-label="Скоро в Google Play">
+          <svg class="google-play-badge__icon" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M8 6l30.5 26L8 58z" fill="#00d1ff" />
+            <path d="M38.5 32L47 24.8 58 18 58 46 47 39.2z" fill="#8b5cf6" />
+            <path d="M8 6l39 22.8L58 18 20.4 0.8A8 8 0 0 0 8 6z" fill="#34d399" />
+            <path d="M8 58l39-22.8L58 46 20.4 63.2A8 8 0 0 1 8 58z" fill="#f59e0b" />
+          </svg>
+          <div class="google-play-badge__text">
+            <span class="google-play-badge__eyebrow">Скоро в</span>
+            <span class="google-play-badge__title">Google Play</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -2607,18 +2631,18 @@
         sourcePage: "index.ru.html",
         messages: {
           success:
-            "Vash email uspeshno dobavlen. Proverte vkhodyashchie soobshcheniya.",
+            "Ваш email успешно добавлен. Проверьте входящие сообщения.",
           alreadyRegistered:
-            "Etot email uzhe est v spiske. Proverte vkhodyashchie soobshcheniya.",
+            "Этот email уже есть в списке. Проверьте входящие сообщения.",
           savedNoEmail:
-            "Vash email sokhranion, no avtomaticheskoe pismo poka ne otpravleno.",
-          invalidEmail: "Pozhaluysta, vvedite korrektnyy email.",
-          sending: "Sokhranyaem vashu zayavku...",
+            "Ваш email сохранён, но автоматическое письмо пока не отправлено.",
+          invalidEmail: "Пожалуйста, введите корректный email.",
+          sending: "Сохраняем вашу заявку...",
           error:
-            "Seichas ne udalos sokhranit vash email. Poprobuyte eshche raz cherez minutku.",
-          setup: "Forma eshche ne aktivna. Snachala dobavte URL Apps Script.",
-          buttonIdle: "Poluchit dostup →",
-          buttonLoading: "Otpravka...",
+            "Сейчас не удалось сохранить ваш email. Попробуйте ещё раз через минуту.",
+          setup: "Форма ещё не активна. Сначала добавьте URL Apps Script.",
+          buttonIdle: "Получить доступ →",
+          buttonLoading: "Отправка...",
         },
       };
 

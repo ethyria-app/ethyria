@@ -2575,6 +2575,10 @@
           </div>
         </div>
 
+        <p class="text-sm text-gray-300 max-w-2xl mx-auto mb-4 leading-relaxed">
+          Saisissez ici votre adresse e-mail et vous recevrez votre lien de
+          téléchargement exclusif dans votre boîte mail personnelle.
+        </p>
         <form
           onsubmit="handleBetaSignup(event)"
           class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mt-8 mb-4"
@@ -2597,7 +2601,7 @@
             aria-hidden="true"
           />
           <button type="submit" class="glow-button whitespace-nowrap">
-            Obtenir l'Accès →
+            Obtenir l'accès →
           </button>
         </form>
         <div
@@ -2605,6 +2609,26 @@
           class="hidden text-sm mb-4"
           aria-live="polite"
         ></div>
+        <div class="max-w-md mx-auto mb-4 text-sm text-gray-300 space-y-2">
+          <p>• D'une valeur de 7,99 € par mois</p>
+          <p>• Aucune carte bancaire requise</p>
+          <p>• 100 % gratuit jusqu'à la fin de la phase d'essai</p>
+        </div>
+        <p class="text-sm text-gray-400 max-w-md mx-auto">
+          Bientôt aussi sur le Google Play Store.
+        </p>
+        <div class="google-play-badge" aria-label="Bientôt sur Google Play">
+          <svg class="google-play-badge__icon" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M8 6l30.5 26L8 58z" fill="#00d1ff" />
+            <path d="M38.5 32L47 24.8 58 18 58 46 47 39.2z" fill="#8b5cf6" />
+            <path d="M8 6l39 22.8L58 18 20.4 0.8A8 8 0 0 0 8 6z" fill="#34d399" />
+            <path d="M8 58l39-22.8L58 46 20.4 63.2A8 8 0 0 1 8 58z" fill="#f59e0b" />
+          </svg>
+          <div class="google-play-badge__text">
+            <span class="google-play-badge__eyebrow">Bientôt sur</span>
+            <span class="google-play-badge__title">Google Play</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -2623,18 +2647,18 @@
         sourcePage: "index.fr.html",
         messages: {
           success:
-            "Votre email a bien ete enregistre. Verifiez maintenant votre boite de reception.",
+            "Votre e-mail a bien été enregistré. Vérifiez maintenant votre boîte de réception.",
           alreadyRegistered:
-            "Cet email est deja sur la liste. Veuillez verifier votre boite de reception.",
+            "Cet e-mail est déjà sur la liste. Veuillez vérifier votre boîte de réception.",
           savedNoEmail:
-            "Votre email a ete enregistre, mais le message automatique n'a pas encore pu etre envoye.",
-          invalidEmail: "Veuillez saisir une adresse email valide.",
+            "Votre e-mail a été enregistré, mais le message automatique n'a pas encore pu être envoyé.",
+          invalidEmail: "Veuillez saisir une adresse e-mail valide.",
           sending: "Enregistrement en cours...",
           error:
-            "Nous n'avons pas pu enregistrer votre email pour le moment. Veuillez reessayer dans un instant.",
+            "Nous n'avons pas pu enregistrer votre e-mail pour le moment. Veuillez réessayer dans un instant.",
           setup:
             "Le formulaire n'est pas encore actif. Ajoutez d'abord l'URL Apps Script.",
-          buttonIdle: "Obtenir l'Acces →",
+          buttonIdle: "Obtenir l'accès →",
           buttonLoading: "Envoi...",
         },
       };
