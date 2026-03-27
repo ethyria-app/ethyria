@@ -83,6 +83,19 @@
   scroll-behavior: smooth;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
 body {
   background: linear-gradient(
     135deg,
@@ -96,6 +109,9 @@ body {
   font-weight: 400;
   margin: 0;
   overflow-x: hidden;
+  overflow-x: clip;
+  width: 100%;
+  max-width: 100%;
   padding-bottom: calc(8rem + env(safe-area-inset-bottom, 0px));
 }
 
@@ -286,6 +302,32 @@ h6 {
   background-clip: text;
 }
 
+.section-shell {
+  padding-top: clamp(3.35rem, 5vw, 4.1rem) !important;
+  padding-bottom: clamp(3.35rem, 5vw, 4.1rem) !important;
+}
+
+.section-header {
+  margin-bottom: clamp(1.35rem, 2.4vw, 1.85rem) !important;
+}
+
+.section-header-tight {
+  margin-bottom: clamp(1.05rem, 2vw, 1.4rem) !important;
+}
+
+.section-eyebrow {
+  margin-bottom: 0.3rem !important;
+}
+
+.section-title {
+  margin-bottom: 0.45rem !important;
+  line-height: 1.08;
+}
+
+.section-subtitle {
+  line-height: 1.65 !important;
+}
+
 .glass-card {
   background: rgba(255, 255, 255, 0.03);
   -webkit-backdrop-filter: blur(12px);
@@ -402,10 +444,14 @@ h6 {
   z-index: 50;
   width: min(
     calc(
-      100vw - 2rem - env(safe-area-inset-left, 0px) -
+      100% - 2rem - env(safe-area-inset-left, 0px) -
         env(safe-area-inset-right, 0px)
     ),
     30rem
+  );
+  max-width: calc(
+    100% - 2rem - env(safe-area-inset-left, 0px) -
+      env(safe-area-inset-right, 0px)
   );
   box-sizing: border-box;
   display: inline-flex;
@@ -477,9 +523,9 @@ h6 {
 }
 
 .bg-blob {
-  position: absolute;
-  width: 400px;
-  height: 400px;
+  position: fixed;
+  width: min(400px, 70vw);
+  height: min(400px, 70vw);
   background: radial-gradient(
     circle,
     rgba(49, 132, 255, 0.15) 0%,
@@ -487,4 +533,77 @@ h6 {
   );
   z-index: -1;
   filter: blur(50px);
+  pointer-events: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+.glass-card,
+.nav-brand,
+.nav-brand-text {
+  min-width: 0;
+}
+
+@media (max-width: 767px) {
+  .nav-brand {
+    gap: 0.65rem !important;
+    max-width: 100%;
+  }
+
+  .nav-brand-text {
+    height: auto !important;
+  }
+
+  .nav-brand-title {
+    font-size: clamp(1.45rem, 8vw, 1.85rem) !important;
+  }
+
+  .nav-brand-slogan {
+    font-size: 0.55rem !important;
+    letter-spacing: 0.22em !important;
+  }
+
+  .roadmap-steps
+    [style*="justify-content: space-between"][style*="align-items: center"] {
+    flex-wrap: wrap !important;
+    gap: 0.75rem !important;
+    align-items: flex-start !important;
+  }
+
+  .roadmap-steps [style*="white-space: nowrap"] {
+    white-space: normal !important;
+    max-width: 100% !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+  }
+
+  svg[style*="overflow: visible"] {
+    overflow: hidden !important;
+    display: block !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  [style*="width: 600px"][style*="height: 600px"] {
+    width: min(600px, calc(100% - 2rem)) !important;
+    height: min(600px, calc(100vw - 2rem)) !important;
+  }
+
+  [style*="width: 800px"][style*="height: 300px"] {
+    width: min(800px, calc(100% - 2rem)) !important;
+    height: min(300px, 45vw) !important;
+  }
+
+  [style*="width: 500px"][style*="height: 500px"] {
+    width: min(500px, calc(100% - 2rem)) !important;
+    height: min(500px, calc(100vw - 2rem)) !important;
+  }
+
+  [style*="width: 400px"][style*="height: 400px"] {
+    width: min(400px, calc(100% - 2rem)) !important;
+    height: min(400px, calc(100vw - 2rem)) !important;
+  }
 }
