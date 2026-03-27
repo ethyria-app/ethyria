@@ -30,6 +30,25 @@ This file documents the recurring operational work required to turn the landing 
    - Core Web Vitals
    - rich result eligibility
 
+### Verification Meta Tag Placement
+
+When Google Search Console or Bing Webmaster Tools provides verification tokens, place them in the `<head>` of every live page directly below the existing `robots` meta tag.
+
+Example snippets:
+
+```html
+<meta name="google-site-verification" content="REPLACE_WITH_GOOGLE_TOKEN" />
+<meta name="msvalidate.01" content="REPLACE_WITH_BING_TOKEN" />
+```
+
+Live pages to update when tokens are available:
+
+- `index.html`
+- `index.de.html`
+- `index.fr.html`
+- `index.es.html`
+- `index.ru.html`
+
 ## Bing Webmaster Workflow
 
 1. Add the same production property in Bing Webmaster Tools.
