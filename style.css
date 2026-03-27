@@ -96,7 +96,7 @@ body {
   font-weight: 400;
   margin: 0;
   overflow-x: hidden;
-  padding-bottom: 7rem;
+  padding-bottom: calc(8rem + env(safe-area-inset-bottom, 0px));
 }
 
 body::before {
@@ -347,6 +347,15 @@ h6 {
   background: var(--ethyria-cyan);
 }
 
+.google-play-badge {
+  width: min(100%, 18rem);
+  height: auto;
+  margin: 0.85rem auto 0;
+  display: block;
+  border-radius: 1rem;
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.26);
+}
+
 .language-switcher {
   display: flex;
   align-items: center;
@@ -388,10 +397,11 @@ h6 {
 .floating-beta-cta {
   position: fixed;
   left: 50%;
-  bottom: 1rem;
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
   transform: translateX(-50%);
   z-index: 50;
-  width: min(calc(100% - 2rem), 30rem);
+  width: min(calc(100vw - 2rem - env(safe-area-inset-left, 0px) - env(safe-area-inset-right, 0px)), 30rem);
+  box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -423,57 +433,23 @@ h6 {
   background-color: #001a79;
 }
 
-.google-play-badge {
-  width: min(100%, 18rem);
-  margin: 0.85rem auto 0;
-  padding: 0.85rem 1rem;
-  border-radius: 1rem;
-  background: linear-gradient(135deg, rgba(4, 10, 28, 0.96), rgba(18, 28, 74, 0.96));
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.26);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.85rem;
-}
-
-.google-play-badge__icon {
-  width: 2rem;
-  height: 2rem;
-  flex-shrink: 0;
-}
-
-.google-play-badge__text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  line-height: 1.1;
-}
-
-.google-play-badge__eyebrow {
-  font-size: 0.65rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.62);
-}
-
-.google-play-badge__title {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #ffffff;
-}
-
 @media (max-width: 640px) {
   body {
-    padding-bottom: 6.5rem;
+    padding-bottom: calc(9rem + env(safe-area-inset-bottom, 0px));
   }
 
   .floating-beta-cta {
-    bottom: 0.85rem;
-    width: calc(100% - 1.25rem);
+    left: max(0.625rem, env(safe-area-inset-left, 0px));
+    right: max(0.625rem, env(safe-area-inset-right, 0px));
+    bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+    transform: none;
+    width: auto;
     padding: 0.95rem 1.15rem;
     font-size: 0.95rem;
+  }
+
+  .floating-beta-cta:hover {
+    transform: none;
   }
 }
 
