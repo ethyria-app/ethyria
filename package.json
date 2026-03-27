@@ -1,7 +1,7 @@
 {
   "name": "dreamzzzlanding",
   "version": "1.0.0",
-  "description": "Dream Analysis and more",
+  "description": "Multilingual static landing page for Ethyria AI dream interpretation and dream journaling",
   "main": "index.js",
   "scripts": {
     "dev": "npx @tailwindcss/cli -i input.css -o assets/tailwind.min.css --watch",
@@ -12,14 +12,21 @@
     "type": "git",
     "url": "git+https://github.com/omcstolz-svg/dreamzzz-landing.git"
   },
-  "keywords": [],
+  "keywords": [
+    "ethyria",
+    "dream journal",
+    "dream interpretation",
+    "ai dream analysis",
+    "multilingual landing page",
+    "android app"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/omcstolz-svg/dreamzzz-landing/issues"
   },
-  "homepage": "https://github.com/omcstolz-svg/dreamzzz-landing#readme",
+  "homepage": "https://ostyles.github.io/ethyria/",
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.2",
     "tailwindcss": "^4.2.2"
