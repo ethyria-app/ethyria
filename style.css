@@ -376,8 +376,7 @@ h6 .ethyria-gradient-text {
 .floating-section-nav__button:focus-visible:not(:disabled) {
   transform: translateY(-1px);
   color: rgba(255, 255, 255, 0.96);
-  filter:
-    drop-shadow(0 0 12px rgba(1, 191, 255, 0.18))
+  filter: drop-shadow(0 0 12px rgba(1, 191, 255, 0.18))
     drop-shadow(0 4px 14px rgba(2, 8, 32, 0.42));
   outline: none;
 }
@@ -393,11 +392,12 @@ h6 .ethyria-gradient-text {
   height: 1.25rem;
 }
 
-.floating-section-nav[data-direction="up"] .floating-section-nav__button--up:not(:disabled),
-.floating-section-nav[data-direction="down"] .floating-section-nav__button--down:not(:disabled) {
+.floating-section-nav[data-direction="up"]
+  .floating-section-nav__button--up:not(:disabled),
+.floating-section-nav[data-direction="down"]
+  .floating-section-nav__button--down:not(:disabled) {
   color: rgba(125, 230, 255, 0.95);
-  filter:
-    drop-shadow(0 0 14px rgba(1, 191, 255, 0.28))
+  filter: drop-shadow(0 0 14px rgba(1, 191, 255, 0.28))
     drop-shadow(0 4px 14px rgba(2, 8, 32, 0.42));
 }
 
@@ -435,6 +435,33 @@ h6 .ethyria-gradient-text {
 
 .section-eyebrow {
   margin-bottom: 0.3rem !important;
+}
+
+.section-pill {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  border: 1px solid;
+  border-radius: 9999px;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.section-pill--app {
+  color: var(--ethyria-cyan);
+  border-color: rgba(1, 191, 255, 0.3);
+}
+
+.section-pill--analysis {
+  color: var(--ethyria-accent);
+  border-color: rgba(49, 132, 255, 0.3);
+}
+
+.section-pill--vision {
+  color: var(--ethyria-purple);
+  border-color: rgba(84, 88, 251, 0.32);
 }
 
 .section-title {
