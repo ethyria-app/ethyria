@@ -66,7 +66,10 @@
   const upButton = nav.querySelector(".floating-section-nav__button--up");
   const downButton = nav.querySelector(".floating-section-nav__button--down");
 
-  if (!(upButton instanceof HTMLButtonElement) || !(downButton instanceof HTMLButtonElement)) {
+  if (
+    !(upButton instanceof HTMLButtonElement) ||
+    !(downButton instanceof HTMLButtonElement)
+  ) {
     return;
   }
 
@@ -76,7 +79,9 @@
   let currentIndex = 0;
   let lastScrollY = viewport.scrollY;
   let ticking = false;
-  const reducedMotion = viewport.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const reducedMotion = viewport.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
 
   function getScrollOffset() {
     return viewport.innerWidth >= 1024 ? 20 : 14;
@@ -96,7 +101,8 @@
   }
 
   function updateState() {
-    const anchorLine = viewport.scrollY + Math.min(viewport.innerHeight * 0.28, 220);
+    const anchorLine =
+      viewport.scrollY + Math.min(viewport.innerHeight * 0.28, 220);
     let nextIndex = 0;
 
     sections.forEach((section, index) => {

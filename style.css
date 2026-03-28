@@ -473,6 +473,186 @@ h6 .ethyria-gradient-text {
   line-height: 1.65 !important;
 }
 
+.app-showcase-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(2rem, 4vw, 3rem);
+  align-items: stretch;
+}
+
+.app-showcase-item {
+  width: min(100%, 23rem);
+  margin-inline: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.app-showcase-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+  flex: 1;
+}
+
+.app-showcase-copy h3 {
+  margin: 0;
+  font-size: clamp(1.45rem, 2vw, 1.72rem);
+  line-height: 1.16;
+}
+
+.app-showcase-copy p {
+  margin: 0;
+  max-width: none;
+  font-size: clamp(0.98rem, 1.25vw, 1.05rem);
+  line-height: 1.72;
+  text-align: center;
+}
+
+.app-showcase-icon {
+  width: var(--ethyria-icon-box-11);
+  height: var(--ethyria-icon-box-11);
+  border-radius: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--ethyria-icon-font-11);
+  box-shadow: 0 12px 28px rgba(2, 8, 32, 0.18);
+}
+
+.app-showcase-visual {
+  position: relative;
+}
+
+.app-showcase-visual::before {
+  content: "";
+  position: absolute;
+  inset: 8% 6% -12% 6%;
+  background: radial-gradient(
+    circle at center,
+    rgba(1, 191, 255, 0.24) 0%,
+    rgba(49, 132, 255, 0.2) 34%,
+    rgba(84, 88, 251, 0.16) 58%,
+    transparent 78%
+  );
+  filter: blur(30px);
+  opacity: 0.72;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.app-showcase-visual::after {
+  content: "";
+  position: absolute;
+  inset: auto 12% -14% 12%;
+  height: 44%;
+  background: radial-gradient(
+    circle at center,
+    rgba(1, 191, 255, 0.34) 0%,
+    rgba(49, 132, 255, 0.18) 42%,
+    transparent 76%
+  );
+  filter: blur(18px);
+  opacity: 0.74;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.app-showcase-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 30px 65px rgba(2, 8, 32, 0.42),
+    0 0 24px rgba(1, 191, 255, 0.14),
+    0 0 52px rgba(49, 132, 255, 0.08),
+    0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.app-showcase-item--featured .app-showcase-image {
+  border-color: rgba(1, 191, 255, 0.22);
+  box-shadow:
+    0 34px 72px rgba(1, 191, 255, 0.16),
+    0 0 28px rgba(1, 191, 255, 0.22),
+    0 0 64px rgba(49, 132, 255, 0.12),
+    0 24px 54px rgba(2, 8, 32, 0.44),
+    0 0 0 1px rgba(1, 191, 255, 0.08);
+}
+
+.live-dream-phone {
+  background: linear-gradient(
+    180deg,
+    rgba(5, 18, 66, 0.98) 0%,
+    rgba(6, 26, 88, 0.96) 100%
+  ) !important;
+  box-shadow:
+    0 0 72px rgba(1, 191, 255, 0.14),
+    0 0 128px rgba(49, 132, 255, 0.08),
+    0 30px 60px rgba(0, 0, 0, 0.62) !important;
+}
+
+.live-dream-shell {
+  position: relative;
+}
+
+.live-dream-shell::before {
+  content: "";
+  position: absolute;
+  inset: 6% 5% -9% 5%;
+  background: radial-gradient(
+    circle at center,
+    rgba(1, 191, 255, 0.26) 0%,
+    rgba(49, 132, 255, 0.18) 36%,
+    rgba(84, 88, 251, 0.14) 58%,
+    transparent 80%
+  );
+  filter: blur(34px);
+  opacity: 0.8;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.live-dream-shell::after {
+  content: "";
+  position: absolute;
+  inset: auto 12% -13% 12%;
+  height: 36%;
+  background: radial-gradient(
+    circle at center,
+    rgba(1, 191, 255, 0.32) 0%,
+    rgba(49, 132, 255, 0.16) 44%,
+    transparent 78%
+  );
+  filter: blur(22px);
+  opacity: 0.78;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.live-dream-entry {
+  background: linear-gradient(
+    180deg,
+    rgba(8, 30, 102, 0.34) 0%,
+    rgba(5, 18, 70, 0.58) 100%
+  ) !important;
+  border-color: rgba(103, 232, 249, 0.14) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 12px 28px rgba(1, 191, 255, 0.06);
+}
+
+@media (min-width: 768px) {
+  .app-showcase-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(2rem, 3vw, 2.75rem);
+  }
+}
+
 .glass-card {
   background: rgba(255, 255, 255, 0.03);
   -webkit-backdrop-filter: blur(12px);
@@ -576,10 +756,29 @@ h6 .ethyria-gradient-text {
   transition: all 0.3s ease;
 }
 
+#beta .glow-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  flex: 0 0 auto;
+  min-width: 13.5rem;
+  padding-inline: 2.35rem;
+}
+
 .glow-button:hover {
   box-shadow: 0 0 25px rgba(1, 191, 255, 0.7);
   transform: scale(1.05);
   background: var(--ethyria-cyan);
+}
+
+#beta input[type="email"] {
+  caret-color: var(--ethyria-cyan);
+}
+
+#beta input[type="email"]::placeholder {
+  color: rgba(125, 211, 252, 0.92) !important;
+  opacity: 1;
 }
 
 .google-play-badge {
@@ -724,6 +923,11 @@ h6 .ethyria-gradient-text {
     padding-bottom: calc(7.25rem + env(safe-area-inset-bottom, 0px));
   }
 
+  #beta .glow-button {
+    min-width: 0;
+    width: 100%;
+  }
+
   .floating-beta-cta {
     display: inline-flex;
     left: 50%;
@@ -750,6 +954,12 @@ h6 .ethyria-gradient-text {
 
   .floating-beta-cta:hover {
     transform: translateX(-50%) translateY(-1px) scale(1.01);
+  }
+}
+
+@media (min-width: 640px) {
+  #beta .glow-button {
+    min-width: 14.5rem;
   }
 }
 
