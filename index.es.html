@@ -2970,13 +2970,26 @@
         object-fit: contain;
       }
 
+      @media (min-width: 1024px) {
+        .nav-brand-logo {
+          max-width: min(37.5rem, calc(100vw - 3rem));
+          max-height: 9rem;
+        }
+      }
+
       h1,
       h2,
       h3,
       h4,
       h5,
       h6 {
-        background: linear-gradient(90deg, #22d3ee 0%, #60a5fa 35%, #a78bfa 70%, #f0abfc 100%);
+        background: linear-gradient(
+          90deg,
+          #22d3ee 0%,
+          #60a5fa 35%,
+          #a78bfa 70%,
+          #f0abfc 100%
+        );
         background-repeat: no-repeat;
         background-size: 100% 100%;
         -webkit-background-clip: text;
