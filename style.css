@@ -302,6 +302,19 @@ h6 {
   background-clip: text;
 }
 
+h1 .ethyria-gradient-text,
+h2 .ethyria-gradient-text,
+h3 .ethyria-gradient-text,
+h4 .ethyria-gradient-text,
+h5 .ethyria-gradient-text,
+h6 .ethyria-gradient-text {
+  background: none;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
+  color: inherit;
+}
+
 .section-shell {
   padding-top: clamp(3.35rem, 5vw, 4.1rem) !important;
   padding-bottom: clamp(3.35rem, 5vw, 4.1rem) !important;
