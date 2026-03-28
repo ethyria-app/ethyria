@@ -115,6 +115,20 @@ body {
   padding-bottom: calc(6rem + env(safe-area-inset-bottom, 0px));
 }
 
+#hero,
+#app-screens,
+#features,
+#insight-pfad,
+#vision,
+#science,
+#export,
+#beta,
+#faq,
+#discoverability,
+#download {
+  scroll-margin-top: 1.5rem;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -318,6 +332,97 @@ h6 .ethyria-gradient-text {
 .section-shell {
   padding-top: clamp(3.35rem, 5vw, 4.1rem) !important;
   padding-bottom: clamp(3.35rem, 5vw, 4.1rem) !important;
+}
+
+.floating-section-nav {
+  position: fixed;
+  top: max(1rem, calc(env(safe-area-inset-top, 0px) + 1rem));
+  right: max(1rem, calc(env(safe-area-inset-right, 0px) + 1rem));
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  transition:
+    opacity 180ms ease,
+    transform 220ms ease;
+}
+
+.floating-section-nav:hover {
+  transform: translateY(-1px);
+}
+
+.floating-section-nav__button {
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  border-radius: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.62);
+  background: transparent;
+  cursor: pointer;
+  filter: drop-shadow(0 4px 14px rgba(2, 8, 32, 0.42));
+  transition:
+    transform 180ms ease,
+    opacity 180ms ease,
+    color 180ms ease,
+    filter 180ms ease;
+}
+
+.floating-section-nav__button:hover:not(:disabled),
+.floating-section-nav__button:focus-visible:not(:disabled) {
+  transform: translateY(-1px);
+  color: rgba(255, 255, 255, 0.96);
+  filter:
+    drop-shadow(0 0 12px rgba(1, 191, 255, 0.18))
+    drop-shadow(0 4px 14px rgba(2, 8, 32, 0.42));
+  outline: none;
+}
+
+.floating-section-nav__button:disabled {
+  opacity: 0.18;
+  cursor: default;
+  filter: none;
+}
+
+.floating-section-nav__button svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.floating-section-nav[data-direction="up"] .floating-section-nav__button--up:not(:disabled),
+.floating-section-nav[data-direction="down"] .floating-section-nav__button--down:not(:disabled) {
+  color: rgba(125, 230, 255, 0.95);
+  filter:
+    drop-shadow(0 0 14px rgba(1, 191, 255, 0.28))
+    drop-shadow(0 4px 14px rgba(2, 8, 32, 0.42));
+}
+
+@media (max-width: 767px) {
+  .floating-section-nav {
+    top: max(0.85rem, calc(env(safe-area-inset-top, 0px) + 0.85rem));
+    right: max(0.85rem, calc(env(safe-area-inset-right, 0px) + 0.85rem));
+  }
+
+  .floating-section-nav__button {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .floating-section-nav__button svg {
+    width: 1.12rem;
+    height: 1.12rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-section-nav,
+  .floating-section-nav__button {
+    transition: none;
+  }
 }
 
 .section-header {
