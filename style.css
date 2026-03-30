@@ -942,13 +942,7 @@ section:not(#insight-pfad) .glass-card [class~="text-left"] {
   bottom: calc(2.75rem + env(safe-area-inset-bottom, 0px));
   transform: translateX(-50%);
   z-index: 50;
-  width: min(
-    calc(
-      100% - 2rem - env(safe-area-inset-left, 0px) -
-        env(safe-area-inset-right, 0px)
-    ),
-    30rem
-  );
+  width: auto;
   max-width: calc(
     100% - 2rem - env(safe-area-inset-left, 0px) -
       env(safe-area-inset-right, 0px)
