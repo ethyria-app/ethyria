@@ -1,23 +1,22 @@
-# Project Status Report - 2026-03-28
+# Project Status Report — 2026-03-30
 
 ## 1. Current Snapshot
 
 - Repository: `C:\Ethyria_LandingPage`
 - Project type: multilingual static landing page for Ethyria
 - Current branch: `main`
-- Current HEAD: `551b709` - `Polish multilingual landing page copy and UI presentation`
+- Current HEAD: `ee10b54` — `Promote test pages to production, archive old pages`
 - Working tree status: clean
 - Production URL: `https://ostyles.github.io/ethyria/`
-- User decision on 2026-03-28: the current `main` version is the final accepted version
 
 ## 2. Important Decision History
 
-- A separate performance experiment worktree and branch existed temporarily.
-- That performance environment was explicitly discarded by user request.
-- The worktree `C:\Ethyria_LandingPage_perf-experiment` was removed.
-- The branch `perf-experiment` was deleted.
+- A separate performance experiment worktree and branch existed temporarily and was discarded.
 - Do not continue any performance-optimization branch unless the user explicitly asks to restart that work.
 - In a new session, treat `main` as the only valid working baseline.
+- On 2026-03-30 a completely rewritten set of pages (originally built as test pages in `test/`) was promoted to production, replacing the previous pages.
+- The previous production pages were archived to `old_sites/`.
+- There are no more test pages — every page in root is a production page.
 
 ## 3. Product Scope
 
@@ -53,9 +52,10 @@ Supported locales:
   - posts to the Google Apps Script endpoint
   - shows inline status and toast feedback
 - `assets/section-nav.js`
-  - injects floating section navigation
-  - localizes button labels by page language
+  - injects floating section navigation (up / down buttons)
+  - localizes button labels by page language (DE / EN / FR / ES / RU)
   - scrolls between major landing-page sections
+  - first anchor is `#top` (flag bar), then `#hero` and subsequent sections
 
 ### Backend / external service
 
@@ -98,7 +98,7 @@ Supported locales:
 - `index.fr.html` - French page
 - `index.es.html` - Spanish page
 - `index.ru.html` - Russian page
-- `style.css` - shared styling across all locales
+- `style.css` - shared styling across all locales (promoted from the former test build on 2026-03-30)
 - `input.css` - Tailwind input source
 
 ### Assets / scripts
@@ -137,7 +137,8 @@ Supported locales:
 - `og-template.html`
   - OG / social preview helper template
 - `old_sites/`
-  - archive / legacy material, not active webroot
+  - archive of the pre-2026-03-30 production pages (5 HTML + style.css)
+  - kept for reference only, not served in production
 
 ## 7. SEO Status
 
@@ -235,16 +236,28 @@ Use this order of operations depending on the next task:
 - Do not assume `market_launch.txt` is the implementation plan; it is ideation material.
 - Do not assume `npm test` provides coverage.
 
-## 13. Suggested Next Logical Work Areas
+## 13. Recent Change Log (2026-03-28 → 2026-03-30)
+
+| Commit | Summary |
+| --- | --- |
+| `44d482e` | DE test page created with full audit fixes, Insight-Pfad content, gradient headlines |
+| `7703f01` | RU test page added with full translation |
+| `c547640` | EN test page: removed remaining DE leftovers |
+| `767b842` | All test pages: translated remaining theory card labels, module bodies (EN/FR/ES/RU) |
+| `4c38019` | UI polish across all pages: logo spacing, float-nav top anchor, Spiritual/BMA footer text, flag links |
+| `ee10b54` | **Promoted test pages to production**, archived old pages to `old_sites/`, removed test folder |
+
+## 14. Suggested Next Logical Work Areas
 
 These are not pending requirements, only the most likely future workstreams:
 
-- live SEO validation on production URLs
+- live SEO validation on the new production pages
 - webmaster verification token insertion when available
 - Google Play / launch collateral refinement
 - multilingual content expansion based on `SEO_KEYWORD_MAP.md`
 - off-page authority execution once on-page state is considered stable
+- update `sitemap.xml` lastmod dates to reflect the 2026-03-30 page refresh
 
-## 14. One-Line Handoff Summary
+## 15. One-Line Handoff Summary
 
-The project is a finalized multilingual static Ethyria landing page on `main`, clean and ready for future work from the main branch only; the discarded performance experiment must not be resumed unless explicitly restarted.
+The project is a finalized multilingual Ethyria landing page on `main` (5 locales), with completely rewritten pages promoted to production on 2026-03-30; old pages are archived in `old_sites/`; work continues from `main` only.
