@@ -25,6 +25,7 @@
   };
 
   const sectionIds = [
+    "top",
     "hero",
     "app-screens",
     "features",
