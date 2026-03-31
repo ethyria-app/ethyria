@@ -2,9 +2,9 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "Open index.de.html in browser",
+			"label": "Open index.html in browser",
 			"type": "shell",
-			"command": "start index.de.html"
+			"command": "start index.html"
 		},
 		{
 			"label": "Open index.marketlaunch.de.html in browser",
