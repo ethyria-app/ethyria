@@ -928,6 +928,75 @@ section:not(#insight-pfad) .glass-card [class~="text-left"] {
   opacity: 1;
 }
 
+/* ---- Emotion Chart Animation ---- */
+
+@keyframes drawLine {
+  from {
+    stroke-dashoffset: 800;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fillReveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes dotPop {
+  0% {
+    r: 0;
+    opacity: 0;
+  }
+  60% {
+    r: 5.5;
+    opacity: 1;
+  }
+  100% {
+    r: inherit;
+    opacity: 1;
+  }
+}
+
+.echo-chart .echo-line {
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+}
+.echo-chart .echo-fill {
+  opacity: 0;
+}
+.echo-chart circle {
+  opacity: 0;
+}
+.echo-chart text:not(.echo-axis) {
+  opacity: 0;
+}
+
+.echo-chart.is-animated .echo-line {
+  animation: drawLine 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+.echo-chart.is-animated .echo-fill {
+  animation: fillReveal 1.5s 0.8s ease-out forwards;
+}
+.echo-chart.is-animated circle:nth-of-type(1) {
+  animation: dotPop 0.4s 0.6s ease-out forwards;
+}
+.echo-chart.is-animated circle:nth-of-type(2) {
+  animation: dotPop 0.4s 1s ease-out forwards;
+}
+.echo-chart.is-animated circle:nth-of-type(3) {
+  animation: dotPop 0.4s 1.4s ease-out forwards;
+}
+.echo-chart.is-animated circle:nth-of-type(4) {
+  animation: dotPop 0.4s 1.8s ease-out forwards;
+}
+.echo-chart.is-animated text:not(.echo-axis) {
+  animation: fillReveal 0.5s 1.6s ease-out forwards;
+}
+
 /* ---- Download Section ---- */
 
 #download {
