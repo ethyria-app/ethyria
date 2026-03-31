@@ -148,30 +148,30 @@ function getEmailTemplate_(locale) {
   const i18n = {
     de: {
       subject: "Willkommen in der Ethyria Traum-Community",
-      greeting: "Liebe Traeumerin, lieber Traeumer,",
+      greeting: "Liebe Träumerin, lieber Träumer,",
       headline: "Willkommen in der Ethyria Traum-Community!",
       thanks:
-        "Vielen Dank fuer dein Interesse als Beta-Tester fuer Ethyria. Wir freuen uns sehr, dass du dabei bist!",
+        "Vielen Dank für dein Interesse als Beta-Tester für Ethyria. Wir freuen uns sehr, dass du dabei bist!",
       listThanks:
-        "Danke fuer deinen Eintrag in unsere E-Mail-Liste!",
+        "Danke für deinen Eintrag in unsere E-Mail-Liste!",
       downloadInfo:
-        "Sobald die Beta-Version startet, erhaeltst du innerhalb der naechsten 4 Wochen eine persoenliche E-Mail mit deinem exklusiven Download-Link direkt in dein Postfach.",
+        "Sobald die Beta-Version startet, erhältst du innerhalb der nächsten 4 Wochen eine persönliche E-Mail mit deinem exklusiven Download-Link direkt in dein Postfach.",
       rewardLead: "Deine Belohnung:",
       rewardItems: [
-        "30 Tage alle Premium-Features voellig kostenlos.",
-        "Option auf 60 Tage: Wenn du nach Ablauf der 30 Tage bereit bist, uns eine kurze Bewertung abzugeben und einen 2-minuetigen Fragebogen in der Ethyria-App auszufuellen, schenken wir dir weitere 30 Tage Premium — insgesamt also 60 Tage gratis.",
+        "30 Tage alle Premium-Features völlig kostenlos.",
+        "Option auf 60 Tage: Wenn du nach Ablauf der 30 Tage bereit bist, uns eine kurze Bewertung abzugeben und einen 2-minütigen Fragebogen in der Ethyria-App auszufüllen, schenken wir dir weitere 30 Tage Premium — insgesamt also 60 Tage gratis.",
       ],
       devNote:
-        "Wir entwickeln staendig weiter, um dir ein stetig besseres Erlebnis bieten zu koennen. Wir sind offen fuer alles, um diese Idee der KI-Traum-Deutung weiterzuentwickeln — dein Feedback ist dabei entscheidend.",
-      privacyLead: "Ein Wort zu deiner Privatsphaere:",
+        "Wir entwickeln ständig weiter, um dir ein stetig besseres Erlebnis bieten zu können. Wir sind offen für alles, um diese Idee der KI-Traum-Deutung weiterzuentwickeln — dein Feedback ist dabei entscheidend.",
+      privacyLead: "Ein Wort zu deiner Privatsphäre:",
       privacyText:
-        "Traumanalyse ist ein zutiefst persoenliches Thema. Deine Daten werden nach hohen Sicherheitsstandards verschluesselt, streng vertraulich behandelt und niemals an Dritte weitergegeben.",
+        "Traumanalyse ist ein zutiefst persönliches Thema. Deine Daten werden nach hohen Sicherheitsstandards verschlüsselt, streng vertraulich behandelt und niemals an Dritte weitergegeben.",
       stayTuned:
         "Halte dein Postfach im Auge — dein exklusiver Zugang kommt bald!",
       closing: "Wir sind gespannt auf deine ersten Erkenntnisse.",
-      signoff: "Mit freundlichen Gruessen,",
+      signoff: "Mit freundlichen Grüßen,",
       signatureName: "Oliver",
-      signatureRole: "Gruender von Ethyria",
+      signatureRole: "Gründer von Ethyria",
     },
     en: {
       subject: "Welcome to the Ethyria Dream Community",
@@ -201,85 +201,85 @@ function getEmailTemplate_(locale) {
       signatureRole: "Founder of Ethyria",
     },
     fr: {
-      subject: "Bienvenue dans la communaute des reves Ethyria",
-      greeting: "Chere reveuse, cher reveur,",
-      headline: "Bienvenue dans la communaute des reves Ethyria !",
+      subject: "Bienvenue dans la communauté des rêves Ethyria",
+      greeting: "Chère rêveuse, cher rêveur,",
+      headline: "Bienvenue dans la communauté des rêves Ethyria !",
       thanks:
-        "Merci pour votre interet en tant que beta-testeur pour Ethyria. Nous sommes ravis de vous compter parmi nous !",
+        "Merci pour votre intérêt en tant que bêta-testeur pour Ethyria. Nous sommes ravis de vous compter parmi nous !",
       listThanks:
-        "Merci pour votre inscription a notre liste e-mail !",
+        "Merci pour votre inscription à notre liste e-mail !",
       downloadInfo:
-        "Des le lancement de la version beta, vous recevrez un e-mail personnel avec votre lien de telechargement exclusif directement dans votre boite de reception — dans les 4 prochaines semaines.",
-      rewardLead: "Votre recompense :",
+        "Dès le lancement de la version bêta, vous recevrez un e-mail personnel avec votre lien de téléchargement exclusif directement dans votre boîte de réception — dans les 4 prochaines semaines.",
+      rewardLead: "Votre récompense :",
       rewardItems: [
-        "30 jours de toutes les fonctionnalites Premium entierement gratuites.",
-        "Option pour 60 jours : si vous acceptez de nous laisser un court avis et de remplir un questionnaire de 2 minutes dans l'application Ethyria apres vos 30 jours, nous vous offrons 30 jours supplementaires de Premium — soit 60 jours gratuits au total.",
+        "30 jours de toutes les fonctionnalités Premium entièrement gratuites.",
+        "Option pour 60 jours : si vous acceptez de nous laisser un court avis et de remplir un questionnaire de 2 minutes dans l'application Ethyria après vos 30 jours, nous vous offrons 30 jours supplémentaires de Premium — soit 60 jours gratuits au total.",
       ],
       devNote:
-        "Nous evoluons en permanence pour vous offrir une experience toujours meilleure. Nous sommes ouverts a toutes les idees pour faire avancer cette vision de l'interpretation des reves par l'IA — vos retours sont essentiels.",
-      privacyLead: "Un mot sur votre vie privee :",
+        "Nous évoluons en permanence pour vous offrir une expérience toujours meilleure. Nous sommes ouverts à toutes les idées pour faire avancer cette vision de l'interprétation des rêves par l'IA — vos retours sont essentiels.",
+      privacyLead: "Un mot sur votre vie privée :",
       privacyText:
-        "L'analyse des reves est un sujet profondement personnel. Vos donnees sont chiffrees selon des standards de securite eleves, traitees de maniere strictement confidentielle et jamais partagees avec des tiers.",
+        "L'analyse des rêves est un sujet profondément personnel. Vos données sont chiffrées selon des standards de sécurité élevés, traitées de manière strictement confidentielle et jamais partagées avec des tiers.",
       stayTuned:
-        "Surveillez votre boite de reception — votre acces exclusif arrive bientot !",
-      closing: "Nous avons hate de decouvrir vos premiers retours.",
+        "Surveillez votre boîte de réception — votre accès exclusif arrive bientôt !",
+      closing: "Nous avons hâte de découvrir vos premiers retours.",
       signoff: "Bien cordialement,",
       signatureName: "Oliver",
       signatureRole: "Fondateur d'Ethyria",
     },
     es: {
-      subject: "Bienvenido a la comunidad de suenos Ethyria",
-      greeting: "Querida sonadora, querido sonador,",
-      headline: "Bienvenido a la comunidad de suenos Ethyria!",
+      subject: "Bienvenido a la comunidad de sueños Ethyria",
+      greeting: "Querida soñadora, querido soñador,",
+      headline: "¡Bienvenido a la comunidad de sueños Ethyria!",
       thanks:
-        "Gracias por tu interes como beta-tester de Ethyria. Estamos encantados de tenerte a bordo!",
+        "Gracias por tu interés como beta-tester de Ethyria. ¡Estamos encantados de tenerte a bordo!",
       listThanks:
-        "Gracias por inscribirte en nuestra lista de correo!",
+        "¡Gracias por inscribirte en nuestra lista de correo!",
       downloadInfo:
-        "En cuanto se lance la version beta, recibiras un correo personal con tu enlace de descarga exclusivo directamente en tu bandeja de entrada — dentro de las proximas 4 semanas.",
+        "En cuanto se lance la versión beta, recibirás un correo personal con tu enlace de descarga exclusivo directamente en tu bandeja de entrada — dentro de las próximas 4 semanas.",
       rewardLead: "Tu recompensa:",
       rewardItems: [
-        "30 dias de todas las funciones Premium completamente gratis.",
-        "Opcion de 60 dias: si despues de tus 30 dias estas dispuesto a dejarnos una breve valoracion y completar un cuestionario de 2 minutos en la app de Ethyria, te regalamos otros 30 dias de Premium — 60 dias gratis en total.",
+        "30 días de todas las funciones Premium completamente gratis.",
+        "Opción de 60 días: si después de tus 30 días estás dispuesto a dejarnos una breve valoración y completar un cuestionario de 2 minutos en la app de Ethyria, te regalamos otros 30 días de Premium — 60 días gratis en total.",
       ],
       devNote:
-        "Evolucionamos constantemente para ofrecerte una experiencia cada vez mejor. Estamos abiertos a todas las ideas para seguir desarrollando esta vision de la interpretacion de suenos con IA — tu feedback es clave.",
+        "Evolucionamos constantemente para ofrecerte una experiencia cada vez mejor. Estamos abiertos a todas las ideas para seguir desarrollando esta visión de la interpretación de sueños con IA — tu feedback es clave.",
       privacyLead: "Una palabra sobre tu privacidad:",
       privacyText:
-        "El analisis de suenos es algo profundamente personal. Tus datos se cifran segun altos estandares de seguridad, se tratan de forma estrictamente confidencial y nunca se comparten con terceros.",
+        "El análisis de sueños es algo profundamente personal. Tus datos se cifran según altos estándares de seguridad, se tratan de forma estrictamente confidencial y nunca se comparten con terceros.",
       stayTuned:
-        "Estate atento a tu bandeja de entrada — tu acceso exclusivo llegara pronto!",
+        "¡Estate atento a tu bandeja de entrada — tu acceso exclusivo llegará pronto!",
       closing: "Tenemos muchas ganas de conocer tus primeras impresiones.",
       signoff: "Saludos cordiales,",
       signatureName: "Oliver",
       signatureRole: "Fundador de Ethyria",
     },
     ru: {
-      subject: "Dobro pozhalovat v soobshchestvo snov Ethyria",
-      greeting: "Dorogaya mechtatelnitsa, dorogoy mechtatel,",
-      headline: "Dobro pozhalovat v soobshchestvo snov Ethyria!",
+      subject: "Добро пожаловать в сообщество снов Ethyria",
+      greeting: "Дорогая мечтательница, дорогой мечтатель,",
+      headline: "Добро пожаловать в сообщество снов Ethyria!",
       thanks:
-        "Spasibo za vash interes kak beta-testera Ethyria. My ochen rady, chto vy s nami!",
+        "Спасибо за ваш интерес в качестве бета-тестера Ethyria. Мы очень рады, что вы с нами!",
       listThanks:
-        "Spasibo za podpisku na nashu rassylku!",
+        "Спасибо за подписку на нашу рассылку!",
       downloadInfo:
-        "Kak tolko beta-versiya budet zapushchena, vy poluchite lichnoe pismo s eksklyuzivnoy ssylkoy dlya skachivaniya pryamo v vash pochtovyy yashchik — v techenie blizhayshikh 4 nedel.",
-      rewardLead: "Vashe voznagrazhdenie:",
+        "Как только бета-версия будет запущена, вы получите личное письмо с эксклюзивной ссылкой для скачивания прямо в ваш почтовый ящик — в течение ближайших 4 недель.",
+      rewardLead: "Ваше вознаграждение:",
       rewardItems: [
-        "30 dney vsekh Premium-funktsiy sovershenno besplatno.",
-        "Variant na 60 dney: esli posle 30 dney vy gotovy ostavit korotkiy otzyv i zapolnit 2-minutnuyu anketu v prilozhenii Ethyria, my podarim vam eshche 30 dney Premium — vsego 60 dney besplatno.",
+        "30 дней всех Premium-функций совершенно бесплатно.",
+        "Вариант на 60 дней: если после 30 дней вы готовы оставить короткий отзыв и заполнить 2-минутную анкету в приложении Ethyria, мы подарим вам ещё 30 дней Premium — всего 60 дней бесплатно.",
       ],
       devNote:
-        "My postoyanno razvivajemsya, chtoby predlozhit vam vse luchshiy opyt. My otkryty dlya vsekh idey po dalnejshemu razvitiyu etoy kontseptsii tolkovaniya snov s pomoshchyu II — vashi otzyvy imeyut reshayushchee znachenie.",
-      privacyLead: "Neskolko slov o vashey konfidentsialnosti:",
+        "Мы постоянно развиваемся, чтобы предложить вам всё лучший опыт. Мы открыты для всех идей по дальнейшему развитию этой концепции толкования снов с помощью ИИ — ваши отзывы имеют решающее значение.",
+      privacyLead: "Несколько слов о вашей конфиденциальности:",
       privacyText:
-        "Analiz snov - gluboko lichnaya tema. Vashi dannye shifruyutsya po vysokim standartam bezopasnosti, strogo konfidentsialny i nikogda ne peredayutsya tretim litsam.",
+        "Анализ снов — глубоко личная тема. Ваши данные шифруются по высоким стандартам безопасности, строго конфиденциальны и никогда не передаются третьим лицам.",
       stayTuned:
-        "Sledite za pochtoy — vash eksklyuzivnyy dostup skoro poyavitsya!",
-      closing: "Nam ochen interesno uznat o vashikh pervykh vpechatleniyakh.",
-      signoff: "S uvazheniem,",
+        "Следите за почтой — ваш эксклюзивный доступ скоро появится!",
+      closing: "Нам очень интересно узнать о ваших первых впечатлениях.",
+      signoff: "С уважением,",
       signatureName: "Oliver",
-      signatureRole: "Osnovatel Ethyria",
+      signatureRole: "Основатель Ethyria",
     },
   };
 
