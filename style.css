@@ -64,6 +64,20 @@
 
 /* ---- Custom Properties ---- */
 
+html {
+  font-size: 122%;
+}
+
+#hero h1 {
+  font-size: 3rem;        /* text-5xl default */
+}
+@media (min-width: 640px) {
+  #hero h1 { font-size: 3.75rem; }  /* sm:text-6xl */
+}
+@media (min-width: 768px) {
+  #hero h1 { font-size: 6rem; }     /* md:text-8xl */
+}
+
 :root {
   --ethyria-dark: #100c1f;
   --ethyria-indigo: #08134e;
