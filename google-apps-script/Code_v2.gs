@@ -152,6 +152,10 @@ function getEmailTemplate_(locale) {
       headline: "Willkommen in der Ethyria Traum-Community!",
       thanks:
         "Vielen Dank fuer dein Interesse als Beta-Tester fuer Ethyria. Wir freuen uns sehr, dass du dabei bist!",
+      listThanks:
+        "Danke fuer deinen Eintrag in unsere E-Mail-Liste!",
+      downloadInfo:
+        "Sobald die Beta-Version startet, erhaeltst du innerhalb der naechsten 4 Wochen eine persoenliche E-Mail mit deinem exklusiven Download-Link direkt in dein Postfach.",
       rewardLead: "Deine Belohnung:",
       rewardItems: [
         "30 Tage alle Premium-Features voellig kostenlos.",
@@ -163,7 +167,7 @@ function getEmailTemplate_(locale) {
       privacyText:
         "Traumanalyse ist ein zutiefst persoenliches Thema. Deine Daten werden nach hohen Sicherheitsstandards verschluesselt, streng vertraulich behandelt und niemals an Dritte weitergegeben.",
       stayTuned:
-        "Wir melden uns in Kuerze mit weiteren Informationen zum Download und zur Einrichtung deines Zugangs.",
+        "Halte dein Postfach im Auge — dein exklusiver Zugang kommt bald!",
       closing: "Wir sind gespannt auf deine ersten Erkenntnisse.",
       signoff: "Mit freundlichen Gruessen,",
       signatureName: "Oliver",
@@ -175,6 +179,10 @@ function getEmailTemplate_(locale) {
       headline: "Welcome to the Ethyria Dream Community!",
       thanks:
         "Thank you for your interest as a beta tester for Ethyria. We are thrilled to have you on board!",
+      listThanks:
+        "Thank you for signing up to our email list!",
+      downloadInfo:
+        "As soon as the beta launches, you will receive a personal email with your exclusive download link directly in your inbox — within the next 4 weeks.",
       rewardLead: "Your Reward:",
       rewardItems: [
         "30 days of all premium features completely free.",
@@ -186,7 +194,7 @@ function getEmailTemplate_(locale) {
       privacyText:
         "Dream analysis is deeply personal. Your data is encrypted to high security standards, treated as strictly confidential, and never shared with third parties.",
       stayTuned:
-        "We will reach out shortly with more details on how to download and set up your access.",
+        "Keep an eye on your inbox — your exclusive access is coming soon!",
       closing: "We cannot wait to hear about your first insights.",
       signoff: "Best regards,",
       signatureName: "Oliver",
@@ -198,6 +206,10 @@ function getEmailTemplate_(locale) {
       headline: "Bienvenue dans la communaute des reves Ethyria !",
       thanks:
         "Merci pour votre interet en tant que beta-testeur pour Ethyria. Nous sommes ravis de vous compter parmi nous !",
+      listThanks:
+        "Merci pour votre inscription a notre liste e-mail !",
+      downloadInfo:
+        "Des le lancement de la version beta, vous recevrez un e-mail personnel avec votre lien de telechargement exclusif directement dans votre boite de reception — dans les 4 prochaines semaines.",
       rewardLead: "Votre recompense :",
       rewardItems: [
         "30 jours de toutes les fonctionnalites Premium entierement gratuites.",
@@ -209,7 +221,7 @@ function getEmailTemplate_(locale) {
       privacyText:
         "L'analyse des reves est un sujet profondement personnel. Vos donnees sont chiffrees selon des standards de securite eleves, traitees de maniere strictement confidentielle et jamais partagees avec des tiers.",
       stayTuned:
-        "Nous vous contacterons prochainement avec plus de details sur le telechargement et la configuration de votre acces.",
+        "Surveillez votre boite de reception — votre acces exclusif arrive bientot !",
       closing: "Nous avons hate de decouvrir vos premiers retours.",
       signoff: "Bien cordialement,",
       signatureName: "Oliver",
@@ -221,6 +233,10 @@ function getEmailTemplate_(locale) {
       headline: "Bienvenido a la comunidad de suenos Ethyria!",
       thanks:
         "Gracias por tu interes como beta-tester de Ethyria. Estamos encantados de tenerte a bordo!",
+      listThanks:
+        "Gracias por inscribirte en nuestra lista de correo!",
+      downloadInfo:
+        "En cuanto se lance la version beta, recibiras un correo personal con tu enlace de descarga exclusivo directamente en tu bandeja de entrada — dentro de las proximas 4 semanas.",
       rewardLead: "Tu recompensa:",
       rewardItems: [
         "30 dias de todas las funciones Premium completamente gratis.",
@@ -232,7 +248,7 @@ function getEmailTemplate_(locale) {
       privacyText:
         "El analisis de suenos es algo profundamente personal. Tus datos se cifran segun altos estandares de seguridad, se tratan de forma estrictamente confidencial y nunca se comparten con terceros.",
       stayTuned:
-        "Te contactaremos en breve con mas detalles sobre como descargar y configurar tu acceso.",
+        "Estate atento a tu bandeja de entrada — tu acceso exclusivo llegara pronto!",
       closing: "Tenemos muchas ganas de conocer tus primeras impresiones.",
       signoff: "Saludos cordiales,",
       signatureName: "Oliver",
@@ -244,6 +260,10 @@ function getEmailTemplate_(locale) {
       headline: "Dobro pozhalovat v soobshchestvo snov Ethyria!",
       thanks:
         "Spasibo za vash interes kak beta-testera Ethyria. My ochen rady, chto vy s nami!",
+      listThanks:
+        "Spasibo za podpisku na nashu rassylku!",
+      downloadInfo:
+        "Kak tolko beta-versiya budet zapushchena, vy poluchite lichnoe pismo s eksklyuzivnoy ssylkoy dlya skachivaniya pryamo v vash pochtovyy yashchik — v techenie blizhayshikh 4 nedel.",
       rewardLead: "Vashe voznagrazhdenie:",
       rewardItems: [
         "30 dney vsekh Premium-funktsiy sovershenno besplatno.",
@@ -255,7 +275,7 @@ function getEmailTemplate_(locale) {
       privacyText:
         "Analiz snov - gluboko lichnaya tema. Vashi dannye shifruyutsya po vysokim standartam bezopasnosti, strogo konfidentsialny i nikogda ne peredayutsya tretim litsam.",
       stayTuned:
-        "My svyazhemsya s vami v blizhayshee vremya s podrobnostyami o zagruzke i nastrojke vashego dostupa.",
+        "Sledite za pochtoy — vash eksklyuzivnyy dostup skoro poyavitsya!",
       closing: "Nam ochen interesno uznat o vashikh pervykh vpechatleniyakh.",
       signoff: "S uvazheniem,",
       signatureName: "Oliver",
@@ -291,6 +311,10 @@ function getEmailTemplate_(locale) {
     t.headline,
     "",
     t.thanks,
+    "",
+    t.listThanks,
+    "",
+    t.downloadInfo,
     "",
     t.rewardLead,
   ]
@@ -342,8 +366,18 @@ function getEmailTemplate_(locale) {
     "</td></tr>",
 
     // Thanks
-    '<tr><td style="padding:30px 34px 24px;font-size:15px;line-height:1.75;color:#d9e4ff;">',
+    '<tr><td style="padding:30px 34px 14px;font-size:15px;line-height:1.75;color:#d9e4ff;">',
     '<p style="margin:0;">' + t.thanks + "</p>",
+    "</td></tr>",
+
+    // List thanks
+    '<tr><td style="padding:0 34px 14px;font-size:15px;line-height:1.75;color:#01bfff;font-weight:600;">',
+    t.listThanks,
+    "</td></tr>",
+
+    // Download info
+    '<tr><td style="padding:0 34px 24px;font-size:15px;line-height:1.75;color:#d9e4ff;">',
+    '<p style="margin:0;">' + t.downloadInfo + "</p>",
     "</td></tr>",
 
     // Reward box
