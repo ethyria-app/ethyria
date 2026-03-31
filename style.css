@@ -328,6 +328,24 @@ h6 {
   border-color: rgba(84, 88, 251, 0.32);
 }
 
+/* Vision cards: larger images on mobile */
+@media (max-width: 767px) {
+  #vision.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  #vision .grid {
+    gap: 1.5rem;
+  }
+  #vision .glass-card {
+    padding: 1.25rem;
+    border-radius: 1.5rem;
+  }
+  #vision .vision-preview {
+    border-radius: 1rem;
+  }
+}
+
 .section-title {
   margin-bottom: 0.45rem;
   line-height: 1.08;
