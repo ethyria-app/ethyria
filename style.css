@@ -69,13 +69,17 @@ html {
 }
 
 #hero h1 {
-  font-size: 3rem;        /* text-5xl default */
+  font-size: 3.66rem; /* text-5xl × 1.22 */
 }
 @media (min-width: 640px) {
-  #hero h1 { font-size: 3.75rem; }  /* sm:text-6xl */
+  #hero h1 {
+    font-size: 4.575rem;
+  } /* sm:text-6xl × 1.22 */
 }
 @media (min-width: 768px) {
-  #hero h1 { font-size: 6rem; }     /* md:text-8xl */
+  #hero h1 {
+    font-size: 6rem;
+  } /* md:text-8xl — desktop unchanged */
 }
 
 :root {
