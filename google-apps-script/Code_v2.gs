@@ -169,7 +169,7 @@ function getEmailTemplate_(locale) {
       stayTuned:
         "Halte dein Postfach im Auge — dein exklusiver Zugang kommt bald!",
       closing: "Wir sind gespannt auf deine ersten Erkenntnisse.",
-      signoff: "Mit freundlichen Grüßen,",
+      signoff: "Bis bald,",
       signatureName: "Oliver",
       signatureRole: "Chefträumer",
     },
@@ -196,7 +196,7 @@ function getEmailTemplate_(locale) {
       stayTuned:
         "Keep an eye on your inbox — your exclusive access is coming soon!",
       closing: "We cannot wait to hear about your first insights.",
-      signoff: "Best regards,",
+      signoff: "See you soon,",
       signatureName: "Oliver",
       signatureRole: "Chief Dreamer",
     },
@@ -223,7 +223,7 @@ function getEmailTemplate_(locale) {
       stayTuned:
         "Surveillez votre boîte de réception — votre accès exclusif arrive bientôt !",
       closing: "Nous avons hâte de découvrir vos premiers retours.",
-      signoff: "Bien cordialement,",
+      signoff: "À bientôt,",
       signatureName: "Oliver",
       signatureRole: "Rêveur en Chef",
     },
@@ -250,7 +250,7 @@ function getEmailTemplate_(locale) {
       stayTuned:
         "¡Estate atento a tu bandeja de entrada — tu acceso exclusivo llegará pronto!",
       closing: "Tenemos muchas ganas de conocer tus primeras impresiones.",
-      signoff: "Saludos cordiales,",
+      signoff: "¡Hasta pronto!",
       signatureName: "Oliver",
       signatureRole: "Soñador en Jefe",
     },
@@ -277,7 +277,7 @@ function getEmailTemplate_(locale) {
       stayTuned:
         "Следите за почтой — ваш эксклюзивный доступ скоро появится!",
       closing: "Нам очень интересно узнать о ваших первых впечатлениях.",
-      signoff: "С уважением,",
+      signoff: "До скорого,",
       signatureName: "Oliver",
       signatureRole: "Главный Мечтатель",
     },
