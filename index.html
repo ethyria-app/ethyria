@@ -22,6 +22,7 @@
         ];
         for (var i = 0; i < langs.length; i++) {
           var code = langs[i].substring(0, 2).toLowerCase();
+          if (code === "de") return;
           if (supported[code]) {
             sessionStorage.setItem("lang_redirected", "1");
             window.location.replace(supported[code]);
