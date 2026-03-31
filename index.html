@@ -4,6 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Browser language detection & redirect -->
+    <script>
+      (function () {
+        if (sessionStorage.getItem("lang_redirected")) return;
+        var params = new URLSearchParams(window.location.search);
+        if (params.get("lang") === "de") return;
+
+        var supported = {
+          en: "index.en.html",
+          fr: "index.fr.html",
+          es: "index.es.html",
+          ru: "index.ru.html",
+        };
+        var langs = navigator.languages || [
+          navigator.language || navigator.userLanguage || "",
+        ];
+        for (var i = 0; i < langs.length; i++) {
+          var code = langs[i].substring(0, 2).toLowerCase();
+          if (supported[code]) {
+            sessionStorage.setItem("lang_redirected", "1");
+            window.location.replace(supported[code]);
+            return;
+          }
+        }
+      })();
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" href="assets/Ethyria_symbol.png" type="image/png" />
     <link rel="apple-touch-icon" href="assets/Ethyria_symbol.png" />
