@@ -171,7 +171,7 @@ function getEmailTemplate_(locale) {
       closing: "Wir sind gespannt auf deine ersten Erkenntnisse.",
       signoff: "Mit freundlichen Grüßen,",
       signatureName: "Oliver",
-      signatureRole: "Gründer von Ethyria",
+      signatureRole: "Chefträumer",
     },
     en: {
       subject: "Welcome to the Ethyria Dream Community",
@@ -198,7 +198,7 @@ function getEmailTemplate_(locale) {
       closing: "We cannot wait to hear about your first insights.",
       signoff: "Best regards,",
       signatureName: "Oliver",
-      signatureRole: "Founder of Ethyria",
+      signatureRole: "Chief Dreamer",
     },
     fr: {
       subject: "Bienvenue dans la communauté des rêves Ethyria",
@@ -225,7 +225,7 @@ function getEmailTemplate_(locale) {
       closing: "Nous avons hâte de découvrir vos premiers retours.",
       signoff: "Bien cordialement,",
       signatureName: "Oliver",
-      signatureRole: "Fondateur d'Ethyria",
+      signatureRole: "Rêveur en Chef",
     },
     es: {
       subject: "Bienvenido a la comunidad de sueños Ethyria",
@@ -252,7 +252,7 @@ function getEmailTemplate_(locale) {
       closing: "Tenemos muchas ganas de conocer tus primeras impresiones.",
       signoff: "Saludos cordiales,",
       signatureName: "Oliver",
-      signatureRole: "Fundador de Ethyria",
+      signatureRole: "Soñador en Jefe",
     },
     ru: {
       subject: "Добро пожаловать в сообщество снов Ethyria",
@@ -279,7 +279,7 @@ function getEmailTemplate_(locale) {
       closing: "Нам очень интересно узнать о ваших первых впечатлениях.",
       signoff: "С уважением,",
       signatureName: "Oliver",
-      signatureRole: "Основатель Ethyria",
+      signatureRole: "Главный Мечтатель",
     },
   };
 
@@ -427,7 +427,7 @@ function getEmailTemplate_(locale) {
     t.signoff +
       '<br><strong style="color:#ffffff;">' +
       t.signatureName +
-      '</strong><br><span style="color:#a855f7;">' +
+      '</strong><br><span style="color:#01bfff;">' +
       t.signatureRole +
       "</span>",
     "</td></tr>",
