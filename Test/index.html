@@ -117,6 +117,17 @@
          TEST PAGE — Minimalist Sophisticated Design System
          ================================================================ -->
     <style>
+            /* Automatische Input-Labels (z.B. von Browsern) kleiner darstellen */
+            input[type="email"]::-webkit-input-placeholder,
+            input[type="email"]::placeholder,
+            input[type="email"]::-moz-placeholder,
+            input[type="email"]:-ms-input-placeholder {
+              font-size: 0.78rem !important;
+            }
+            /* Firefox: autofill label (floating label) kleiner */
+            input[type="email"]:-moz-ui-invalid {
+              font-size: 0.78rem !important;
+            }
       /* ================================================================
          DESIGN TOKENS — 3 colors, 3 radii, 3 spacings
          ================================================================ */
