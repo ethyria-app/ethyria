@@ -118,10 +118,16 @@
          ================================================================ -->
     <style>
       /* Automatische Input-Labels (z.B. von Browsern) kleiner darstellen */
-      input[type="email"]:not([type='password']):not([readonly])::-webkit-input-placeholder,
-      input[type="email"]:not([type='password']):not([readonly])::placeholder,
-      input[type="email"]:not([type='password']):not([readonly])::-moz-placeholder,
-      input[type="email"]:not([type='password']):not([readonly]):-ms-input-placeholder,
+      input[type="email"]:not([type="password"]):not(
+          [readonly]
+        )::-webkit-input-placeholder,
+      input[type="email"]:not([type="password"]):not([readonly])::placeholder,
+      input[type="email"]:not([type="password"]):not(
+          [readonly]
+        )::-moz-placeholder,
+      input[type="email"]:not([type="password"]):not(
+          [readonly]
+        ):-ms-input-placeholder,
       #heroBottomEmail::-webkit-input-placeholder,
       #heroBottomEmail::placeholder,
       #heroBottomEmail::-moz-placeholder,
@@ -145,7 +151,9 @@
         background: transparent !important;
       }
       /* Firefox: autofill label (floating label) noch kleiner */
-      input[type="email"]:not([type='password']):not([readonly]):-moz-ui-invalid,
+      input[type="email"]:not([type="password"]):not(
+          [readonly]
+        ):-moz-ui-invalid,
       #heroBottomEmail:-moz-ui-invalid,
       #betaEmail:-moz-ui-invalid,
       #exitEmail:-moz-ui-invalid {
@@ -392,7 +400,13 @@
         font-family: "Poppins", sans-serif;
         font-weight: 700;
         font-size: 1.15rem;
-        background: linear-gradient(90deg, #22d3ee 0%, #60a5fa 35%, #a78bfa 70%, #f0abfc 100%);
+        background: linear-gradient(
+          90deg,
+          #22d3ee 0%,
+          #60a5fa 35%,
+          #a78bfa 70%,
+          #f0abfc 100%
+        );
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -1084,9 +1098,9 @@
           class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-0 font-normal leading-relaxed reveal"
           style="position: relative; z-index: 1"
         >
-          Ethyria convierte tus sueños en revelaciones profundas y
-          creaciones visuales únicas. Una IA de vanguardia explora tu
-          subconsciente desde cinco enfoques distintos.
+          Ethyria convierte tus sueños en revelaciones profundas y creaciones
+          visuales únicas. Una IA de vanguardia explora tu subconsciente desde
+          cinco enfoques distintos.
         </p>
       </header>
 
@@ -1102,7 +1116,11 @@
           onsubmit="handleHeroBottomSignup(event)"
           class="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto mb-4 items-center"
         >
-          <label for="heroBottomEmail" class="text-xs text-cyan-400 whitespace-nowrap shrink-0">Correo Electrónico</label>
+          <label
+            for="heroBottomEmail"
+            class="text-xs text-cyan-400 whitespace-nowrap shrink-0"
+            >Correo Electrónico</label
+          >
           <input
             type="email"
             id="heroBottomEmail"
@@ -1135,9 +1153,7 @@
       </section>
 
       <!-- ★ FLOATING CTA — improved copy (H1 fix) ★ -->
-      <a href="#beta" class="floating-beta-cta"
-        >Inicia tu viaje de sueños →</a
-      >
+      <a href="#beta" class="floating-beta-cta">Inicia tu viaje de sueños →</a>
 
       <!-- Section Divider -->
       <div class="section-divider" aria-hidden="true"></div>
@@ -1150,14 +1166,17 @@
         class="container mx-auto px-6 py-24 section-shell relative z-10"
       >
         <div class="text-center mb-16 reveal">
-          <div class="section-pill section-pill--app ethyria-gradient-text">EN LA APP</div>
+          <div class="section-pill section-pill--app ethyria-gradient-text">
+            EN LA APP
+          </div>
           <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
             Descubre <span class="ethyria-gradient-text">Ethyria</span>
           </h2>
           <p
             class="text-gray-300 max-w-2xl mx-auto text-base md:text-lg font-normal leading-relaxed"
           >
-            Tres pantallas reales de la app — Análisis, Comunidad y Estadísticas.
+            Tres pantallas reales de la app — Análisis, Comunidad y
+            Estadísticas.
           </p>
         </div>
         <div
@@ -1237,28 +1256,42 @@
             </article>
           </div>
           <div class="ethyria-slider__controls">
-              <button
-                class="ethyria-slider__nav ethyria-slider__nav--prev"
-                aria-label="Pantalla anterior"
-                disabled
-              >
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M8 12L16 6V18L8 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                </svg>
-              </button>
+            <button
+              class="ethyria-slider__nav ethyria-slider__nav--prev"
+              aria-label="Pantalla anterior"
+              disabled
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M8 12L16 6V18L8 12Z"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </button>
             <div class="ethyria-slider__dots" role="tablist"></div>
             <div class="ethyria-slider__counter" aria-hidden="true">
               <span class="ethyria-slider__counter-current">01</span> /
               <span class="ethyria-slider__counter-total">03</span>
             </div>
-              <button
-                class="ethyria-slider__nav ethyria-slider__nav--next"
-                aria-label="Siguiente pantalla"
-              >
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M16 12L8 6V18L16 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                </svg>
-              </button>
+            <button
+              class="ethyria-slider__nav ethyria-slider__nav--next"
+              aria-label="Siguiente pantalla"
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M16 12L8 6V18L16 12Z"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -1272,11 +1305,14 @@
       <section id="features" class="py-24 section-shell relative z-10">
         <div class="container mx-auto px-6">
           <div class="text-center mb-16 reveal">
-            <div class="section-pill section-pill--analysis ethyria-gradient-text">
+            <div
+              class="section-pill section-pill--analysis ethyria-gradient-text"
+            >
               Capas de Interpretación
             </div>
             <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-              5 Perspectivas de <span class="ethyria-gradient-text">Análisis</span>
+              5 Perspectivas de
+              <span class="ethyria-gradient-text">Análisis</span>
             </h2>
             <p class="text-gray-300 max-w-2xl mx-auto text-base font-normal">
               Cada sueño merece la mirada adecuada. Ethyria interpreta tus
@@ -1308,7 +1344,9 @@
                     >
                       General
                     </div>
-                    <h4 class="font-bold text-base mb-2">Interpretación General</h4>
+                    <h4 class="font-bold text-base mb-2">
+                      Interpretación General
+                    </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
                       Amplia, profunda e imparcial. La IA analiza símbolos,
                       emociones y estructura narrativa de tu sueño sin una
@@ -1317,7 +1355,7 @@
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Nivel Básico
                   </div>
@@ -1339,14 +1377,18 @@
                     >
                       Freud
                     </div>
-                    <h4 class="font-bold text-base mb-2">Psicoanálisis Clásico</h4>
+                    <h4 class="font-bold text-base mb-2">
+                      Psicoanálisis Clásico
+                    </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                      Deseos inconscientes, conflictos reprimidos y naturaleza pulsional bajo la lupa. El censor del sueño es decodificado.
+                      Deseos inconscientes, conflictos reprimidos y naturaleza
+                      pulsional bajo la lupa. El censor del sueño es
+                      decodificado.
                     </p>
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Psicología Profunda
                   </div>
@@ -1372,13 +1414,13 @@
                       Psicología Analítica
                     </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                      Arquetipos, sombra, ánima y el inconsciente colectivo.
-                      El camino hacia la individuación comienza con el sueño.
+                      Arquetipos, sombra, ánima y el inconsciente colectivo. El
+                      camino hacia la individuación comienza con el sueño.
                     </p>
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Arquetipos
                   </div>
@@ -1404,14 +1446,14 @@
                       Interpretación Espiritual
                     </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                      Una perspectiva experiencial no científica. Explora
-                      el significado simbólico, las narrativas internas y la
+                      Una perspectiva experiencial no científica. Explora el
+                      significado simbólico, las narrativas internas y la
                       resonancia personal más allá de los marcos clínicos.
                     </p>
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Energía &amp; Alma
                   </div>
@@ -1437,14 +1479,14 @@
                       Biosynchronous Analysis
                     </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                      Frecuencia cardíaca, VFC y fases de sueño de Health Connect
-                      fluyen directamente en la interpretación. Cuerpo y sueño
-                      como uno.
+                      Frecuencia cardíaca, VFC y fases de sueño de Health
+                      Connect fluyen directamente en la interpretación. Cuerpo y
+                      sueño como uno.
                     </p>
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Biometría + IA
                   </div>
@@ -1458,7 +1500,14 @@
                 disabled
               >
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M8 12L16 6V18L8 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  <path
+                    d="M8 12L16 6V18L8 12Z"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none"
+                  />
                 </svg>
               </button>
               <div class="ethyria-slider__dots" role="tablist"></div>
@@ -1471,7 +1520,14 @@
                 aria-label="Siguiente perspectiva"
               >
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M16 12L8 6V18L16 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  <path
+                    d="M16 12L8 6V18L16 12Z"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none"
+                  />
                 </svg>
               </button>
             </div>
@@ -1490,13 +1546,15 @@
         class="container mx-auto px-6 py-24 section-shell relative z-10"
       >
         <div class="text-center mb-16 reveal">
-          <div class="section-pill section-pill--vision ethyria-gradient-text">Modos Creativos</div>
+          <div class="section-pill section-pill--vision ethyria-gradient-text">
+            Modos Creativos
+          </div>
           <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
             Ethyria <span class="ethyria-gradient-text">Vision</span>
           </h2>
           <p class="text-gray-300 max-w-xl mx-auto text-base font-normal">
-            Choose from three generative modes and turn your dream into a
-            visual memory.
+            Choose from three generative modes and turn your dream into a visual
+            memory.
           </p>
         </div>
         <!-- Bento Vision Grid -->
@@ -1600,7 +1658,8 @@
                 <span
                   class="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.25em] text-cyan-400"
                 >
-                  <span class="w-6 h-px bg-cyan-700"></span>Ejemplo en vivo de la app<span class="w-6 h-px bg-cyan-700"></span>
+                  <span class="w-6 h-px bg-cyan-700"></span>Ejemplo en vivo de
+                  la app<span class="w-6 h-px bg-cyan-700"></span>
                 </span>
               </div>
               <div
@@ -2265,8 +2324,8 @@
                       Emotional Echo
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
-                      Nuestro módulo de seguimiento de sentimientos visualiza
-                      la dinámica emocional de tu sueño — niveles de tensión,
+                      Nuestro módulo de seguimiento de sentimientos visualiza la
+                      dinámica emocional de tu sueño — niveles de tensión,
                       indicadores de resiliencia, puntos de inflexión.
                     </p>
                     <div
@@ -2502,8 +2561,8 @@
                       Decodificación de Arquetipos
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
-                      Ethyria conecta símbolos con tu contexto personal.
-                      Cada tarjeta representa un símbolo.
+                      Ethyria conecta símbolos con tu contexto personal. Cada
+                      tarjeta representa un símbolo.
                     </p>
                     <div
                       style="display: flex; flex-direction: column; gap: 8px"
@@ -2559,7 +2618,8 @@
                             color: rgba(252, 165, 165, 0.6);
                           "
                         >
-                          Vergüenza social / Vulnerabilidad · Presión por rendimiento
+                          Vergüenza social / Vulnerabilidad · Presión por
+                          rendimiento
                         </div>
                       </div>
                       <div
@@ -2625,9 +2685,9 @@
                       Insight Accionable
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
-                      Del sueño surge un insight para tu vida despierta.
-                      Ethyria sintetiza impulsos de coaching individuales —
-                      crecimiento personal.
+                      Del sueño surge un insight para tu vida despierta. Ethyria
+                      sintetiza impulsos de coaching individuales — crecimiento
+                      personal.
                     </p>
                     <div
                       style="
@@ -2747,7 +2807,8 @@
               >
             </h2>
             <p class="text-gray-300 max-w-xl mx-auto text-base font-normal">
-              Cinco razones por las que Ethyria no es solo otra app de interpretación de sueños.
+              Cinco razones por las que Ethyria no es solo otra app de
+              interpretación de sueños.
             </p>
           </div>
           <div
@@ -2771,8 +2832,8 @@
                   Análisis Multimodal Biosíncrono
                 </h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
-                  Ninguna otra app conecta la frecuencia cardíaca, las fases
-                  de sueño y el contenido onírico en un único análisis.
+                  Ninguna otra app conecta la frecuencia cardíaca, las fases de
+                  sueño y el contenido onírico en un único análisis.
                 </p>
               </div>
             </div>
@@ -2812,7 +2873,9 @@
                 <span aria-hidden="true">📈</span>
               </div>
               <div>
-                <h4 class="font-bold text-base mb-2">Reconoce tus Propios Patrones</h4>
+                <h4 class="font-bold text-base mb-2">
+                  Reconoce tus Propios Patrones
+                </h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
                   Ethyria te muestra a lo largo de semanas qué arquetipos y
                   emociones se repiten.
@@ -2844,9 +2907,7 @@
                 <span aria-hidden="true">🔒</span>
               </div>
               <div>
-                <h4 class="font-bold text-base mb-2">
-                  Tus Datos. Solo Tuyos.
-                </h4>
+                <h4 class="font-bold text-base mb-2">Tus Datos. Solo Tuyos.</h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
                   Cifrado, local y nunca usado para entrenamiento. Lo que
                   experimentas por la noche es lo más privado.
@@ -2886,8 +2947,8 @@
             class="text-lg text-gray-300 mb-4 leading-relaxed max-w-3xl mx-auto"
           >
             Buscamos pioneros que quieran dar forma al futuro del análisis
-            digital de sueños con nosotros. Como agradecimiento por tu
-            confianza temprana, te damos acceso completo a nuestra tecnología.
+            digital de sueños con nosotros. Como agradecimiento por tu confianza
+            temprana, te damos acceso completo a nuestra tecnología.
           </p>
 
           <div class="mb-8 mt-12">
@@ -2907,7 +2968,10 @@
                 class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
               >
                 <span aria-hidden="true" class="text-base mt-0.5">🛠️</span
-                ><span>Todas las funciones y herramientas de análisis incluidas.</span>
+                ><span
+                  >Todas las funciones y herramientas de análisis
+                  incluidas.</span
+                >
               </div>
               <div
                 class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
@@ -2925,8 +2989,8 @@
               >
             </h3>
             <p class="text-base text-gray-300 mb-6 leading-relaxed">
-              Desbloquearemos otros 30 días de Premium si nos apoyas
-              brevemente tras tu prueba:
+              Desbloquearemos otros 30 días de Premium si nos apoyas brevemente
+              tras tu prueba:
             </p>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div
@@ -2977,9 +3041,7 @@
           <output id="betaStatus" class="hidden text-sm mb-4"></output>
 
           <div class="max-w-md mx-auto mb-4 text-sm text-gray-300 space-y-2">
-            <p>
-              <span aria-hidden="true">•</span> Valorado en 7,99€ al mes
-            </p>
+            <p><span aria-hidden="true">•</span> Valorado en 7,99€ al mes</p>
             <p><span aria-hidden="true">•</span> Sin tarjeta de crédito</p>
             <p>
               <span aria-hidden="true">•</span> 100% gratis hasta el final del
@@ -3041,9 +3103,9 @@
                 ¿Es Ethyria realmente gratuita?
               </h3>
               <p class="text-sm text-gray-300 leading-relaxed">
-                Sí. Puedes usar Ethyria de forma gratuita. Las compras opcionales
-                dentro de la app desbloquean funciones premium adicionales como
-                exportaciones PDF y análisis ampliados.
+                Sí. Puedes usar Ethyria de forma gratuita. Las compras
+                opcionales dentro de la app desbloquean funciones premium
+                adicionales como exportaciones PDF y análisis ampliados.
               </p>
             </article>
             <article class="glass-card px-6 py-6 rounded-3xl text-left">
@@ -3180,9 +3242,7 @@
       <div class="success-overlay__card">
         <div class="success-checkmark">✓</div>
         <h2 class="ethyria-gradient-text">¡Bienvenido a la Comunidad!</h2>
-        <p>
-          Revisa tu bandeja de entrada — tu acceso exclusivo llega pronto.
-        </p>
+        <p>Revisa tu bandeja de entrada — tu acceso exclusivo llega pronto.</p>
         <div class="success-share">
           <p
             style="

@@ -118,10 +118,16 @@
          ================================================================ -->
     <style>
       /* Automatische Input-Labels (z.B. von Browsern) kleiner darstellen */
-      input[type="email"]:not([type='password']):not([readonly])::-webkit-input-placeholder,
-      input[type="email"]:not([type='password']):not([readonly])::placeholder,
-      input[type="email"]:not([type='password']):not([readonly])::-moz-placeholder,
-      input[type="email"]:not([type='password']):not([readonly]):-ms-input-placeholder,
+      input[type="email"]:not([type="password"]):not(
+          [readonly]
+        )::-webkit-input-placeholder,
+      input[type="email"]:not([type="password"]):not([readonly])::placeholder,
+      input[type="email"]:not([type="password"]):not(
+          [readonly]
+        )::-moz-placeholder,
+      input[type="email"]:not([type="password"]):not(
+          [readonly]
+        ):-ms-input-placeholder,
       #heroBottomEmail::-webkit-input-placeholder,
       #heroBottomEmail::placeholder,
       #heroBottomEmail::-moz-placeholder,
@@ -145,7 +151,9 @@
         background: transparent !important;
       }
       /* Firefox: autofill label (floating label) noch kleiner */
-      input[type="email"]:not([type='password']):not([readonly]):-moz-ui-invalid,
+      input[type="email"]:not([type="password"]):not(
+          [readonly]
+        ):-moz-ui-invalid,
       #heroBottomEmail:-moz-ui-invalid,
       #betaEmail:-moz-ui-invalid,
       #exitEmail:-moz-ui-invalid {
@@ -392,7 +400,13 @@
         font-family: "Poppins", sans-serif;
         font-weight: 700;
         font-size: 1.15rem;
-        background: linear-gradient(90deg, #22d3ee 0%, #60a5fa 35%, #a78bfa 70%, #f0abfc 100%);
+        background: linear-gradient(
+          90deg,
+          #22d3ee 0%,
+          #60a5fa 35%,
+          #a78bfa 70%,
+          #f0abfc 100%
+        );
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -982,7 +996,9 @@
     </style>
   </head>
   <body class="overflow-x-hidden">
-    <a href="#main-content" class="skip-link">Перейти к основному содержимому</a>
+    <a href="#main-content" class="skip-link"
+      >Перейти к основному содержимому</a
+    >
 
     <div class="bg-blob top-[-10%] left-[-10%]"></div>
     <div class="bg-blob bottom-[20%] right-[-5%]"></div>
@@ -1085,8 +1101,8 @@
           style="position: relative; z-index: 1"
         >
           Ethyria превращает твои сны в глубокие откровения и уникальные
-          визуальные произведения. Передовой ИИ исследует твоё
-          подсознание с пяти разных перспектив.
+          визуальные произведения. Передовой ИИ исследует твоё подсознание с
+          пяти разных перспектив.
         </p>
       </header>
 
@@ -1102,7 +1118,11 @@
           onsubmit="handleHeroBottomSignup(event)"
           class="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto mb-4 items-center"
         >
-          <label for="heroBottomEmail" class="text-xs text-cyan-400 whitespace-nowrap shrink-0">Адрес электронной почты</label>
+          <label
+            for="heroBottomEmail"
+            class="text-xs text-cyan-400 whitespace-nowrap shrink-0"
+            >Адрес электронной почты</label
+          >
           <input
             type="email"
             id="heroBottomEmail"
@@ -1150,7 +1170,9 @@
         class="container mx-auto px-6 py-24 section-shell relative z-10"
       >
         <div class="text-center mb-16 reveal">
-          <div class="section-pill section-pill--app ethyria-gradient-text">В ПРИЛОЖЕНИИ</div>
+          <div class="section-pill section-pill--app ethyria-gradient-text">
+            В ПРИЛОЖЕНИИ
+          </div>
           <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
             Откройте для себя <span class="ethyria-gradient-text">Ethyria</span>
           </h2>
@@ -1176,8 +1198,8 @@
                 </div>
                 <h3 class="text-2xl font-bold">Анализ Снов</h3>
                 <p class="text-gray-300 leading-relaxed">
-                  Выберите тип анализа и получите глубокое толкование снов
-                  на основе Фрейда, Юнга, духовных или биосинхронных методов.
+                  Выберите тип анализа и получите глубокое толкование снов на
+                  основе Фрейда, Юнга, духовных или биосинхронных методов.
                 </p>
               </div>
               <div class="app-showcase-visual">
@@ -1220,8 +1242,8 @@
                 </div>
                 <h3 class="text-2xl font-bold">Статистика</h3>
                 <p class="text-gray-300 leading-relaxed">
-                  Понимайте свои паттерны сна через детальные оценки
-                  и откройте своё подсознание.
+                  Понимайте свои паттерны сна через детальные оценки и откройте
+                  своё подсознание.
                 </p>
               </div>
               <div class="app-showcase-visual">
@@ -1237,28 +1259,42 @@
             </article>
           </div>
           <div class="ethyria-slider__controls">
-              <button
-                class="ethyria-slider__nav ethyria-slider__nav--prev"
-                aria-label="Предыдущий экран"
-                disabled
-              >
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M8 12L16 6V18L8 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                </svg>
-              </button>
+            <button
+              class="ethyria-slider__nav ethyria-slider__nav--prev"
+              aria-label="Предыдущий экран"
+              disabled
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M8 12L16 6V18L8 12Z"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </button>
             <div class="ethyria-slider__dots" role="tablist"></div>
             <div class="ethyria-slider__counter" aria-hidden="true">
               <span class="ethyria-slider__counter-current">01</span> /
               <span class="ethyria-slider__counter-total">03</span>
             </div>
-              <button
-                class="ethyria-slider__nav ethyria-slider__nav--next"
-                aria-label="Следующий экран"
-              >
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M16 12L8 6V18L16 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                </svg>
-              </button>
+            <button
+              class="ethyria-slider__nav ethyria-slider__nav--next"
+              aria-label="Следующий экран"
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M16 12L8 6V18L16 12Z"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -1272,15 +1308,17 @@
       <section id="features" class="py-24 section-shell relative z-10">
         <div class="container mx-auto px-6">
           <div class="text-center mb-16 reveal">
-            <div class="section-pill section-pill--analysis ethyria-gradient-text">
+            <div
+              class="section-pill section-pill--analysis ethyria-gradient-text"
+            >
               Слои Интерпретации
             </div>
             <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
               5 Перспектив <span class="ethyria-gradient-text">Анализа</span>
             </h2>
             <p class="text-gray-300 max-w-2xl mx-auto text-base font-normal">
-              Каждый сон заслуживает правильного взгляда. Ethyria интерпретирует ваши
-              сны через пять различных подходов.
+              Каждый сон заслуживает правильного взгляда. Ethyria интерпретирует
+              ваши сны через пять различных подходов.
             </p>
           </div>
           <div
@@ -1308,16 +1346,18 @@
                     >
                       General
                     </div>
-                    <h4 class="font-bold text-base mb-2">Общая Интерпретация</h4>
+                    <h4 class="font-bold text-base mb-2">
+                      Общая Интерпретация
+                    </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
                       Широкая, глубокая и непредвзятая. ИИ анализирует символы,
-                      эмоции и нарративную структуру вашего сна без привязки
-                      к конкретной школе мышления.
+                      эмоции и нарративную структуру вашего сна без привязки к
+                      конкретной школе мышления.
                     </p>
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Начальный Уровень
                   </div>
@@ -1339,14 +1379,17 @@
                     >
                       Freud
                     </div>
-                    <h4 class="font-bold text-base mb-2">Классический Психоанализ</h4>
+                    <h4 class="font-bold text-base mb-2">
+                      Классический Психоанализ
+                    </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                      Бессознательные желания, подавленные конфликты и влечения под пристальным вниманием. Цензор сновидений расшифрован.
+                      Бессознательные желания, подавленные конфликты и влечения
+                      под пристальным вниманием. Цензор сновидений расшифрован.
                     </p>
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Психология Глубин
                   </div>
@@ -1372,13 +1415,13 @@
                       Аналитическая Психология
                     </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                      Архетипы, тень, анима и коллективное бессознательное.
-                      Путь к индивидуации начинается со сна.
+                      Архетипы, тень, анима и коллективное бессознательное. Путь
+                      к индивидуации начинается со сна.
                     </p>
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Архетипы
                   </div>
@@ -1400,18 +1443,16 @@
                     >
                       Spiritual
                     </div>
-                    <h4 class="font-bold text-base mb-2">
-                      Духовная Рефлексия
-                    </h4>
+                    <h4 class="font-bold text-base mb-2">Духовная Рефлексия</h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
                       Основанная на опыте, ненаучная перспектива. Исследуйте
-                      символическое значение, внутренние нарративы и личный резонанс
-                      за пределами клинических рамок.
+                      символическое значение, внутренние нарративы и личный
+                      резонанс за пределами клинических рамок.
                     </p>
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Энергия &amp; Душа
                   </div>
@@ -1437,14 +1478,14 @@
                       Biosynchronous Analysis
                     </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                      Частота пульса, ВСР и фазы сна из Health Connect
-                      напрямую интегрируются в интерпретацию. Тело и сон
-                      как единое целое.
+                      Частота пульса, ВСР и фазы сна из Health Connect напрямую
+                      интегрируются в интерпретацию. Тело и сон как единое
+                      целое.
                     </p>
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Биометрия + ИИ
                   </div>
@@ -1458,7 +1499,14 @@
                 disabled
               >
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M8 12L16 6V18L8 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  <path
+                    d="M8 12L16 6V18L8 12Z"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none"
+                  />
                 </svg>
               </button>
               <div class="ethyria-slider__dots" role="tablist"></div>
@@ -1471,7 +1519,14 @@
                 aria-label="Следующая перспектива"
               >
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M16 12L8 6V18L16 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  <path
+                    d="M16 12L8 6V18L16 12Z"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none"
+                  />
                 </svg>
               </button>
             </div>
@@ -1490,13 +1545,15 @@
         class="container mx-auto px-6 py-24 section-shell relative z-10"
       >
         <div class="text-center mb-16 reveal">
-          <div class="section-pill section-pill--vision ethyria-gradient-text">Творческие Режимы</div>
+          <div class="section-pill section-pill--vision ethyria-gradient-text">
+            Творческие Режимы
+          </div>
           <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
             Ethyria <span class="ethyria-gradient-text">Vision</span>
           </h2>
           <p class="text-gray-300 max-w-xl mx-auto text-base font-normal">
-            Choose from three generative modes and turn your dream into a
-            visual memory.
+            Choose from three generative modes and turn your dream into a visual
+            memory.
           </p>
         </div>
         <!-- Bento Vision Grid -->
@@ -1517,9 +1574,8 @@
               <span class="vision-card__tag">✦ Режим Символа</span>
               <h3 class="vision-card__title">Символ Сна</h3>
               <p class="vision-card__desc">
-                Фокус на самом мощном символе вашего сна. Ethyria
-                выделяет образ, к которому ваше подсознание
-                возвращается снова и снова.
+                Фокус на самом мощном символе вашего сна. Ethyria выделяет
+                образ, к которому ваше подсознание возвращается снова и снова.
               </p>
             </div>
           </div>
@@ -1539,8 +1595,8 @@
               <span class="vision-card__tag">☯ Режим Эмоции</span>
               <h3 class="vision-card__title">Эмоция Сна</h3>
               <p class="vision-card__desc">
-                Мы переводим ощущение вашего сна в кинематографическое освещение,
-                плотную атмосферу и визуальный резонанс.
+                Мы переводим ощущение вашего сна в кинематографическое
+                освещение, плотную атмосферу и визуальный резонанс.
               </p>
             </div>
           </div>
@@ -1560,9 +1616,9 @@
               <span class="vision-card__tag">👁 Полный Режим</span>
               <h3 class="vision-card__title">Полный Сон</h3>
               <p class="vision-card__desc">
-                Полная сцена. Ethyria превращает полное повествование
-                вашего сна в целостную визуальную композицию,
-                к которой вы сможете возвращаться.
+                Полная сцена. Ethyria превращает полное повествование вашего сна
+                в целостную визуальную композицию, к которой вы сможете
+                возвращаться.
               </p>
             </div>
           </div>
@@ -1601,7 +1657,8 @@
                 <span
                   class="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.25em] text-cyan-400"
                 >
-                  <span class="w-6 h-px bg-cyan-700"></span>Живой пример из приложения<span class="w-6 h-px bg-cyan-700"></span>
+                  <span class="w-6 h-px bg-cyan-700"></span>Живой пример из
+                  приложения<span class="w-6 h-px bg-cyan-700"></span>
                 </span>
               </div>
               <div
@@ -1996,9 +2053,9 @@
                       Narrative Core
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
-                      Мы превращаем ваши слова в действенные данные.
-                      Ethyria идентифицирует символы, сущности и эмоциональные
-                      якоря в реальном времени.
+                      Мы превращаем ваши слова в действенные данные. Ethyria
+                      идентифицирует символы, сущности и эмоциональные якоря в
+                      реальном времени.
                     </p>
                     <div
                       style="
@@ -2131,9 +2188,9 @@
                       Матрица Перспектив
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
-                      Вы определяете психологическую модель. Исполняемый
-                      промпт инъецируется динамически — без компромиссов
-                      между методами, только точный фокус.
+                      Вы определяете психологическую модель. Исполняемый промпт
+                      инъецируется динамически — без компромиссов между
+                      методами, только точный фокус.
                     </p>
                     <div
                       style="
@@ -2266,9 +2323,9 @@
                       Emotional Echo
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
-                      Наш модуль отслеживания настроений визуализирует эмоциональную
-                      динамику вашего сна — уровни напряжения, индикаторы
-                      устойчивости, переломные точки.
+                      Наш модуль отслеживания настроений визуализирует
+                      эмоциональную динамику вашего сна — уровни напряжения,
+                      индикаторы устойчивости, переломные точки.
                     </p>
                     <div
                       style="
@@ -2626,9 +2683,9 @@
                       Действенный Инсайт
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
-                      Из сна рождается инсайт для вашей жизни наяву.
-                      Ethyria синтезирует индивидуальные коучинг-импульсы —
-                      личностный рост.
+                      Из сна рождается инсайт для вашей жизни наяву. Ethyria
+                      синтезирует индивидуальные коучинг-импульсы — личностный
+                      рост.
                     </p>
                     <div
                       style="
@@ -2748,7 +2805,8 @@
               >
             </h2>
             <p class="text-gray-300 max-w-xl mx-auto text-base font-normal">
-              Пять причин, почему Ethyria — это не просто ещё одно приложение для толкования снов.
+              Пять причин, почему Ethyria — это не просто ещё одно приложение
+              для толкования снов.
             </p>
           </div>
           <div
@@ -2772,8 +2830,8 @@
                   Биосинхронный Мультимодальный Анализ
                 </h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
-                  Ни одно другое приложение не объединяет пульс, фазы сна и содержание
-                  снов в единый анализ.
+                  Ни одно другое приложение не объединяет пульс, фазы сна и
+                  содержание снов в единый анализ.
                 </p>
               </div>
             </div>
@@ -2813,10 +2871,12 @@
                 <span aria-hidden="true">📈</span>
               </div>
               <div>
-                <h4 class="font-bold text-base mb-2">Распознайте Свои Паттерны</h4>
+                <h4 class="font-bold text-base mb-2">
+                  Распознайте Свои Паттерны
+                </h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
-                  Ethyria показывает вам в течение недель, какие архетипы и эмоции
-                  повторяются.
+                  Ethyria показывает вам в течение недель, какие архетипы и
+                  эмоции повторяются.
                 </p>
               </div>
             </div>
@@ -2831,8 +2891,8 @@
               <div>
                 <h4 class="font-bold text-base mb-2">Ваш Сон как Искусство</h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
-                  Изображения, созданные ИИ, как символ, эмоция или полная сцена —
-                  уникальные для вас.
+                  Изображения, созданные ИИ, как символ, эмоция или полная сцена
+                  — уникальные для вас.
                 </p>
               </div>
             </div>
@@ -2849,8 +2909,8 @@
                   Ваши Данные. Только Ваши.
                 </h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
-                  Зашифровано, локально и никогда не используется для обучения. То, что вы
-                  переживаете ночью — самое личное.
+                  Зашифровано, локально и никогда не используется для обучения.
+                  То, что вы переживаете ночью — самое личное.
                 </p>
               </div>
             </div>
@@ -2886,10 +2946,9 @@
           <p
             class="text-lg text-gray-300 mb-4 leading-relaxed max-w-3xl mx-auto"
           >
-            Мы ищем первопроходцев, которые хотят формировать будущее
-            цифрового анализа снов вместе с нами. В благодарность за
-            ваше раннее доверие мы предоставляем вам полный доступ
-            к нашей технологии.
+            Мы ищем первопроходцев, которые хотят формировать будущее цифрового
+            анализа снов вместе с нами. В благодарность за ваше раннее доверие
+            мы предоставляем вам полный доступ к нашей технологии.
           </p>
 
           <div class="mb-8 mt-12">
@@ -2927,8 +2986,8 @@
               >
             </h3>
             <p class="text-base text-gray-300 mb-6 leading-relaxed">
-              Мы разблокируем ещё 30 дней Premium, если вы кратко
-              поддержите нас после пробного периода:
+              Мы разблокируем ещё 30 дней Premium, если вы кратко поддержите нас
+              после пробного периода:
             </p>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div
@@ -2950,14 +3009,15 @@
             class="text-sm text-gray-300 max-w-2xl mx-auto mb-4 leading-relaxed"
           >
             Введите свой адрес электронной почты здесь и вы получите
-            эксклюзивную ссылку для скачивания в ваш личный
-            почтовый ящик.
+            эксклюзивную ссылку для скачивания в ваш личный почтовый ящик.
           </p>
           <form
             onsubmit="handleBetaSignup(event)"
             class="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto mt-8 mb-4"
           >
-            <label for="betaEmail" class="sr-only">Адрес электронной почты</label>
+            <label for="betaEmail" class="sr-only"
+              >Адрес электронной почты</label
+            >
             <input
               type="email"
               id="betaEmail"
@@ -2980,9 +3040,7 @@
           <output id="betaStatus" class="hidden text-sm mb-4"></output>
 
           <div class="max-w-md mx-auto mb-4 text-sm text-gray-300 space-y-2">
-            <p>
-              <span aria-hidden="true">•</span> Стоимость €7.99 в месяц
-            </p>
+            <p><span aria-hidden="true">•</span> Стоимость €7.99 в месяц</p>
             <p><span aria-hidden="true">•</span> Без кредитной карты</p>
             <p>
               <span aria-hidden="true">•</span> 100% бесплатно до окончания
@@ -3027,13 +3085,14 @@
               FAQ
             </p>
             <h2 class="text-3xl md:text-4xl font-bold mb-4 section-title">
-              Часто Задаваемые <span class="ethyria-gradient-text">Вопросы</span>
+              Часто Задаваемые
+              <span class="ethyria-gradient-text">Вопросы</span>
             </h2>
             <p
               class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed section-subtitle"
             >
-              Прозрачные ответы о ценах, конфиденциальности, ИИ-анализе снов
-              и совместимости устройств.
+              Прозрачные ответы о ценах, конфиденциальности, ИИ-анализе снов и
+              совместимости устройств.
             </p>
           </div>
           <div
@@ -3044,8 +3103,8 @@
                 Ethyria действительно бесплатна?
               </h3>
               <p class="text-sm text-gray-300 leading-relaxed">
-                Да. Вы можете использовать Ethyria бесплатно. Дополнительные покупки
-                в приложении открывают премиум-функции, такие как
+                Да. Вы можете использовать Ethyria бесплатно. Дополнительные
+                покупки в приложении открывают премиум-функции, такие как
                 PDF-экспорт и расширенная аналитика.
               </p>
             </article>
@@ -3085,8 +3144,8 @@
               </h3>
               <p class="text-sm text-gray-300 leading-relaxed">
                 Да. Как премиум-пользователь, вы можете экспортировать каждый
-                анализ и ежемесячную статистику в виде
-                профессионального PDF-документа.
+                анализ и ежемесячную статистику в виде профессионального
+                PDF-документа.
               </p>
             </article>
             <article class="glass-card px-6 py-6 rounded-3xl text-left">
@@ -3184,9 +3243,7 @@
       <div class="success-overlay__card">
         <div class="success-checkmark">✓</div>
         <h2 class="ethyria-gradient-text">Добро пожаловать в Сообщество!</h2>
-        <p>
-          Проверь свою почту — твой эксклюзивный доступ уже в пути.
-        </p>
+        <p>Проверь свою почту — твой эксклюзивный доступ уже в пути.</p>
         <div class="success-share">
           <p
             style="
@@ -3322,7 +3379,8 @@
             "Этот email уже в списке. Пожалуйста, проверьте почту.",
           savedNoEmail:
             "Ваш email был сохранён, но автоматическое письмо пока не отправлено.",
-          invalidEmail: "Пожалуйста, введите действительный адрес электронной почты.",
+          invalidEmail:
+            "Пожалуйста, введите действительный адрес электронной почты.",
           sending: "Сохраняем ваше место...",
           error:
             "Не удалось сохранить ваш email. Попробуйте ещё раз через мгновение.",

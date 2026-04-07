@@ -118,10 +118,16 @@
          ================================================================ -->
     <style>
       /* Automatische Input-Labels (z.B. von Browsern) kleiner darstellen */
-      input[type="email"]:not([type='password']):not([readonly])::-webkit-input-placeholder,
-      input[type="email"]:not([type='password']):not([readonly])::placeholder,
-      input[type="email"]:not([type='password']):not([readonly])::-moz-placeholder,
-      input[type="email"]:not([type='password']):not([readonly]):-ms-input-placeholder,
+      input[type="email"]:not([type="password"]):not(
+          [readonly]
+        )::-webkit-input-placeholder,
+      input[type="email"]:not([type="password"]):not([readonly])::placeholder,
+      input[type="email"]:not([type="password"]):not(
+          [readonly]
+        )::-moz-placeholder,
+      input[type="email"]:not([type="password"]):not(
+          [readonly]
+        ):-ms-input-placeholder,
       #heroBottomEmail::-webkit-input-placeholder,
       #heroBottomEmail::placeholder,
       #heroBottomEmail::-moz-placeholder,
@@ -145,7 +151,9 @@
         background: transparent !important;
       }
       /* Firefox: autofill label (floating label) noch kleiner */
-      input[type="email"]:not([type='password']):not([readonly]):-moz-ui-invalid,
+      input[type="email"]:not([type="password"]):not(
+          [readonly]
+        ):-moz-ui-invalid,
       #heroBottomEmail:-moz-ui-invalid,
       #betaEmail:-moz-ui-invalid,
       #exitEmail:-moz-ui-invalid {
@@ -392,7 +400,13 @@
         font-family: "Poppins", sans-serif;
         font-weight: 700;
         font-size: 1.15rem;
-        background: linear-gradient(90deg, #22d3ee 0%, #60a5fa 35%, #a78bfa 70%, #f0abfc 100%);
+        background: linear-gradient(
+          90deg,
+          #22d3ee 0%,
+          #60a5fa 35%,
+          #a78bfa 70%,
+          #f0abfc 100%
+        );
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -1084,7 +1098,9 @@
           class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-0 font-normal leading-relaxed reveal"
           style="position: relative; z-index: 1"
         >
-          Ethyria transforme tes rêves en révélations profondes et en créations visuelles uniques. Une IA de pointe explore ton subconscient selon cinq perspectives différentes.
+          Ethyria transforme tes rêves en révélations profondes et en créations
+          visuelles uniques. Une IA de pointe explore ton subconscient selon
+          cinq perspectives différentes.
         </p>
       </header>
 
@@ -1100,7 +1116,11 @@
           onsubmit="handleHeroBottomSignup(event)"
           class="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto mb-4 items-center"
         >
-          <label for="heroBottomEmail" class="text-xs text-cyan-400 whitespace-nowrap shrink-0">Adresse e-mail</label>
+          <label
+            for="heroBottomEmail"
+            class="text-xs text-cyan-400 whitespace-nowrap shrink-0"
+            >Adresse e-mail</label
+          >
           <input
             type="email"
             id="heroBottomEmail"
@@ -1148,14 +1168,17 @@
         class="container mx-auto px-6 py-24 section-shell relative z-10"
       >
         <div class="text-center mb-16 reveal">
-          <div class="section-pill section-pill--app ethyria-gradient-text">L'APPLICATION</div>
+          <div class="section-pill section-pill--app ethyria-gradient-text">
+            L'APPLICATION
+          </div>
           <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
             Découvre <span class="ethyria-gradient-text">Ethyria</span>
           </h2>
           <p
             class="text-gray-300 max-w-2xl mx-auto text-base md:text-lg font-normal leading-relaxed"
           >
-            Trois écrans réels de l'application — Analyse, Communauté et Statistiques.
+            Trois écrans réels de l'application — Analyse, Communauté et
+            Statistiques.
           </p>
         </div>
         <div
@@ -1174,7 +1197,9 @@
                 </div>
                 <h3 class="text-2xl font-bold">Analyse de Rêves</h3>
                 <p class="text-gray-300 leading-relaxed">
-                  Choisis ton type d'analyse et reçois une interprétation profonde des rêves basée sur Freud, Jung, spirituelle ou des méthodes biosynchrones.
+                  Choisis ton type d'analyse et reçois une interprétation
+                  profonde des rêves basée sur Freud, Jung, spirituelle ou des
+                  méthodes biosynchrones.
                 </p>
               </div>
               <div class="app-showcase-visual">
@@ -1195,7 +1220,8 @@
                 </div>
                 <h3 class="text-2xl font-bold">Éther</h3>
                 <p class="text-gray-300 leading-relaxed">
-                  Découvre les tendances mondiales de rêves et plonge dans une communauté croissante de rêveurs.
+                  Découvre les tendances mondiales de rêves et plonge dans une
+                  communauté croissante de rêveurs.
                 </p>
               </div>
               <div class="app-showcase-visual">
@@ -1216,7 +1242,8 @@
                 </div>
                 <h3 class="text-2xl font-bold">Statistiques</h3>
                 <p class="text-gray-300 leading-relaxed">
-                  Comprends tes habitudes de sommeil grâce à des évaluations détaillées et découvre ton subconscient.
+                  Comprends tes habitudes de sommeil grâce à des évaluations
+                  détaillées et découvre ton subconscient.
                 </p>
               </div>
               <div class="app-showcase-visual">
@@ -1232,28 +1259,42 @@
             </article>
           </div>
           <div class="ethyria-slider__controls">
-              <button
-                class="ethyria-slider__nav ethyria-slider__nav--prev"
-                aria-label="Écran précédent"
-                disabled
-              >
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M8 12L16 6V18L8 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                </svg>
-              </button>
+            <button
+              class="ethyria-slider__nav ethyria-slider__nav--prev"
+              aria-label="Écran précédent"
+              disabled
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M8 12L16 6V18L8 12Z"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </button>
             <div class="ethyria-slider__dots" role="tablist"></div>
             <div class="ethyria-slider__counter" aria-hidden="true">
               <span class="ethyria-slider__counter-current">01</span> /
               <span class="ethyria-slider__counter-total">03</span>
             </div>
-              <button
-                class="ethyria-slider__nav ethyria-slider__nav--next"
-                aria-label="Écran suivant"
-              >
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M16 12L8 6V18L16 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                </svg>
-              </button>
+            <button
+              class="ethyria-slider__nav ethyria-slider__nav--next"
+              aria-label="Écran suivant"
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M16 12L8 6V18L16 12Z"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -1267,14 +1308,19 @@
       <section id="features" class="py-24 section-shell relative z-10">
         <div class="container mx-auto px-6">
           <div class="text-center mb-16 reveal">
-            <div class="section-pill section-pill--analysis ethyria-gradient-text">
+            <div
+              class="section-pill section-pill--analysis ethyria-gradient-text"
+            >
               Couches d'Interprétation
             </div>
             <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-              5 Perspectives d'<span class="ethyria-gradient-text">Analyse</span>
+              5 Perspectives d'<span class="ethyria-gradient-text"
+                >Analyse</span
+              >
             </h2>
             <p class="text-gray-300 max-w-2xl mx-auto text-base font-normal">
-              Chaque rêve mérite le bon regard. Ethyria interprète tes rêves à travers cinq approches distinctes.
+              Chaque rêve mérite le bon regard. Ethyria interprète tes rêves à
+              travers cinq approches distinctes.
             </p>
           </div>
           <div
@@ -1302,14 +1348,18 @@
                     >
                       General
                     </div>
-                    <h4 class="font-bold text-base mb-2">Interprétation Générale</h4>
+                    <h4 class="font-bold text-base mb-2">
+                      Interprétation Générale
+                    </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                      Large, profonde et impartiale. L'IA analyse les symboles, les émotions et la structure narrative de ton rêve sans école de pensée fixe.
+                      Large, profonde et impartiale. L'IA analyse les symboles,
+                      les émotions et la structure narrative de ton rêve sans
+                      école de pensée fixe.
                     </p>
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Niveau de Base
                   </div>
@@ -1331,14 +1381,17 @@
                     >
                       Freud
                     </div>
-                    <h4 class="font-bold text-base mb-2">Psychanalyse Classique</h4>
+                    <h4 class="font-bold text-base mb-2">
+                      Psychanalyse Classique
+                    </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                      Désirs inconscients, conflits refoulés et nature pulsionnelle sous la loupe. Le censeur du rêve est décodé.
+                      Désirs inconscients, conflits refoulés et nature
+                      pulsionnelle sous la loupe. Le censeur du rêve est décodé.
                     </p>
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Psychologie des Profondeurs
                   </div>
@@ -1364,12 +1417,13 @@
                       Psychologie Analytique
                     </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                      Archétypes, ombre, anima et l'inconscient collectif. Le chemin vers l'individuation commence par le rêve.
+                      Archétypes, ombre, anima et l'inconscient collectif. Le
+                      chemin vers l'individuation commence par le rêve.
                     </p>
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Archétypes
                   </div>
@@ -1395,12 +1449,14 @@
                       Réflexion Spirituelle
                     </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                      Une perspective basée sur l'expérience, non scientifique. Explore la signification symbolique, les récits internes et la résonance personnelle au-delà des cadres cliniques.
+                      Une perspective basée sur l'expérience, non scientifique.
+                      Explore la signification symbolique, les récits internes
+                      et la résonance personnelle au-delà des cadres cliniques.
                     </p>
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Énergie &amp; Âme
                   </div>
@@ -1426,12 +1482,14 @@
                       Biosynchronous Analysis
                     </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                      Fréquence cardiaque, VFC et phases de sommeil de Health Connect affluent directement dans l'interprétation. Corps et rêve ne font qu'un.
+                      Fréquence cardiaque, VFC et phases de sommeil de Health
+                      Connect affluent directement dans l'interprétation. Corps
+                      et rêve ne font qu'un.
                     </p>
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Biométrie + IA
                   </div>
@@ -1445,7 +1503,14 @@
                 disabled
               >
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M8 12L16 6V18L8 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  <path
+                    d="M8 12L16 6V18L8 12Z"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none"
+                  />
                 </svg>
               </button>
               <div class="ethyria-slider__dots" role="tablist"></div>
@@ -1458,7 +1523,14 @@
                 aria-label="Perspective suivante"
               >
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M16 12L8 6V18L16 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  <path
+                    d="M16 12L8 6V18L16 12Z"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none"
+                  />
                 </svg>
               </button>
             </div>
@@ -1477,13 +1549,15 @@
         class="container mx-auto px-6 py-24 section-shell relative z-10"
       >
         <div class="text-center mb-16 reveal">
-          <div class="section-pill section-pill--vision ethyria-gradient-text">Modes Créatifs</div>
+          <div class="section-pill section-pill--vision ethyria-gradient-text">
+            Modes Créatifs
+          </div>
           <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
             Ethyria <span class="ethyria-gradient-text">Vision</span>
           </h2>
           <p class="text-gray-300 max-w-xl mx-auto text-base font-normal">
-            Choose from three generative modes and turn your dream into a
-            visual memory.
+            Choose from three generative modes and turn your dream into a visual
+            memory.
           </p>
         </div>
         <!-- Bento Vision Grid -->
@@ -1504,7 +1578,9 @@
               <span class="vision-card__tag">✦ Mode Symbole</span>
               <h3 class="vision-card__title">Symbole de Rêve</h3>
               <p class="vision-card__desc">
-                Concentre-toi sur le symbole le plus puissant de ton rêve. Ethyria isole l'image vers laquelle ton subconscient revient sans cesse.
+                Concentre-toi sur le symbole le plus puissant de ton rêve.
+                Ethyria isole l'image vers laquelle ton subconscient revient
+                sans cesse.
               </p>
             </div>
           </div>
@@ -1524,7 +1600,8 @@
               <span class="vision-card__tag">☯ Mode Émotion</span>
               <h3 class="vision-card__title">Émotion de Rêve</h3>
               <p class="vision-card__desc">
-                Nous traduisons la sensation de ton rêve en éclairages cinématographiques, atmosphère dense et résonance visuelle.
+                Nous traduisons la sensation de ton rêve en éclairages
+                cinématographiques, atmosphère dense et résonance visuelle.
               </p>
             </div>
           </div>
@@ -1544,7 +1621,9 @@
               <span class="vision-card__tag">👁 Mode Complet</span>
               <h3 class="vision-card__title">Rêve Complet</h3>
               <p class="vision-card__desc">
-                La scène complète. Ethyria transforme la narration complète de ton rêve en une composition visuelle cohérente à laquelle tu pourras revenir.
+                La scène complète. Ethyria transforme la narration complète de
+                ton rêve en une composition visuelle cohérente à laquelle tu
+                pourras revenir.
               </p>
             </div>
           </div>
@@ -1571,7 +1650,8 @@
               Le Chemin de l'Insight :<br />De Fragments à Clarté
             </h2>
             <p class="text-gray-300 max-w-xl mx-auto text-base font-normal">
-              Du rêve brut à l'impulsion de croissance concrète — en quatre étapes précises.
+              Du rêve brut à l'impulsion de croissance concrète — en quatre
+              étapes précises.
             </p>
           </div>
 
@@ -1582,7 +1662,8 @@
                 <span
                   class="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.25em] text-cyan-400"
                 >
-                  <span class="w-6 h-px bg-cyan-700"></span>Exemple en direct de l'app<span class="w-6 h-px bg-cyan-700"></span>
+                  <span class="w-6 h-px bg-cyan-700"></span>Exemple en direct de
+                  l'app<span class="w-6 h-px bg-cyan-700"></span>
                 </span>
               </div>
               <div
@@ -1977,7 +2058,9 @@
                       Narrative Core
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
-                      Nous transformons tes mots en données exploitables. Ethyria identifie symboles, entités et points d'ancrage émotionnels en temps réel.
+                      Nous transformons tes mots en données exploitables.
+                      Ethyria identifie symboles, entités et points d'ancrage
+                      émotionnels en temps réel.
                     </p>
                     <div
                       style="
@@ -2110,7 +2193,9 @@
                       Matrice de Perspectives
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
-                      Tu détermines le cadre psychologique. Le prompt exécutable est injecté dynamiquement — aucun compromis entre les méthodes, juste une concentration précise.
+                      Tu détermines le cadre psychologique. Le prompt exécutable
+                      est injecté dynamiquement — aucun compromis entre les
+                      méthodes, juste une concentration précise.
                     </p>
                     <div
                       style="
@@ -2243,7 +2328,9 @@
                       Emotional Echo
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
-                      Notre module de suivi des sentiments visualise la dynamique émotionnelle de ton rêve — niveaux de tension, indicateurs de résilience, points de basculement.
+                      Notre module de suivi des sentiments visualise la
+                      dynamique émotionnelle de ton rêve — niveaux de tension,
+                      indicateurs de résilience, points de basculement.
                     </p>
                     <div
                       style="
@@ -2478,7 +2565,8 @@
                       Décodage des Archétypes
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
-                      Ethyria connecte les symboles avec ton contexte personnel. Chaque carte représente un symbole.
+                      Ethyria connecte les symboles avec ton contexte personnel.
+                      Chaque carte représente un symbole.
                     </p>
                     <div
                       style="display: flex; flex-direction: column; gap: 8px"
@@ -2534,7 +2622,8 @@
                             color: rgba(252, 165, 165, 0.6);
                           "
                         >
-                          Honte sociale / Vulnérabilité · Pression de performance
+                          Honte sociale / Vulnérabilité · Pression de
+                          performance
                         </div>
                       </div>
                       <div
@@ -2600,7 +2689,9 @@
                       Insight Actionnable
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
-                      Du rêve naît un insight pour ta vie éveillée. Ethyria synthétise des impulsions de coaching individuelles — croissance personnelle.
+                      Du rêve naît un insight pour ta vie éveillée. Ethyria
+                      synthétise des impulsions de coaching individuelles —
+                      croissance personnelle.
                     </p>
                     <div
                       style="
@@ -2631,7 +2722,9 @@
                           margin-bottom: 14px;
                         "
                       >
-                        « Dans quel domaine de ta vie cherches-tu actuellement une 'pièce' que tu n'as pas encore trouvée — et qu'est-ce qui t'empêche d'ouvrir la bonne porte ? »
+                        « Dans quel domaine de ta vie cherches-tu actuellement
+                        une 'pièce' que tu n'as pas encore trouvée — et
+                        qu'est-ce qui t'empêche d'ouvrir la bonne porte ? »
                       </p>
                       <div style="display: flex; gap: 6px; flex-wrap: wrap">
                         <span
@@ -2718,7 +2811,8 @@
               >
             </h2>
             <p class="text-gray-300 max-w-xl mx-auto text-base font-normal">
-              Cinq raisons pour lesquelles Ethyria n'est pas qu'une simple app d'interprétation de rêves.
+              Cinq raisons pour lesquelles Ethyria n'est pas qu'une simple app
+              d'interprétation de rêves.
             </p>
           </div>
           <div
@@ -2742,7 +2836,8 @@
                   Analyse Multimodale Biosynchrone
                 </h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
-                  Aucune autre app ne relie fréquence cardiaque, phases de sommeil et contenu onirique en une seule analyse.
+                  Aucune autre app ne relie fréquence cardiaque, phases de
+                  sommeil et contenu onirique en une seule analyse.
                 </p>
               </div>
             </div>
@@ -2764,7 +2859,8 @@
                   5 Perspectives — Insight Multicouche
                 </h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
-                  Freud, Jung, général, spirituel, biosynchrone — pas comme option unique, mais comme couches complémentaires.
+                  Freud, Jung, général, spirituel, biosynchrone — pas comme
+                  option unique, mais comme couches complémentaires.
                 </p>
               </div>
             </div>
@@ -2781,9 +2877,12 @@
                 <span aria-hidden="true">📈</span>
               </div>
               <div>
-                <h4 class="font-bold text-base mb-2">Reconnais tes Propres Schémas</h4>
+                <h4 class="font-bold text-base mb-2">
+                  Reconnais tes Propres Schémas
+                </h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
-                  Ethyria te montre au fil des semaines quels archétypes et émotions se répètent.
+                  Ethyria te montre au fil des semaines quels archétypes et
+                  émotions se répètent.
                 </p>
               </div>
             </div>
@@ -2798,7 +2897,8 @@
               <div>
                 <h4 class="font-bold text-base mb-2">Ton Rêve comme Art</h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
-                  Images générées par IA comme symbole, émotion ou scène complète — uniques pour toi.
+                  Images générées par IA comme symbole, émotion ou scène
+                  complète — uniques pour toi.
                 </p>
               </div>
             </div>
@@ -2815,7 +2915,8 @@
                   Tes Données. Uniquement les Tiennes.
                 </h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
-                  Chiffré, local et jamais utilisé pour l'entraînement. Ce que tu vis la nuit est ce qu'il y a de plus privé.
+                  Chiffré, local et jamais utilisé pour l'entraînement. Ce que
+                  tu vis la nuit est ce qu'il y a de plus privé.
                 </p>
               </div>
             </div>
@@ -2851,12 +2952,17 @@
           <p
             class="text-lg text-gray-300 mb-4 leading-relaxed max-w-3xl mx-auto"
           >
-            Nous cherchons des pionniers qui veulent façonner l'avenir de l'analyse digitale des rêves avec nous. En remerciement de ta confiance précoce, nous te donnons un accès complet à notre technologie.
+            Nous cherchons des pionniers qui veulent façonner l'avenir de
+            l'analyse digitale des rêves avec nous. En remerciement de ta
+            confiance précoce, nous te donnons un accès complet à notre
+            technologie.
           </p>
 
           <div class="mb-8 mt-12">
             <h3 class="text-2xl font-bold mb-6">
-              <span class="ethyria-gradient-text">Ton Package de Démarrage :</span>
+              <span class="ethyria-gradient-text"
+                >Ton Package de Démarrage :</span
+              >
             </h3>
             <div
               class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto mb-16"
@@ -2889,7 +2995,8 @@
               >
             </h3>
             <p class="text-base text-gray-300 mb-6 leading-relaxed">
-              Nous débloquerons 30 jours de Premium supplémentaires si tu nous soutiens brièvement après ta période d'essai :
+              Nous débloquerons 30 jours de Premium supplémentaires si tu nous
+              soutiens brièvement après ta période d'essai :
             </p>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div
@@ -2910,7 +3017,8 @@
           <p
             class="text-sm text-gray-300 max-w-2xl mx-auto mb-4 leading-relaxed"
           >
-            Entre ton adresse e-mail ici et tu recevras ton lien de téléchargement exclusif dans ta boîte de réception personnelle.
+            Entre ton adresse e-mail ici et tu recevras ton lien de
+            téléchargement exclusif dans ta boîte de réception personnelle.
           </p>
           <form
             onsubmit="handleBetaSignup(event)"
@@ -2942,9 +3050,12 @@
             <p>
               <span aria-hidden="true">•</span> D'une valeur de 7,99€ par mois
             </p>
-            <p><span aria-hidden="true">•</span> Pas de carte de crédit requise</p>
             <p>
-              <span aria-hidden="true">•</span> 100% gratuit jusqu'à la fin de la période d'essai
+              <span aria-hidden="true">•</span> Pas de carte de crédit requise
+            </p>
+            <p>
+              <span aria-hidden="true">•</span> 100% gratuit jusqu'à la fin de
+              la période d'essai
             </p>
           </div>
           <p class="text-sm text-gray-300 max-w-md mx-auto">
@@ -2990,7 +3101,8 @@
             <p
               class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed section-subtitle"
             >
-              Réponses transparentes sur les prix, la confidentialité, l'analyse de rêves par IA et la disponibilité des appareils.
+              Réponses transparentes sur les prix, la confidentialité, l'analyse
+              de rêves par IA et la disponibilité des appareils.
             </p>
           </div>
           <div
@@ -3001,7 +3113,9 @@
                 Ethyria est-elle vraiment gratuite ?
               </h3>
               <p class="text-sm text-gray-300 leading-relaxed">
-                Oui. Tu peux utiliser Ethyria gratuitement. Les achats optionnels dans l'app débloquent des fonctionnalités premium comme les exports PDF et les analyses avancées.
+                Oui. Tu peux utiliser Ethyria gratuitement. Les achats
+                optionnels dans l'app débloquent des fonctionnalités premium
+                comme les exports PDF et les analyses avancées.
               </p>
             </article>
             <article class="glass-card px-6 py-6 rounded-3xl text-left">
@@ -3009,7 +3123,8 @@
                 Mes données de rêves sont-elles en sécurité ?
               </h3>
               <p class="text-sm text-gray-300 leading-relaxed">
-                Ta vie privée est notre priorité. Tes données de rêves restent sur ton appareil — pas de cloud, pas de tracking.
+                Ta vie privée est notre priorité. Tes données de rêves restent
+                sur ton appareil — pas de cloud, pas de tracking.
               </p>
             </article>
             <article class="glass-card px-6 py-6 rounded-3xl text-left">
@@ -3017,7 +3132,9 @@
                 Comment fonctionne l'analyse de rêves par IA ?
               </h3>
               <p class="text-sm text-gray-300 leading-relaxed">
-                Ethyria utilise une IA avancée pour identifier symboles, thèmes émotionnels et motifs récurrents selon des approches psychologiques basées sur Jung et Freud.
+                Ethyria utilise une IA avancée pour identifier symboles, thèmes
+                émotionnels et motifs récurrents selon des approches
+                psychologiques basées sur Jung et Freud.
               </p>
             </article>
             <article class="glass-card px-6 py-6 rounded-3xl text-left">
@@ -3025,7 +3142,9 @@
                 Quels modes d'analyse propose Ethyria ?
               </h3>
               <p class="text-sm text-gray-300 leading-relaxed">
-                Ethyria propose cinq perspectives d'analyse : Interprétation Générale, Psychanalyse Freudienne, Psychologie Analytique Jungienne, Réflexion Spirituelle et Analyse Biosynchrone.
+                Ethyria propose cinq perspectives d'analyse : Interprétation
+                Générale, Psychanalyse Freudienne, Psychologie Analytique
+                Jungienne, Réflexion Spirituelle et Analyse Biosynchrone.
               </p>
             </article>
             <!-- ★ NEW: Export FAQ (replaces Export section) ★ -->
@@ -3034,7 +3153,9 @@
                 Puis-je exporter mes analyses ?
               </h3>
               <p class="text-sm text-gray-300 leading-relaxed">
-                Oui. En tant qu'utilisateur premium, tu peux exporter chaque analyse et tes statistiques mensuelles sous forme de document PDF professionnel.
+                Oui. En tant qu'utilisateur premium, tu peux exporter chaque
+                analyse et tes statistiques mensuelles sous forme de document
+                PDF professionnel.
               </p>
             </article>
             <article class="glass-card px-6 py-6 rounded-3xl text-left">
@@ -3042,7 +3163,8 @@
                 Sur quels appareils Ethyria est-elle disponible ?
               </h3>
               <p class="text-sm text-gray-300 leading-relaxed">
-                Ethyria est actuellement disponible pour Android. Une version iOS est en développement.
+                Ethyria est actuellement disponible pour Android. Une version
+                iOS est en développement.
               </p>
             </article>
           </div>
