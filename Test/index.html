@@ -485,48 +485,42 @@
         z-index: 10;
         width: 2.75rem;
         height: 2.75rem;
-        border-radius: 50%;
-        border: 1px solid rgba(255, 255, 255, 0.07);
-        background: rgba(255, 255, 255, 0.03);
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
+        border: none;
+        background: none;
         color: rgba(255, 255, 255, 0.6);
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
         transition:
-          background 0.35s var(--slider-ease),
-          border-color 0.35s var(--slider-ease),
-          color 0.35s var(--slider-ease),
-          transform 0.25s var(--slider-ease),
-          box-shadow 0.35s var(--slider-ease);
+          color 0.25s var(--slider-ease),
+          transform 0.18s var(--slider-ease);
         flex-shrink: 0;
         padding: 0;
         outline: none;
       }
       .ethyria-slider__nav svg {
-        width: 1rem;
-        height: 1rem;
+        width: 1.6rem;
+        height: 1.6rem;
         stroke: currentColor;
-        stroke-width: 2;
+        stroke-width: 2.2;
         stroke-linecap: round;
         stroke-linejoin: round;
         fill: none;
+        display: block;
+        margin: auto;
       }
       .ethyria-slider__nav:hover {
-        background: rgba(255, 255, 255, 0.07);
-        border-color: color-mix(in srgb, var(--slider-accent) 50%, transparent);
-        color: #fff;
-        transform: scale(1.1);
-        box-shadow: 0 0 20px rgba(1, 191, 255, 0.08);
+        color: #01bfff;
+        transform: scale(1.13);
       }
       .ethyria-slider__nav:focus-visible {
-        border-color: var(--slider-accent);
-        box-shadow: 0 0 0 2px
-          color-mix(in srgb, var(--slider-accent) 30%, transparent);
+        color: #01bfff;
+        outline: 2px solid #01bfff;
+        outline-offset: 2px;
       }
       .ethyria-slider__nav:active {
+        color: #01bfff;
         transform: scale(0.93);
       }
       .ethyria-slider__nav:disabled {
@@ -1263,7 +1257,7 @@
                 disabled
               >
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M6 14L12 8L18 14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 12L16 6V18L8 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                 </svg>
               </button>
             <div class="ethyria-slider__dots" role="tablist"></div>
@@ -1276,7 +1270,7 @@
                 aria-label="Nächster Screen"
               >
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M6 10L12 16L18 10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16 12L8 6V18L16 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                 </svg>
               </button>
           </div>
