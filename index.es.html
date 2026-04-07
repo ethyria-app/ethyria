@@ -24,53 +24,13 @@
       crossorigin
     />
 
-    <!-- FIX: SEO — keyword-rich title -->
     <title>Ethyria | Tus Sueños como Realidad Visual</title>
     <meta
       name="description"
       content="Ethyria transforma tus sueños en insights profundos y obras de arte generadas por IA. Interpretación de sueños basada en Jung y Freud, 5 modos de análisis y diario visual de sueños."
     />
     <meta name="theme-color" content="#0F1035" />
-    <meta
-      name="robots"
-      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
-    />
-    <link
-      rel="canonical"
-      href="https://ostyles.github.io/ethyria/index.es.html"
-    />
-
-    <!-- hreflang -->
-    <link
-      rel="alternate"
-      hreflang="en"
-      href="https://ostyles.github.io/ethyria/index.en.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="de"
-      href="https://ostyles.github.io/ethyria/"
-    />
-    <link
-      rel="alternate"
-      hreflang="fr"
-      href="https://ostyles.github.io/ethyria/index.fr.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="ru"
-      href="https://ostyles.github.io/ethyria/index.ru.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="es"
-      href="https://ostyles.github.io/ethyria/index.es.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://ostyles.github.io/ethyria/"
-    />
+    <meta name="robots" content="noindex,nofollow" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -86,10 +46,6 @@
     <meta
       property="og:image"
       content="https://ostyles.github.io/ethyria/assets/og-image-es.png"
-    />
-    <meta
-      property="og:image:alt"
-      content="Vista previa de la app Ethyria para análisis de sueños con IA y diario de sueños"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -110,10 +66,6 @@
       name="twitter:image"
       content="https://ostyles.github.io/ethyria/assets/og-image-es.png"
     />
-    <meta
-      name="twitter:image:alt"
-      content="Vista previa de la app Ethyria para análisis de sueños con IA y diario de sueños"
-    />
 
     <!-- JSON-LD: Organization -->
     <script type="application/ld+json">
@@ -121,64 +73,26 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Ethyria",
-        "url": "https://ostyles.github.io/ethyria/index.es.html",
+        "url": "https://ostyles.github.io/ethyria/",
         "logo": "https://ostyles.github.io/ethyria/assets/Ethyria_symbol.png",
         "sameAs": ["https://github.com/OStyles/ethyria"]
       }
     </script>
 
-    <!-- JSON-LD: WebSite -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": "https://ostyles.github.io/ethyria/#website",
-        "name": "Ethyria",
-        "url": "https://ostyles.github.io/ethyria/index.es.html"
-      }
-    </script>
-
-    <!-- JSON-LD: WebPage -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "@id": "https://ostyles.github.io/ethyria/index.es.html#webpage",
-        "url": "https://ostyles.github.io/ethyria/index.es.html",
-        "name": "Ethyria | Tus Sueños como Realidad Visual",
-        "description": "Ethyria transforma tus sueños en insights profundos y obras de arte generadas por IA. Dream interpretation based on Jung & Freud, 5 analysis modes, visual dream journal.",
-        "inLanguage": "es",
-        "isPartOf": { "@id": "https://ostyles.github.io/ethyria/#website" },
-        "about": {
-          "@type": "Thing",
-          "name": "Análisis de sueños con IA y diario de sueños"
-        },
-        "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "url": "https://ostyles.github.io/ethyria/assets/og-image-es.png"
-        }
-      }
-    </script>
-
-    <!-- FIX: MobileApplication — freemium offers -->
+    <!-- JSON-LD: MobileApplication -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "MobileApplication",
         "name": "Ethyria – Interpretación de Sueños & Diario de Sueños",
-        "url": "https://ostyles.github.io/ethyria/index.es.html",
-        "image": "https://ostyles.github.io/ethyria/assets/og-image-es.png",
-        "description": "Ethyria transforma tus sueños en insights profundos y obras de arte generadas por IA. Dream interpretation based on Jung & Freud, 5 analysis modes, visual dream journal.",
+        "url": "https://ostyles.github.io/ethyria/",
+        "image": "https://ostyles.github.io/ethyria/assets/og-image-de.png",
+        "description": "Ethyria transforma tus sueños en insights profundos y obras de arte generadas por IA.",
         "applicationCategory": "HealthApplication",
         "applicationSubCategory": "LifestyleApplication",
         "operatingSystem": "Android",
         "inLanguage": "es",
         "isAccessibleForFree": true,
-        "publisher": {
-          "@type": "Organization",
-          "name": "Ethyria",
-          "url": "https://ostyles.github.io/ethyria/index.es.html"
-        },
         "offers": [
           {
             "@type": "Offer",
@@ -198,16 +112,884 @@
 
     <link rel="stylesheet" href="assets/tailwind.min.css" />
     <link rel="stylesheet" href="style.css" />
-  </head>
 
+    <!-- ================================================================
+         TEST PAGE — Minimalist Sophisticated Design System
+         ================================================================ -->
+    <style>
+      /* Automatische Input-Labels (z.B. von Browsern) kleiner darstellen */
+      input[type="email"]:not([type='password']):not([readonly])::-webkit-input-placeholder,
+      input[type="email"]:not([type='password']):not([readonly])::placeholder,
+      input[type="email"]:not([type='password']):not([readonly])::-moz-placeholder,
+      input[type="email"]:not([type='password']):not([readonly]):-ms-input-placeholder,
+      #heroBottomEmail::-webkit-input-placeholder,
+      #heroBottomEmail::placeholder,
+      #heroBottomEmail::-moz-placeholder,
+      #heroBottomEmail:-ms-input-placeholder,
+      #betaEmail::-webkit-input-placeholder,
+      #betaEmail::placeholder,
+      #betaEmail::-moz-placeholder,
+      #betaEmail:-ms-input-placeholder,
+      #exitEmail::-webkit-input-placeholder,
+      #exitEmail::placeholder,
+      #exitEmail::-moz-placeholder,
+      #exitEmail:-ms-input-placeholder {
+        font-size: 8px !important;
+        color: #01bfff !important;
+        opacity: 1 !important;
+        line-height: 1 !important;
+        white-space: nowrap !important;
+        text-align: left !important;
+        font-family: inherit !important;
+        letter-spacing: 0.01em !important;
+        background: transparent !important;
+      }
+      /* Firefox: autofill label (floating label) noch kleiner */
+      input[type="email"]:not([type='password']):not([readonly]):-moz-ui-invalid,
+      #heroBottomEmail:-moz-ui-invalid,
+      #betaEmail:-moz-ui-invalid,
+      #exitEmail:-moz-ui-invalid {
+        font-size: 8px !important;
+        color: #01bfff !important;
+        line-height: 1 !important;
+        white-space: nowrap !important;
+        text-align: left !important;
+        font-family: inherit !important;
+        letter-spacing: 0.01em !important;
+        background: transparent !important;
+      }
+      /* ================================================================
+         DESIGN TOKENS — 3 colors, 3 radii, 3 spacings
+         ================================================================ */
+      :root {
+        --c-primary: rgba(1, 191, 255, 1);
+        --c-primary-dim: rgba(1, 191, 255, 0.5);
+        --c-primary-subtle: rgba(1, 191, 255, 0.08);
+        --c-surface: rgba(255, 255, 255, 0.04);
+        --c-border: rgba(255, 255, 255, 0.07);
+        --c-border-hover: rgba(255, 255, 255, 0.14);
+        --c-text: rgba(255, 255, 255, 0.65);
+        --c-text-strong: #ffffff;
+        --r-sm: 12px;
+        --r-md: 20px;
+        --r-lg: 28px;
+      }
+
+      /* ---- Hero Inline Form ---- */
+      .hero-form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        max-width: 28rem;
+        margin: 0 auto;
+      }
+      @media (min-width: 640px) {
+        .hero-form {
+          flex-direction: row;
+        }
+      }
+      .hero-form input[type="email"] {
+        flex: 1;
+        padding: 0.85rem 1.15rem;
+        border-radius: var(--r-md);
+        background: var(--c-surface);
+        border: 1px solid var(--c-border);
+        color: #fff;
+        font-size: 0.9rem;
+        caret-color: var(--c-primary);
+        outline: none;
+        transition: border-color 0.3s ease;
+      }
+      .hero-form input[type="email"]::placeholder {
+        color: rgba(255, 255, 255, 0.3);
+      }
+      .hero-form input[type="email"]:focus {
+        border-color: var(--c-primary-dim);
+      }
+      .hero-form button[type="submit"] {
+        padding: 0.85rem 1.75rem;
+        border-radius: var(--r-md);
+        background: var(--c-primary);
+        color: #0a0a1a;
+        font-weight: 400;
+        font-family: "Inter", sans-serif;
+        font-size: 0.9rem;
+        white-space: nowrap;
+        border: none;
+        cursor: pointer;
+        transition: opacity 0.25s ease;
+      }
+      .hero-form button[type="submit"]:hover {
+        opacity: 0.85;
+      }
+      .hero-form button[type="submit"]:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      /* ---- Social Proof Bar ---- */
+      .social-proof-bar {
+        padding: 1rem 1.5rem;
+        border-radius: var(--r-md);
+        background: var(--c-surface);
+        border: 1px solid var(--c-border);
+        backdrop-filter: none;
+      }
+      .social-proof-avatars span {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        font-size: 11px;
+        font-weight: 400;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.08);
+        color: rgba(255, 255, 255, 0.5);
+        border: 1px solid var(--c-border);
+      }
+
+      /* ---- Scroll Reveal — subtle, fast ---- */
+      .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition:
+          opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal.is-visible {
+        opacity: 1;
+        transform: none;
+      }
+      .stagger > .reveal:nth-child(2) {
+        transition-delay: 0.08s;
+      }
+      .stagger > .reveal:nth-child(3) {
+        transition-delay: 0.16s;
+      }
+
+      /* ---- Hero Glow — static, no pulse ---- */
+      .hero-glow {
+        position: absolute;
+        top: -30%;
+        left: 50%;
+        translate: -50% 0;
+        width: clamp(300px, 55vw, 550px);
+        height: clamp(300px, 55vw, 550px);
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(1, 191, 255, 0.07) 0%,
+          transparent 65%
+        );
+        filter: blur(80px);
+        pointer-events: none;
+        z-index: 0;
+      }
+      #hero h1 {
+        text-shadow: 0 0 120px rgba(1, 191, 255, 0.08);
+      }
+
+      /* ---- Section Dividers — minimal line ---- */
+      .section-divider {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        position: relative;
+        z-index: 5;
+      }
+      .section-divider::before {
+        content: "";
+        width: min(40%, 16rem);
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--c-border-hover) 50%,
+          transparent
+        );
+      }
+      .section-divider::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        translate: -50% 0;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.12);
+      }
+
+      /* ---- Typography — consistent, restrained ---- */
+      /* glass-card headings inherit global gradient from style.css */
+
+      /* ---- Glass Card — unified single style ---- */
+      .glass-card {
+        transition: border-color 0.3s ease;
+      }
+      .glass-card:hover {
+        border-color: var(--c-border-hover);
+      }
+
+      /* ---- Vision Bento Grid ---- */
+      .vision-bento {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+      }
+      @media (min-width: 768px) {
+        .vision-bento {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1.25rem;
+        }
+      }
+      .vision-card {
+        border-radius: var(--r-lg);
+        display: flex;
+        flex-direction: column;
+      }
+      .vision-card__img-wrap {
+        position: relative;
+        overflow: hidden;
+        aspect-ratio: 1;
+        border-radius: var(--r-lg);
+        border: 1px solid var(--c-border);
+        transition: border-color 0.4s ease;
+      }
+      .vision-card:hover .vision-card__img-wrap {
+        border-color: var(--c-border-hover);
+      }
+      .vision-card__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .vision-card:hover .vision-card__image {
+        transform: scale(1.03);
+      }
+      .vision-card__body {
+        padding: 1rem 0.25rem 0;
+        text-align: center;
+      }
+      .vision-card__tag {
+        display: inline-block;
+        align-self: flex-start;
+        padding: 0.2rem 0.6rem;
+        border-radius: var(--r-sm);
+        font-size: 10px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 0.4rem;
+        color: var(--c-primary);
+        background: rgba(1, 191, 255, 0.08);
+      }
+      .vision-card__title {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 1.15rem;
+        background: linear-gradient(90deg, #22d3ee 0%, #60a5fa 35%, #a78bfa 70%, #f0abfc 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        margin: 0 0 0.25rem;
+        line-height: 1.25;
+      }
+      .vision-card__desc {
+        font-size: 0.8rem;
+        line-height: 1.5;
+        color: var(--c-text);
+        margin: 0;
+      }
+      .vision-card--featured .vision-card__img-wrap {
+        border-color: rgba(1, 191, 255, 0.12);
+      }
+
+      /* ---- Ethyria Slider v2 — World-Class ---- */
+      .ethyria-slider {
+        position: relative;
+        --slider-accent: var(--c-primary, #01bfff);
+        --slider-ease: cubic-bezier(0.22, 1, 0.36, 1);
+        --slider-duration: 0.6s;
+      }
+      .ethyria-slider__track {
+        position: relative;
+        overflow: hidden;
+        border-radius: 1rem;
+        touch-action: pan-y;
+      }
+      .ethyria-slider__slide {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        transform: translateX(100px) scale(0.96);
+        pointer-events: none;
+        transition:
+          opacity var(--slider-duration) var(--slider-ease),
+          transform var(--slider-duration) var(--slider-ease);
+        will-change: opacity, transform;
+      }
+      .ethyria-slider__slide.is-active {
+        position: relative;
+        opacity: 1;
+        transform: translateX(0) scale(1);
+        pointer-events: auto;
+      }
+      .ethyria-slider__slide.is-exit-left {
+        opacity: 0;
+        transform: translateX(-100px) scale(0.96);
+      }
+      .ethyria-slider__slide.is-exit-right {
+        opacity: 0;
+        transform: translateX(100px) scale(0.96);
+      }
+      .ethyria-slider__slide.is-dragging,
+      .ethyria-slider__slide.is-dragging.is-active {
+        transition: none !important;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .ethyria-slider__slide {
+          transition-duration: 0.01ms !important;
+          transform: none !important;
+        }
+        .ethyria-slider__slide.is-active {
+          transform: none !important;
+        }
+        .ethyria-slider__slide.is-exit-left,
+        .ethyria-slider__slide.is-exit-right {
+          transform: none !important;
+        }
+      }
+
+      /* --- Controls bar --- */
+      .ethyria-slider__controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+        margin-top: 2rem;
+      }
+
+      /* --- Navigation arrows --- */
+      .ethyria-slider__nav {
+        position: relative;
+        z-index: 10;
+        width: 2.75rem;
+        height: 2.75rem;
+        border: none;
+        background: none;
+        color: rgba(255, 255, 255, 0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition:
+          color 0.25s var(--slider-ease),
+          transform 0.18s var(--slider-ease);
+        flex-shrink: 0;
+        padding: 0;
+        outline: none;
+      }
+      .ethyria-slider__nav svg {
+        width: 1.6rem;
+        height: 1.6rem;
+        stroke: currentColor;
+        stroke-width: 2.2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+        display: block;
+        margin: auto;
+      }
+      .ethyria-slider__nav:hover {
+        color: #01bfff;
+        transform: scale(1.13);
+      }
+      .ethyria-slider__nav:focus-visible {
+        color: #01bfff;
+        outline: 2px solid #01bfff;
+        outline-offset: 2px;
+      }
+      .ethyria-slider__nav:active {
+        color: #01bfff;
+        transform: scale(0.93);
+      }
+      .ethyria-slider__nav:disabled {
+        opacity: 0.1;
+        cursor: default;
+        pointer-events: none;
+        transform: none;
+      }
+
+      /* --- Pill-shaped dot indicators --- */
+      .ethyria-slider__dots {
+        display: flex;
+        align-items: center;
+        gap: 0.35rem;
+      }
+      .ethyria-slider__dot {
+        height: 0.3rem;
+        width: 0.3rem;
+        border-radius: 100px;
+        border: none;
+        background: rgba(255, 255, 255, 0.18);
+        cursor: pointer;
+        transition:
+          width 0.45s var(--slider-ease),
+          background 0.45s var(--slider-ease),
+          opacity 0.3s ease;
+        padding: 0;
+        flex-shrink: 0;
+        outline: none;
+      }
+      .ethyria-slider__dot.is-active {
+        width: 1.5rem;
+        background: var(--slider-accent);
+      }
+      .ethyria-slider__dot:hover:not(.is-active) {
+        background: rgba(255, 255, 255, 0.35);
+      }
+      .ethyria-slider__dot:focus-visible {
+        box-shadow: 0 0 0 2px
+          color-mix(in srgb, var(--slider-accent) 40%, transparent);
+      }
+
+      /* --- Slide counter --- */
+      .ethyria-slider__counter {
+        font-family: "Inter", ui-monospace, monospace;
+        font-size: 0.7rem;
+        font-weight: 400;
+        letter-spacing: 0.08em;
+        color: rgba(255, 255, 255, 0.28);
+        min-width: 2.75rem;
+        text-align: center;
+        user-select: none;
+        font-variant-numeric: tabular-nums;
+      }
+      .ethyria-slider__counter-current {
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      @media (max-width: 767px) {
+        .ethyria-slider__nav {
+          width: 2.25rem;
+          height: 2.25rem;
+        }
+        .ethyria-slider__nav svg {
+          width: 0.85rem;
+          height: 0.85rem;
+        }
+        .ethyria-slider__controls {
+          gap: 0.875rem;
+          margin-top: 1.5rem;
+        }
+        .ethyria-slider__dot.is-active {
+          width: 1.25rem;
+        }
+        .ethyria-slider__counter {
+          font-size: 0.65rem;
+          min-width: 2.25rem;
+        }
+      }
+
+      /* ---- Trust Dots — monochrome ---- */
+      .trust-dot--warm {
+        background: rgba(255, 255, 255, 0.4) !important;
+        box-shadow: none;
+      }
+
+      /* ---- Scroll Hint Edge ---- */
+      .scroll-hint-wrapper {
+        position: relative;
+      }
+      .scroll-hint-wrapper::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 40px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--ethyria-dark, #100c1f) 90%
+        );
+        pointer-events: none;
+        z-index: 2;
+        transition: opacity 0.3s;
+      }
+      .scroll-hint-wrapper.scrolled-end::after {
+        opacity: 0;
+      }
+
+      /* ---- Stagger Grid ---- */
+      .stagger-grid > * {
+        opacity: 0;
+        transform: translateY(16px);
+        transition:
+          opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .stagger-grid.is-visible > *:nth-child(1) {
+        transition-delay: 0s;
+      }
+      .stagger-grid.is-visible > *:nth-child(2) {
+        transition-delay: 0.07s;
+      }
+      .stagger-grid.is-visible > *:nth-child(3) {
+        transition-delay: 0.14s;
+      }
+      .stagger-grid.is-visible > *:nth-child(4) {
+        transition-delay: 0.18s;
+      }
+      .stagger-grid.is-visible > *:nth-child(5) {
+        transition-delay: 0.22s;
+      }
+      .stagger-grid.is-visible > * {
+        opacity: 1;
+        transform: none;
+      }
+
+      /* ================================================================
+         RESPONSIVE — Mobile-first, restrained
+         ================================================================ */
+      @media (max-width: 390px) {
+        html {
+          font-size: 108%;
+        }
+        #hero h1 {
+          font-size: 2rem;
+        }
+        .hero-form button[type="submit"] {
+          padding: 0.75rem 1.25rem;
+          font-size: 0.85rem;
+        }
+        .nav-brand-logo {
+          max-height: 6rem;
+        }
+        .section-pill {
+          font-size: 8px;
+          letter-spacing: 0.2em;
+        }
+        #beta h2 {
+          font-size: 1.5rem;
+        }
+        .social-proof-bar {
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        #hero {
+          padding-top: 0.25rem;
+          padding-bottom: 2rem;
+        }
+        #hero h1 {
+          font-size: 2.9rem;
+          margin-bottom: 1rem;
+          line-height: 1.08;
+        }
+        #hero > p,
+        header#hero > p {
+          font-size: 0.92rem;
+          margin-bottom: 1.25rem;
+          max-width: none;
+        }
+        .hero-form {
+          gap: 0.5rem;
+          max-width: 100%;
+        }
+        .hero-form input[type="email"] {
+          padding: 0.8rem 1.5rem;
+          font-size: 0.88rem;
+          height: 2.75rem;
+          border-radius: var(--r-md);
+          text-align: center;
+          color: #fff;
+        }
+        .hero-form button[type="submit"] {
+          padding: 0.8rem 1.5rem;
+          font-size: 0.88rem;
+        }
+        .hero-trust-line {
+          font-size: 0.72rem;
+          gap: 0.4rem 0.8rem;
+        }
+        .section-shell {
+          padding-top: 2.5rem;
+          padding-bottom: 2.5rem;
+        }
+        .section-shell .text-center.mb-16 {
+          margin-bottom: 1.5rem;
+        }
+        #app-screens h2,
+        #features h2,
+        #vision h2,
+        #science h2 {
+          font-size: 2rem;
+        }
+        .section-pill {
+          font-size: 9px;
+          padding: 0.2rem 0.7rem;
+          margin-bottom: 0.8rem;
+        }
+        .nav-brand-logo {
+          max-height: 6rem;
+        }
+        .language-switcher {
+          gap: 0.45rem;
+        }
+        .language-flag {
+          width: 1.342rem;
+          height: 1.342rem;
+        }
+        .vision-bento {
+          gap: 1.5rem;
+        }
+        .vision-card__body {
+          padding: 1.25rem 0.15rem 0.75rem;
+        }
+        .vision-card__title {
+          font-size: 1.25rem;
+        }
+        .vision-card__desc {
+          font-size: 0.95rem;
+        }
+        .vision-card__tag {
+          font-size: 9px;
+        }
+
+        #beta {
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+        }
+        #beta h2 {
+          font-size: 1.75rem;
+        }
+        #faq .grid {
+          gap: 0.6rem;
+        }
+        #faq .glass-card {
+          padding: 1rem 1.15rem;
+          border-radius: var(--r-md);
+        }
+        #faq h3 {
+          font-size: 0.92rem;
+          margin-bottom: 0.35rem;
+        }
+        #faq p {
+          font-size: 0.82rem;
+        }
+        #science .grid {
+          gap: 0.6rem;
+        }
+        #science .glass-card {
+          padding: 1.1rem;
+        }
+        #science h4 {
+          font-size: 0.88rem;
+        }
+        #insight-pfad .roadmap-steps {
+          gap: 1.75rem;
+        }
+        #insight-pfad h2 {
+          font-size: 1.35rem;
+        }
+        .live-dream-shell {
+          max-width: 100%;
+        }
+        .floating-beta-cta {
+          font-size: 0.82rem;
+          padding: 0.75rem 1.15rem;
+        }
+        .section-divider::before {
+          width: 60%;
+        }
+        footer {
+          padding: 1.5rem 1rem;
+        }
+      }
+
+      @media (min-width: 641px) and (max-width: 1023px) {
+        #hero h1 {
+          font-size: 3.5rem;
+        }
+        .vision-bento {
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+        }
+        .vision-card:last-child {
+          grid-column: 1 / -1;
+        }
+
+        .features-scroll {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1rem;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .features-scroll {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1rem;
+        }
+      }
+      @media (min-width: 1280px) {
+        .features-scroll {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+
+      /* ---- Reduced Motion ---- */
+      @media (prefers-reduced-motion: reduce) {
+        .reveal {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
+        .vision-card__image {
+          transition: none;
+        }
+        .stagger-grid > * {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
+      }
+
+      /* ---- Smooth Scroll ---- */
+      html {
+        scroll-behavior: smooth;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+
+      /* ---- Noise overlay — disabled, hidden ---- */
+      .noise-overlay {
+        display: none;
+      }
+      .cursor-glow {
+        display: none;
+      }
+      .hero-starfield {
+        display: none;
+      }
+
+      /* ---- Section tints — removed, pure dark ---- */
+      #app-screens,
+      #features,
+      #vision,
+      #insight-pfad,
+      #science,
+      #beta {
+        background: none;
+      }
+
+      /* ---- Unified card hover — subtle border shift only ---- */
+      #faq .glass-card,
+      #beta .glass-card,
+      #science .glass-card,
+      .features-scroll .glass-card {
+        transition: border-color 0.3s ease;
+      }
+      #faq .glass-card:hover,
+      #beta .glass-card:hover,
+      #science .glass-card:hover,
+      .features-scroll .glass-card:hover {
+        border-color: var(--c-border-hover);
+        transform: none;
+        box-shadow: none;
+      }
+
+      /* ---- Kill card glow pseudo-element ---- */
+      .features-scroll .glass-card::after {
+        display: none;
+      }
+
+      /* ---- Features cards — unified muted color ---- */
+      .features-scroll .glass-card .text-cyan-400,
+      .features-scroll .glass-card .text-purple-400,
+      .features-scroll .glass-card .text-blue-400,
+      .features-scroll .glass-card .text-indigo-400,
+      .features-scroll .glass-card .text-sky-400 {
+        color: var(--c-primary) !important;
+      }
+      .features-scroll .glass-card [class*="bg-cyan-500"],
+      .features-scroll .glass-card [class*="bg-purple-500"],
+      .features-scroll .glass-card [class*="bg-blue-500"],
+      .features-scroll .glass-card [class*="bg-indigo-500"],
+      .features-scroll .glass-card [class*="bg-sky-500"] {
+        background: var(--c-primary-subtle) !important;
+      }
+
+      /* ---- Science cards — unified muted color ---- */
+      #science .glass-card [class*="usp-icon"] {
+        background: var(--c-primary-subtle) !important;
+      }
+      #science .text-cyan-400,
+      #science .text-violet-400,
+      #science .text-sky-400,
+      #science .text-indigo-400 {
+        color: rgba(255, 255, 255, 0.45) !important;
+      }
+
+      /* ---- Pill badges — no pulse, static ---- */
+      .animate-pulse {
+        animation: none !important;
+      }
+
+      /* ---- Confetti / success pulse — disabled ---- */
+      @keyframes confettiFall {
+        0%,
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes successPulse {
+        0%,
+        100% {
+          transform: none;
+          opacity: 1;
+        }
+      }
+
+      /* ---- Gradient text — active everywhere ---- */
+
+      /* ---- Hero form glow — removed ---- */
+      .hero-form button[type="submit"] {
+        box-shadow: none;
+      }
+      .hero-form button[type="submit"]:hover {
+        box-shadow: none;
+        filter: none;
+        transform: none;
+      }
+    </style>
+  </head>
   <body class="overflow-x-hidden">
-    <!-- FIX: Accessibility — Skip-Link -->
     <a href="#main-content" class="skip-link">Ir al contenido principal</a>
 
     <div class="bg-blob top-[-10%] left-[-10%]"></div>
     <div class="bg-blob bottom-[20%] right-[-5%]"></div>
 
-    <!-- Sprachleiste -->
+    <!-- ============================================================
+         LANGUAGE BAR
+         ============================================================ -->
     <div
       id="top"
       class="w-full flex justify-center px-6 pt-8 pb-2 relative z-20"
@@ -256,6 +1038,9 @@
       </nav>
     </div>
 
+    <!-- ============================================================
+         LOGO / NAV
+         ============================================================ -->
     <nav
       aria-label="Navegación principal"
       class="container mx-auto px-6 py-6 flex justify-center items-center relative z-10"
@@ -271,38 +1056,91 @@
       </div>
     </nav>
 
-    <!-- FIX: Accessibility — <main> Landmark -->
     <main id="main-content">
       <!-- ============================================================
-           HERO — FIX: CTA above the fold
+           HERO — CTA ABOVE THE FOLD (C1 fix)
            ============================================================ -->
       <header
         id="hero"
-        class="container mx-auto px-6 pt-2 pb-20 text-center relative z-10"
+        class="container mx-auto px-6 pt-2 pb-0 text-center relative z-10"
       >
+        <!-- Subtle glow -->
+        <div class="hero-glow" aria-hidden="true"></div>
+
         <div
-          class="inline-block px-4 py-1 border border-cyan-500/30 rounded-full text-[10px] tracking-[0.3em] uppercase mb-8 text-cyan-400 animate-pulse"
+          class="inline-block px-4 py-1 border border-cyan-500/30 rounded-full text-[10px] tracking-[0.3em] uppercase mb-8 ethyria-gradient-text animate-pulse reveal"
+          style="position: relative; z-index: 1"
         >
           NUEVO - CONVÍERTETE EN BETA TESTER
         </div>
         <h1
-          class="text-5xl sm:text-6xl md:text-8xl font-bold mb-8 leading-[1.1]"
+          class="text-5xl sm:text-6xl md:text-8xl font-bold mb-8 leading-[1.1] reveal"
+          style="position: relative; z-index: 1"
         >
           No solo sueñes. <br />
           <span class="ethyria-gradient-text">Visualízalo.</span>
         </h1>
-        <!-- FIX: Contrast — text-gray-300 -->
         <p
-          class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12 font-light leading-relaxed"
+          class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-0 font-normal leading-relaxed reveal"
+          style="position: relative; z-index: 1"
         >
-          Ethyria convierte tus sueños en revelaciones profundas y creaciones
-          visuales únicas. Una IA de vanguardia explora tu subconsciente desde
-          cinco enfoques distintos.
+          Ethyria convierte tus sueños en revelaciones profundas y
+          creaciones visuales únicas. Una IA de vanguardia explora tu
+          subconsciente desde cinco enfoques distintos.
         </p>
       </header>
 
-      <!-- FIX: Floating CTA -->
-      <a href="#beta" class="floating-beta-cta">Inicia tu viaje de sueños</a>
+      <!-- ============================================================
+           HERO BOTTOM SIGNUP — below-the-fold conversion
+           ============================================================ -->
+      <section
+        class="relative z-10 container mx-auto px-6 pt-0 pb-8 text-center"
+        style="margin-top: -4rem"
+      >
+        <div class="section-divider mb-4" aria-hidden="true"></div>
+        <form
+          onsubmit="handleHeroBottomSignup(event)"
+          class="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto mb-4 items-center"
+        >
+          <label for="heroBottomEmail" class="text-xs text-cyan-400 whitespace-nowrap shrink-0">Correo Electrónico</label>
+          <input
+            type="email"
+            id="heroBottomEmail"
+            name="email"
+            required
+            autocomplete="email"
+            placeholder="tu@email.com"
+            class="flex-1 px-5 py-4 rounded-full bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500/50 focus:bg-white/8 transition text-sm"
+          />
+          <input
+            type="text"
+            name="website"
+            tabindex="-1"
+            autocomplete="off"
+            class="honeypot-field"
+            aria-hidden="true"
+          />
+          <button type="submit" class="glow-button">Obtener Acceso →</button>
+        </form>
+        <output id="heroBottomStatus" class="hidden text-sm mb-4"></output>
+
+        <div
+          class="max-w-md mx-auto mb-4 text-xs text-cyan-300 space-y-1"
+          style="opacity: 0.7"
+        >
+          <p>Valorado en 7,99€ al mes</p>
+          <p>Sin tarjeta de crédito</p>
+          <p>100% gratis hasta el final del período de prueba</p>
+        </div>
+      </section>
+
+      <!-- ★ FLOATING CTA — improved copy (H1 fix) ★ -->
+      <a href="#beta" class="floating-beta-cta"
+        >Inicia tu viaje de sueños →</a
+      >
+
+      <!-- Section Divider -->
+      <div class="section-divider" aria-hidden="true"></div>
 
       <!-- ============================================================
            APP SCREENSHOTS
@@ -311,302 +1149,460 @@
         id="app-screens"
         class="container mx-auto px-6 py-24 section-shell relative z-10"
       >
-        <div class="text-center mb-16">
-          <div class="section-pill section-pill--app">EN LA APP</div>
+        <div class="text-center mb-16 reveal">
+          <div class="section-pill section-pill--app ethyria-gradient-text">EN LA APP</div>
           <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
             Descubre <span class="ethyria-gradient-text">Ethyria</span>
           </h2>
           <p
-            class="text-gray-300 max-w-2xl mx-auto text-base md:text-lg font-light leading-relaxed"
+            class="text-gray-300 max-w-2xl mx-auto text-base md:text-lg font-normal leading-relaxed"
           >
-            Tres pantallas reales de la app — Análisis, Comunidad y
-            Estadísticas.
+            Tres pantallas reales de la app — Análisis, Comunidad y Estadísticas.
           </p>
         </div>
-
-        <div class="app-showcase-grid">
-          <article class="app-showcase-item">
-            <div class="app-showcase-copy">
-              <div class="app-showcase-icon bg-cyan-500/20 text-cyan-400">
-                <span aria-hidden="true">🔍</span>
+        <div
+          class="ethyria-slider"
+          data-slider="app-screens"
+          data-autoplay="7000"
+          role="region"
+          aria-roledescription="Carrusel"
+          aria-label="App Screenshots"
+        >
+          <div class="ethyria-slider__track">
+            <article class="ethyria-slider__slide app-showcase-item is-active">
+              <div class="app-showcase-copy">
+                <div class="app-showcase-icon bg-cyan-500/20 text-cyan-400">
+                  <span aria-hidden="true">🔍</span>
+                </div>
+                <h3 class="text-2xl font-bold">Análisis de Sueños</h3>
+                <p class="text-gray-300 leading-relaxed">
+                  Elige tu tipo de análisis y recibe una interpretación profunda
+                  basada en Freud, Jung, espiritual o métodos biosíncronos.
+                </p>
               </div>
-              <h3 class="text-2xl font-bold">Análisis de Sueños</h3>
-              <p class="text-gray-300 leading-relaxed">
-                Elige tu tipo de análisis y recibe una interpretación profunda
-                basada en Freud, Jung, espiritual o métodos biosíncronos.
-              </p>
-            </div>
-            <div class="app-showcase-visual">
-              <img
-                src="assets/analysis_es.jpg"
-                alt="Pantalla de análisis de Ethyria"
-                loading="lazy"
-                width="460"
-                height="920"
-                class="app-showcase-image"
-              />
-            </div>
-          </article>
-
-          <article class="app-showcase-item app-showcase-item--featured">
-            <div class="app-showcase-copy">
-              <div class="app-showcase-icon bg-purple-500/20 text-purple-400">
-                <span aria-hidden="true">☯</span>
+              <div class="app-showcase-visual">
+                <img
+                  src="assets/analysis.jpg"
+                  alt="Pantalla de análisis de Ethyria"
+                  loading="lazy"
+                  width="460"
+                  height="920"
+                  class="app-showcase-image"
+                />
               </div>
-              <h3 class="text-2xl font-bold">Éter</h3>
-              <p class="text-gray-300 leading-relaxed">
-                Descubre tendencias globales de sueños y súmérgete en una
-                comunidad creciente de soñadores.
-              </p>
-            </div>
-            <div class="app-showcase-visual">
-              <img
-                src="assets/ether_es.jpg"
-                alt="Comunidad Éter de Ethyria"
-                loading="lazy"
-                width="460"
-                height="920"
-                class="app-showcase-image"
-              />
-            </div>
-          </article>
-
-          <article class="app-showcase-item">
-            <div class="app-showcase-copy">
-              <div class="app-showcase-icon bg-blue-500/20 text-blue-400">
-                <span aria-hidden="true">📊</span>
+            </article>
+            <article class="ethyria-slider__slide app-showcase-item">
+              <div class="app-showcase-copy">
+                <div class="app-showcase-icon bg-purple-500/20 text-purple-400">
+                  <span aria-hidden="true">☯</span>
+                </div>
+                <h3 class="text-2xl font-bold">Éter</h3>
+                <p class="text-gray-300 leading-relaxed">
+                  Descubre tendencias globales de sueños y sumérgete en una
+                  comunidad creciente de soñadores.
+                </p>
               </div>
-              <h3 class="text-2xl font-bold">Estadísticas</h3>
-              <p class="text-gray-300 leading-relaxed">
-                Comprende tus patrones de sueño a través de evaluaciones
-                detalladas y descubre tu subconsciente.
-              </p>
+              <div class="app-showcase-visual">
+                <img
+                  src="assets/ether.jpg"
+                  alt="Comunidad Éter de Ethyria"
+                  loading="lazy"
+                  width="460"
+                  height="920"
+                  class="app-showcase-image"
+                />
+              </div>
+            </article>
+            <article class="ethyria-slider__slide app-showcase-item">
+              <div class="app-showcase-copy">
+                <div class="app-showcase-icon bg-blue-500/20 text-blue-400">
+                  <span aria-hidden="true">📊</span>
+                </div>
+                <h3 class="text-2xl font-bold">Estadísticas</h3>
+                <p class="text-gray-300 leading-relaxed">
+                  Comprende tus patrones de sueño a través de evaluaciones
+                  detalladas y descubre tu subconsciente.
+                </p>
+              </div>
+              <div class="app-showcase-visual">
+                <img
+                  src="assets/statistic.jpg"
+                  alt="Estadísticas de Ethyria"
+                  loading="lazy"
+                  width="460"
+                  height="920"
+                  class="app-showcase-image"
+                />
+              </div>
+            </article>
+          </div>
+          <div class="ethyria-slider__controls">
+              <button
+                class="ethyria-slider__nav ethyria-slider__nav--prev"
+                aria-label="Pantalla anterior"
+                disabled
+              >
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M8 12L16 6V18L8 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+              </button>
+            <div class="ethyria-slider__dots" role="tablist"></div>
+            <div class="ethyria-slider__counter" aria-hidden="true">
+              <span class="ethyria-slider__counter-current">01</span> /
+              <span class="ethyria-slider__counter-total">03</span>
             </div>
-            <div class="app-showcase-visual">
-              <img
-                src="assets/statistic_es.jpg"
-                alt="Estadísticas de Ethyria"
-                loading="lazy"
-                width="460"
-                height="920"
-                class="app-showcase-image"
-              />
-            </div>
-          </article>
+              <button
+                class="ethyria-slider__nav ethyria-slider__nav--next"
+                aria-label="Siguiente pantalla"
+              >
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M16 12L8 6V18L16 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+              </button>
+          </div>
         </div>
       </section>
 
+      <!-- Section Divider -->
+      <div class="section-divider" aria-hidden="true"></div>
+
       <!-- ============================================================
            5 ANALYSE-PERSPEKTIVEN
-           FIX: Spiritual als nicht-wissenschaftlich gekennzeichnet
            ============================================================ -->
       <section id="features" class="py-24 section-shell relative z-10">
         <div class="container mx-auto px-6">
-          <div class="text-center mb-16">
-            <div class="section-pill section-pill--analysis">
+          <div class="text-center mb-16 reveal">
+            <div class="section-pill section-pill--analysis ethyria-gradient-text">
               Capas de Interpretación
             </div>
             <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-              5 <span class="ethyria-gradient-text">Perspectivas</span> de
-              Análisis
+              5 Perspectivas de <span class="ethyria-gradient-text">Análisis</span>
             </h2>
-            <p class="text-gray-300 max-w-2xl mx-auto text-base font-light">
+            <p class="text-gray-300 max-w-2xl mx-auto text-base font-normal">
               Cada sueño merece la mirada adecuada. Ethyria interpreta tus
               sueños a través de cinco enfoques distintos.
             </p>
           </div>
-
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5"
+            class="ethyria-slider"
+            data-slider="features"
+            data-autoplay="5000"
+            role="region"
+            aria-roledescription="Carrusel"
+            aria-label="Analysis Perspectives"
           >
-            <!-- General -->
-            <div
-              class="glass-card p-7 rounded-[28px] flex flex-col gap-4 group hover:border-cyan-500/30 hover:shadow-[0_0_30px_rgba(1,191,255,0.08)] transition-all duration-300"
-            >
-              <div
-                class="w-11 h-11 bg-cyan-500/15 rounded-xl flex items-center justify-center text-xl group-hover:bg-cyan-500/25 transition"
-              >
-                <span aria-hidden="true">🔍</span>
-              </div>
-              <div>
+            <div class="ethyria-slider__track">
+              <!-- General -->
+              <div class="ethyria-slider__slide is-active">
                 <div
-                  class="text-[10px] text-cyan-400 uppercase tracking-[0.2em] mb-1 font-medium"
+                  class="glass-card p-7 rounded-[28px] flex flex-col gap-4 group hover:border-cyan-500/30 hover:shadow-[0_0_30px_rgba(1,191,255,0.08)] transition-all duration-300 max-w-lg mx-auto"
                 >
-                  General
+                  <div
+                    class="w-11 h-11 bg-cyan-500/15 rounded-xl flex items-center justify-center text-xl group-hover:bg-cyan-500/25 transition"
+                  >
+                    <span aria-hidden="true">🔍</span>
+                  </div>
+                  <div>
+                    <div
+                      class="text-[10px] text-cyan-400 uppercase tracking-[0.2em] mb-1 font-normal"
+                    >
+                      General
+                    </div>
+                    <h4 class="font-bold text-base mb-2">Interpretación General</h4>
+                    <p class="text-xs text-gray-300 leading-relaxed">
+                      Amplia, profunda e imparcial. La IA analiza símbolos,
+                      emociones y estructura narrativa de tu sueño sin una
+                      escuela fija de pensamiento.
+                    </p>
+                  </div>
+                  <div
+                    class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
+                    style="color: #01bfff;"
+                  >
+                    Nivel Básico
+                  </div>
                 </div>
-                <h4 class="font-bold text-base mb-2">Interpretación General</h4>
-                <p class="text-xs text-gray-300 leading-relaxed">
-                  Amplia, profunda e imparcial. La IA analiza símbolos,
-                  emociones y estructura narrativa de tu sueño sin una escuela
-                  fija de pensamiento.
-                </p>
               </div>
-              <div
-                class="mt-auto pt-2 border-t border-white/5 text-[10px] text-gray-500 uppercase tracking-widest"
-              >
-                Nivel Básico
+              <!-- Freud -->
+              <div class="ethyria-slider__slide">
+                <div
+                  class="glass-card p-7 rounded-[28px] flex flex-col gap-4 group hover:border-purple-500/30 hover:shadow-[0_0_30px_rgba(84,88,251,0.08)] transition-all duration-300 max-w-lg mx-auto"
+                >
+                  <div
+                    class="w-11 h-11 bg-purple-500/15 rounded-xl flex items-center justify-center text-xl group-hover:bg-purple-500/25 transition"
+                  >
+                    <span aria-hidden="true">🧠</span>
+                  </div>
+                  <div>
+                    <div
+                      class="text-[10px] text-purple-400 uppercase tracking-[0.2em] mb-1 font-normal"
+                    >
+                      Freud
+                    </div>
+                    <h4 class="font-bold text-base mb-2">Psicoanálisis Clásico</h4>
+                    <p class="text-xs text-gray-300 leading-relaxed">
+                      Deseos inconscientes, conflictos reprimidos y naturaleza pulsional bajo la lupa. El censor del sueño es decodificado.
+                    </p>
+                  </div>
+                  <div
+                    class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
+                    style="color: #01bfff;"
+                  >
+                    Psicología Profunda
+                  </div>
+                </div>
+              </div>
+              <!-- Jung -->
+              <div class="ethyria-slider__slide">
+                <div
+                  class="glass-card p-7 rounded-[28px] flex flex-col gap-4 border-cyan-500/20 shadow-[0_0_40px_rgba(1,191,255,0.07)] group hover:border-cyan-500/40 hover:shadow-[0_0_40px_rgba(1,191,255,0.14)] transition-all duration-300 max-w-lg mx-auto"
+                >
+                  <div
+                    class="w-11 h-11 bg-blue-500/20 rounded-xl flex items-center justify-center text-xl group-hover:bg-blue-500/30 transition"
+                  >
+                    <span aria-hidden="true">☯</span>
+                  </div>
+                  <div>
+                    <div
+                      class="text-[10px] text-blue-400 uppercase tracking-[0.2em] mb-1 font-normal"
+                    >
+                      Jung
+                    </div>
+                    <h4 class="font-bold text-base mb-2">
+                      Psicología Analítica
+                    </h4>
+                    <p class="text-xs text-gray-300 leading-relaxed">
+                      Arquetipos, sombra, ánima y el inconsciente colectivo.
+                      El camino hacia la individuación comienza con el sueño.
+                    </p>
+                  </div>
+                  <div
+                    class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
+                    style="color: #01bfff;"
+                  >
+                    Arquetipos
+                  </div>
+                </div>
+              </div>
+              <!-- Spiritual -->
+              <div class="ethyria-slider__slide">
+                <div
+                  class="glass-card p-7 rounded-[28px] flex flex-col gap-4 group hover:border-indigo-400/30 hover:shadow-[0_0_30px_rgba(99,102,241,0.08)] transition-all duration-300 max-w-lg mx-auto"
+                >
+                  <div
+                    class="w-11 h-11 bg-indigo-500/15 rounded-xl flex items-center justify-center text-xl group-hover:bg-indigo-500/25 transition"
+                  >
+                    <span aria-hidden="true">✨</span>
+                  </div>
+                  <div>
+                    <div
+                      class="text-[10px] text-indigo-400 uppercase tracking-[0.2em] mb-1 font-normal"
+                    >
+                      Spiritual
+                    </div>
+                    <h4 class="font-bold text-base mb-2">
+                      Interpretación Espiritual
+                    </h4>
+                    <p class="text-xs text-gray-300 leading-relaxed">
+                      Una perspectiva experiencial no científica. Explora
+                      el significado simbólico, las narrativas internas y la
+                      resonancia personal más allá de los marcos clínicos.
+                    </p>
+                  </div>
+                  <div
+                    class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
+                    style="color: #01bfff;"
+                  >
+                    Energía &amp; Alma
+                  </div>
+                </div>
+              </div>
+              <!-- BMA -->
+              <div class="ethyria-slider__slide">
+                <div
+                  class="glass-card p-7 rounded-[28px] flex flex-col gap-4 group hover:border-cyan-400/30 hover:shadow-[0_0_30px_rgba(1,191,255,0.1)] transition-all duration-300 max-w-lg mx-auto"
+                >
+                  <div
+                    class="w-11 h-11 bg-cyan-400/15 rounded-xl flex items-center justify-center text-xl group-hover:bg-cyan-400/25 transition"
+                  >
+                    <span aria-hidden="true">💓</span>
+                  </div>
+                  <div>
+                    <div
+                      class="text-[10px] text-cyan-300 uppercase tracking-[0.2em] mb-1 font-normal"
+                    >
+                      BMA
+                    </div>
+                    <h4 class="font-bold text-base mb-2">
+                      Biosynchronous Analysis
+                    </h4>
+                    <p class="text-xs text-gray-300 leading-relaxed">
+                      Frecuencia cardíaca, VFC y fases de sueño de Health Connect
+                      fluyen directamente en la interpretación. Cuerpo y sueño
+                      como uno.
+                    </p>
+                  </div>
+                  <div
+                    class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
+                    style="color: #01bfff;"
+                  >
+                    Biometría + IA
+                  </div>
+                </div>
               </div>
             </div>
-
-            <!-- Freud -->
-            <div
-              class="glass-card p-7 rounded-[28px] flex flex-col gap-4 group hover:border-purple-500/30 hover:shadow-[0_0_30px_rgba(84,88,251,0.08)] transition-all duration-300"
-            >
-              <div
-                class="w-11 h-11 bg-purple-500/15 rounded-xl flex items-center justify-center text-xl group-hover:bg-purple-500/25 transition"
+            <div class="ethyria-slider__controls">
+              <button
+                class="ethyria-slider__nav ethyria-slider__nav--prev"
+                aria-label="Perspectiva anterior"
+                disabled
               >
-                <span aria-hidden="true">🧠</span>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M8 12L16 6V18L8 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+              </button>
+              <div class="ethyria-slider__dots" role="tablist"></div>
+              <div class="ethyria-slider__counter" aria-hidden="true">
+                <span class="ethyria-slider__counter-current">01</span> /
+                <span class="ethyria-slider__counter-total">05</span>
               </div>
-              <div>
-                <div
-                  class="text-[10px] text-purple-400 uppercase tracking-[0.2em] mb-1 font-medium"
-                >
-                  Freud
-                </div>
-                <h4 class="font-bold text-base mb-2">Psicoanálisis Clásico</h4>
-                <p class="text-xs text-gray-300 leading-relaxed">
-                  Deseos inconscientes, conflictos reprimidos y naturaleza
-                  pulsional bajo el microscopio. El censor del sueño es
-                  decodificado.
-                </p>
-              </div>
-              <div
-                class="mt-auto pt-2 border-t border-white/5 text-[10px] text-gray-500 uppercase tracking-widest"
+              <button
+                class="ethyria-slider__nav ethyria-slider__nav--next"
+                aria-label="Siguiente perspectiva"
               >
-                Psicología Profunda
-              </div>
-            </div>
-
-            <!-- Jung (highlighted) -->
-            <div
-              class="glass-card p-7 rounded-[28px] flex flex-col gap-4 border-cyan-500/20 shadow-[0_0_40px_rgba(1,191,255,0.07)] group hover:border-cyan-500/40 hover:shadow-[0_0_40px_rgba(1,191,255,0.14)] transition-all duration-300"
-            >
-              <div
-                class="w-11 h-11 bg-blue-500/20 rounded-xl flex items-center justify-center text-xl group-hover:bg-blue-500/30 transition"
-              >
-                <span aria-hidden="true">☯</span>
-              </div>
-              <div>
-                <div
-                  class="text-[10px] text-blue-400 uppercase tracking-[0.2em] mb-1 font-medium"
-                >
-                  Jung
-                </div>
-                <h4 class="font-bold text-base mb-2">Psicología Analítica</h4>
-                <p class="text-xs text-gray-300 leading-relaxed">
-                  Arquetipos, sombra, ánima y el inconsciente colectivo. El
-                  camino hacia la individuación comienza con el sueño.
-                </p>
-              </div>
-              <div
-                class="mt-auto pt-2 border-t border-white/5 text-[10px] text-gray-500 uppercase tracking-widest"
-              >
-                Arquetipos
-              </div>
-            </div>
-
-            <!-- FIX: Spiritual — als nicht-wissenschaftlich / erfahrungsbasiert gekennzeichnet -->
-            <div
-              class="glass-card p-7 rounded-[28px] flex flex-col gap-4 group hover:border-indigo-400/30 hover:shadow-[0_0_30px_rgba(99,102,241,0.08)] transition-all duration-300"
-            >
-              <div
-                class="w-11 h-11 bg-indigo-500/15 rounded-xl flex items-center justify-center text-xl group-hover:bg-indigo-500/25 transition"
-              >
-                <span aria-hidden="true">✨</span>
-              </div>
-              <div>
-                <div
-                  class="text-[10px] text-indigo-400 uppercase tracking-[0.2em] mb-1 font-medium"
-                >
-                  Spiritual
-                </div>
-                <h4 class="font-bold text-base mb-2">
-                  Interpretación Espiritual
-                </h4>
-                <p class="text-xs text-gray-300 leading-relaxed">
-                  Una perspectiva experiencial no científica. Explora el
-                  significado simbólico, las narrativas internas y la resonancia
-                  personal más allá de los marcos clínicos.
-                </p>
-              </div>
-              <div
-                class="mt-auto pt-2 border-t border-white/5 text-[10px] text-gray-500 uppercase tracking-widest"
-              >
-                Energía & Alma
-              </div>
-            </div>
-
-            <!-- BMA -->
-            <div
-              class="glass-card p-7 rounded-[28px] flex flex-col gap-4 group hover:border-cyan-400/30 hover:shadow-[0_0_30px_rgba(1,191,255,0.1)] transition-all duration-300"
-            >
-              <div
-                class="w-11 h-11 bg-cyan-400/15 rounded-xl flex items-center justify-center text-xl group-hover:bg-cyan-400/25 transition"
-              >
-                <span aria-hidden="true">💓</span>
-              </div>
-              <div>
-                <div
-                  class="text-[10px] text-cyan-300 uppercase tracking-[0.2em] mb-1 font-medium"
-                >
-                  BMA
-                </div>
-                <h4 class="font-bold text-base mb-2">
-                  Biosynchronous Analysis
-                </h4>
-                <p class="text-xs text-gray-300 leading-relaxed">
-                  Frecuencia cardíaca, VFC y fases de sueño de Health Connect
-                  fluyen directamente en la interpretación. Cuerpo y sueño como
-                  uno.
-                </p>
-              </div>
-              <div
-                class="mt-auto pt-2 border-t border-white/5 text-[10px] text-gray-500 uppercase tracking-widest"
-              >
-                Biometría + IA
-              </div>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M16 12L8 6V18L16 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Section: Der Insight-Pfad -->
+      <!-- Section Divider -->
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <!-- ============================================================
+           ETHYRIA VISION (3 Kreative Modi) — moved up for wow-factor
+           ============================================================ -->
+      <section
+        id="vision"
+        class="container mx-auto px-6 py-24 section-shell relative z-10"
+      >
+        <div class="text-center mb-16 reveal">
+          <div class="section-pill section-pill--vision ethyria-gradient-text">Modos Creativos</div>
+          <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+            Ethyria <span class="ethyria-gradient-text">Vision</span>
+          </h2>
+          <p class="text-gray-300 max-w-xl mx-auto text-base font-normal">
+            Choose from three generative modes and turn your dream into a
+            visual memory.
+          </p>
+        </div>
+        <!-- Bento Vision Grid -->
+        <div class="vision-bento stagger">
+          <!-- Card 1: Traumsymbol -->
+          <div class="vision-card reveal">
+            <div class="vision-card__img-wrap">
+              <img
+                class="vision-card__image"
+                src="assets/symbol_new.png"
+                alt="AI-generated dream symbol artwork — your strongest dream image isolated"
+                loading="lazy"
+                width="600"
+                height="600"
+              />
+            </div>
+            <div class="vision-card__body">
+              <span class="vision-card__tag">✦ Modo Símbolo</span>
+              <h3 class="vision-card__title">Símbolo del Sueño</h3>
+              <p class="vision-card__desc">
+                Enfoca el símbolo más poderoso de tu sueño. Ethyria aísla la
+                imagen a la que tu subconsciente vuelve una y otra vez.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2: Traumemotion (Featured) -->
+          <div class="vision-card vision-card--featured reveal">
+            <div class="vision-card__img-wrap">
+              <img
+                class="vision-card__image"
+                src="assets/emotion_new.png"
+                alt="AI-generated dream emotion artwork — cinematic lighting mood"
+                loading="lazy"
+                width="600"
+                height="600"
+              />
+            </div>
+            <div class="vision-card__body">
+              <span class="vision-card__tag">☯ Modo Emoción</span>
+              <h3 class="vision-card__title">Emoción del Sueño</h3>
+              <p class="vision-card__desc">
+                Traducimos la sensación de tu sueño en iluminaciones
+                cinematográficas, atmósfera densa y resonancia visual.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3: Gesamter Traum -->
+          <div class="vision-card reveal">
+            <div class="vision-card__img-wrap">
+              <img
+                class="vision-card__image"
+                src="assets/general_new.png"
+                alt="AI-generated full dream scene — complete visual composition"
+                loading="lazy"
+                width="600"
+                height="600"
+              />
+            </div>
+            <div class="vision-card__body">
+              <span class="vision-card__tag">👁 Modo Completo</span>
+              <h3 class="vision-card__title">Sueño Completo</h3>
+              <p class="vision-card__desc">
+                La escena completa. Ethyria convierte la narrativa completa de
+                tu sueño en una composición visual coherente a la que puedes
+                volver.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Divider -->
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <!-- ============================================================
+           INSIGHT-PFAD — Interactive Demo (full)
+           ============================================================ -->
       <section id="insight-pfad" class="py-24 relative z-10 overflow-hidden">
         <div class="container mx-auto px-6 max-w-5xl relative">
-          <!-- Header -->
-          <div class="text-center mb-16">
+          <div class="text-center mb-16 reveal">
             <div
-              class="inline-block px-4 py-1 border border-violet-500/30 rounded-full text-[10px] tracking-[0.3em] uppercase mb-6 text-violet-400"
+              class="inline-block px-4 py-1 border border-violet-500/30 rounded-full text-[10px] tracking-[0.3em] uppercase mb-6 ethyria-gradient-text"
             >
               Cómo funciona
             </div>
             <h2
               class="text-4xl md:text-5xl font-bold mb-4 leading-tight ethyria-gradient-text"
             >
-              El Camino del Insight:<br />
-              De Fragmentos a Claridad
+              El Camino del Insight:<br />De Fragmentos a Claridad
             </h2>
-            <p class="text-gray-300 max-w-xl mx-auto text-base font-light">
+            <p class="text-gray-300 max-w-xl mx-auto text-base font-normal">
               Del sueño en bruto al impulso de crecimiento concreto — en cuatro
               pasos precisos.
             </p>
           </div>
 
-          <!-- Beispiel-Traum: App-UI Mockup -->
+          <!-- Typewriter Phone Mockup -->
           <div class="flex justify-center mb-20">
             <div class="w-full max-w-md relative live-dream-shell">
-              <!-- "In der App" Label -->
               <div class="text-center mb-5">
                 <span
                   class="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.25em] text-cyan-400"
                 >
-                  <span class="w-6 h-px bg-cyan-700"></span>
-                  Ejemplo en vivo de la app
-                  <span class="w-6 h-px bg-cyan-700"></span>
+                  <span class="w-6 h-px bg-cyan-700"></span>Ejemplo en vivo de la app<span class="w-6 h-px bg-cyan-700"></span>
                 </span>
               </div>
-
-              <!-- Phone Frame -->
               <div
                 class="live-dream-phone"
                 style="
@@ -640,77 +1636,11 @@
                     style="
                       font-size: 11px;
                       color: rgba(255, 255, 255, 0.4);
-                      font-weight: 600;
-                      letter-spacing: 0.05em;
+                      font-weight: 400;
                     "
                     >9:41</span
                   >
                   <div style="display: flex; gap: 5px; align-items: center">
-                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
-                      <rect
-                        x="0"
-                        y="3"
-                        width="2"
-                        height="7"
-                        rx="1"
-                        fill="rgba(255,255,255,0.4)"
-                      />
-                      <rect
-                        x="3"
-                        y="2"
-                        width="2"
-                        height="8"
-                        rx="1"
-                        fill="rgba(255,255,255,0.4)"
-                      />
-                      <rect
-                        x="6"
-                        y="0.5"
-                        width="2"
-                        height="9.5"
-                        rx="1"
-                        fill="rgba(255,255,255,0.5)"
-                      />
-                      <rect
-                        x="9"
-                        y="0"
-                        width="2"
-                        height="10"
-                        rx="1"
-                        fill="rgba(255,255,255,0.6)"
-                      />
-                      <rect
-                        x="12.5"
-                        y="2"
-                        width="1.5"
-                        height="6"
-                        rx="0.75"
-                        stroke="rgba(255,255,255,0.4)"
-                        stroke-width="0.5"
-                        fill="none"
-                      />
-                    </svg>
-                    <svg
-                      width="16"
-                      height="10"
-                      viewBox="0 0 16 10"
-                      fill="rgba(255,255,255,0.5)"
-                    >
-                      <path
-                        d="M8 2.5C9.9 2.5 11.6 3.3 12.8 4.6L14.2 3.2C12.6 1.6 10.4 0.6 8 0.6C5.6 0.6 3.4 1.6 1.8 3.2L3.2 4.6C4.4 3.3 6.1 2.5 8 2.5Z"
-                        fill="rgba(255,255,255,0.3)"
-                      />
-                      <path
-                        d="M8 5.5C9.1 5.5 10.1 5.9 10.8 6.7L12.2 5.3C11.1 4.2 9.6 3.5 8 3.5C6.4 3.5 4.9 4.2 3.8 5.3L5.2 6.7C5.9 5.9 6.9 5.5 8 5.5Z"
-                        fill="rgba(255,255,255,0.55)"
-                      />
-                      <circle
-                        cx="8"
-                        cy="8.5"
-                        r="1.5"
-                        fill="rgba(255,255,255,0.8)"
-                      />
-                    </svg>
                     <svg width="25" height="12" viewBox="0 0 25 12" fill="none">
                       <rect
                         x="0.5"
@@ -728,14 +1658,9 @@
                         rx="1.5"
                         fill="rgba(255,255,255,0.55)"
                       />
-                      <path
-                        d="M23 4v4c.8-.3 1.3-1 1.3-2S23.8 4.3 23 4z"
-                        fill="rgba(255,255,255,0.35)"
-                      />
                     </svg>
                   </div>
                 </div>
-
                 <!-- App Header -->
                 <div
                   style="
@@ -765,52 +1690,27 @@
                     🌙
                   </div>
                   <div>
-                    <div
-                      style="
-                        font-size: 13px;
-                        font-weight: 700;
-                        color: #fff;
-                        line-height: 1.2;
-                      "
-                    >
+                    <div style="font-size: 13px; font-weight: 700; color: #fff">
                       Dream Journal
                     </div>
                     <div
                       style="
                         font-size: 10px;
                         color: rgba(139, 92, 246, 0.8);
-                        font-weight: 500;
-                        letter-spacing: 0.05em;
+                        font-weight: 400;
                       "
                     >
                       26 de marzo de 2026 · 7:14 h
                     </div>
                   </div>
-                  <div style="margin-left: auto; display: flex; gap: 8px">
-                    <div
-                      style="
-                        width: 28px;
-                        height: 28px;
-                        background: rgba(255, 255, 255, 0.05);
-                        border-radius: 8px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        font-size: 13px;
-                      "
-                    >
-                      🔒
-                    </div>
-                  </div>
                 </div>
-
                 <!-- Dream Title -->
                 <div style="padding: 16px 20px 8px">
                   <div
                     style="
                       font-size: 11px;
                       color: rgba(1, 191, 255, 0.7);
-                      font-weight: 600;
+                      font-weight: 400;
                       letter-spacing: 0.15em;
                       text-transform: uppercase;
                       margin-bottom: 6px;
@@ -818,18 +1718,10 @@
                   >
                     Título del Sueño
                   </div>
-                  <div
-                    style="
-                      font-size: 17px;
-                      font-weight: 700;
-                      color: #fff;
-                      letter-spacing: -0.01em;
-                    "
-                  >
+                  <div style="font-size: 17px; font-weight: 700; color: #fff">
                     La Casa de las Mil Puertas
                   </div>
                 </div>
-
                 <!-- Emotion Tags -->
                 <div
                   style="
@@ -844,11 +1736,10 @@
                       padding: 3px 10px;
                       border-radius: 20px;
                       font-size: 10px;
-                      font-weight: 600;
+                      font-weight: 400;
                       background: rgba(239, 68, 68, 0.12);
                       border: 1px solid rgba(239, 68, 68, 0.25);
                       color: #fca5a5;
-                      letter-spacing: 0.05em;
                     "
                     >😰 Tenso</span
                   >
@@ -857,11 +1748,10 @@
                       padding: 3px 10px;
                       border-radius: 20px;
                       font-size: 10px;
-                      font-weight: 600;
+                      font-weight: 400;
                       background: rgba(139, 92, 246, 0.12);
                       border: 1px solid rgba(139, 92, 246, 0.25);
                       color: #c4b5fd;
-                      letter-spacing: 0.05em;
                     "
                     >🌀 Confuso</span
                   >
@@ -870,16 +1760,14 @@
                       padding: 3px 10px;
                       border-radius: 20px;
                       font-size: 10px;
-                      font-weight: 600;
+                      font-weight: 400;
                       background: rgba(1, 191, 255, 0.08);
                       border: 1px solid rgba(1, 191, 255, 0.2);
                       color: #67e8f9;
-                      letter-spacing: 0.05em;
                     "
                     >✨ Alivio</span
                   >
                 </div>
-
                 <!-- Dream Text Area -->
                 <div
                   class="live-dream-entry"
@@ -895,7 +1783,7 @@
                     style="
                       font-size: 11px;
                       color: rgba(255, 255, 255, 0.3);
-                      font-weight: 600;
+                      font-weight: 400;
                       letter-spacing: 0.12em;
                       text-transform: uppercase;
                       margin-bottom: 10px;
@@ -913,8 +1801,8 @@
                         display: inline-block;
                         box-shadow: 0 0 6px rgba(1, 191, 255, 0.5);
                       "
-                    ></span>
-                    Descripción del Sueño
+                    ></span
+                    >Descripción del Sueño
                   </div>
                   <p
                     id="dreamTypewriter"
@@ -938,8 +1826,7 @@
                     "
                   ></span>
                 </div>
-
-                <!-- Mic / Voice Input Bar -->
+                <!-- Mic Bar -->
                 <div
                   style="
                     margin: 0 16px 16px;
@@ -998,7 +1885,7 @@
                     <div
                       style="
                         font-size: 11px;
-                        font-weight: 600;
+                        font-weight: 400;
                         color: rgba(255, 255, 255, 0.7);
                         margin-bottom: 2px;
                       "
@@ -1010,7 +1897,6 @@
                     </div>
                   </div>
                 </div>
-
                 <!-- Analyse Button -->
                 <div style="padding: 0 16px 20px">
                   <div
@@ -1027,7 +1913,6 @@
                       font-weight: 700;
                       color: #fff;
                       letter-spacing: 0.03em;
-                      cursor: pointer;
                       box-shadow: 0 4px 20px rgba(1, 191, 255, 0.25);
                     "
                   >
@@ -1035,9 +1920,7 @@
                   </div>
                 </div>
               </div>
-              <!-- end phone frame -->
-
-              <!-- Arrow down into roadmap -->
+              <!-- Arrow down -->
               <div class="flex flex-col items-center mt-8 gap-2">
                 <div
                   style="
@@ -1045,7 +1928,7 @@
                     color: rgba(1, 191, 255, 0.6);
                     text-transform: uppercase;
                     letter-spacing: 0.2em;
-                    font-weight: 600;
+                    font-weight: 400;
                   "
                 >
                   Cómo la IA procesa tu sueño
@@ -1074,9 +1957,8 @@
             </div>
           </div>
 
-          <!-- Roadmap: vertikale Linie + Knotenpunkte -->
+          <!-- Roadmap -->
           <div class="relative">
-            <!-- Verbindungslinie -->
             <div
               class="hidden md:block absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-px"
               style="
@@ -1091,24 +1973,21 @@
                 box-shadow: 0 0 12px rgba(1, 191, 255, 0.3);
               "
             ></div>
-
             <div class="flex flex-col gap-16 roadmap-steps">
-              <!-- MODUL 01: Narrative Core — Erfassung -->
+              <!-- 01 Narrative Core -->
               <div class="flex flex-col md:flex-row items-start gap-8">
-                <!-- Card LEFT -->
                 <div class="flex-1 md:text-right order-2 md:order-1">
                   <div
                     style="
                       background: rgba(255, 255, 255, 0.04);
                       backdrop-filter: blur(16px);
-                      -webkit-backdrop-filter: blur(16px);
                       border: 1px solid rgba(1, 191, 255, 0.18);
                       border-radius: 24px;
                       padding: 28px 32px;
                     "
                   >
                     <div
-                      class="text-[10px] text-cyan-400 uppercase tracking-[0.25em] font-medium mb-1"
+                      class="text-[10px] text-cyan-400 uppercase tracking-[0.25em] font-normal mb-1"
                     >
                       01 · Captura
                     </div>
@@ -1118,15 +1997,13 @@
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
                       Transformamos tus palabras en datos accionables. Ethyria
                       identifica símbolos, entidades y puntos de anclaje
-                      emocionales en tiempo real — mientras aún escribes.
+                      emocionales en tiempo real.
                     </p>
-                    <!-- NLP Token Mockup -->
                     <div
                       style="
                         background: rgba(0, 0, 0, 0.3);
                         border-radius: 14px;
                         padding: 14px 16px;
-                        margin-bottom: 14px;
                         text-align: left;
                       "
                     >
@@ -1198,51 +2075,8 @@
                         >
                       </div>
                     </div>
-                    <div
-                      style="
-                        display: flex;
-                        gap: 6px;
-                        flex-wrap: wrap;
-                        justify-content: flex-end;
-                      "
-                    >
-                      <span
-                        style="
-                          font-size: 10px;
-                          padding: 3px 9px;
-                          border-radius: 20px;
-                          background: rgba(1, 191, 255, 0.08);
-                          border: 1px solid rgba(1, 191, 255, 0.2);
-                          color: #67e8f9;
-                        "
-                        >Symbol ×3</span
-                      >
-                      <span
-                        style="
-                          font-size: 10px;
-                          padding: 3px 9px;
-                          border-radius: 20px;
-                          background: rgba(239, 68, 68, 0.08);
-                          border: 1px solid rgba(239, 68, 68, 0.2);
-                          color: #fca5a5;
-                        "
-                        >Emotion ×2</span
-                      >
-                      <span
-                        style="
-                          font-size: 10px;
-                          padding: 3px 9px;
-                          border-radius: 20px;
-                          background: rgba(139, 92, 246, 0.08);
-                          border: 1px solid rgba(139, 92, 246, 0.2);
-                          color: #c4b5fd;
-                        "
-                        >Conflicto ×1</span
-                      >
-                    </div>
                   </div>
                 </div>
-                <!-- Knoten -->
                 <div
                   class="relative flex-shrink-0 order-1 md:order-2 z-10 flex flex-col items-center pt-6"
                 >
@@ -1256,21 +2090,13 @@
                   >
                     🎙️
                   </div>
-                  <div
-                    class="absolute inset-x-0 top-6 h-16 rounded-full animate-ping"
-                    style="
-                      background: rgba(1, 191, 255, 0.06);
-                      animation-duration: 2.5s;
-                    "
-                  ></div>
                 </div>
                 <div class="flex-1 order-3 hidden md:block"></div>
               </div>
 
-              <!-- MODUL 02: Matriz de Perspectivas — Filterung -->
+              <!-- 02 Perspektiv-Matrix -->
               <div class="flex flex-col md:flex-row items-start gap-8">
                 <div class="flex-1 order-2 hidden md:block"></div>
-                <!-- Knoten -->
                 <div
                   class="relative flex-shrink-0 order-1 md:order-2 z-10 flex flex-col items-center pt-6"
                 >
@@ -1285,20 +2111,18 @@
                     ⚙️
                   </div>
                 </div>
-                <!-- Card RIGHT -->
                 <div class="flex-1 order-3">
                   <div
                     style="
                       background: rgba(255, 255, 255, 0.04);
                       backdrop-filter: blur(16px);
-                      -webkit-backdrop-filter: blur(16px);
                       border: 1px solid rgba(139, 92, 246, 0.18);
                       border-radius: 24px;
                       padding: 28px 32px;
                     "
                   >
                     <div
-                      class="text-[10px] text-violet-400 uppercase tracking-[0.25em] font-medium mb-1"
+                      class="text-[10px] text-violet-400 uppercase tracking-[0.25em] font-normal mb-1"
                     >
                       02 · Filtrado
                     </div>
@@ -1306,17 +2130,15 @@
                       Matriz de Perspectivas
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
-                      Tú determines el marco psicológico. El Prompt ejecutable
-                      se inyecta dinámicamente — sin compromise between methods,
-                      just precise enfoque preciso.
+                      Tú determinas el marco psicológico. El Prompt ejecutable
+                      se inyecta dinámicamente — sin compromiso entre métodos,
+                      solo enfoque preciso.
                     </p>
-                    <!-- PaaS Grid Mockup -->
                     <div
                       style="
                         display: grid;
                         grid-template-columns: 1fr 1fr;
                         gap: 8px;
-                        margin-bottom: 14px;
                       "
                     >
                       <div
@@ -1330,12 +2152,12 @@
                           gap: 8px;
                         "
                       >
-                        <span style="font-size: 20px">🔍</span>
-                        <span
+                        <span style="font-size: 20px">🔍</span
+                        ><span
                           style="
                             font-size: 13px;
                             color: rgba(255, 255, 255, 0.6);
-                            font-weight: 600;
+                            font-weight: 400;
                           "
                           >General</span
                         >
@@ -1386,12 +2208,12 @@
                           gap: 8px;
                         "
                       >
-                        <span style="font-size: 20px">🧠</span>
-                        <span
+                        <span style="font-size: 20px">🧠</span
+                        ><span
                           style="
                             font-size: 13px;
                             color: rgba(255, 255, 255, 0.6);
-                            font-weight: 600;
+                            font-weight: 400;
                           "
                           >Freud</span
                         >
@@ -1407,14 +2229,14 @@
                           gap: 8px;
                         "
                       >
-                        <span style="font-size: 20px">✨</span>
-                        <span
+                        <span style="font-size: 20px">✨</span
+                        ><span
                           style="
                             font-size: 13px;
                             color: rgba(255, 255, 255, 0.6);
-                            font-weight: 600;
+                            font-weight: 400;
                           "
-                          >Spiritual</span
+                          >Espiritual</span
                         >
                       </div>
                     </div>
@@ -1422,41 +2244,36 @@
                 </div>
               </div>
 
-              <!-- MODUL 03: Emotional Echo — Resonanz -->
+              <!-- 03 Emotional Echo -->
               <div class="flex flex-col md:flex-row items-start gap-8">
-                <!-- Card LEFT -->
                 <div class="flex-1 md:text-right order-2 md:order-1">
                   <div
                     style="
                       background: rgba(255, 255, 255, 0.04);
                       backdrop-filter: blur(16px);
-                      -webkit-backdrop-filter: blur(16px);
                       border: 1px solid rgba(56, 189, 248, 0.18);
                       border-radius: 24px;
                       padding: 28px 32px;
                     "
                   >
                     <div
-                      class="text-[10px] text-sky-400 uppercase tracking-[0.25em] font-medium mb-1"
+                      class="text-[10px] text-sky-400 uppercase tracking-[0.25em] font-normal mb-1"
                     >
                       03 · Resonancia
                     </div>
                     <h3 class="font-bold text-xl mb-2 ethyria-gradient-text">
-                      Eco Emocional
+                      Emotional Echo
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
-                      "Escuchamos lo que hay entre líneas." Nuestro módulo de
-                      seguimiento de sentimientos visualiza la dinámica
-                      emocional de tu sueño — niveles de tensión, indicadores de
-                      resiliencia, puntos de inflexión.
+                      Nuestro módulo de seguimiento de sentimientos visualiza
+                      la dinámica emocional de tu sueño — niveles de tensión,
+                      indicadores de resiliencia, puntos de inflexión.
                     </p>
-                    <!-- Emotion Graph SVG -->
                     <div
                       style="
                         background: rgba(0, 0, 0, 0.35);
                         border-radius: 14px;
                         padding: 16px;
-                        margin-bottom: 14px;
                       "
                     >
                       <div
@@ -1532,13 +2349,11 @@
                             </feMerge>
                           </filter>
                         </defs>
-                        <!-- Fill area -->
                         <path
                           d="M10,72 C40,72 55,30 80,26 C100,22 115,58 140,52 C160,47 175,72 200,70 C225,68 240,20 270,18 C290,16 305,68 310,68 L310,85 L10,85 Z"
                           fill="url(#fillGrad)"
                           class="echo-fill"
                         />
-                        <!-- Main curve -->
                         <path
                           d="M10,72 C40,72 55,30 80,26 C100,22 115,58 140,52 C160,47 175,72 200,70 C225,68 240,20 270,18 C290,16 305,68 310,68"
                           fill="none"
@@ -1548,7 +2363,6 @@
                           class="echo-line"
                           filter="url(#glow)"
                         />
-                        <!-- Data points -->
                         <circle
                           cx="80"
                           cy="26"
@@ -1584,7 +2398,6 @@
                           stroke-width="1.5"
                           filter="url(#glow)"
                         />
-                        <!-- Label: Barfuß (peak) -->
                         <text
                           x="80"
                           y="16"
@@ -1595,7 +2408,6 @@
                         >
                           Descalzo · 7.8
                         </text>
-                        <!-- Label: Nebel (low) -->
                         <text
                           x="310"
                           y="60"
@@ -1606,14 +2418,12 @@
                         >
                           Niebla · 2.1
                         </text>
-                        <!-- x-axis labels -->
                         <text
                           class="echo-axis"
                           x="10"
                           y="84"
                           font-size="7"
                           fill="rgba(255,255,255,0.25)"
-                          font-family="sans-serif"
                         >
                           00:15
                         </text>
@@ -1623,7 +2433,6 @@
                           y="84"
                           font-size="7"
                           fill="rgba(255,255,255,0.25)"
-                          font-family="sans-serif"
                         >
                           01:20
                         </text>
@@ -1633,47 +2442,13 @@
                           y="84"
                           font-size="7"
                           fill="rgba(255,255,255,0.25)"
-                          font-family="sans-serif"
                         >
                           01:50
                         </text>
                       </svg>
                     </div>
-                    <!-- Key insight pills -->
-                    <div
-                      style="
-                        display: flex;
-                        gap: 6px;
-                        flex-wrap: wrap;
-                        justify-content: flex-end;
-                      "
-                    >
-                      <span
-                        style="
-                          font-size: 10px;
-                          padding: 3px 9px;
-                          border-radius: 20px;
-                          background: rgba(239, 68, 68, 0.1);
-                          border: 1px solid rgba(239, 68, 68, 0.2);
-                          color: #fca5a5;
-                        "
-                        >⚡ Pico de Estrés: Secuencia Descalzo</span
-                      >
-                      <span
-                        style="
-                          font-size: 10px;
-                          padding: 3px 9px;
-                          border-radius: 20px;
-                          background: rgba(34, 211, 238, 0.08);
-                          border: 1px solid rgba(34, 211, 238, 0.2);
-                          color: #67e8f9;
-                        "
-                        >✓ Resiliencia: relajación rápida</span
-                      >
-                    </div>
                   </div>
                 </div>
-                <!-- Knoten -->
                 <div
                   class="relative flex-shrink-0 order-1 md:order-2 z-10 flex flex-col items-center pt-6"
                 >
@@ -1691,10 +2466,9 @@
                 <div class="flex-1 order-3 hidden md:block"></div>
               </div>
 
-              <!-- MODUL 04: Decodificación de Arquetipos — Synthese -->
+              <!-- 04 Archetypen-Dekodierung -->
               <div class="flex flex-col md:flex-row items-start gap-8">
                 <div class="flex-1 order-2 hidden md:block"></div>
-                <!-- Knoten -->
                 <div
                   class="relative flex-shrink-0 order-1 md:order-2 z-10 flex flex-col items-center pt-6"
                 >
@@ -1709,38 +2483,30 @@
                     🏛️
                   </div>
                 </div>
-                <!-- Card RIGHT -->
                 <div class="flex-1 order-3">
                   <div
                     style="
                       background: rgba(255, 255, 255, 0.04);
                       backdrop-filter: blur(16px);
-                      -webkit-backdrop-filter: blur(16px);
                       border: 1px solid rgba(99, 102, 241, 0.18);
                       border-radius: 24px;
                       padding: 28px 32px;
                     "
                   >
                     <div
-                      class="text-[10px] text-indigo-400 uppercase tracking-[0.25em] font-medium mb-1"
+                      class="text-[10px] text-indigo-400 uppercase tracking-[0.25em] font-normal mb-1"
                     >
-                      04 · Síntesis
+                      04 · Profundidad
                     </div>
                     <h3 class="font-bold text-xl mb-2 ethyria-gradient-text">
                       Decodificación de Arquetipos
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
-                      Ethyria vincula los símbolos con tu contexto personal.
-                      Cada carta representa un símbolo.
+                      Ethyria conecta símbolos con tu contexto personal.
+                      Cada tarjeta representa un símbolo.
                     </p>
-                    <!-- Archetype Cards -->
                     <div
-                      style="
-                        display: flex;
-                        flex-direction: column;
-                        gap: 8px;
-                        margin-bottom: 14px;
-                      "
+                      style="display: flex; flex-direction: column; gap: 8px"
                     >
                       <div
                         style="
@@ -1748,30 +2514,25 @@
                           border: 1px solid rgba(139, 92, 246, 0.22);
                           border-radius: 12px;
                           padding: 12px 14px;
-                          display: flex;
-                          justify-content: space-between;
-                          align-items: center;
                         "
                       >
-                        <div>
-                          <div
-                            style="
-                              font-size: 14px;
-                              font-weight: 700;
-                              color: #c4b5fd;
-                              margin-bottom: 2px;
-                            "
-                          >
-                            🌑 Edificio / Laberinto
-                          </div>
-                          <div
-                            style="
-                              font-size: 12px;
-                              color: rgba(196, 181, 253, 0.6);
-                            "
-                          >
-                            Arquetipo: El Sí mismo (Jung) · Desorientación
-                          </div>
+                        <div
+                          style="
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: #c4b5fd;
+                            margin-bottom: 2px;
+                          "
+                        >
+                          🌑 Edificio / Laberinto
+                        </div>
+                        <div
+                          style="
+                            font-size: 12px;
+                            color: rgba(196, 181, 253, 0.6);
+                          "
+                        >
+                          Arquetipo: El Ser (Jung) · Desorientación
                         </div>
                       </div>
                       <div
@@ -1780,31 +2541,25 @@
                           border: 1px solid rgba(239, 68, 68, 0.18);
                           border-radius: 12px;
                           padding: 12px 14px;
-                          display: flex;
-                          justify-content: space-between;
-                          align-items: center;
                         "
                       >
-                        <div>
-                          <div
-                            style="
-                              font-size: 14px;
-                              font-weight: 700;
-                              color: #fca5a5;
-                              margin-bottom: 2px;
-                            "
-                          >
-                            👣 Estar Descalzo
-                          </div>
-                          <div
-                            style="
-                              font-size: 12px;
-                              color: rgba(252, 165, 165, 0.6);
-                            "
-                          >
-                            Vergüenza Social / Vulnerabilidad · Presión de
-                            Rendimiento
-                          </div>
+                        <div
+                          style="
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: #fca5a5;
+                            margin-bottom: 2px;
+                          "
+                        >
+                          👣 Estar Descalzo
+                        </div>
+                        <div
+                          style="
+                            font-size: 12px;
+                            color: rgba(252, 165, 165, 0.6);
+                          "
+                        >
+                          Vergüenza social / Vulnerabilidad · Presión por rendimiento
                         </div>
                       </div>
                       <div
@@ -1813,30 +2568,25 @@
                           border: 1px solid rgba(56, 189, 248, 0.15);
                           border-radius: 12px;
                           padding: 12px 14px;
-                          display: flex;
-                          justify-content: space-between;
-                          align-items: center;
                         "
                       >
-                        <div>
-                          <div
-                            style="
-                              font-size: 14px;
-                              font-weight: 700;
-                              color: #7dd3fc;
-                              margin-bottom: 2px;
-                            "
-                          >
-                            🌫️ Niebla Azul
-                          </div>
-                          <div
-                            style="
-                              font-size: 12px;
-                              color: rgba(125, 211, 252, 0.6);
-                            "
-                          >
-                            Disolución del Control · Transición / Transformación
-                          </div>
+                        <div
+                          style="
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: #7dd3fc;
+                            margin-bottom: 2px;
+                          "
+                        >
+                          🌫️ Niebla Azul
+                        </div>
+                        <div
+                          style="
+                            font-size: 12px;
+                            color: rgba(125, 211, 252, 0.6);
+                          "
+                        >
+                          Disolución del control · Transición / Transformación
                         </div>
                       </div>
                     </div>
@@ -1844,9 +2594,8 @@
                 </div>
               </div>
 
-              <!-- MODUL 05: Insight Accionable — Transformation -->
+              <!-- 05 Handlungsimpuls -->
               <div class="flex flex-col md:flex-row items-start gap-8">
-                <!-- Card LEFT -->
                 <div class="flex-1 md:text-right order-2 md:order-1">
                   <div
                     style="
@@ -1856,7 +2605,6 @@
                         rgba(139, 92, 246, 0.06)
                       );
                       backdrop-filter: blur(16px);
-                      -webkit-backdrop-filter: blur(16px);
                       border: 1px solid rgba(1, 191, 255, 0.25);
                       border-radius: 24px;
                       padding: 28px 32px;
@@ -1864,32 +2612,29 @@
                     "
                   >
                     <div
-                      class="text-[10px] uppercase tracking-[0.25em] font-medium mb-1"
+                      class="text-[10px] uppercase tracking-[0.25em] font-normal mb-1"
                       style="
                         background: linear-gradient(90deg, #22d3ee, #a78bfa);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                       "
                     >
-                      05 · Transformation
+                      05 · Integración
                     </div>
                     <h3 class="font-bold text-xl mb-2 ethyria-gradient-text">
                       Insight Accionable
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
-                      El sueño se convierte en un insight para tu vida
-                      consciente. Ethyria sintetiza impulsos de coaching
-                      individuales — no lecturas genéricas, sino crecimiento
-                      personal.
+                      Del sueño surge un insight para tu vida despierta.
+                      Ethyria sintetiza impulsos de coaching individuales —
+                      crecimiento personal.
                     </p>
-                    <!-- Insight Card Mockup -->
                     <div
                       style="
                         background: rgba(0, 0, 0, 0.3);
                         border: 1px solid rgba(1, 191, 255, 0.15);
                         border-radius: 16px;
                         padding: 18px 20px;
-                        margin-bottom: 14px;
                         text-align: left;
                       "
                     >
@@ -1913,18 +2658,11 @@
                           margin-bottom: 14px;
                         "
                       >
-                        "In which area of your life are you currently searching
-                        for a 'espacio' que aún no has encontrado — y qué te
-                        impide abrir la puerta correcta?"
+                        „In welchem Bereich deines Lebens suchst du gerade einen
+                        'Raum', den du noch nicht gefunden hast — und was
+                        hindert dich daran, die richtige Tür zu öffnen?"
                       </p>
-                      <div
-                        style="
-                          display: flex;
-                          gap: 6px;
-                          flex-wrap: wrap;
-                          margin-bottom: 12px;
-                        "
-                      >
+                      <div style="display: flex; gap: 6px; flex-wrap: wrap">
                         <span
                           style="
                             font-size: 10px;
@@ -1945,7 +2683,7 @@
                             border: 1px solid rgba(239, 68, 68, 0.2);
                             color: #fca5a5;
                           "
-                          >Presión de Rendimiento</span
+                          >Presión por rendimiento</span
                         >
                         <span
                           style="
@@ -1956,60 +2694,12 @@
                             border: 1px solid rgba(34, 211, 238, 0.2);
                             color: #67e8f9;
                           "
-                          >Transformation</span
+                          >Transformación</span
                         >
-                      </div>
-                      <!-- Export Button -->
-                      <div
-                        style="
-                          display: flex;
-                          gap: 8px;
-                          flex-wrap: wrap;
-                          justify-content: flex-end;
-                        "
-                      >
-                        <div
-                          style="
-                            display: inline-flex;
-                            align-items: center;
-                            gap: 6px;
-                            padding: 7px 14px;
-                            border-radius: 10px;
-                            border: 1px solid rgba(1, 191, 255, 0.3);
-                            background: transparent;
-                            font-size: 11px;
-                            color: rgba(1, 191, 255, 0.8);
-                            cursor: pointer;
-                          "
-                        >
-                          + Comparar Historia Emocional
-                        </div>
-                        <div
-                          style="
-                            display: inline-flex;
-                            align-items: center;
-                            gap: 6px;
-                            padding: 7px 14px;
-                            border-radius: 10px;
-                            background: linear-gradient(
-                              135deg,
-                              rgba(1, 191, 255, 0.2),
-                              rgba(139, 92, 246, 0.2)
-                            );
-                            border: 1px solid rgba(1, 191, 255, 0.25);
-                            font-size: 11px;
-                            color: #fff;
-                            font-weight: 600;
-                            cursor: pointer;
-                          "
-                        >
-                          📤 Exportar al Diario
-                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- Knoten -->
                 <div
                   class="relative flex-shrink-0 order-1 md:order-2 z-10 flex flex-col items-center pt-6"
                 >
@@ -2029,17 +2719,6 @@
                   >
                     💡
                   </div>
-                  <div
-                    class="absolute inset-x-0 top-6 h-16 rounded-full"
-                    style="
-                      background: radial-gradient(
-                        circle,
-                        rgba(1, 191, 255, 0.12) 0%,
-                        transparent 70%
-                      );
-                      animation: pulse 3s ease-in-out infinite;
-                    "
-                  ></div>
                 </div>
                 <div class="flex-1 order-3 hidden md:block"></div>
               </div>
@@ -2047,113 +2726,18 @@
           </div>
         </div>
       </section>
-      <!-- ============================================================
-           ETHYRIA VISION (3 Kreative Modi)
-           ============================================================ -->
-      <section
-        id="vision"
-        class="container mx-auto px-6 py-24 section-shell relative z-10"
-      >
-        <div class="text-center mb-16">
-          <div class="section-pill section-pill--vision">Modos Creativos</div>
-          <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-            Ethyria <span class="ethyria-gradient-text">Vision</span>
-          </h2>
-          <p class="text-gray-300 max-w-xl mx-auto text-base font-light">
-            Elige entre tres modos generativos y transforma tu sueño en un
-            recuerdo visual.
-          </p>
-        </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="glass-card p-10 rounded-[40px] text-left">
-            <div
-              class="w-12 h-12 bg-cyan-500/20 rounded-2xl flex items-center justify-center mb-6 text-cyan-400 text-2xl"
-            >
-              <span aria-hidden="true">✦</span>
-            </div>
-            <h3 class="text-2xl font-bold mb-4">Símbolo del Sueño</h3>
-            <p class="text-gray-300 leading-relaxed mb-6">
-              Enfócate en el símbolo más poderoso de tu sueño. Ethyria aísla la
-              imagen a la que tu subconsciente sigue volviendo.
-            </p>
-            <div
-              class="vision-preview bg-indigo-950/50 aspect-square rounded-2xl overflow-hidden"
-            >
-              <img
-                src="assets/symbol_new.png"
-                alt="Obra de arte del símbolo del sueño generada por IA"
-                loading="lazy"
-                width="400"
-                height="400"
-                class="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-
-          <div
-            class="glass-card p-10 rounded-[40px] text-left border-cyan-500/20 shadow-[0_0_50px_rgba(1,191,255,0.1)]"
-          >
-            <div
-              class="w-12 h-12 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6 text-purple-400 text-2xl"
-            >
-              <span aria-hidden="true">☯</span>
-            </div>
-            <h3 class="text-2xl font-bold mb-4">Emoción del Sueño</h3>
-            <p class="text-gray-300 leading-relaxed mb-6">
-              Traducimos la sensación de tu sueño en iluminaciones
-              cinematográficas, atmósfera densa y resonancia visual.
-            </p>
-            <div
-              class="vision-preview bg-indigo-950/50 aspect-square rounded-2xl overflow-hidden"
-            >
-              <img
-                src="assets/emotion_new.png"
-                alt="Obra de arte de la emoción del sueño generada por IA"
-                loading="lazy"
-                width="400"
-                height="400"
-                class="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-
-          <div class="glass-card p-10 rounded-[40px] text-left">
-            <div
-              class="w-12 h-12 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6 text-blue-400 text-2xl"
-            >
-              <span aria-hidden="true">👁</span>
-            </div>
-            <h3 class="text-2xl font-bold mb-4">Sueño Completo</h3>
-            <p class="text-gray-300 leading-relaxed mb-6">
-              La escena completa. Ethyria convierte la narrativa completa de tu
-              sueño en una composición visual coherente a la que puedes volver.
-            </p>
-            <div
-              class="vision-preview bg-indigo-950/50 aspect-square rounded-2xl overflow-hidden"
-            >
-              <img
-                src="assets/general_new.png"
-                alt="Escena completa del sueño generada por IA"
-                loading="lazy"
-                width="400"
-                height="400"
-                class="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <!-- Section Divider -->
+      <div class="section-divider" aria-hidden="true"></div>
 
       <!-- ============================================================
-           WISSENSCHAFT TRIFFT INTUITION (5 USPs)
-           FIX: „besser als jeder Therapeut" entfernt
+           WISSENSCHAFT TRIFFT INTUITION (compact)
            ============================================================ -->
       <section id="science" class="py-24 relative z-10 overflow-hidden">
         <div class="container mx-auto px-6 max-w-5xl relative">
-          <div class="text-center mb-16">
+          <div class="text-center mb-16 reveal">
             <div
-              class="inline-block px-4 py-1 border border-cyan-500/30 rounded-full text-[10px] tracking-[0.3em] uppercase mb-6 text-cyan-400"
+              class="inline-block px-4 py-1 border border-cyan-500/30 rounded-full text-[10px] tracking-[0.3em] uppercase mb-6 ethyria-gradient-text"
             >
               Por qué Ethyria es diferente
             </div>
@@ -2162,15 +2746,13 @@
                 >Intuición.</span
               >
             </h2>
-            <p class="text-gray-300 max-w-xl mx-auto text-base font-light">
-              Cinco razones por las que Ethyria no es solo otra app de
-              interpretación de sueños — sino una herramienta real para explorar
-              tu subconsciente.
+            <p class="text-gray-300 max-w-xl mx-auto text-base font-normal">
+              Cinco razones por las que Ethyria no es solo otra app de interpretación de sueños.
             </p>
           </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <!-- USP 01 -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 stagger-grid reveal"
+          >
             <div
               class="glass-card p-8 rounded-[28px] flex gap-6 group hover:border-cyan-500/30 hover:shadow-[0_0_30px_rgba(1,191,255,0.08)] transition-all duration-300"
             >
@@ -2181,7 +2763,7 @@
               </div>
               <div>
                 <div
-                  class="text-[10px] text-cyan-400 uppercase tracking-[0.25em] mb-1 font-medium"
+                  class="text-[10px] text-cyan-400 uppercase tracking-[0.25em] mb-1 font-normal"
                 >
                   Exklusiv
                 </div>
@@ -2189,15 +2771,11 @@
                   Análisis Multimodal Biosíncrono
                 </h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
-                  Ninguna otra app conecta la frecuencia cardíaca, las fases de
-                  sueño y el contenido onírico en un único análisis. Ethyria lee
-                  tu cuerpo — y tu sueño — al mismo tiempo. Un enfoque
-                  experimental, exclusivo de Ethyria.
+                  Ninguna otra app conecta la frecuencia cardíaca, las fases
+                  de sueño y el contenido onírico en un único análisis.
                 </p>
               </div>
             </div>
-
-            <!-- USP 02 -->
             <div
               class="glass-card p-8 rounded-[28px] flex gap-6 group hover:border-violet-500/30 hover:shadow-[0_0_30px_rgba(139,92,246,0.08)] transition-all duration-300"
             >
@@ -2208,26 +2786,25 @@
               </div>
               <div>
                 <div
-                  class="text-[10px] text-violet-400 uppercase tracking-[0.25em] mb-1 font-medium"
+                  class="text-[10px] text-violet-400 uppercase tracking-[0.25em] mb-1 font-normal"
                 >
-                  Profundidad
+                  Depth
                 </div>
                 <h4 class="font-bold text-base mb-2">
                   5 Perspectivas — Insight Multicapa
                 </h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
                   Freud, Jung, general, espiritual, biosíncrono — no como una
-                  sola opción, sino como capas complementarias. Tu sueño se
-                  ilumina desde múltiples ángulos simultáneamente.
+                  sola opción, sino como capas complementarias.
                 </p>
               </div>
             </div>
           </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <!-- USP 03 — FIX: „besser als jeder Therapeut" entfernt -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 stagger-grid reveal"
+          >
             <div
-              class="glass-card p-8 rounded-[28px] flex flex-col gap-4 group hover:border-sky-500/30 hover:shadow-[0_0_30px_rgba(56,189,248,0.08)] transition-all duration-300"
+              class="glass-card p-8 rounded-[28px] flex flex-col gap-4 group hover:border-sky-500/30 transition-all duration-300"
             >
               <div
                 class="w-12 h-12 rounded-2xl flex items-center justify-center text-2xl usp-icon--sky"
@@ -2235,25 +2812,15 @@
                 <span aria-hidden="true">📈</span>
               </div>
               <div>
-                <div
-                  class="text-[10px] text-sky-400 uppercase tracking-[0.25em] mb-1 font-medium"
-                >
-                  Crecimiento
-                </div>
-                <h4 class="font-bold text-base mb-2">
-                  Reconoce tus Propios Patrones
-                </h4>
+                <h4 class="font-bold text-base mb-2">Reconoce tus Propios Patrones</h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
-                  Ethyria almacena cada análisis y te muestra a lo largo de
-                  semanas qué arquetipos y emociones se repiten — para una
-                  comprensión más profunda de ti mismo con el tiempo.
+                  Ethyria te muestra a lo largo de semanas qué arquetipos y
+                  emociones se repiten.
                 </p>
               </div>
             </div>
-
-            <!-- USP 04 -->
             <div
-              class="glass-card p-8 rounded-[28px] flex flex-col gap-4 group hover:border-indigo-500/30 hover:shadow-[0_0_30px_rgba(99,102,241,0.08)] transition-all duration-300"
+              class="glass-card p-8 rounded-[28px] flex flex-col gap-4 group hover:border-indigo-500/30 transition-all duration-300"
             >
               <div
                 class="w-12 h-12 rounded-2xl flex items-center justify-center text-2xl usp-icon--indigo"
@@ -2261,23 +2828,15 @@
                 <span aria-hidden="true">🎨</span>
               </div>
               <div>
-                <div
-                  class="text-[10px] text-indigo-400 uppercase tracking-[0.25em] mb-1 font-medium"
-                >
-                  Único
-                </div>
                 <h4 class="font-bold text-base mb-2">Tu Sueño como Arte</h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
-                  Ethyria genera imágenes que representan tu sueño como símbolo,
-                  emoción o escena completa — sin filtros, sin plantillas. Una
-                  obra de arte que existe solo una vez: para ti.
+                  Imágenes generadas por IA como símbolo, emoción o escena
+                  completa — únicas para ti.
                 </p>
               </div>
             </div>
-
-            <!-- USP 05 -->
             <div
-              class="glass-card p-8 rounded-[28px] flex flex-col gap-4 group hover:border-cyan-500/30 hover:shadow-[0_0_30px_rgba(1,191,255,0.1)] transition-all duration-300 usp-icon--cyan-border"
+              class="glass-card p-8 rounded-[28px] flex flex-col gap-4 group hover:border-cyan-500/30 transition-all duration-300"
             >
               <div
                 class="w-12 h-12 rounded-2xl flex items-center justify-center text-2xl usp-icon--cyan"
@@ -2285,16 +2844,12 @@
                 <span aria-hidden="true">🔒</span>
               </div>
               <div>
-                <div
-                  class="text-[10px] text-cyan-400 uppercase tracking-[0.25em] mb-1 font-medium"
-                >
-                  Confianza
-                </div>
-                <h4 class="font-bold text-base mb-2">Tus Datos. Solo Tuyos.</h4>
+                <h4 class="font-bold text-base mb-2">
+                  Tus Datos. Solo Tuyos.
+                </h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
-                  Tu diario de sueños permanece cifrado, local y nunca se usa
-                  para entrenamiento. Lo que experimentas por la noche es lo más
-                  privado que existe — lo tratamos así.
+                  Cifrado, local y nunca usado para entrenamiento. Lo que
+                  experimentas por la noche es lo más privado.
                 </p>
               </div>
             </div>
@@ -2302,121 +2857,16 @@
         </div>
       </section>
 
-      <!-- ============================================================
-           EXPORT
-           ============================================================ -->
-      <section id="export" class="py-24 relative z-10 overflow-hidden">
-        <div class="container mx-auto px-6 max-w-5xl relative">
-          <div class="text-center mb-16">
-            <div
-              class="inline-block px-4 py-1 border border-violet-500/30 rounded-full text-[10px] tracking-[0.3em] uppercase mb-6 text-violet-400"
-            >
-              Función Premium
-            </div>
-            <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-              Exporta tus insights<br />
-              <span class="ethyria-gradient-text">como documento PDF</span>
-            </h2>
-            <p class="text-gray-300 max-w-xl mx-auto text-base font-light">
-              La exportación PDF es una función premium. Exporta tus análisis
-              como PDF diseñado profesionalmente — en cualquier momento.
-            </p>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div
-              class="glass-card p-9 rounded-[28px] flex flex-col gap-6 export-card--cyan"
-            >
-              <div class="flex items-center gap-4">
-                <div
-                  class="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl shrink-0 usp-icon--cyan"
-                >
-                  <span aria-hidden="true">📄</span>
-                </div>
-                <div>
-                  <div
-                    class="text-[10px] text-cyan-400 uppercase tracking-[0.25em] mb-0.5 font-medium"
-                  >
-                    PDF
-                  </div>
-                  <h3 class="text-xl font-bold">Exportación de Análisis</h3>
-                </div>
-              </div>
-              <ul class="space-y-4">
-                <li class="flex gap-3 items-start">
-                  <div>
-                    <span class="text-sm font-semibold text-white block mb-0.5"
-                      >Interpretación Completa en PDF</span
-                    >
-                    <span class="text-xs text-gray-300 leading-relaxed"
-                      >Exporta cada análisis como un documento PDF profesional.
-                      Esta función es premium y no está disponible de forma
-                      gratuita.</span
-                    >
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div
-              class="glass-card p-9 rounded-[28px] flex flex-col gap-6 export-card--violet"
-            >
-              <div class="flex items-center gap-4">
-                <div
-                  class="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl shrink-0 usp-icon--violet"
-                >
-                  <span aria-hidden="true">📊</span>
-                </div>
-                <div>
-                  <div
-                    class="text-[10px] text-violet-400 uppercase tracking-[0.25em] mb-0.5 font-medium"
-                  >
-                    PDF
-                  </div>
-                  <h3 class="text-xl font-bold">Exportación de Estadísticas</h3>
-                </div>
-              </div>
-              <ul class="space-y-4">
-                <li class="flex gap-3 items-start">
-                  <div>
-                    <span class="text-sm font-semibold text-white block mb-0.5"
-                      >Informe Mensual y Anual en PDF</span
-                    >
-                    <span class="text-xs text-gray-300 leading-relaxed"
-                      >Receive automatically generated summaries as PDF. This
-                      feature is premium and not available for free.</span
-                    >
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div
-            class="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-12 py-6 px-8 rounded-2xl export-trust-bar"
-          >
-            <div class="flex items-center gap-2 text-sm text-gray-300">
-              <span aria-hidden="true" class="text-violet-400">🛡️</span>
-              <span>Tus datos solo salen del dispositivo bajo tu orden</span>
-            </div>
-            <div class="hidden sm:block w-px h-5 bg-white/10"></div>
-            <div class="flex items-center gap-2 text-sm text-gray-300">
-              <span aria-hidden="true" class="text-sky-400">📦</span>
-              <span>Descarga completa de datos en cualquier momento</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <!-- Section Divider -->
+      <div class="section-divider" aria-hidden="true"></div>
 
       <!-- ============================================================
-           BETA SIGNUP
-           FIX: Fake-Scarcity-Bar removed, Label for email field,
-                Honeypot position-based
+           BETA SIGNUP — Full enhanced section
            ============================================================ -->
       <section id="beta" class="container mx-auto px-6 py-32 relative z-10">
         <div class="max-w-2xl mx-auto text-center">
           <div
-            class="inline-flex items-center gap-2 px-4 py-1.5 border border-cyan-500/30 rounded-full text-[10px] tracking-[0.25em] uppercase mb-10 text-cyan-400"
+            class="inline-flex items-center gap-2 px-4 py-1.5 border border-cyan-500/30 rounded-full text-[10px] tracking-[0.25em] uppercase mb-10 ethyria-gradient-text reveal"
           >
             <span
               class="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse"
@@ -2429,15 +2879,15 @@
               >Ethyria Dream Community!</span
             >
           </h2>
-          <p class="text-xl text-white mb-4 leading-relaxed font-medium">
+          <p class="text-xl text-white mb-4 leading-relaxed font-normal">
             Tus sueños. Decodificados científicamente.
           </p>
           <p
             class="text-lg text-gray-300 mb-4 leading-relaxed max-w-3xl mx-auto"
           >
             Buscamos pioneros que quieran dar forma al futuro del análisis
-            digital de sueños con nosotros. Como agradecimiento por tu confianza
-            temprana, te damos acceso completo a nuestra tecnología.
+            digital de sueños con nosotros. Como agradecimiento por tu
+            confianza temprana, te damos acceso completo a nuestra tecnología.
           </p>
 
           <div class="mb-8 mt-12">
@@ -2450,23 +2900,20 @@
               <div
                 class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
               >
-                <span aria-hidden="true" class="text-base mt-0.5">🎁</span>
-                <span>30 días de Ethyria Premium de forma gratuita.</span>
+                <span aria-hidden="true" class="text-base mt-0.5">🎁</span
+                ><span>30 días de Ethyria Premium de forma gratuita.</span>
               </div>
               <div
                 class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
               >
-                <span aria-hidden="true" class="text-base mt-0.5">🛠️</span>
-                <span
-                  >Todas las funciones y herramientas de análisis
-                  incluidas.</span
-                >
+                <span aria-hidden="true" class="text-base mt-0.5">🛠️</span
+                ><span>Todas las funciones y herramientas de análisis incluidas.</span>
               </div>
               <div
                 class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
               >
-                <span aria-hidden="true" class="text-base mt-0.5">🔎</span>
-                <span>Sin suscripción, sin trampa, total transparencia.</span>
+                <span aria-hidden="true" class="text-base mt-0.5">🔎</span
+                ><span>Sin suscripción, sin trampa, total transparencia.</span>
               </div>
             </div>
           </div>
@@ -2478,21 +2925,21 @@
               >
             </h3>
             <p class="text-base text-gray-300 mb-6 leading-relaxed">
-              Desbloquearemos otros 30 días de Premium si nos apoyas brevemente
-              tras tu prueba:
+              Desbloquearemos otros 30 días de Premium si nos apoyas
+              brevemente tras tu prueba:
             </p>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div
                 class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
               >
-                <span aria-hidden="true" class="text-base mt-0.5">⭐</span>
-                <span>Envíanos una breve reseña de tu experiencia.</span>
+                <span aria-hidden="true" class="text-base mt-0.5">⭐</span
+                ><span>Envíanos una breve reseña de tu experiencia.</span>
               </div>
               <div
                 class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
               >
-                <span aria-hidden="true" class="text-base mt-0.5">📝</span>
-                <span>Completa nuestro cuestionario de 2 minutos.</span>
+                <span aria-hidden="true" class="text-base mt-0.5">📝</span
+                ><span>Completa nuestro cuestionario de 2 minutos.</span>
               </div>
             </div>
           </div>
@@ -2507,7 +2954,6 @@
             onsubmit="handleBetaSignup(event)"
             class="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto mt-8 mb-4"
           >
-            <!-- FIX: Accessibility — Label für E-Mail-Feld -->
             <label for="betaEmail" class="sr-only">Correo Electrónico</label>
             <input
               type="email"
@@ -2518,7 +2964,6 @@
               placeholder="tu@email.com"
               class="flex-1 px-5 py-4 rounded-full bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500/50 focus:bg-white/8 transition text-sm"
             />
-            <!-- FIX: Honeypot — position-based hiding -->
             <input
               type="text"
               name="website"
@@ -2530,45 +2975,56 @@
             <button type="submit" class="glow-button">Obtener Acceso →</button>
           </form>
           <output id="betaStatus" class="hidden text-sm mb-4"></output>
+
           <div class="max-w-md mx-auto mb-4 text-sm text-gray-300 space-y-2">
-            <p><span aria-hidden="true">•</span> Valorado en 7,99€ al mes</p>
+            <p>
+              <span aria-hidden="true">•</span> Valorado en 7,99€ al mes
+            </p>
             <p><span aria-hidden="true">•</span> Sin tarjeta de crédito</p>
             <p>
-              <span aria-hidden="true">•</span> 100% free until the end of the
-              trial period
+              <span aria-hidden="true">•</span> 100% gratis hasta el final del
+              período de prueba
             </p>
           </div>
           <p class="text-sm text-gray-300 max-w-md mx-auto">
             Próximamente en Google Play Store.
           </p>
-          <img
-            class="google-play-badge"
-            src="assets/google.png"
-            alt="Consiguelo en Google Play"
-            width="288"
-            height="86"
-          />
+          <!-- ★ CLICKABLE Google Play Badge (H5 fix) ★ -->
+          <a
+            href="https://play.google.com/store"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="google-play-badge"
+              src="assets/google.png"
+              alt="Consiguelo en Google Play"
+              width="288"
+              height="86"
+            />
+          </a>
         </div>
       </section>
 
+      <!-- Section Divider -->
+      <div class="section-divider" aria-hidden="true"></div>
+
       <!-- ============================================================
-           FAQ
-           FIX: Schema-Wortlaut an HTML angeglichen
+           FAQ — expanded with Export info
            ============================================================ -->
       <section
         id="faq"
         class="container mx-auto px-6 py-24 section-shell relative z-10"
       >
         <div class="max-w-5xl mx-auto">
-          <div class="text-center mb-16">
+          <div class="text-center mb-16 reveal">
             <p
-              class="text-[10px] tracking-[0.3em] uppercase text-white mb-3 section-eyebrow"
+              class="text-[10px] tracking-[0.3em] uppercase ethyria-gradient-text mb-3 section-eyebrow"
             >
               FAQ
             </p>
             <h2 class="text-3xl md:text-4xl font-bold mb-4 section-title">
-              Preguntas
-              <span class="ethyria-gradient-text">Frecuentes</span>
+              Preguntas <span class="ethyria-gradient-text">Frecuentes</span>
             </h2>
             <p
               class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed section-subtitle"
@@ -2577,16 +3033,17 @@
               IA y disponibilidad de dispositivos.
             </p>
           </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-5 stagger-grid reveal"
+          >
             <article class="glass-card px-6 py-6 rounded-3xl text-left">
               <h3 class="text-xl font-bold mb-3">
                 ¿Es Ethyria realmente gratuita?
               </h3>
               <p class="text-sm text-gray-300 leading-relaxed">
-                Sí. Puedes usar Ethyria de forma gratuita. Las compras
-                opcionales dentro de la app desbloquean funciones premium
-                adicionales como exportaciones PDF y análisis ampliados.
+                Sí. Puedes usar Ethyria de forma gratuita. Las compras opcionales
+                dentro de la app desbloquean funciones premium adicionales como
+                exportaciones PDF y análisis ampliados.
               </p>
             </article>
             <article class="glass-card px-6 py-6 rounded-3xl text-left">
@@ -2600,7 +3057,7 @@
             </article>
             <article class="glass-card px-6 py-6 rounded-3xl text-left">
               <h3 class="text-xl font-bold mb-3">
-                How does the AI dream analysis work?
+                ¿Cómo funciona el análisis de sueños con IA?
               </h3>
               <p class="text-sm text-gray-300 leading-relaxed">
                 Ethyria utiliza IA avanzada para identificar símbolos, temas
@@ -2610,7 +3067,7 @@
             </article>
             <article class="glass-card px-6 py-6 rounded-3xl text-left">
               <h3 class="text-xl font-bold mb-3">
-                Which analysis modes does Ethyria offer?
+                ¿Qué modos de análisis ofrece Ethyria?
               </h3>
               <p class="text-sm text-gray-300 leading-relaxed">
                 Ethyria ofrece cinco perspectivas de análisis: Interpretación
@@ -2618,96 +3075,36 @@
                 Reflexión Espiritual y Análisis Biosíncrono.
               </p>
             </article>
-            <article
-              class="glass-card px-6 py-6 rounded-3xl text-left md:col-span-2"
-            >
-              <h3 class="text-xl font-bold mb-3">
-                Which devices is Ethyria available on?
-              </h3>
-              <p class="text-sm text-gray-300 leading-relaxed">
-                Ethyria is currently available for Android. An iOS version is in
-                development.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============================================================
-           DISCOVERABILITY — FIX: Auf nutzerbezogenen Inhalt reduziert
-           ============================================================ -->
-      <section
-        id="discoverability"
-        class="container mx-auto px-6 py-24 section-shell relative z-10"
-      >
-        <div class="max-w-5xl mx-auto">
-          <div class="text-center mb-16">
-            <p
-              class="text-[10px] tracking-[0.3em] uppercase text-white mb-3 section-eyebrow"
-            >
-              Descubrir
-            </p>
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 section-title">
-              Más que un
-              <span class="ethyria-gradient-text">Diario de Sueños</span>
-            </h2>
-            <p
-              class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed section-subtitle"
-            >
-              Ethyria reúne la interpretación de sueños con IA, un diario de
-              sueños privado, análisis basado en psicología e insights visuales
-              en una sola app para Android.
-            </p>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <!-- ★ NEW: Export FAQ (replaces Export section) ★ -->
             <article class="glass-card px-6 py-6 rounded-3xl text-left">
               <h3 class="text-xl font-bold mb-3">
-                Interpretación de sueños con verdadera profundidad
+                ¿Puedo exportar mis análisis?
               </h3>
               <p class="text-sm text-gray-300 leading-relaxed">
-                Ethyria transforma símbolos, emociones y patrones recurrentes en
-                lecturas de IA matizadas en lugar de generalidades vagas.
+                Sí. Como usuario premium, puedes exportar cada análisis y tus
+                estadísticas mensuales como documento PDF profesional.
               </p>
             </article>
             <article class="glass-card px-6 py-6 rounded-3xl text-left">
               <h3 class="text-xl font-bold mb-3">
-                Diario de sueños privado para Android
+                ¿En qué dispositivos está disponible Ethyria?
               </h3>
               <p class="text-sm text-gray-300 leading-relaxed">
-                Registra sueños, detecta temas recurrentes y construye un diario
-                de sueños estructurado con visualizaciones y opciones de
-                exportación.
-              </p>
-            </article>
-            <article class="glass-card px-6 py-6 rounded-3xl text-left">
-              <h3 class="text-xl font-bold mb-3">
-                Modos de análisis basados en psicología
-              </h3>
-              <p class="text-sm text-gray-300 leading-relaxed">
-                Explora múltiples perspectivas de interpretación inspiradas en
-                Jung, Freud, interpretación simbólica de sueños, patrones
-                emocionales y marcos científicos.
-              </p>
-            </article>
-            <article class="glass-card px-6 py-6 rounded-3xl text-left">
-              <h3 class="text-xl font-bold mb-3">
-                Patrones, estadísticas e insights visuales
-              </h3>
-              <p class="text-sm text-gray-300 leading-relaxed">
-                Descubre símbolos recurrentes, cambios emocionales y patrones
-                relacionados con el sueño mediante un flujo de análisis visual.
+                Ethyria está actualmente disponible para Android. Una versión
+                para iOS está en desarrollo.
               </p>
             </article>
           </div>
         </div>
       </section>
     </main>
-    <!-- end #main-content -->
 
+    <!-- ============================================================
+         FOOTER — enhanced with contact
+         ============================================================ -->
     <footer id="download" class="border-t border-white/5 py-8 text-center">
       <div class="text-gray-500 text-xs tracking-widest uppercase">
-        ETHYRIA APP - DREAM ANALYSIS
+        ETHYRIA APP — ANÁLISIS DE SUEÑOS
       </div>
       <a
         href="mailto:ethyria.app@gmail.com"
@@ -2716,8 +3113,123 @@
       >
     </footer>
 
+    <!-- ============================================================
+         EXIT-INTENT POPUP (H3 — neu)
+         ============================================================ -->
+    <div
+      id="exitPopup"
+      class="exit-popup"
+      hidden
+      aria-modal="true"
+      role="dialog"
+      aria-label="Última oportunidad — Obtén acceso beta"
+    >
+      <div class="exit-popup__backdrop"></div>
+      <div class="exit-popup__card">
+        <button type="button" class="exit-popup__close" aria-label="Cerrar">
+          &times;
+        </button>
+        <div style="font-size: 2.5rem; margin-bottom: 0.75rem">🌙</div>
+        <h2 class="ethyria-gradient-text">¡Espera — tu sueño te espera!</h2>
+        <p>
+          Get
+          <strong style="color: var(--ethyria-cyan)"
+            >30 días Premium gratis</strong
+          >, antes de irte.
+        </p>
+        <form class="exit-popup__form" onsubmit="handleExitSignup(event)">
+          <label for="exitEmail" class="sr-only">Correo Electrónico</label>
+          <input
+            type="email"
+            id="exitEmail"
+            name="email"
+            required
+            autocomplete="email"
+            placeholder="tu@email.com"
+          />
+          <input
+            type="text"
+            name="website"
+            tabindex="-1"
+            autocomplete="off"
+            class="honeypot-field"
+            aria-hidden="true"
+          />
+          <button type="submit">Obtener ahora →</button>
+        </form>
+        <output
+          id="exitStatus"
+          class="block text-sm mt-3 min-h-[1.25rem]"
+        ></output>
+        <p
+          style="
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.3);
+            margin-top: 0.75rem;
+          "
+        >
+          Sin spam. Solo tu enlace de descarga exclusivo.
+        </p>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SUCCESS OVERLAY (H4 — Post-Signup Experience)
+         ============================================================ -->
+    <div id="successOverlay" class="success-overlay" hidden>
+      <div class="success-overlay__card">
+        <div class="success-checkmark">✓</div>
+        <h2 class="ethyria-gradient-text">¡Bienvenido a la Comunidad!</h2>
+        <p>
+          Revisa tu bandeja de entrada — tu acceso exclusivo llega pronto.
+        </p>
+        <div class="success-share">
+          <p
+            style="
+              font-size: 0.85rem;
+              color: rgba(255, 255, 255, 0.5);
+              margin: 0 0 0.75rem;
+            "
+          >
+            Comparte Ethyria con amigos:
+          </p>
+          <div class="success-share-buttons">
+            <button onclick="shareToTwitter()" class="share-btn">
+              𝕏 Compartir
+            </button>
+            <button onclick="shareToWhatsApp()" class="share-btn">
+              WhatsApp
+            </button>
+            <button onclick="copyShareLink()" class="share-btn" id="copyBtn">
+              Copiar enlace
+            </button>
+          </div>
+        </div>
+        <button
+          onclick="closeSuccessOverlay()"
+          style="
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.85rem;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: color 0.2s;
+          "
+        >
+          Cerrar
+        </button>
+      </div>
+      <div class="confetti-container" id="confettiContainer"></div>
+    </div>
+
+    <!-- ============================================================
+         SCRIPTS
+         ============================================================ -->
     <script src="assets/beta-signup.js"></script>
     <script src="assets/section-nav.js"></script>
+
+    <!-- Echo chart animation trigger -->
     <script>
       (function () {
         var c = document.querySelector(".echo-chart");
@@ -2733,12 +3245,72 @@
         ).observe(c);
       })();
     </script>
+
+    <!-- ============================================================
+         SCROLL REVEAL — IntersectionObserver
+         ============================================================ -->
+    <script>
+      (function () {
+        var reveals = document.querySelectorAll(".reveal");
+        if (!reveals.length) return;
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                io.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.15, rootMargin: "0px 0px -8% 0px" },
+        );
+        reveals.forEach(function (el) {
+          io.observe(el);
+        });
+      })();
+    </script>
+
+    <!-- ============================================================
+         SCROLL HINT FADE + STAGGER GRID OBSERVER
+         ============================================================ -->
+    <script>
+      (function () {
+        // Scroll-hint-wrapper: fade right edge when scrolled to end
+        var wrappers = document.querySelectorAll(".scroll-hint-wrapper");
+        wrappers.forEach(function (w) {
+          w.addEventListener("scroll", function () {
+            var atEnd = w.scrollLeft + w.clientWidth >= w.scrollWidth - 8;
+            w.classList.toggle("scrolled-end", atEnd);
+          });
+        });
+
+        // Stagger-grid IntersectionObserver
+        var grids = document.querySelectorAll(".stagger-grid");
+        if (!grids.length) return;
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                io.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: "0px 0px -6% 0px" },
+        );
+        grids.forEach(function (g) {
+          io.observe(g);
+        });
+      })();
+    </script>
+
+    <!-- Beta signup config -->
     <script>
       window.ethyriaBetaConfig = {
         endpoint:
           "https://script.google.com/macros/s/AKfycbys9llscb8Gm0yHTyXeSHJSv71BEAwewi66ePs9S7uwYMvhuyn35pE7-3ALusDjxjLh/exec",
         locale: "es",
-        sourcePage: "index.es.html",
+        sourcePage: "test/index.es.html",
         messages: {
           success:
             "Tu correo fue registrado correctamente. Revisa tu bandeja de entrada para el enlace de descarga.",
@@ -2752,25 +3324,24 @@
             "No pudimos guardar tu correo en este momento. Por favor inténtalo de nuevo.",
           setup:
             "El registro no está activo todavía. Primero añade la URL del Apps Script.",
-          buttonIdle: "Claim Access →",
-          buttonLoading: "Saving...",
+          buttonIdle: "Obtener Acceso →",
+          buttonLoading: "Guardando...",
         },
       };
+    </script>
 
-      // Typewriter effect for the example dream
+    <!-- Typewriter effect -->
+    <script>
       (function () {
-        const dreamText =
+        var dreamText =
           "Un edificio enorme, mitad museo, mitad estación de trenes. Busco una sala, no la encuentro. Puertas oscuras por todas partes, un suave murmullo. De repente estoy descalzo. Abro una puerta y me encuentro en una densa niebla azul. Un escritorio vacío ante mí. Siento un extraño alivio.";
-        const el = document.getElementById("dreamTypewriter");
-        const cursor = document.getElementById("dreamCursor");
+        var el = document.getElementById("dreamTypewriter");
         if (!el) return;
-
-        let i = 0;
-        let displayed = "";
-
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
+        var i = 0;
+        var displayed = "";
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
               if (entry.isIntersecting) {
                 observer.disconnect();
                 setTimeout(typeNext, 600);
@@ -2780,24 +3351,530 @@
           { threshold: 0.3 },
         );
         observer.observe(el);
-
         function typeNext() {
           if (i >= dreamText.length) return;
-          const ch = dreamText[i];
-          if (ch === "\n") {
-            displayed += "<br>";
-          } else {
-            displayed += ch;
-          }
+          var ch = dreamText[i];
+          displayed += ch === "\n" ? "<br>" : ch;
           el.innerHTML = displayed;
           i++;
-          const delay = /[.!?,\n]/.test(ch) ? 80 : ch === " " ? 25 : 28;
+          var delay = /[.!?,\n]/.test(ch) ? 80 : ch === " " ? 25 : 28;
           setTimeout(typeNext, delay);
         }
       })();
     </script>
 
-    <!-- JSON-LD: FAQ — FIX: Wortlaut stimmt exakt mit sichtbarem HTML überein -->
+    <!-- ================================================================
+         CONVERSION ENHANCEMENTS
+         ================================================================ -->
+    <script>
+      (function () {
+        "use strict";
+
+        var config = window.ethyriaBetaConfig || {};
+        var messages = config.messages || {};
+        var endpoint = String(config.endpoint || "").trim();
+
+        // ---- Shared signup logic ---- //
+        function doSignup(email, statusEl, button, idleLabel) {
+          if (!endpoint || endpoint.indexOf("REPLACE_WITH_") === 0) {
+            if (statusEl) {
+              statusEl.textContent = messages.setup || "Signup not ready.";
+              statusEl.className = "block text-sm mt-3 text-amber-300";
+            }
+            return Promise.resolve();
+          }
+          var payload = new URLSearchParams();
+          payload.set("email", email);
+          payload.set("locale", config.locale || "de");
+          payload.set("sourcePage", config.sourcePage || "test/index.html");
+          payload.set("pageUrl", window.location.href);
+          payload.set("userAgent", navigator.userAgent || "");
+          return fetch(endpoint, {
+            method: "POST",
+            body: payload,
+            redirect: "follow",
+          })
+            .then(function (r) {
+              return r.text();
+            })
+            .then(function (text) {
+              var result;
+              try {
+                result = JSON.parse(text);
+              } catch (e) {
+                result = {};
+              }
+              var status = result.status || "error";
+              if (status === "success") {
+                if (statusEl) {
+                  statusEl.textContent = messages.success;
+                  statusEl.className =
+                    "block text-sm mt-3 text-cyan-400 animate-pulse";
+                }
+                showSuccessOverlay();
+              } else if (status === "already_registered") {
+                if (statusEl) {
+                  statusEl.textContent = messages.alreadyRegistered;
+                  statusEl.className = "block text-sm mt-3 text-sky-300";
+                }
+              } else if (status === "saved_no_email") {
+                if (statusEl) {
+                  statusEl.textContent =
+                    messages.savedNoEmail || messages.success;
+                  statusEl.className = "block text-sm mt-3 text-amber-300";
+                }
+                showSuccessOverlay();
+              } else if (status === "invalid_email") {
+                if (statusEl) {
+                  statusEl.textContent = messages.invalidEmail;
+                  statusEl.className = "block text-sm mt-3 text-rose-400";
+                }
+              } else {
+                throw new Error("request_failed");
+              }
+            })
+            .catch(function () {
+              if (statusEl) {
+                statusEl.textContent = messages.error;
+                statusEl.className = "block text-sm mt-3 text-rose-400";
+              }
+            })
+            .finally(function () {
+              if (button) {
+                button.disabled = false;
+                button.textContent = idleLabel;
+                button.style.opacity = "1";
+                button.style.cursor = "";
+              }
+            });
+        }
+
+        // ---- Hero form handler ---- //
+        window.handleHeroSignup = function (event) {
+          event.preventDefault();
+          var form = event.currentTarget;
+          var input = form.querySelector('input[type="email"]');
+          var button = form.querySelector('button[type="submit"]');
+          var honeypot = form.querySelector('input[name="website"]');
+          if (!input || !button) return;
+          if (honeypot && honeypot.value) return;
+          if (!input.checkValidity()) {
+            input.reportValidity();
+            return;
+          }
+          var email = String(input.value || "")
+            .trim()
+            .toLowerCase();
+          var idleLabel = "Comenzar gratis →";
+          button.disabled = true;
+          button.textContent = "Guardando...";
+          button.style.opacity = "0.7";
+          var statusEl = document.getElementById("heroStatus");
+          doSignup(email, statusEl, button, idleLabel).then(function () {
+            if (statusEl && statusEl.classList.contains("text-cyan-400")) {
+              input.value = "";
+            }
+          });
+        };
+
+        // ---- Hero bottom form handler ---- //
+        window.handleHeroBottomSignup = function (event) {
+          event.preventDefault();
+          var form = event.currentTarget;
+          var input = form.querySelector('input[type="email"]');
+          var button = form.querySelector('button[type="submit"]');
+          var honeypot = form.querySelector('input[name="website"]');
+          if (!input || !button) return;
+          if (honeypot && honeypot.value) return;
+          if (!input.checkValidity()) {
+            input.reportValidity();
+            return;
+          }
+          var email = String(input.value || "")
+            .trim()
+            .toLowerCase();
+          var idleLabel = "Obtener Acceso →";
+          button.disabled = true;
+          button.textContent = "Guardando...";
+          button.style.opacity = "0.7";
+          var statusEl = document.getElementById("heroBottomStatus");
+          doSignup(email, statusEl, button, idleLabel).then(function () {
+            if (statusEl && statusEl.classList.contains("text-cyan-400")) {
+              input.value = "";
+            }
+          });
+        };
+
+        // ---- Exit popup form handler ---- //
+        window.handleExitSignup = function (event) {
+          event.preventDefault();
+          var form = event.currentTarget;
+          var input = form.querySelector('input[type="email"]');
+          var button = form.querySelector('button[type="submit"]');
+          var honeypot = form.querySelector('input[name="website"]');
+          if (!input || !button) return;
+          if (honeypot && honeypot.value) return;
+          if (!input.checkValidity()) {
+            input.reportValidity();
+            return;
+          }
+          var email = String(input.value || "")
+            .trim()
+            .toLowerCase();
+          var idleLabel = "Obtener ahora →";
+          button.disabled = true;
+          button.textContent = "Guardando...";
+          var statusEl = document.getElementById("exitStatus");
+          doSignup(email, statusEl, button, idleLabel).then(function () {
+            if (statusEl && statusEl.classList.contains("text-cyan-400")) {
+              input.value = "";
+              setTimeout(function () {
+                document.getElementById("exitPopup").hidden = true;
+              }, 800);
+            }
+          });
+        };
+
+        // ---- Watch bottom form for success (to trigger overlay) ---- //
+        var betaStatusEl = document.getElementById("betaStatus");
+        if (betaStatusEl) {
+          new MutationObserver(function () {
+            if (
+              betaStatusEl.textContent &&
+              betaStatusEl.classList.contains("text-cyan-400")
+            ) {
+              showSuccessOverlay();
+            }
+          }).observe(betaStatusEl, {
+            childList: true,
+            characterData: true,
+            subtree: true,
+          });
+        }
+
+        // ---- Success Overlay + Confetti ---- //
+        window.showSuccessOverlay = function () {
+          var overlay = document.getElementById("successOverlay");
+          if (!overlay || !overlay.hidden) return;
+          overlay.hidden = false;
+          spawnConfetti();
+        };
+        window.closeSuccessOverlay = function () {
+          document.getElementById("successOverlay").hidden = true;
+        };
+
+        function spawnConfetti() {
+          /* Disabled — minimalist design */
+        }
+
+        // ---- Social sharing ---- //
+        var shareUrl = "https://ostyles.github.io/ethyria/";
+        var shareText =
+          "Ethyria transforma tus sueños en insights profundos. ¡Prueba la Beta!";
+
+        window.shareToTwitter = function () {
+          window.open(
+            "https://x.com/intent/tweet?text=" +
+              encodeURIComponent(shareText) +
+              "&url=" +
+              encodeURIComponent(shareUrl),
+            "_blank",
+            "noopener",
+          );
+        };
+        window.shareToWhatsApp = function () {
+          window.open(
+            "https://wa.me/?text=" +
+              encodeURIComponent(shareText + " " + shareUrl),
+            "_blank",
+            "noopener",
+          );
+        };
+        window.copyShareLink = function () {
+          if (navigator.clipboard) {
+            navigator.clipboard.writeText(shareUrl).then(function () {
+              var btn = document.getElementById("copyBtn");
+              if (btn) {
+                btn.textContent = "Copiado ✓";
+                setTimeout(function () {
+                  btn.textContent = "Copiar enlace";
+                }, 2000);
+              }
+            });
+          }
+        };
+
+        // ---- Exit-Intent Popup ---- //
+        var exitShown = false;
+        document.addEventListener("mouseleave", function (e) {
+          if (e.clientY < 0 && !exitShown) {
+            // Don't show if user already signed up (success overlay was shown)
+            if (!document.getElementById("successOverlay").hidden) return;
+            exitShown = true;
+            document.getElementById("exitPopup").hidden = false;
+          }
+        });
+        // Close handlers
+        var exitBackdrop = document.querySelector(".exit-popup__backdrop");
+        var exitClose = document.querySelector(".exit-popup__close");
+        if (exitBackdrop)
+          exitBackdrop.addEventListener("click", function () {
+            document.getElementById("exitPopup").hidden = true;
+          });
+        if (exitClose)
+          exitClose.addEventListener("click", function () {
+            document.getElementById("exitPopup").hidden = true;
+          });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") {
+            document.getElementById("exitPopup").hidden = true;
+            document.getElementById("successOverlay").hidden = true;
+          }
+        });
+      })();
+
+      // ---- Ethyria Slider v2 — World-Class ---- //
+      (function () {
+        var TRANSITION_MS = 600;
+        var reducedMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
+
+        document.querySelectorAll(".ethyria-slider").forEach(function (root) {
+          var track = root.querySelector(".ethyria-slider__track");
+          var slides = Array.from(
+            track.querySelectorAll(".ethyria-slider__slide"),
+          );
+          var prevBtn = root.querySelector(".ethyria-slider__nav--prev");
+          var nextBtn = root.querySelector(".ethyria-slider__nav--next");
+          var dotsWrap = root.querySelector(".ethyria-slider__dots");
+          var counterCur = root.querySelector(
+            ".ethyria-slider__counter-current",
+          );
+          var counterTotal = root.querySelector(
+            ".ethyria-slider__counter-total",
+          );
+          var current = 0;
+          var total = slides.length;
+          var isAnimating = false;
+          var autoplayMs = parseInt(root.dataset.autoplay, 10) || 0;
+          var autoTimer = null;
+          var isPaused = false;
+          var isVisible = true;
+
+          // --- Pad numbers: 01, 02 … ---
+          function pad(n) {
+            return n < 10 ? "0" + n : "" + n;
+          }
+
+          // --- Build dots ---
+          slides.forEach(function (slide, i) {
+            var dot = document.createElement("button");
+            dot.className =
+              "ethyria-slider__dot" + (i === 0 ? " is-active" : "");
+            dot.setAttribute("aria-label", "Slide " + (i + 1));
+            dot.setAttribute("role", "tab");
+            dot.setAttribute("aria-selected", i === 0 ? "true" : "false");
+            dot.addEventListener("click", function () {
+              goTo(i);
+              resetAutoplay();
+            });
+            dotsWrap.appendChild(dot);
+
+            // ARIA for slides
+            slide.setAttribute("role", "tabpanel");
+            slide.setAttribute(
+              "aria-label",
+              "Slide " + (i + 1) + " von " + total,
+            );
+          });
+          var dots = Array.from(dotsWrap.children);
+
+          // --- Counter init ---
+          if (counterTotal) counterTotal.textContent = pad(total);
+
+          // --- Update UI state ---
+          function updateUI() {
+            prevBtn.disabled = current === 0;
+            nextBtn.disabled = current === total - 1;
+            dots.forEach(function (d, i) {
+              var active = i === current;
+              d.classList.toggle("is-active", active);
+              d.setAttribute("aria-selected", active ? "true" : "false");
+            });
+            if (counterCur) counterCur.textContent = pad(current + 1);
+          }
+
+          // --- Core transition ---
+          function goTo(index, forceDir) {
+            if (isAnimating || index === current || index < 0 || index >= total)
+              return;
+            isAnimating = true;
+
+            var dir = forceDir || (index > current ? 1 : -1);
+            var outSlide = slides[current];
+            var inSlide = slides[index];
+
+            // Exit
+            outSlide.classList.remove("is-active");
+            outSlide.classList.add(dir > 0 ? "is-exit-left" : "is-exit-right");
+
+            // Prepare enter slide off-screen
+            inSlide.style.transition = "none";
+            inSlide.style.transform =
+              "translateX(" + (dir > 0 ? "100" : "-100") + "px) scale(0.96)";
+            inSlide.style.opacity = "0";
+            inSlide.classList.add("is-active");
+
+            // Force reflow
+            void inSlide.offsetHeight;
+
+            // Animate in
+            inSlide.style.transition = "";
+            inSlide.style.transform = "";
+            inSlide.style.opacity = "";
+
+            current = index;
+            updateUI();
+
+            var dur = reducedMotion ? 50 : TRANSITION_MS;
+            setTimeout(function () {
+              outSlide.classList.remove("is-exit-left", "is-exit-right");
+              outSlide.style.transform = "";
+              outSlide.style.opacity = "";
+              isAnimating = false;
+            }, dur + 20);
+          }
+
+          // --- Looping helper for autoplay ---
+          function next() {
+            if (current < total - 1) {
+              goTo(current + 1);
+            } else {
+              goTo(0, 1); // loop forward
+            }
+          }
+
+          // --- Navigation ---
+          prevBtn.addEventListener("click", function () {
+            goTo(current - 1);
+            resetAutoplay();
+          });
+          nextBtn.addEventListener("click", function () {
+            goTo(current + 1);
+            resetAutoplay();
+          });
+
+          // --- Keyboard ---
+          root.setAttribute("tabindex", "0");
+          root.addEventListener("keydown", function (e) {
+            if (e.key === "ArrowLeft") {
+              e.preventDefault();
+              goTo(current - 1);
+              resetAutoplay();
+            }
+            if (e.key === "ArrowRight") {
+              e.preventDefault();
+              goTo(current + 1);
+              resetAutoplay();
+            }
+          });
+
+          // --- Touch / swipe with velocity ---
+          var touchStartX = 0;
+          var touchStartT = 0;
+          root.addEventListener(
+            "touchstart",
+            function (e) {
+              touchStartX = e.changedTouches[0].clientX;
+              touchStartT = Date.now();
+              pauseAutoplay();
+            },
+            { passive: true },
+          );
+
+          root.addEventListener(
+            "touchend",
+            function (e) {
+              var dx = touchStartX - e.changedTouches[0].clientX;
+              var dt = Date.now() - touchStartT;
+              var velocity = Math.abs(dx) / (dt || 1);
+
+              // Trigger on distance > 40px OR velocity > 0.3px/ms (fast flick)
+              if (Math.abs(dx) > 40 || velocity > 0.3) {
+                if (dx > 0) goTo(current + 1);
+                else goTo(current - 1);
+              }
+              resumeAutoplay();
+            },
+            { passive: true },
+          );
+
+          // --- Autoplay ---
+          function startAutoplay() {
+            if (!autoplayMs || isPaused || !isVisible) return;
+            clearInterval(autoTimer);
+            autoTimer = setInterval(function () {
+              next();
+            }, autoplayMs);
+          }
+
+          function pauseAutoplay() {
+            isPaused = true;
+            clearInterval(autoTimer);
+          }
+
+          function resumeAutoplay() {
+            isPaused = false;
+            startAutoplay();
+          }
+
+          function resetAutoplay() {
+            if (!autoplayMs) return;
+            clearInterval(autoTimer);
+            isPaused = false;
+            startAutoplay();
+          }
+
+          // Pause on hover (desktop)
+          root.addEventListener("mouseenter", pauseAutoplay);
+          root.addEventListener("mouseleave", function () {
+            isPaused = false;
+            startAutoplay();
+          });
+
+          // Pause on focus within (keyboard navigation)
+          root.addEventListener("focusin", pauseAutoplay);
+          root.addEventListener("focusout", function (e) {
+            if (!root.contains(e.relatedTarget)) {
+              isPaused = false;
+              startAutoplay();
+            }
+          });
+
+          // --- IntersectionObserver: pause when off-screen ---
+          if ("IntersectionObserver" in window) {
+            var obs = new IntersectionObserver(
+              function (entries) {
+                isVisible = entries[0].isIntersecting;
+                if (isVisible && !isPaused) startAutoplay();
+                else {
+                  clearInterval(autoTimer);
+                }
+              },
+              { threshold: 0.15 },
+            );
+            obs.observe(root);
+          }
+
+          // --- Init ---
+          updateUI();
+          if (autoplayMs) startAutoplay();
+        });
+      })();
+    </script>
+
+    <!-- JSON-LD: FAQ -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -2805,42 +3882,50 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "¿Es Ethyria realmente gratuita?",
+            "name": "Ist Ethyria wirklich kostenlos?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. Puedes usar Ethyria de forma gratuita. Las compras opcionales dentro de la app desbloquean funciones premium adicionales como exportaciones PDF y análisis ampliados."
+              "text": "Ja. Du kannst Ethyria kostenlos nutzen. Optionale In-App-Käufe schalten zusätzliche Premium-Funktionen wie PDF-Exporte und erweiterte Analysen frei."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Qué tan seguros están mis datos de sueños?",
+            "name": "Wie sicher sind meine Traumdaten?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Tu privacidad es lo primero. Los datos de tus sueños permanecen en tu dispositivo — sin nube, sin rastreo."
+              "text": "Deine Privatsphäre steht an erster Stelle. Deine Traumdaten bleiben auf deinem Gerät — ohne Cloud-Pflicht und ohne Tracking."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Cómo funciona el análisis de sueños con IA?",
+            "name": "Wie funktioniert die KI-Traumdeutung?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Ethyria utiliza IA avanzada para identificar símbolos, temas emocionales y patrones recurrentes siguiendo enfoques psicológicos basados en Jung y Freud."
+              "text": "Ethyria nutzt fortschrittliche KI, um Symbole, emotionale Themen und wiederkehrende Muster mithilfe psychologischer Ansätze nach Jung und Freud einzuordnen."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Qué modos de análisis ofrece Ethyria?",
+            "name": "Welche Analyse-Modi bietet Ethyria?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Ethyria ofrece cinco perspectivas de análisis: Interpretación General, Psicoanálisis Freudiano, Psicología Analítica Jungiana, Reflexión Espiritual y Análisis Biosíncrono."
+              "text": "Ethyria bietet fünf Analyse-Perspektiven: Allgemeine Deutung, Freudsche Psychoanalyse, Jungsche Analytische Psychologie, Spirituelle Reflexion und Biosynchrone Analyse."
             }
           },
           {
             "@type": "Question",
-            "name": "¿En qué dispositivos está disponible Ethyria?",
+            "name": "Kann ich meine Analysen exportieren?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Ethyria está disponible actualmente para Android. Una versión para iOS está en desarrollo."
+              "text": "Ja. Als Premium-Nutzer kannst du jede Analyse und deine monatlichen Statistiken als professionell gestaltetes PDF-Dokument exportieren."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Für welche Geräte ist Ethyria verfügbar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Aktuell ist Ethyria für Android verfügbar. Eine iOS-Version ist in Arbeit."
             }
           }
         ]
