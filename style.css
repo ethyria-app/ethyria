@@ -4,23 +4,6 @@
    ============================================================ */
 
 /* ---- Font Faces ---- */
-/* TODO: Convert TTF → WOFF2 for 2-3× smaller files */
-
-@font-face {
-  font-family: "Poppins";
-  src: url("fonts/poppins_regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url("fonts/poppins_semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
 
 @font-face {
   font-family: "Poppins";
@@ -34,30 +17,6 @@
   font-family: "Inter";
   src: url("fonts/inter_regular.ttf") format("truetype");
   font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("fonts/inter_medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("fonts/inter_variable.ttf") format("truetype");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Arista Pro Fat";
-  src: url("fonts/Arista-Pro-Fat-trial.ttf") format("truetype");
-  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
@@ -277,9 +236,45 @@ h6 {
   color: transparent;
 }
 
-.brand-logo {
-  font-family: "Arista Pro Fat", sans-serif;
-  letter-spacing: 2px;
+/* ---- Global gradient on all headings (Poppins) ---- */
+h1, h2, h3, h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  background: linear-gradient(
+    90deg,
+    #22d3ee 0%,
+    #60a5fa 35%,
+    #a78bfa 70%,
+    #f0abfc 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* ---- Pills / eyebrows keep gradient ---- */
+.section-pill,
+.section-eyebrow {
+  background: linear-gradient(
+    90deg,
+    #22d3ee 0%,
+    #60a5fa 35%,
+    #a78bfa 70%,
+    #f0abfc 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* ---- Sublines: weiß + Inter ---- */
+.section-subtitle,
+.text-center > p {
+  font-family: "Inter", sans-serif;
+  -webkit-text-fill-color: #ffffff;
+  color: #ffffff;
 }
 
 /* ---- Section Shells & Pills ---- */
@@ -876,7 +871,7 @@ section:not(#insight-pfad) .glass-card [class~="text-left"] {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.25em;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 0.25rem;
 }
 
@@ -914,7 +909,7 @@ section:not(#insight-pfad) .glass-card [class~="text-left"] {
   color: white;
   padding: 1rem 2rem;
   border-radius: 9999px;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   display: inline-block;
   box-shadow: 0 0 15px rgba(49, 132, 255, 0.4);
