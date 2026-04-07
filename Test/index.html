@@ -1073,25 +1073,20 @@
         style="margin-top: -4rem"
       >
         <div class="section-divider mb-4" aria-hidden="true"></div>
-        <p
-          class="text-xs text-cyan-300/70 max-w-2xl mx-auto mb-4 leading-relaxed"
-        >
-          Trage hier deine Email Adresse ein und du bekommst deinen exklusiven
-          Download-Link in dein persönliches Postfach.
-        </p>
         <form
           onsubmit="handleHeroBottomSignup(event)"
-          class="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto mb-4"
+          class="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto mb-4 items-stretch"
         >
-          <label for="heroBottomEmail" class="sr-only">Email Adresse</label>
+          <label for="heroBottomEmail" style="display:none">Email Adresse</label>
           <input
             type="email"
             id="heroBottomEmail"
             name="email"
             required
             autocomplete="email"
-            placeholder="Email Adresse"
-            class="flex-1 px-5 py-4 rounded-full bg-white/5 border border-white/10 text-cyan-300/70 placeholder-cyan-300/40 focus:outline-none focus:border-cyan-500/50 focus:bg-white/8 transition text-xs"
+            placeholder="deine@email.com"
+            class="flex-1 px-4 rounded-full bg-white/5 border border-white/10 text-cyan-300 placeholder-cyan-400 focus:outline-none focus:border-cyan-500/50 focus:bg-white/8 transition text-xs"
+            style="opacity: 0.7; height: 2.75rem"
           />
           <input
             type="text"
@@ -1101,11 +1096,25 @@
             class="honeypot-field"
             aria-hidden="true"
           />
-          <button type="submit" class="glow-button">Zugang sichern →</button>
+          <button
+            type="submit"
+            class="glow-button"
+            style="
+              padding: 0 1.5rem;
+              font-size: 0.75rem;
+              height: 2.75rem;
+              line-height: 1;
+            "
+          >
+            Zugang sichern →
+          </button>
         </form>
         <output id="heroBottomStatus" class="hidden text-sm mb-4"></output>
 
-        <div class="max-w-md mx-auto mb-4 text-xs text-cyan-300/70 space-y-1">
+        <div
+          class="max-w-md mx-auto mb-4 text-xs text-cyan-300 space-y-1"
+          style="opacity: 0.7"
+        >
           <p>Im Wert von 7,99 € pro Monat</p>
           <p>Keine Kreditkarte benötigt</p>
           <p>100 % kostenlos bis zum Ablauf der Testphase</p>
