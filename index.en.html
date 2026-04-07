@@ -27,21 +27,58 @@
     <title>Ethyria | AI Dream Interpretation &amp; Visual Dream Journal</title>
     <meta
       name="description"
-      content="Ethyria transforms your dreams into deep insights and AI-generated artworks. Dream interpretation based on Jung &amp; Freud, 5 analysis modes, visual dream journal."
+      content="Ethyria transforms your dreams into deep insights and AI-generated artworks. Dream interpretation based on Jung &amp; Freud, 5 analysis modes, visual dream journal. Try it free today."
     />
     <meta name="theme-color" content="#0F1035" />
-    <meta name="robots" content="noindex,nofollow" />
+    <meta name="robots" content="index,follow" />
+    <link
+      rel="canonical"
+      href="https://ostyles.github.io/ethyria/index.en.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="de"
+      href="https://ostyles.github.io/ethyria/"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://ostyles.github.io/ethyria/index.en.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="fr"
+      href="https://ostyles.github.io/ethyria/index.fr.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://ostyles.github.io/ethyria/index.es.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="ru"
+      href="https://ostyles.github.io/ethyria/index.ru.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://ostyles.github.io/ethyria/"
+    />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ostyles.github.io/ethyria/" />
+    <meta
+      property="og:url"
+      content="https://ostyles.github.io/ethyria/index.en.html"
+    />
     <meta
       property="og:title"
       content="Ethyria | AI Dream Interpretation &amp; Visual Dream Journal"
     />
     <meta
       property="og:description"
-      content="Ethyria transforms your dreams into deep insights and AI-generated artworks. Dream interpretation based on Jung &amp; Freud, 5 analysis modes, visual dream journal."
+      content="Ethyria transforms your dreams into deep insights and AI-generated artworks. Dream interpretation based on Jung &amp; Freud, 5 analysis modes, visual dream journal. Try it free today."
     />
     <meta
       property="og:image"
@@ -86,7 +123,7 @@
         "@type": "MobileApplication",
         "name": "Ethyria – Dream Interpretation & Dream Journal",
         "url": "https://ostyles.github.io/ethyria/",
-        "image": "https://ostyles.github.io/ethyria/assets/og-image-de.png",
+        "image": "https://ostyles.github.io/ethyria/assets/og-image-en.png",
         "description": "Ethyria transforms your dreams into deep insights and AI-generated artworks.",
         "applicationCategory": "HealthApplication",
         "applicationSubCategory": "LifestyleApplication",
@@ -118,10 +155,16 @@
          ================================================================ -->
     <style>
       /* Automatische Input-Labels (z.B. von Browsern) kleiner darstellen */
-      input[type="email"]:not([type='password']):not([readonly])::-webkit-input-placeholder,
-      input[type="email"]:not([type='password']):not([readonly])::placeholder,
-      input[type="email"]:not([type='password']):not([readonly])::-moz-placeholder,
-      input[type="email"]:not([type='password']):not([readonly]):-ms-input-placeholder,
+      input[type="email"]:not([type="password"]):not(
+          [readonly]
+        )::-webkit-input-placeholder,
+      input[type="email"]:not([type="password"]):not([readonly])::placeholder,
+      input[type="email"]:not([type="password"]):not(
+          [readonly]
+        )::-moz-placeholder,
+      input[type="email"]:not([type="password"]):not(
+          [readonly]
+        ):-ms-input-placeholder,
       #heroBottomEmail::-webkit-input-placeholder,
       #heroBottomEmail::placeholder,
       #heroBottomEmail::-moz-placeholder,
@@ -145,7 +188,9 @@
         background: transparent !important;
       }
       /* Firefox: autofill label (floating label) noch kleiner */
-      input[type="email"]:not([type='password']):not([readonly]):-moz-ui-invalid,
+      input[type="email"]:not([type="password"]):not(
+          [readonly]
+        ):-moz-ui-invalid,
       #heroBottomEmail:-moz-ui-invalid,
       #betaEmail:-moz-ui-invalid,
       #exitEmail:-moz-ui-invalid {
@@ -392,7 +437,13 @@
         font-family: "Poppins", sans-serif;
         font-weight: 700;
         font-size: 1.15rem;
-        background: linear-gradient(90deg, #22d3ee 0%, #60a5fa 35%, #a78bfa 70%, #f0abfc 100%);
+        background: linear-gradient(
+          90deg,
+          #22d3ee 0%,
+          #60a5fa 35%,
+          #a78bfa 70%,
+          #f0abfc 100%
+        );
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -1084,9 +1135,9 @@
           class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-0 font-normal leading-relaxed reveal"
           style="position: relative; z-index: 1"
         >
-          Ethyria transforms your dreams into deep insights and unique
-          visual artworks. Cutting-edge AI interprets your subconscious from
-          five distinct perspectives — grounded in psychology.
+          Ethyria transforms your dreams into deep insights and unique visual
+          artworks. Cutting-edge AI interprets your subconscious from five
+          distinct perspectives — grounded in psychology.
         </p>
       </header>
 
@@ -1102,7 +1153,11 @@
           onsubmit="handleHeroBottomSignup(event)"
           class="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto mb-4 items-center"
         >
-          <label for="heroBottomEmail" class="text-xs text-cyan-400 whitespace-nowrap shrink-0">Email Address</label>
+          <label
+            for="heroBottomEmail"
+            class="text-xs text-cyan-400 whitespace-nowrap shrink-0"
+            >Email Address</label
+          >
           <input
             type="email"
             id="heroBottomEmail"
@@ -1135,9 +1190,7 @@
       </section>
 
       <!-- ★ FLOATING CTA — improved copy (H1 fix) ★ -->
-      <a href="#beta" class="floating-beta-cta"
-        >Start Your Dream Journey →</a
-      >
+      <a href="#beta" class="floating-beta-cta">Start Your Dream Journey →</a>
 
       <!-- Section Divider -->
       <div class="section-divider" aria-hidden="true"></div>
@@ -1150,14 +1203,17 @@
         class="container mx-auto px-6 py-24 section-shell relative z-10"
       >
         <div class="text-center mb-16 reveal">
-          <div class="section-pill section-pill--app ethyria-gradient-text">THE APP</div>
+          <div class="section-pill section-pill--app ethyria-gradient-text">
+            THE APP
+          </div>
           <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
             Experience <span class="ethyria-gradient-text">Ethyria</span>
           </h2>
           <p
             class="text-gray-300 max-w-2xl mx-auto text-base md:text-lg font-normal leading-relaxed"
           >
-            Three real screens from the app — Analysis, Community, and Statistics.
+            Three real screens from the app — Analysis, Community, and
+            Statistics.
           </p>
         </div>
         <div
@@ -1176,8 +1232,9 @@
                 </div>
                 <h3 class="text-2xl font-bold">Dream Analysis</h3>
                 <p class="text-gray-300 leading-relaxed">
-                  Choose your analysis type and receive a deep dream interpretation
-                  based on Freud, Jung, spiritual, or biosynchronous methods.
+                  Choose your analysis type and receive a deep dream
+                  interpretation based on Freud, Jung, spiritual, or
+                  biosynchronous methods.
                 </p>
               </div>
               <div class="app-showcase-visual">
@@ -1198,8 +1255,8 @@
                 </div>
                 <h3 class="text-2xl font-bold">Aether</h3>
                 <p class="text-gray-300 leading-relaxed">
-                  Discover global dream trends and dive into a growing
-                  community of dreamers.
+                  Discover global dream trends and dive into a growing community
+                  of dreamers.
                 </p>
               </div>
               <div class="app-showcase-visual">
@@ -1237,28 +1294,42 @@
             </article>
           </div>
           <div class="ethyria-slider__controls">
-              <button
-                class="ethyria-slider__nav ethyria-slider__nav--prev"
-                aria-label="Previous Screen"
-                disabled
-              >
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M8 12L16 6V18L8 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                </svg>
-              </button>
+            <button
+              class="ethyria-slider__nav ethyria-slider__nav--prev"
+              aria-label="Previous Screen"
+              disabled
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M8 12L16 6V18L8 12Z"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </button>
             <div class="ethyria-slider__dots" role="tablist"></div>
             <div class="ethyria-slider__counter" aria-hidden="true">
               <span class="ethyria-slider__counter-current">01</span> /
               <span class="ethyria-slider__counter-total">03</span>
             </div>
-              <button
-                class="ethyria-slider__nav ethyria-slider__nav--next"
-                aria-label="Next Screen"
-              >
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M16 12L8 6V18L16 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                </svg>
-              </button>
+            <button
+              class="ethyria-slider__nav ethyria-slider__nav--next"
+              aria-label="Next Screen"
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M16 12L8 6V18L16 12Z"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -1272,7 +1343,9 @@
       <section id="features" class="py-24 section-shell relative z-10">
         <div class="container mx-auto px-6">
           <div class="text-center mb-16 reveal">
-            <div class="section-pill section-pill--analysis ethyria-gradient-text">
+            <div
+              class="section-pill section-pill--analysis ethyria-gradient-text"
+            >
               Analysis Perspectives
             </div>
             <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
@@ -1308,16 +1381,18 @@
                     >
                       General
                     </div>
-                    <h4 class="font-bold text-base mb-2">General Interpretation</h4>
+                    <h4 class="font-bold text-base mb-2">
+                      General Interpretation
+                    </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
                       Broad, deep, and unbiased. The AI analyzes symbols,
-                      emotions, and narrative structure of your dream without
-                      a fixed school of thought.
+                      emotions, and narrative structure of your dream without a
+                      fixed school of thought.
                     </p>
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Entry Level
                   </div>
@@ -1339,15 +1414,17 @@
                     >
                       Freud
                     </div>
-                    <h4 class="font-bold text-base mb-2">Classical Psychoanalysis</h4>
+                    <h4 class="font-bold text-base mb-2">
+                      Classical Psychoanalysis
+                    </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                      Unconscious desires, repressed conflicts, and drive nature under
-                      scrutiny. The dream censor is decoded.
+                      Unconscious desires, repressed conflicts, and drive nature
+                      under scrutiny. The dream censor is decoded.
                     </p>
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Depth Psychology
                   </div>
@@ -1379,7 +1456,7 @@
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Archetypes
                   </div>
@@ -1412,7 +1489,7 @@
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Energy &amp; Soul
                   </div>
@@ -1445,7 +1522,7 @@
                   </div>
                   <div
                     class="mt-auto pt-2 border-t border-white/5 text-[10px] text-cyan-400 uppercase tracking-widest"
-                    style="color: #01bfff;"
+                    style="color: #01bfff"
                   >
                     Biometrics + AI
                   </div>
@@ -1459,7 +1536,14 @@
                 disabled
               >
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M8 12L16 6V18L8 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  <path
+                    d="M8 12L16 6V18L8 12Z"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none"
+                  />
                 </svg>
               </button>
               <div class="ethyria-slider__dots" role="tablist"></div>
@@ -1472,7 +1556,14 @@
                 aria-label="Next Perspective"
               >
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M16 12L8 6V18L16 12Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  <path
+                    d="M16 12L8 6V18L16 12Z"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none"
+                  />
                 </svg>
               </button>
             </div>
@@ -1491,13 +1582,15 @@
         class="container mx-auto px-6 py-24 section-shell relative z-10"
       >
         <div class="text-center mb-16 reveal">
-          <div class="section-pill section-pill--vision ethyria-gradient-text">Creative Modes</div>
+          <div class="section-pill section-pill--vision ethyria-gradient-text">
+            Creative Modes
+          </div>
           <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
             Ethyria <span class="ethyria-gradient-text">Vision</span>
           </h2>
           <p class="text-gray-300 max-w-xl mx-auto text-base font-normal">
-            Choose from three generative modes and turn your dream into a
-            visual memory.
+            Choose from three generative modes and turn your dream into a visual
+            memory.
           </p>
         </div>
         <!-- Bento Vision Grid -->
@@ -1588,8 +1681,7 @@
               The Insight Path:<br />From Fragments to Clarity
             </h2>
             <p class="text-gray-300 max-w-xl mx-auto text-base font-normal">
-              From raw dream to concrete growth impulse — in four
-              precise steps.
+              From raw dream to concrete growth impulse — in four precise steps.
             </p>
           </div>
 
@@ -1600,7 +1692,8 @@
                 <span
                   class="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.25em] text-cyan-400"
                 >
-                  <span class="w-6 h-px bg-cyan-700"></span>Live example from the app<span class="w-6 h-px bg-cyan-700"></span>
+                  <span class="w-6 h-px bg-cyan-700"></span>Live example from
+                  the app<span class="w-6 h-px bg-cyan-700"></span>
                 </span>
               </div>
               <div
@@ -1996,8 +2089,8 @@
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
                       We transform your words into actionable data points.
-                      Ethyria identifies symbols, entities, and emotional
-                      anchor points in real time.
+                      Ethyria identifies symbols, entities, and emotional anchor
+                      points in real time.
                     </p>
                     <div
                       style="
@@ -2131,8 +2224,8 @@
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
                       You determine the psychological framework. The chosen
-                      Executable Prompt is dynamically injected — no
-                      compromise between methods, just precise focus.
+                      Executable Prompt is dynamically injected — no compromise
+                      between methods, just precise focus.
                     </p>
                     <div
                       style="
@@ -2502,8 +2595,8 @@
                       Archetype Decoding
                     </h3>
                     <p class="text-sm text-gray-300 leading-relaxed mb-4">
-                      Ethyria connects symbols with your personal context.
-                      Each card represents a symbol.
+                      Ethyria connects symbols with your personal context. Each
+                      card represents a symbol.
                     </p>
                     <div
                       style="display: flex; flex-direction: column; gap: 8px"
@@ -2812,7 +2905,9 @@
                 <span aria-hidden="true">📈</span>
               </div>
               <div>
-                <h4 class="font-bold text-base mb-2">Recognize Your Own Patterns</h4>
+                <h4 class="font-bold text-base mb-2">
+                  Recognize Your Own Patterns
+                </h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
                   Ethyria shows you over weeks which archetypes and emotions
                   recur.
@@ -2830,8 +2925,8 @@
               <div>
                 <h4 class="font-bold text-base mb-2">Your Dream as Art</h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
-                  AI-generated images as symbol, emotion, or full scene —
-                  unique to you.
+                  AI-generated images as symbol, emotion, or full scene — unique
+                  to you.
                 </p>
               </div>
             </div>
@@ -2844,9 +2939,7 @@
                 <span aria-hidden="true">🔒</span>
               </div>
               <div>
-                <h4 class="font-bold text-base mb-2">
-                  Your Data. Only Yours.
-                </h4>
+                <h4 class="font-bold text-base mb-2">Your Data. Only Yours.</h4>
                 <p class="text-sm text-gray-300 leading-relaxed">
                   Encrypted, local, and never used for training. What you
                   experience at night is the most private thing there is.
@@ -2925,8 +3018,8 @@
               >
             </h3>
             <p class="text-base text-gray-300 mb-6 leading-relaxed">
-              We will unlock another 30 days of Premium if you briefly
-              support us after your test:
+              We will unlock another 30 days of Premium if you briefly support
+              us after your test:
             </p>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div
@@ -2977,13 +3070,11 @@
           <output id="betaStatus" class="hidden text-sm mb-4"></output>
 
           <div class="max-w-md mx-auto mb-4 text-sm text-gray-300 space-y-2">
-            <p>
-              <span aria-hidden="true">•</span> Worth €7.99 per month
-            </p>
+            <p><span aria-hidden="true">•</span> Worth €7.99 per month</p>
             <p><span aria-hidden="true">•</span> No credit card required</p>
             <p>
-              <span aria-hidden="true">•</span> 100% free until the end of
-              the trial period
+              <span aria-hidden="true">•</span> 100% free until the end of the
+              trial period
             </p>
           </div>
           <p class="text-sm text-gray-300 max-w-md mx-auto">
@@ -3024,35 +3115,32 @@
               FAQ
             </p>
             <h2 class="text-3xl md:text-4xl font-bold mb-4 section-title">
-              Frequently Asked <span class="ethyria-gradient-text">Questions</span>
+              Frequently Asked
+              <span class="ethyria-gradient-text">Questions</span>
             </h2>
             <p
               class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed section-subtitle"
             >
-              Transparent answers about pricing, privacy, AI dream analysis,
-              and device availability.
+              Transparent answers about pricing, privacy, AI dream analysis, and
+              device availability.
             </p>
           </div>
           <div
             class="grid grid-cols-1 md:grid-cols-2 gap-5 stagger-grid reveal"
           >
             <article class="glass-card px-6 py-6 rounded-3xl text-left">
-              <h3 class="text-xl font-bold mb-3">
-                Is Ethyria really free?
-              </h3>
+              <h3 class="text-xl font-bold mb-3">Is Ethyria really free?</h3>
               <p class="text-sm text-gray-300 leading-relaxed">
                 Yes. You can use Ethyria for free. Optional in-app purchases
-                unlock additional premium features like PDF exports and
-                extended analyses.
+                unlock additional premium features like PDF exports and extended
+                analyses.
               </p>
             </article>
             <article class="glass-card px-6 py-6 rounded-3xl text-left">
-              <h3 class="text-xl font-bold mb-3">
-                How safe is my dream data?
-              </h3>
+              <h3 class="text-xl font-bold mb-3">How safe is my dream data?</h3>
               <p class="text-sm text-gray-300 leading-relaxed">
-                Your privacy comes first. Your dream data stays on your
-                device — no cloud required, no tracking.
+                Your privacy comes first. Your dream data stays on your device —
+                no cloud required, no tracking.
               </p>
             </article>
             <article class="glass-card px-6 py-6 rounded-3xl text-left">
@@ -3070,16 +3158,14 @@
                 Which analysis modes does Ethyria offer?
               </h3>
               <p class="text-sm text-gray-300 leading-relaxed">
-                Ethyria offers five analysis perspectives: General Interpretation,
-                Freudian Psychoanalysis, Jungian Analytical Psychology,
-                Spiritual Reflection, and Biosynchronous Analysis.
+                Ethyria offers five analysis perspectives: General
+                Interpretation, Freudian Psychoanalysis, Jungian Analytical
+                Psychology, Spiritual Reflection, and Biosynchronous Analysis.
               </p>
             </article>
             <!-- ★ NEW: Export FAQ (replaces Export section) ★ -->
             <article class="glass-card px-6 py-6 rounded-3xl text-left">
-              <h3 class="text-xl font-bold mb-3">
-                Can I export my analyses?
-              </h3>
+              <h3 class="text-xl font-bold mb-3">Can I export my analyses?</h3>
               <p class="text-sm text-gray-300 leading-relaxed">
                 Yes. As a premium user, you can export each analysis and your
                 monthly statistics as a professionally designed PDF document.
@@ -3090,8 +3176,8 @@
                 Which devices is Ethyria available on?
               </h3>
               <p class="text-sm text-gray-300 leading-relaxed">
-                Ethyria is currently available for Android. An iOS version is
-                in development.
+                Ethyria is currently available for Android. An iOS version is in
+                development.
               </p>
             </article>
           </div>
@@ -3180,9 +3266,7 @@
       <div class="success-overlay__card">
         <div class="success-checkmark">✓</div>
         <h2 class="ethyria-gradient-text">Welcome to the Community!</h2>
-        <p>
-          Check your inbox now — your exclusive access is coming soon.
-        </p>
+        <p>Check your inbox now — your exclusive access is coming soon.</p>
         <div class="success-share">
           <p
             style="
@@ -3322,8 +3406,7 @@
           sending: "Saving your spot...",
           error:
             "We could not save your email right now. Please try again in a moment.",
-          setup:
-            "Signup is not live yet. Add the Apps Script URL first.",
+          setup: "Signup is not live yet. Add the Apps Script URL first.",
           buttonIdle: "Claim Access →",
           buttonLoading: "Saving...",
         },
