@@ -990,7 +990,9 @@ section:not(#insight-pfad) .glass-card [class~="text-left"] {
 }
 .echo-chart circle {
   opacity: 0;
-  transition: opacity 0.3s ease, r 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    r 0.3s ease;
 }
 .echo-chart text:not(.echo-axis) {
   opacity: 0;

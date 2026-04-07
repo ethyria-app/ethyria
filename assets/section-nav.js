@@ -24,24 +24,13 @@
     },
   };
 
-  const sectionIds = [
-    "top",
-    "app-screens",
-    "features",
-    "insight-pfad",
-    "vision",
-    "science",
-    "export",
-    "beta",
-    "faq",
-    "discoverability",
-  ];
+  const sectionSelectors = ["#top", "header[id]", "section[id]", "footer[id]"];
 
   const lang = document.documentElement.lang || "en";
   const labels = localeLabels[lang] || localeLabels.en;
-  const sections = sectionIds
-    .map((id) => document.getElementById(id))
-    .filter((element) => element instanceof HTMLElement);
+  const sections = Array.from(
+    document.querySelectorAll(sectionSelectors.join(",")),
+  ).filter((el) => el instanceof HTMLElement && el.offsetHeight > 0);
 
   if (sections.length < 2) {
     return;

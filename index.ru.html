@@ -305,7 +305,9 @@
       </header>
 
       <!-- FIX: Floating CTA -->
-      <a href="#beta" class="floating-beta-cta">Начни своё путешествие в мир снов</a>
+      <a href="#beta" class="floating-beta-cta"
+        >Начни своё путешествие в мир снов</a
+      >
 
       <!-- ============================================================
            APP SCREENSHOTS
@@ -612,7 +614,12 @@
               <div
                 class="live-dream-phone"
                 style="
-                  background: linear-gradient(170deg, #07112b 0%, #060f3e 50%, #071530 100%);
+                  background: linear-gradient(
+                    170deg,
+                    #07112b 0%,
+                    #060f3e 50%,
+                    #071530 100%
+                  );
                   border: 1px solid rgba(255, 255, 255, 0.1);
                   border-radius: 36px;
                   overflow: hidden;
@@ -1469,7 +1476,8 @@
                         Эмоциональная Нагрузка · Прогрессия Сна
                       </div>
                       <svg
-                        viewBox="0 0 320 90" class="echo-chart"
+                        viewBox="0 0 320 90"
+                        class="echo-chart"
                         width="100%"
                         style="overflow: visible"
                       >
@@ -1531,7 +1539,8 @@
                         <!-- Fill area -->
                         <path
                           d="M10,72 C40,72 55,30 80,26 C100,22 115,58 140,52 C160,47 175,72 200,70 C225,68 240,20 270,18 C290,16 305,68 310,68 L310,85 L10,85 Z"
-                          fill="url(#fillGrad)" class="echo-fill"
+                          fill="url(#fillGrad)"
+                          class="echo-fill"
                         />
                         <!-- Main curve -->
                         <path
@@ -1539,7 +1548,8 @@
                           fill="none"
                           stroke="url(#echoGrad)"
                           stroke-width="2.5"
-                          stroke-linecap="round" class="echo-line"
+                          stroke-linecap="round"
+                          class="echo-line"
                           filter="url(#glow)"
                         />
                         <!-- Data points -->
@@ -1601,7 +1611,8 @@
                           Туман · 2.1
                         </text>
                         <!-- x-axis labels -->
-                        <text class="echo-axis"
+                        <text
+                          class="echo-axis"
                           x="10"
                           y="84"
                           font-size="7"
@@ -1610,7 +1621,8 @@
                         >
                           00:15
                         </text>
-                        <text class="echo-axis"
+                        <text
+                          class="echo-axis"
                           x="118"
                           y="84"
                           font-size="7"
@@ -1619,7 +1631,8 @@
                         >
                           01:20
                         </text>
-                        <text class="echo-axis"
+                        <text
+                          class="echo-axis"
                           x="255"
                           y="84"
                           font-size="7"
@@ -2711,7 +2724,19 @@
     <script src="assets/beta-signup.js"></script>
     <script src="assets/section-nav.js"></script>
     <script>
-      (function(){var c=document.querySelector('.echo-chart');if(!c)return;new IntersectionObserver(function(e,o){if(e[0].isIntersecting){c.classList.add('is-animated');o.unobserve(c);}},{threshold:0.5,rootMargin:'0px 0px -5% 0px'}).observe(c);})();
+      (function () {
+        var c = document.querySelector(".echo-chart");
+        if (!c) return;
+        new IntersectionObserver(
+          function (e, o) {
+            if (e[0].isIntersecting) {
+              c.classList.add("is-animated");
+              o.unobserve(c);
+            }
+          },
+          { threshold: 0.5, rootMargin: "0px 0px -5% 0px" },
+        ).observe(c);
+      })();
     </script>
     <script>
       window.ethyriaBetaConfig = {

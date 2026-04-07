@@ -143,7 +143,9 @@
         margin: 0 auto;
       }
       @media (min-width: 640px) {
-        .hero-form { flex-direction: row; }
+        .hero-form {
+          flex-direction: row;
+        }
       }
       .hero-form input[type="email"] {
         flex: 1;
@@ -210,15 +212,20 @@
       .reveal {
         opacity: 0;
         transform: translateY(20px);
-        transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-                    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        transition:
+          opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
       }
       .reveal.is-visible {
         opacity: 1;
         transform: none;
       }
-      .stagger > .reveal:nth-child(2) { transition-delay: 0.08s; }
-      .stagger > .reveal:nth-child(3) { transition-delay: 0.16s; }
+      .stagger > .reveal:nth-child(2) {
+        transition-delay: 0.08s;
+      }
+      .stagger > .reveal:nth-child(3) {
+        transition-delay: 0.16s;
+      }
 
       /* ---- Hero Glow — static, no pulse ---- */
       .hero-glow {
@@ -229,7 +236,11 @@
         width: clamp(300px, 55vw, 550px);
         height: clamp(300px, 55vw, 550px);
         border-radius: 50%;
-        background: radial-gradient(circle, rgba(1, 191, 255, 0.07) 0%, transparent 65%);
+        background: radial-gradient(
+          circle,
+          rgba(1, 191, 255, 0.07) 0%,
+          transparent 65%
+        );
         filter: blur(80px);
         pointer-events: none;
         z-index: 0;
@@ -252,7 +263,12 @@
         content: "";
         width: min(40%, 16rem);
         height: 1px;
-        background: linear-gradient(90deg, transparent, var(--c-border-hover) 50%, transparent);
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--c-border-hover) 50%,
+          transparent
+        );
       }
       .section-divider::after {
         content: "";
@@ -292,25 +308,25 @@
       }
       @media (min-width: 768px) {
         .vision-bento {
-          grid-template-columns: 1fr 1.3fr 1fr;
+          grid-template-columns: repeat(3, 1fr);
           gap: 1.25rem;
         }
       }
       .vision-card {
         border-radius: var(--r-lg);
-        overflow: hidden;
-        border: 1px solid var(--c-border);
-        transition: border-color 0.4s ease;
         display: flex;
         flex-direction: column;
-      }
-      .vision-card:hover {
-        border-color: var(--c-border-hover);
       }
       .vision-card__img-wrap {
         position: relative;
         overflow: hidden;
         aspect-ratio: 1;
+        border-radius: var(--r-lg);
+        border: 1px solid var(--c-border);
+        transition: border-color 0.4s ease;
+      }
+      .vision-card:hover .vision-card__img-wrap {
+        border-color: var(--c-border-hover);
       }
       .vision-card__image {
         width: 100%;
@@ -323,7 +339,7 @@
         transform: scale(1.03);
       }
       .vision-card__body {
-        padding: 1.25rem 1.5rem;
+        padding: 1rem 0.25rem 0;
         text-align: center;
       }
       .vision-card__tag {
@@ -353,101 +369,201 @@
         color: var(--c-text);
         margin: 0;
       }
-      .vision-card--featured {
+      .vision-card--featured .vision-card__img-wrap {
         border-color: rgba(1, 191, 255, 0.12);
       }
 
-      /* ---- Ethyria Slider ---- */
+      /* ---- Ethyria Slider v2 — World-Class ---- */
       .ethyria-slider {
         position: relative;
-        padding: 0 3rem;
+        --slider-accent: var(--c-primary, #01bfff);
+        --slider-ease: cubic-bezier(0.22, 1, 0.36, 1);
+        --slider-duration: 0.6s;
       }
       .ethyria-slider__track {
         position: relative;
         overflow: hidden;
+        border-radius: 1rem;
+        touch-action: pan-y;
       }
       .ethyria-slider__slide {
         position: absolute;
         inset: 0;
         opacity: 0;
-        transform: translateX(40px);
+        transform: translateX(100px) scale(0.96);
         pointer-events: none;
-        transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        transition:
+          opacity var(--slider-duration) var(--slider-ease),
+          transform var(--slider-duration) var(--slider-ease);
         will-change: opacity, transform;
       }
       .ethyria-slider__slide.is-active {
         position: relative;
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(0) scale(1);
         pointer-events: auto;
       }
       .ethyria-slider__slide.is-exit-left {
-        transform: translateX(-40px);
+        opacity: 0;
+        transform: translateX(-100px) scale(0.96);
       }
       .ethyria-slider__slide.is-exit-right {
-        transform: translateX(40px);
+        opacity: 0;
+        transform: translateX(100px) scale(0.96);
       }
-      /* Navigation arrows */
+      .ethyria-slider__slide.is-dragging,
+      .ethyria-slider__slide.is-dragging.is-active {
+        transition: none !important;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .ethyria-slider__slide {
+          transition-duration: 0.01ms !important;
+          transform: none !important;
+        }
+        .ethyria-slider__slide.is-active {
+          transform: none !important;
+        }
+        .ethyria-slider__slide.is-exit-left,
+        .ethyria-slider__slide.is-exit-right {
+          transform: none !important;
+        }
+      }
+
+      /* --- Controls bar --- */
+      .ethyria-slider__controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+        margin-top: 2rem;
+      }
+
+      /* --- Navigation arrows --- */
       .ethyria-slider__nav {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        position: relative;
         z-index: 10;
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2.75rem;
+        height: 2.75rem;
         border-radius: 50%;
-        border: 1px solid rgba(255,255,255,0.15);
-        background: rgba(255,255,255,0.06);
-        backdrop-filter: blur(8px);
-        color: #fff;
-        font-size: 1.25rem;
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        color: rgba(255, 255, 255, 0.6);
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        opacity: 0.7;
-        transition: opacity 0.25s, background 0.25s, border-color 0.25s;
+        transition:
+          background 0.35s var(--slider-ease),
+          border-color 0.35s var(--slider-ease),
+          color 0.35s var(--slider-ease),
+          transform 0.25s var(--slider-ease),
+          box-shadow 0.35s var(--slider-ease);
+        flex-shrink: 0;
+        padding: 0;
+        outline: none;
+      }
+      .ethyria-slider__nav svg {
+        width: 1rem;
+        height: 1rem;
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
       }
       .ethyria-slider__nav:hover {
-        opacity: 1;
-        background: rgba(255,255,255,0.12);
-        border-color: rgba(1,191,255,0.5);
+        background: rgba(255, 255, 255, 0.07);
+        border-color: color-mix(in srgb, var(--slider-accent) 50%, transparent);
+        color: #fff;
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(1, 191, 255, 0.08);
       }
-      .ethyria-slider__nav--prev { left: 0; }
-      .ethyria-slider__nav--next { right: 0; }
+      .ethyria-slider__nav:focus-visible {
+        border-color: var(--slider-accent);
+        box-shadow: 0 0 0 2px
+          color-mix(in srgb, var(--slider-accent) 30%, transparent);
+      }
+      .ethyria-slider__nav:active {
+        transform: scale(0.93);
+      }
       .ethyria-slider__nav:disabled {
-        opacity: 0.15;
+        opacity: 0.1;
         cursor: default;
         pointer-events: none;
+        transform: none;
       }
-      @media (max-width: 767px) {
-        .ethyria-slider { padding: 0 2.25rem; }
-        .ethyria-slider__nav { width: 2rem; height: 2rem; font-size: 1rem; }
-      }
-      /* Dot indicators */
+
+      /* --- Pill-shaped dot indicators --- */
       .ethyria-slider__dots {
         display: flex;
-        justify-content: center;
-        gap: 0.5rem;
-        margin-top: 1.5rem;
+        align-items: center;
+        gap: 0.35rem;
       }
       .ethyria-slider__dot {
-        width: 0.5rem;
-        height: 0.5rem;
-        border-radius: 50%;
-        border: 1.5px solid rgba(255,255,255,0.3);
-        background: transparent;
+        height: 0.3rem;
+        width: 0.3rem;
+        border-radius: 100px;
+        border: none;
+        background: rgba(255, 255, 255, 0.18);
         cursor: pointer;
-        transition: background 0.3s, border-color 0.3s, transform 0.3s;
+        transition:
+          width 0.45s var(--slider-ease),
+          background 0.45s var(--slider-ease),
+          opacity 0.3s ease;
         padding: 0;
+        flex-shrink: 0;
+        outline: none;
       }
       .ethyria-slider__dot.is-active {
-        background: var(--c-primary, #01bfff);
-        border-color: var(--c-primary, #01bfff);
-        transform: scale(1.3);
+        width: 1.5rem;
+        background: var(--slider-accent);
       }
       .ethyria-slider__dot:hover:not(.is-active) {
-        border-color: rgba(255,255,255,0.6);
+        background: rgba(255, 255, 255, 0.35);
+      }
+      .ethyria-slider__dot:focus-visible {
+        box-shadow: 0 0 0 2px
+          color-mix(in srgb, var(--slider-accent) 40%, transparent);
+      }
+
+      /* --- Slide counter --- */
+      .ethyria-slider__counter {
+        font-family: "Inter", ui-monospace, monospace;
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        color: rgba(255, 255, 255, 0.28);
+        min-width: 2.75rem;
+        text-align: center;
+        user-select: none;
+        font-variant-numeric: tabular-nums;
+      }
+      .ethyria-slider__counter-current {
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      @media (max-width: 767px) {
+        .ethyria-slider__nav {
+          width: 2.25rem;
+          height: 2.25rem;
+        }
+        .ethyria-slider__nav svg {
+          width: 0.85rem;
+          height: 0.85rem;
+        }
+        .ethyria-slider__controls {
+          gap: 0.875rem;
+          margin-top: 1.5rem;
+        }
+        .ethyria-slider__dot.is-active {
+          width: 1.25rem;
+        }
+        .ethyria-slider__counter {
+          font-size: 0.65rem;
+          min-width: 2.25rem;
+        }
       }
 
       /* ---- Trust Dots — monochrome ---- */
@@ -463,27 +579,46 @@
       .scroll-hint-wrapper::after {
         content: "";
         position: absolute;
-        top: 0; right: 0; bottom: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
         width: 40px;
-        background: linear-gradient(90deg, transparent, var(--ethyria-dark, #100c1f) 90%);
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--ethyria-dark, #100c1f) 90%
+        );
         pointer-events: none;
         z-index: 2;
         transition: opacity 0.3s;
       }
-      .scroll-hint-wrapper.scrolled-end::after { opacity: 0; }
+      .scroll-hint-wrapper.scrolled-end::after {
+        opacity: 0;
+      }
 
       /* ---- Stagger Grid ---- */
       .stagger-grid > * {
         opacity: 0;
         transform: translateY(16px);
-        transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
-                    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        transition:
+          opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
       }
-      .stagger-grid.is-visible > *:nth-child(1) { transition-delay: 0s; }
-      .stagger-grid.is-visible > *:nth-child(2) { transition-delay: 0.07s; }
-      .stagger-grid.is-visible > *:nth-child(3) { transition-delay: 0.14s; }
-      .stagger-grid.is-visible > *:nth-child(4) { transition-delay: 0.18s; }
-      .stagger-grid.is-visible > *:nth-child(5) { transition-delay: 0.22s; }
+      .stagger-grid.is-visible > *:nth-child(1) {
+        transition-delay: 0s;
+      }
+      .stagger-grid.is-visible > *:nth-child(2) {
+        transition-delay: 0.07s;
+      }
+      .stagger-grid.is-visible > *:nth-child(3) {
+        transition-delay: 0.14s;
+      }
+      .stagger-grid.is-visible > *:nth-child(4) {
+        transition-delay: 0.18s;
+      }
+      .stagger-grid.is-visible > *:nth-child(5) {
+        transition-delay: 0.22s;
+      }
       .stagger-grid.is-visible > * {
         opacity: 1;
         transform: none;
@@ -493,94 +628,240 @@
          RESPONSIVE — Mobile-first, restrained
          ================================================================ */
       @media (max-width: 390px) {
-        html { font-size: 108%; }
-        #hero h1 { font-size: 2rem; }
+        html {
+          font-size: 108%;
+        }
+        #hero h1 {
+          font-size: 2rem;
+        }
         .hero-form button[type="submit"] {
           padding: 0.75rem 1.25rem;
           font-size: 0.85rem;
         }
-        .nav-brand-logo { max-height: 4rem; }
-        .section-pill { font-size: 8px; letter-spacing: 0.2em; }
-        #beta h2 { font-size: 1.5rem; }
-        .social-proof-bar { margin-left: 1rem; margin-right: 1rem; }
+        .nav-brand-logo {
+          max-height: 4rem;
+        }
+        .section-pill {
+          font-size: 8px;
+          letter-spacing: 0.2em;
+        }
+        #beta h2 {
+          font-size: 1.5rem;
+        }
+        .social-proof-bar {
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
       }
 
       @media (max-width: 640px) {
-        body { padding-left: 0; padding-right: 0; }
-        #hero { padding-top: 0.25rem; padding-bottom: 2rem; }
-        #hero h1 { font-size: 2.4rem; margin-bottom: 1rem; line-height: 1.08; }
-        #hero > p, header#hero > p {
-          font-size: 0.92rem; margin-bottom: 1.25rem; max-width: none;
+        body {
+          padding-left: 0;
+          padding-right: 0;
         }
-        .hero-form { gap: 0.5rem; max-width: 100%; }
-        .hero-form input[type="email"] { padding: 0.8rem 1rem; font-size: 0.88rem; }
-        .hero-form button[type="submit"] { padding: 0.8rem 1.5rem; font-size: 0.88rem; }
-        .hero-trust-line { font-size: 0.72rem; gap: 0.4rem 0.8rem; }
-        .section-shell { padding-top: 2.5rem; padding-bottom: 2.5rem; }
-        .section-shell .text-center.mb-16 { margin-bottom: 1.5rem; }
-        #app-screens h2, #features h2, #vision h2, #science h2 { font-size: 1.6rem; }
-        .section-pill { font-size: 9px; padding: 0.2rem 0.7rem; margin-bottom: 0.8rem; }
-        .nav-brand-logo { max-height: 4.5rem; }
-        .language-switcher { gap: 0.45rem; }
-        .language-flag { width: 1.1rem; height: 1.1rem; }
-        .vision-bento { gap: 0.75rem; }
-        .vision-card__body { padding: 0.75rem 1rem; }
-        .vision-card__title { font-size: 1rem; }
-        .vision-card__desc { font-size: 0.78rem; }
-        .vision-card__tag { font-size: 9px; }
+        #hero {
+          padding-top: 0.25rem;
+          padding-bottom: 2rem;
+        }
+        #hero h1 {
+          font-size: 2.4rem;
+          margin-bottom: 1rem;
+          line-height: 1.08;
+        }
+        #hero > p,
+        header#hero > p {
+          font-size: 0.92rem;
+          margin-bottom: 1.25rem;
+          max-width: none;
+        }
+        .hero-form {
+          gap: 0.5rem;
+          max-width: 100%;
+        }
+        .hero-form input[type="email"] {
+          padding: 0.8rem 1rem;
+          font-size: 0.88rem;
+        }
+        .hero-form button[type="submit"] {
+          padding: 0.8rem 1.5rem;
+          font-size: 0.88rem;
+        }
+        .hero-trust-line {
+          font-size: 0.72rem;
+          gap: 0.4rem 0.8rem;
+        }
+        .section-shell {
+          padding-top: 2.5rem;
+          padding-bottom: 2.5rem;
+        }
+        .section-shell .text-center.mb-16 {
+          margin-bottom: 1.5rem;
+        }
+        #app-screens h2,
+        #features h2,
+        #vision h2,
+        #science h2 {
+          font-size: 1.6rem;
+        }
+        .section-pill {
+          font-size: 9px;
+          padding: 0.2rem 0.7rem;
+          margin-bottom: 0.8rem;
+        }
+        .nav-brand-logo {
+          max-height: 4.5rem;
+        }
+        .language-switcher {
+          gap: 0.45rem;
+        }
+        .language-flag {
+          width: 1.1rem;
+          height: 1.1rem;
+        }
+        .vision-bento {
+          gap: 0.75rem;
+        }
+        .vision-card__body {
+          padding: 0.75rem 0.15rem 0;
+        }
+        .vision-card__title {
+          font-size: 1rem;
+        }
+        .vision-card__desc {
+          font-size: 0.78rem;
+        }
+        .vision-card__tag {
+          font-size: 9px;
+        }
 
-        #beta { padding-top: 3rem; padding-bottom: 3rem; }
-        #beta h2 { font-size: 1.75rem; }
-        #faq .grid { gap: 0.6rem; }
-        #faq .glass-card { padding: 1rem 1.15rem; border-radius: var(--r-md); }
-        #faq h3 { font-size: 0.92rem; margin-bottom: 0.35rem; }
-        #faq p { font-size: 0.82rem; }
-        #science .grid { gap: 0.6rem; }
-        #science .glass-card { padding: 1.1rem; }
-        #science h4 { font-size: 0.88rem; }
-        #insight-pfad .roadmap-steps { gap: 1.75rem; }
-        #insight-pfad h2 { font-size: 1.35rem; }
-        .live-dream-shell { max-width: 100%; }
-        .floating-beta-cta { font-size: 0.82rem; padding: 0.75rem 1.15rem; }
-        .section-divider::before { width: 60%; }
-        footer { padding: 1.5rem 1rem; }
+        #beta {
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+        }
+        #beta h2 {
+          font-size: 1.75rem;
+        }
+        #faq .grid {
+          gap: 0.6rem;
+        }
+        #faq .glass-card {
+          padding: 1rem 1.15rem;
+          border-radius: var(--r-md);
+        }
+        #faq h3 {
+          font-size: 0.92rem;
+          margin-bottom: 0.35rem;
+        }
+        #faq p {
+          font-size: 0.82rem;
+        }
+        #science .grid {
+          gap: 0.6rem;
+        }
+        #science .glass-card {
+          padding: 1.1rem;
+        }
+        #science h4 {
+          font-size: 0.88rem;
+        }
+        #insight-pfad .roadmap-steps {
+          gap: 1.75rem;
+        }
+        #insight-pfad h2 {
+          font-size: 1.35rem;
+        }
+        .live-dream-shell {
+          max-width: 100%;
+        }
+        .floating-beta-cta {
+          font-size: 0.82rem;
+          padding: 0.75rem 1.15rem;
+        }
+        .section-divider::before {
+          width: 60%;
+        }
+        footer {
+          padding: 1.5rem 1rem;
+        }
       }
 
       @media (min-width: 641px) and (max-width: 1023px) {
-        #hero h1 { font-size: 3.5rem; }
-        .vision-bento { grid-template-columns: 1fr 1fr; gap: 1rem; }
-        .vision-card:last-child { grid-column: 1 / -1; }
+        #hero h1 {
+          font-size: 3.5rem;
+        }
+        .vision-bento {
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+        }
+        .vision-card:last-child {
+          grid-column: 1 / -1;
+        }
 
-        .features-scroll { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+        .features-scroll {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1rem;
+        }
       }
 
       @media (min-width: 1024px) {
-        .features-scroll { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+        .features-scroll {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1rem;
+        }
       }
       @media (min-width: 1280px) {
-        .features-scroll { grid-template-columns: repeat(5, 1fr); }
+        .features-scroll {
+          grid-template-columns: repeat(5, 1fr);
+        }
       }
 
       /* ---- Reduced Motion ---- */
       @media (prefers-reduced-motion: reduce) {
-        .reveal { opacity: 1; transform: none; transition: none; }
-        .vision-card__image { transition: none; }
-        .stagger-grid > * { opacity: 1; transform: none; transition: none; }
+        .reveal {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
+        .vision-card__image {
+          transition: none;
+        }
+        .stagger-grid > * {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
       }
 
       /* ---- Smooth Scroll ---- */
-      html { scroll-behavior: smooth; }
+      html {
+        scroll-behavior: smooth;
+      }
       @media (prefers-reduced-motion: reduce) {
-        html { scroll-behavior: auto; }
+        html {
+          scroll-behavior: auto;
+        }
       }
 
       /* ---- Noise overlay — disabled, hidden ---- */
-      .noise-overlay { display: none; }
-      .cursor-glow { display: none; }
-      .hero-starfield { display: none; }
+      .noise-overlay {
+        display: none;
+      }
+      .cursor-glow {
+        display: none;
+      }
+      .hero-starfield {
+        display: none;
+      }
 
       /* ---- Section tints — removed, pure dark ---- */
-      #app-screens, #features, #vision, #insight-pfad, #science, #beta {
+      #app-screens,
+      #features,
+      #vision,
+      #insight-pfad,
+      #science,
+      #beta {
         background: none;
       }
 
@@ -601,7 +882,9 @@
       }
 
       /* ---- Kill card glow pseudo-element ---- */
-      .features-scroll .glass-card::after { display: none; }
+      .features-scroll .glass-card::after {
+        display: none;
+      }
 
       /* ---- Features cards — unified muted color ---- */
       .features-scroll .glass-card .text-cyan-400,
@@ -636,8 +919,19 @@
       }
 
       /* ---- Confetti / success pulse — disabled ---- */
-      @keyframes confettiFall { 0%, 100% { opacity: 0; } }
-      @keyframes successPulse { 0%, 100% { transform: none; opacity: 1; } }
+      @keyframes confettiFall {
+        0%,
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes successPulse {
+        0%,
+        100% {
+          transform: none;
+          opacity: 1;
+        }
+      }
 
       /* ---- Gradient text — limited to hero h1 only, muted everywhere else ---- */
       #features .ethyria-gradient-text,
@@ -664,8 +958,6 @@
   </head>
   <body class="overflow-x-hidden">
     <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
-
-
 
     <div class="bg-blob top-[-10%] left-[-10%]"></div>
     <div class="bg-blob bottom-[20%] right-[-5%]"></div>
@@ -745,9 +1037,9 @@
            ============================================================ -->
       <header
         id="hero"
-        class="container mx-auto px-6 pt-2 pb-12 text-center relative z-10"
+        class="container mx-auto px-6 pt-2 pb-0 text-center relative z-10"
       >
-<!-- Subtle glow -->
+        <!-- Subtle glow -->
         <div class="hero-glow" aria-hidden="true"></div>
 
         <div
@@ -764,23 +1056,25 @@
           <span class="ethyria-gradient-text">Sieh sie.</span>
         </h1>
         <p
-          class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 font-light leading-relaxed reveal"
+          class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-0 font-normal leading-relaxed reveal"
           style="position: relative; z-index: 1"
         >
           Ethyria verwandelt deine Träume in tiefe Erkenntnisse und einzigartige
           visuelle Kunstwerke. Modernste KI deutet dein Unterbewusstsein aus
           fünf unterschiedlichen Perspektiven — fundiert in der Psychologie.
         </p>
-
       </header>
 
       <!-- ============================================================
            HERO BOTTOM SIGNUP — below-the-fold conversion
            ============================================================ -->
-      <section class="relative z-10 container mx-auto px-6 pt-4 pb-8 text-center">
-        <div class="section-divider mb-6" aria-hidden="true"></div>
+      <section
+        class="relative z-10 container mx-auto px-6 pt-0 pb-8 text-center"
+        style="margin-top: -4rem"
+      >
+        <div class="section-divider mb-4" aria-hidden="true"></div>
         <p
-          class="text-sm text-gray-300 max-w-2xl mx-auto mb-4 leading-relaxed"
+          class="text-xs text-cyan-300/70 max-w-2xl mx-auto mb-4 leading-relaxed"
         >
           Trage hier deine Email Adresse ein und du bekommst deinen exklusiven
           Download-Link in dein persönliches Postfach.
@@ -796,8 +1090,8 @@
             name="email"
             required
             autocomplete="email"
-            placeholder="deine@email.com"
-            class="flex-1 px-5 py-4 rounded-full bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500/50 focus:bg-white/8 transition text-sm"
+            placeholder="Email Adresse"
+            class="flex-1 px-5 py-4 rounded-full bg-white/5 border border-white/10 text-cyan-300/70 placeholder-cyan-300/40 focus:outline-none focus:border-cyan-500/50 focus:bg-white/8 transition text-xs"
           />
           <input
             type="text"
@@ -811,15 +1105,10 @@
         </form>
         <output id="heroBottomStatus" class="hidden text-sm mb-4"></output>
 
-        <div class="max-w-md mx-auto mb-4 text-sm text-gray-300 space-y-2">
-          <p>
-            <span aria-hidden="true">•</span> Im Wert von 7,99 € pro Monat
-          </p>
-          <p><span aria-hidden="true">•</span> Keine Kreditkarte benötigt</p>
-          <p>
-            <span aria-hidden="true">•</span> 100 % kostenlos bis zum Ablauf
-            der Testphase
-          </p>
+        <div class="max-w-md mx-auto mb-4 text-xs text-cyan-300/70 space-y-1">
+          <p>Im Wert von 7,99 € pro Monat</p>
+          <p>Keine Kreditkarte benötigt</p>
+          <p>100 % kostenlos bis zum Ablauf der Testphase</p>
         </div>
       </section>
 
@@ -844,12 +1133,19 @@
             Erlebe <span class="ethyria-gradient-text">Ethyria</span>
           </h2>
           <p
-            class="text-gray-300 max-w-2xl mx-auto text-base md:text-lg font-light leading-relaxed"
+            class="text-gray-300 max-w-2xl mx-auto text-base md:text-lg font-normal leading-relaxed"
           >
             Drei echte Screens aus der App — Analyse, Community und Statistiken.
           </p>
         </div>
-        <div class="ethyria-slider" data-slider="app-screens">
+        <div
+          class="ethyria-slider"
+          data-slider="app-screens"
+          data-autoplay="7000"
+          role="region"
+          aria-roledescription="Karussell"
+          aria-label="App Screenshots"
+        >
           <div class="ethyria-slider__track">
             <article class="ethyria-slider__slide app-showcase-item is-active">
               <div class="app-showcase-copy">
@@ -902,8 +1198,8 @@
                 </div>
                 <h3 class="text-2xl font-bold">Statistiken</h3>
                 <p class="text-gray-300 leading-relaxed">
-                  Verstehe deine Schlafmuster durch detaillierte Auswertungen und
-                  lerne dein Unterbewusstsein besser kennen.
+                  Verstehe deine Schlafmuster durch detaillierte Auswertungen
+                  und lerne dein Unterbewusstsein besser kennen.
                 </p>
               </div>
               <div class="app-showcase-visual">
@@ -918,9 +1214,26 @@
               </div>
             </article>
           </div>
-          <button class="ethyria-slider__nav ethyria-slider__nav--prev" aria-label="Vorheriger Screen" disabled>&#8249;</button>
-          <button class="ethyria-slider__nav ethyria-slider__nav--next" aria-label="Nächster Screen">&#8250;</button>
-          <div class="ethyria-slider__dots"></div>
+          <div class="ethyria-slider__controls">
+            <button
+              class="ethyria-slider__nav ethyria-slider__nav--prev"
+              aria-label="Vorheriger Screen"
+              disabled
+            >
+              <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" /></svg>
+            </button>
+            <div class="ethyria-slider__dots" role="tablist"></div>
+            <div class="ethyria-slider__counter" aria-hidden="true">
+              <span class="ethyria-slider__counter-current">01</span> /
+              <span class="ethyria-slider__counter-total">03</span>
+            </div>
+            <button
+              class="ethyria-slider__nav ethyria-slider__nav--next"
+              aria-label="Nächster Screen"
+            >
+              <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6" /></svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -939,13 +1252,20 @@
             <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
               5 Analyse-<span class="ethyria-gradient-text">Perspektiven</span>
             </h2>
-            <p class="text-gray-300 max-w-2xl mx-auto text-base font-light">
+            <p class="text-gray-300 max-w-2xl mx-auto text-base font-normal">
               Jeder Traum verdient die passende Perspektive. Ethyria
               interpretiert deine Träume mithilfe von fünf eigenständigen
               Deutungsansätzen.
             </p>
           </div>
-          <div class="ethyria-slider" data-slider="features">
+          <div
+            class="ethyria-slider"
+            data-slider="features"
+            data-autoplay="5000"
+            role="region"
+            aria-roledescription="Karussell"
+            aria-label="Analyse-Perspektiven"
+          >
             <div class="ethyria-slider__track">
               <!-- General -->
               <div class="ethyria-slider__slide is-active">
@@ -997,8 +1317,8 @@
                       Klassische Psychoanalyse
                     </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                      Unbewusste Wünsche, verdrängte Konflikte und Triebnatur unter
-                      der Lupe. Der Traumzensor wird entschlüsselt.
+                      Unbewusste Wünsche, verdrängte Konflikte und Triebnatur
+                      unter der Lupe. Der Traumzensor wird entschlüsselt.
                     </p>
                   </div>
                   <div
@@ -1028,8 +1348,8 @@
                       Analytische Psychologie
                     </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                      Archetypen, Schatten, Anima und kollektives Unbewusstes. Der
-                      Weg zur Individuation beginnt mit dem Traum.
+                      Archetypen, Schatten, Anima und kollektives Unbewusstes.
+                      Der Weg zur Individuation beginnt mit dem Traum.
                     </p>
                   </div>
                   <div
@@ -1055,11 +1375,14 @@
                     >
                       Spiritual
                     </div>
-                    <h4 class="font-bold text-base mb-2">Spirituelle Reflexion</h4>
+                    <h4 class="font-bold text-base mb-2">
+                      Spirituelle Reflexion
+                    </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                      Ein erfahrungsbasierter, nicht-wissenschaftlicher Blickwinkel.
-                      Erkunde symbolische Bedeutung, innere Narrative und
-                      persönliche Resonanz jenseits klinischer Rahmen.
+                      Ein erfahrungsbasierter, nicht-wissenschaftlicher
+                      Blickwinkel. Erkunde symbolische Bedeutung, innere
+                      Narrative und persönliche Resonanz jenseits klinischer
+                      Rahmen.
                     </p>
                   </div>
                   <div
@@ -1085,7 +1408,9 @@
                     >
                       BMA
                     </div>
-                    <h4 class="font-bold text-base mb-2">Biosynchrone Analyse</h4>
+                    <h4 class="font-bold text-base mb-2">
+                      Biosynchrone Analyse
+                    </h4>
                     <p class="text-xs text-gray-300 leading-relaxed">
                       Herzrate, HRV und Schlafphasen aus Health Connect fließen
                       direkt in die Deutung ein. Ein experimenteller Ansatz, der
@@ -1100,9 +1425,26 @@
                 </div>
               </div>
             </div>
-            <button class="ethyria-slider__nav ethyria-slider__nav--prev" aria-label="Vorherige Perspektive" disabled>&#8249;</button>
-            <button class="ethyria-slider__nav ethyria-slider__nav--next" aria-label="Nächste Perspektive">&#8250;</button>
-            <div class="ethyria-slider__dots"></div>
+            <div class="ethyria-slider__controls">
+              <button
+                class="ethyria-slider__nav ethyria-slider__nav--prev"
+                aria-label="Vorherige Perspektive"
+                disabled
+              >
+                <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" /></svg>
+              </button>
+              <div class="ethyria-slider__dots" role="tablist"></div>
+              <div class="ethyria-slider__counter" aria-hidden="true">
+                <span class="ethyria-slider__counter-current">01</span> /
+                <span class="ethyria-slider__counter-total">05</span>
+              </div>
+              <button
+                class="ethyria-slider__nav ethyria-slider__nav--next"
+                aria-label="Nächste Perspektive"
+              >
+                <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6" /></svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -1122,7 +1464,7 @@
           <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
             Ethyria <span class="ethyria-gradient-text">Vision</span>
           </h2>
-          <p class="text-gray-300 max-w-xl mx-auto text-base font-light">
+          <p class="text-gray-300 max-w-xl mx-auto text-base font-normal">
             Wähle aus drei generativen Modi und verwandle deinen Traum in eine
             visuelle Erinnerung.
           </p>
@@ -1189,7 +1531,8 @@
               <h3 class="vision-card__title">Gesamter Traum</h3>
               <p class="vision-card__desc">
                 Die ganze Szene. Ethyria verwandelt den gesamten Traum in eine
-                stimmige visuelle Komposition, in die du wieder eintauchen kannst.
+                stimmige visuelle Komposition, in die du wieder eintauchen
+                kannst.
               </p>
             </div>
           </div>
@@ -1215,7 +1558,7 @@
             >
               Der Insight-Pfad:<br />Von Fragmenten zu Klarheit
             </h2>
-            <p class="text-gray-300 max-w-xl mx-auto text-base font-light">
+            <p class="text-gray-300 max-w-xl mx-auto text-base font-normal">
               Vom rohen Traumerlebnis zum konkreten Wachstumsimpuls — in vier
               präzisen Schritten.
             </p>
@@ -2376,12 +2719,14 @@
                 >Intuition.</span
               >
             </h2>
-            <p class="text-gray-300 max-w-xl mx-auto text-base font-light">
+            <p class="text-gray-300 max-w-xl mx-auto text-base font-normal">
               Fünf Gründe, warum Ethyria nicht nur eine weitere
               Traumdeutungs-App ist.
             </p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 stagger-grid reveal">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 stagger-grid reveal"
+          >
             <div
               class="glass-card p-8 rounded-[28px] flex gap-6 group hover:border-cyan-500/30 hover:shadow-[0_0_30px_rgba(1,191,255,0.08)] transition-all duration-300"
             >
@@ -2429,7 +2774,9 @@
               </div>
             </div>
           </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 stagger-grid reveal">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 stagger-grid reveal"
+          >
             <div
               class="glass-card p-8 rounded-[28px] flex flex-col gap-4 group hover:border-sky-500/30 transition-all duration-300"
             >
@@ -2660,7 +3007,9 @@
               Geräteverfügbarkeit.
             </p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 stagger-grid reveal">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-5 stagger-grid reveal"
+          >
             <article class="glass-card px-6 py-6 rounded-3xl text-left">
               <h3 class="text-xl font-bold mb-3">
                 Ist Ethyria wirklich kostenlos?
@@ -3259,50 +3608,96 @@
         });
       })();
 
-      // ---- Ethyria Slider ---- //
+      // ---- Ethyria Slider v2 — World-Class ---- //
       (function () {
+        var TRANSITION_MS = 600;
+        var reducedMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
+
         document.querySelectorAll(".ethyria-slider").forEach(function (root) {
           var track = root.querySelector(".ethyria-slider__track");
-          var slides = Array.from(track.querySelectorAll(".ethyria-slider__slide"));
+          var slides = Array.from(
+            track.querySelectorAll(".ethyria-slider__slide"),
+          );
           var prevBtn = root.querySelector(".ethyria-slider__nav--prev");
           var nextBtn = root.querySelector(".ethyria-slider__nav--next");
           var dotsWrap = root.querySelector(".ethyria-slider__dots");
+          var counterCur = root.querySelector(
+            ".ethyria-slider__counter-current",
+          );
+          var counterTotal = root.querySelector(
+            ".ethyria-slider__counter-total",
+          );
           var current = 0;
           var total = slides.length;
           var isAnimating = false;
+          var autoplayMs = parseInt(root.dataset.autoplay, 10) || 0;
+          var autoTimer = null;
+          var isPaused = false;
+          var isVisible = true;
 
-          // Build dots
-          slides.forEach(function (_, i) {
+          // --- Pad numbers: 01, 02 … ---
+          function pad(n) {
+            return n < 10 ? "0" + n : "" + n;
+          }
+
+          // --- Build dots ---
+          slides.forEach(function (slide, i) {
             var dot = document.createElement("button");
-            dot.className = "ethyria-slider__dot" + (i === 0 ? " is-active" : "");
+            dot.className =
+              "ethyria-slider__dot" + (i === 0 ? " is-active" : "");
             dot.setAttribute("aria-label", "Slide " + (i + 1));
-            dot.addEventListener("click", function () { goTo(i); });
+            dot.setAttribute("role", "tab");
+            dot.setAttribute("aria-selected", i === 0 ? "true" : "false");
+            dot.addEventListener("click", function () {
+              goTo(i);
+              resetAutoplay();
+            });
             dotsWrap.appendChild(dot);
+
+            // ARIA for slides
+            slide.setAttribute("role", "tabpanel");
+            slide.setAttribute(
+              "aria-label",
+              "Slide " + (i + 1) + " von " + total,
+            );
           });
           var dots = Array.from(dotsWrap.children);
 
-          function updateNav() {
+          // --- Counter init ---
+          if (counterTotal) counterTotal.textContent = pad(total);
+
+          // --- Update UI state ---
+          function updateUI() {
             prevBtn.disabled = current === 0;
             nextBtn.disabled = current === total - 1;
             dots.forEach(function (d, i) {
-              d.classList.toggle("is-active", i === current);
+              var active = i === current;
+              d.classList.toggle("is-active", active);
+              d.setAttribute("aria-selected", active ? "true" : "false");
             });
+            if (counterCur) counterCur.textContent = pad(current + 1);
           }
 
-          function goTo(index) {
-            if (isAnimating || index === current || index < 0 || index >= total) return;
+          // --- Core transition ---
+          function goTo(index, forceDir) {
+            if (isAnimating || index === current || index < 0 || index >= total)
+              return;
             isAnimating = true;
-            var dir = index > current ? 1 : -1;
+
+            var dir = forceDir || (index > current ? 1 : -1);
             var outSlide = slides[current];
             var inSlide = slides[index];
 
-            // Exit direction
+            // Exit
             outSlide.classList.remove("is-active");
             outSlide.classList.add(dir > 0 ? "is-exit-left" : "is-exit-right");
 
-            // Enter: position off-screen opposite side, then activate
+            // Prepare enter slide off-screen
             inSlide.style.transition = "none";
-            inSlide.style.transform = dir > 0 ? "translateX(40px)" : "translateX(-40px)";
+            inSlide.style.transform =
+              "translateX(" + (dir > 0 ? "100" : "-100") + "px) scale(0.96)";
             inSlide.style.opacity = "0";
             inSlide.classList.add("is-active");
 
@@ -3315,38 +3710,141 @@
             inSlide.style.opacity = "";
 
             current = index;
-            updateNav();
+            updateUI();
 
+            var dur = reducedMotion ? 50 : TRANSITION_MS;
             setTimeout(function () {
               outSlide.classList.remove("is-exit-left", "is-exit-right");
+              outSlide.style.transform = "";
+              outSlide.style.opacity = "";
               isAnimating = false;
-            }, 520);
+            }, dur + 20);
           }
 
-          prevBtn.addEventListener("click", function () { goTo(current - 1); });
-          nextBtn.addEventListener("click", function () { goTo(current + 1); });
+          // --- Looping helper for autoplay ---
+          function next() {
+            if (current < total - 1) {
+              goTo(current + 1);
+            } else {
+              goTo(0, 1); // loop forward
+            }
+          }
 
-          // Keyboard support
-          root.setAttribute("tabindex", "0");
-          root.addEventListener("keydown", function (e) {
-            if (e.key === "ArrowLeft") { e.preventDefault(); goTo(current - 1); }
-            if (e.key === "ArrowRight") { e.preventDefault(); goTo(current + 1); }
+          // --- Navigation ---
+          prevBtn.addEventListener("click", function () {
+            goTo(current - 1);
+            resetAutoplay();
+          });
+          nextBtn.addEventListener("click", function () {
+            goTo(current + 1);
+            resetAutoplay();
           });
 
-          // Touch / swipe
-          var touchStartX = 0;
-          root.addEventListener("touchstart", function (e) {
-            touchStartX = e.changedTouches[0].screenX;
-          }, { passive: true });
-          root.addEventListener("touchend", function (e) {
-            var diff = touchStartX - e.changedTouches[0].screenX;
-            if (Math.abs(diff) > 50) {
-              if (diff > 0) goTo(current + 1);
-              else goTo(current - 1);
+          // --- Keyboard ---
+          root.setAttribute("tabindex", "0");
+          root.addEventListener("keydown", function (e) {
+            if (e.key === "ArrowLeft") {
+              e.preventDefault();
+              goTo(current - 1);
+              resetAutoplay();
             }
-          }, { passive: true });
+            if (e.key === "ArrowRight") {
+              e.preventDefault();
+              goTo(current + 1);
+              resetAutoplay();
+            }
+          });
 
-          updateNav();
+          // --- Touch / swipe with velocity ---
+          var touchStartX = 0;
+          var touchStartT = 0;
+          root.addEventListener(
+            "touchstart",
+            function (e) {
+              touchStartX = e.changedTouches[0].clientX;
+              touchStartT = Date.now();
+              pauseAutoplay();
+            },
+            { passive: true },
+          );
+
+          root.addEventListener(
+            "touchend",
+            function (e) {
+              var dx = touchStartX - e.changedTouches[0].clientX;
+              var dt = Date.now() - touchStartT;
+              var velocity = Math.abs(dx) / (dt || 1);
+
+              // Trigger on distance > 40px OR velocity > 0.3px/ms (fast flick)
+              if (Math.abs(dx) > 40 || velocity > 0.3) {
+                if (dx > 0) goTo(current + 1);
+                else goTo(current - 1);
+              }
+              resumeAutoplay();
+            },
+            { passive: true },
+          );
+
+          // --- Autoplay ---
+          function startAutoplay() {
+            if (!autoplayMs || isPaused || !isVisible) return;
+            clearInterval(autoTimer);
+            autoTimer = setInterval(function () {
+              next();
+            }, autoplayMs);
+          }
+
+          function pauseAutoplay() {
+            isPaused = true;
+            clearInterval(autoTimer);
+          }
+
+          function resumeAutoplay() {
+            isPaused = false;
+            startAutoplay();
+          }
+
+          function resetAutoplay() {
+            if (!autoplayMs) return;
+            clearInterval(autoTimer);
+            isPaused = false;
+            startAutoplay();
+          }
+
+          // Pause on hover (desktop)
+          root.addEventListener("mouseenter", pauseAutoplay);
+          root.addEventListener("mouseleave", function () {
+            isPaused = false;
+            startAutoplay();
+          });
+
+          // Pause on focus within (keyboard navigation)
+          root.addEventListener("focusin", pauseAutoplay);
+          root.addEventListener("focusout", function (e) {
+            if (!root.contains(e.relatedTarget)) {
+              isPaused = false;
+              startAutoplay();
+            }
+          });
+
+          // --- IntersectionObserver: pause when off-screen ---
+          if ("IntersectionObserver" in window) {
+            var obs = new IntersectionObserver(
+              function (entries) {
+                isVisible = entries[0].isIntersecting;
+                if (isVisible && !isPaused) startAutoplay();
+                else {
+                  clearInterval(autoTimer);
+                }
+              },
+              { threshold: 0.15 },
+            );
+            obs.observe(root);
+          }
+
+          // --- Init ---
+          updateUI();
+          if (autoplayMs) startAutoplay();
         });
       })();
     </script>
