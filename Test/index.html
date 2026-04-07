@@ -118,10 +118,10 @@
          ================================================================ -->
     <style>
       /* Automatische Input-Labels (z.B. von Browsern) kleiner darstellen */
-      input[type="email"]::-webkit-input-placeholder,
-      input[type="email"]::placeholder,
-      input[type="email"]::-moz-placeholder,
-      input[type="email"]:-ms-input-placeholder,
+      input[type="email"]:not([type='password']):not([readonly])::-webkit-input-placeholder,
+      input[type="email"]:not([type='password']):not([readonly])::placeholder,
+      input[type="email"]:not([type='password']):not([readonly])::-moz-placeholder,
+      input[type="email"]:not([type='password']):not([readonly]):-ms-input-placeholder,
       #heroBottomEmail::-webkit-input-placeholder,
       #heroBottomEmail::placeholder,
       #heroBottomEmail::-moz-placeholder,
@@ -134,7 +134,7 @@
       #exitEmail::placeholder,
       #exitEmail::-moz-placeholder,
       #exitEmail:-ms-input-placeholder {
-        font-size: 9px !important;
+        font-size: 8px !important;
         color: #01bfff !important;
         opacity: 1 !important;
         line-height: 1 !important;
@@ -142,19 +142,21 @@
         text-align: left !important;
         font-family: inherit !important;
         letter-spacing: 0.01em !important;
+        background: transparent !important;
       }
       /* Firefox: autofill label (floating label) noch kleiner */
-      input[type="email"]:-moz-ui-invalid,
+      input[type="email"]:not([type='password']):not([readonly]):-moz-ui-invalid,
       #heroBottomEmail:-moz-ui-invalid,
       #betaEmail:-moz-ui-invalid,
       #exitEmail:-moz-ui-invalid {
-        font-size: 9px !important;
+        font-size: 8px !important;
         color: #01bfff !important;
         line-height: 1 !important;
         white-space: nowrap !important;
         text-align: left !important;
         font-family: inherit !important;
         letter-spacing: 0.01em !important;
+        background: transparent !important;
       }
       /* ================================================================
          DESIGN TOKENS — 3 colors, 3 radii, 3 spacings
