@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /google-apps-script/
-Sitemap: https://ostyles.github.io/ethyria/sitemap.xml
+Sitemap: https://ethyria.at/sitemap.xml
