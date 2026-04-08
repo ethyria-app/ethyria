@@ -1917,7 +1917,7 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   position: relative;
   opacity: 1;
   transform: translateX(0) scale(1);
-  pointer-events: auto;
+  pointer-events: none;
 }
 .ethyria-slider__slide.is-exit-left {
   opacity: 0;
