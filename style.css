@@ -1795,6 +1795,16 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   text-shadow: 0 0 120px rgba(1, 191, 255, 0.08);
 }
 
+#beta h2 {
+  line-height: 1.08;
+  text-shadow: 0 0 120px rgba(1, 191, 255, 0.08);
+}
+@media (min-width: 641px) {
+  #beta h2 {
+    line-height: 1.1;
+  }
+}
+
 /* ---- Section Dividers — minimal line ---- */
 .section-divider {
   width: 100%;
