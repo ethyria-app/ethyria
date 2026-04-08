@@ -2106,6 +2106,19 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   }
 }
 
+/* Features slider: no peek-expansion on desktop — constrain to card width */
+[data-slider="features"] {
+  max-width: 32rem;
+  margin-inline: auto;
+}
+@media (min-width: 1024px) {
+  [data-slider="features"] {
+    overflow: visible;
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+}
+
 /* ---- Trust Dots — monochrome ---- */
 .trust-dot--warm {
   background: rgba(255, 255, 255, 0.4) !important;
