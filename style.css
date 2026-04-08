@@ -1995,7 +1995,7 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--sp-3);
+  gap: var(--sp-2);
   margin-top: var(--sp-5);
 }
 
@@ -2008,8 +2008,8 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
 .ethyria-slider__nav {
   position: relative;
   z-index: 10;
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 1.75rem;
+  height: 1.75rem;
   border: none;
   background: none;
   color: rgba(255, 255, 255, 0.6);
@@ -2021,7 +2021,10 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   flex-shrink: 0;
   padding: 0;
   outline: none;
-  transition: color 180ms ease, transform 180ms ease, filter 180ms ease;
+  transition:
+    color 180ms ease,
+    transform 180ms ease,
+    filter 180ms ease;
   filter: drop-shadow(0 4px 14px rgba(2, 8, 32, 0.42));
 }
 .ethyria-slider__nav svg {
@@ -2088,44 +2091,24 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
 .ethyria-slider__dot:focus-visible {
 }
 
-/* --- Slide counter --- */
-.ethyria-slider__counter {
-  font-family: "Inter", ui-monospace, monospace;
-  font-size: var(--fs-xs);
-  font-weight: 400;
-  letter-spacing: 0.08em;
-  color: rgba(255, 255, 255, 0.28);
-  min-width: 2.25rem;
-  text-align: center;
-  user-select: none;
-  font-variant-numeric: tabular-nums;
-}
-.ethyria-slider__counter-current {
-  color: rgba(255, 255, 255, 0.85);
-}
-
 @media (min-width: 768px) {
   .ethyria-slider__controls {
-    gap: var(--sp-4);
+    gap: var(--sp-3);
     margin-top: var(--sp-6);
   }
   .ethyria-slider__controls--top {
     display: none;
   }
   .ethyria-slider__nav {
-    width: 2.75rem;
-    height: 2.75rem;
+    width: 2.25rem;
+    height: 2.25rem;
   }
   .ethyria-slider__nav svg {
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1.4rem;
+    height: 1.4rem;
   }
   .ethyria-slider__dot.is-active {
     width: 1.5rem;
-  }
-  .ethyria-slider__counter {
-    font-size: var(--fs-xs);
-    min-width: 2.75rem;
   }
 }
 

@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -385,10 +385,6 @@
               </svg>
             </button>
             <div class="ethyria-slider__dots" role="tablist"></div>
-            <div class="ethyria-slider__counter" aria-hidden="true">
-              <span class="ethyria-slider__counter-current">01</span> /
-              <span class="ethyria-slider__counter-total">03</span>
-            </div>
             <button
               class="ethyria-slider__nav ethyria-slider__nav--next"
               aria-label="Écran suivant"
@@ -491,10 +487,6 @@
               </svg>
             </button>
             <div class="ethyria-slider__dots" role="tablist"></div>
-            <div class="ethyria-slider__counter" aria-hidden="true">
-              <span class="ethyria-slider__counter-current">01</span> /
-              <span class="ethyria-slider__counter-total">03</span>
-            </div>
             <button
               class="ethyria-slider__nav ethyria-slider__nav--next"
               aria-label="Écran suivant"
@@ -566,10 +558,6 @@
                 </svg>
               </button>
               <div class="ethyria-slider__dots" role="tablist"></div>
-              <div class="ethyria-slider__counter" aria-hidden="true">
-                <span class="ethyria-slider__counter-current">01</span> /
-                <span class="ethyria-slider__counter-total">05</span>
-              </div>
               <button
                 class="ethyria-slider__nav ethyria-slider__nav--next"
                 aria-label="Perspective suivante"
@@ -771,10 +759,6 @@
                 </svg>
               </button>
               <div class="ethyria-slider__dots" role="tablist"></div>
-              <div class="ethyria-slider__counter" aria-hidden="true">
-                <span class="ethyria-slider__counter-current">01</span> /
-                <span class="ethyria-slider__counter-total">05</span>
-              </div>
               <button
                 class="ethyria-slider__nav ethyria-slider__nav--next"
                 aria-label="Perspective suivante"
@@ -2590,12 +2574,6 @@
           var dotsWraps = Array.from(
             root.querySelectorAll(".ethyria-slider__dots"),
           );
-          var counterCurs = Array.from(
-            root.querySelectorAll(".ethyria-slider__counter-current"),
-          );
-          var counterTotals = Array.from(
-            root.querySelectorAll(".ethyria-slider__counter-total"),
-          );
           var current = 0;
           var total = slides.length;
           var isAnimating = false;
@@ -2603,12 +2581,6 @@
           var autoTimer = null;
           var isPaused = false;
           var isVisible = true;
-
-          // --- Pad numbers: 01, 02 … ---
-          function pad(n) {
-            return n < 10 ? "0" + n : "" + n;
-          }
-
           // --- Build dots ---
           var allDotSets = dotsWraps.map(function () {
             return [];
@@ -2636,12 +2608,6 @@
               "Slide " + (i + 1) + " von " + total,
             );
           });
-
-          // --- Counter init ---
-          counterTotals.forEach(function (el) {
-            el.textContent = pad(total);
-          });
-
           // --- Update UI state ---
           function updateUI() {
             prevBtns.forEach(function (btn) {
@@ -2656,9 +2622,6 @@
                 d.classList.toggle("is-active", active);
                 d.setAttribute("aria-selected", active ? "true" : "false");
               });
-            });
-            counterCurs.forEach(function (el) {
-              el.textContent = pad(current + 1);
             });
           }
 
