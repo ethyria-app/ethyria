@@ -1563,21 +1563,21 @@ body {
     width: auto;
   }
   .floating-beta-cta {
-    bottom: calc(var(--sp-7) + env(safe-area-inset-bottom, 0px));
+    bottom: calc(2rem + env(safe-area-inset-bottom, 0px));
     max-width: min(
       calc(
-        100% - var(--sp-6) - env(safe-area-inset-left, 0px) -
+        100% - 1.5rem - env(safe-area-inset-left, 0px) -
           env(safe-area-inset-right, 0px)
       ),
-      22rem
+      18.5rem
     );
     padding: var(--sp-3) var(--sp-4);
     font-size: var(--fs-sm);
-    line-height: inherit;
+    line-height: 1.15;
     white-space: nowrap;
     box-shadow:
-      0 12px 32px rgba(49, 132, 255, 0.2),
-      0 0 0 1px rgba(255, 255, 255, 0.1);
+      0 12px 28px rgba(1, 191, 255, 0.2),
+      0 0 0 1px rgba(255, 255, 255, 0.08);
   }
 }
 

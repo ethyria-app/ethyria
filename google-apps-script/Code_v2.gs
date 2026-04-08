@@ -152,8 +152,7 @@ function getEmailTemplate_(locale) {
       headline: "Willkommen in der Ethyria Traum-Community!",
       thanks:
         "Vielen Dank für dein Interesse als Beta-Tester für Ethyria. Wir freuen uns sehr, dass du dabei bist!",
-      listThanks:
-        "Danke für deinen Eintrag in unsere E-Mail-Liste!",
+      listThanks: "Danke für deinen Eintrag in unsere E-Mail-Liste!",
       downloadInfo:
         "Sobald die Beta-Version startet, erhältst du innerhalb der nächsten 4 Wochen eine persönliche E-Mail mit deinem exklusiven Download-Link direkt in dein Postfach.",
       rewardLead: "Deine Belohnung:",
@@ -179,8 +178,7 @@ function getEmailTemplate_(locale) {
       headline: "Welcome to the Ethyria Dream Community!",
       thanks:
         "Thank you for your interest as a beta tester for Ethyria. We are thrilled to have you on board!",
-      listThanks:
-        "Thank you for signing up to our email list!",
+      listThanks: "Thank you for signing up to our email list!",
       downloadInfo:
         "As soon as the beta launches, you will receive a personal email with your exclusive download link directly in your inbox — within the next 4 weeks.",
       rewardLead: "Your Reward:",
@@ -206,8 +204,7 @@ function getEmailTemplate_(locale) {
       headline: "Bienvenue dans la communauté des rêves Ethyria !",
       thanks:
         "Merci pour votre intérêt en tant que bêta-testeur pour Ethyria. Nous sommes ravis de vous compter parmi nous !",
-      listThanks:
-        "Merci pour votre inscription à notre liste e-mail !",
+      listThanks: "Merci pour votre inscription à notre liste e-mail !",
       downloadInfo:
         "Dès le lancement de la version bêta, vous recevrez un e-mail personnel avec votre lien de téléchargement exclusif directement dans votre boîte de réception — dans les 4 prochaines semaines.",
       rewardLead: "Votre récompense :",
@@ -233,8 +230,7 @@ function getEmailTemplate_(locale) {
       headline: "¡Bienvenido a la comunidad de sueños Ethyria!",
       thanks:
         "Gracias por tu interés como beta-tester de Ethyria. ¡Estamos encantados de tenerte a bordo!",
-      listThanks:
-        "¡Gracias por inscribirte en nuestra lista de correo!",
+      listThanks: "¡Gracias por inscribirte en nuestra lista de correo!",
       downloadInfo:
         "En cuanto se lance la versión beta, recibirás un correo personal con tu enlace de descarga exclusivo directamente en tu bandeja de entrada — dentro de las próximas 4 semanas.",
       rewardLead: "Tu recompensa:",
@@ -260,8 +256,7 @@ function getEmailTemplate_(locale) {
       headline: "Добро пожаловать в сообщество снов Ethyria!",
       thanks:
         "Спасибо за ваш интерес в качестве бета-тестера Ethyria. Мы очень рады, что вы с нами!",
-      listThanks:
-        "Спасибо за подписку на нашу рассылку!",
+      listThanks: "Спасибо за подписку на нашу рассылку!",
       downloadInfo:
         "Как только бета-версия будет запущена, вы получите личное письмо с эксклюзивной ссылкой для скачивания прямо в ваш почтовый ящик — в течение ближайших 4 недель.",
       rewardLead: "Ваше вознаграждение:",
@@ -274,8 +269,7 @@ function getEmailTemplate_(locale) {
       privacyLead: "Несколько слов о вашей конфиденциальности:",
       privacyText:
         "Анализ снов — глубоко личная тема. Ваши данные шифруются по высоким стандартам безопасности, строго конфиденциальны и никогда не передаются третьим лицам.",
-      stayTuned:
-        "Следите за почтой — ваш эксклюзивный доступ скоро появится!",
+      stayTuned: "Следите за почтой — ваш эксклюзивный доступ скоро появится!",
       closing: "Нам очень интересно узнать о ваших первых впечатлениях.",
       signoff: "До скорого,",
       signatureName: "Oliver",
@@ -349,8 +343,10 @@ function getEmailTemplate_(locale) {
     '<tr><td align="center" style="padding:0;background-color:#08134e;background-image:linear-gradient(135deg,#100c1f 0%,#08134e 48%,#001a79 100%);">',
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0">',
     '<tr><td align="center" style="padding:30px 20px 10px;">',
-    '<img src="' + logoUrl + '" alt="Ethyria" width="220" style="display:block;max-width:220px;width:100%;height:auto;border-radius:20px;" />',
-    '</td></tr>',
+    '<img src="' +
+      logoUrl +
+      '" alt="Ethyria" width="220" style="display:block;max-width:220px;width:100%;height:auto;border-radius:20px;" />',
+    "</td></tr>",
 
     // Headline
     '<tr><td align="center" style="padding:14px 34px 8px;">',
