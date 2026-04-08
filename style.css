@@ -1118,7 +1118,7 @@ section:not(#insight-pfad) .glass-card [class~="text-left"] {
 .floating-beta-cta {
   position: fixed;
   left: 50%;
-  bottom: calc(2rem + env(safe-area-inset-bottom, 0px));
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
   transform: translateX(-50%);
   z-index: 50;
   width: auto;
@@ -1566,7 +1566,7 @@ body {
     width: auto;
   }
   .floating-beta-cta {
-    bottom: calc(2rem + env(safe-area-inset-bottom, 0px));
+    bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
     max-width: min(
       calc(
         100% - 1.5rem - env(safe-area-inset-left, 0px) -
