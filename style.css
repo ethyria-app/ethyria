@@ -1083,7 +1083,7 @@ section:not(#insight-pfad) .glass-card [class~="text-left"] {
   height: auto;
   margin: var(--sp-2) auto 0;
   display: block;
-  border-radius: var(--r-sm);
+  border-radius: 15px;
   box-shadow: 0 18px 34px rgba(0, 0, 0, 0.26);
   transition:
     transform 0.25s ease,
