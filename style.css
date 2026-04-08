@@ -2128,7 +2128,7 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   opacity: 0;
 }
 
-/* ---- Stagger Grid ---- */
+/* ---- Stagger Grid (per-child reveal) ---- */
 .stagger-grid > * {
   opacity: 0;
   transform: translateY(16px);
@@ -2136,22 +2136,7 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
     opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
     transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.stagger-grid.is-visible > *:nth-child(1) {
-  transition-delay: 0s;
-}
-.stagger-grid.is-visible > *:nth-child(2) {
-  transition-delay: 0.07s;
-}
-.stagger-grid.is-visible > *:nth-child(3) {
-  transition-delay: 0.14s;
-}
-.stagger-grid.is-visible > *:nth-child(4) {
-  transition-delay: 0.18s;
-}
-.stagger-grid.is-visible > *:nth-child(5) {
-  transition-delay: 0.22s;
-}
-.stagger-grid.is-visible > * {
+.stagger-grid > .is-visible {
   opacity: 1;
   transform: none;
 }

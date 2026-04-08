@@ -981,7 +981,7 @@
                 box-shadow: 0 0 12px rgba(1, 191, 255, 0.3);
               "
             ></div>
-            <div class="flex flex-col gap-16 roadmap-steps">
+            <div class="flex flex-col gap-16 roadmap-steps stagger-grid">
               <!-- 01 Narrative Core -->
               <div class="flex flex-col md:flex-row items-start gap-8">
                 <div class="flex-1 md:text-right order-2 md:order-1">
@@ -1466,7 +1466,7 @@
             </p>
           </div>
           <div
-            class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6 stagger-grid reveal"
+            class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6 stagger-grid"
           >
             <div
               class="glass-card usp-card flex gap-6 group hover:border-cyan-500/30 hover:shadow-[0_0_30px_rgba(1,191,255,0.08)] transition-all duration-300"
@@ -1516,7 +1516,7 @@
             </div>
           </div>
           <div
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 stagger-grid reveal"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 stagger-grid"
           >
             <div
               class="glass-card usp-card flex flex-col gap-4 group hover:border-sky-500/30 transition-all duration-300"
@@ -1594,9 +1594,6 @@
               >Ethyria Dream Community!</span
             >
           </h2>
-          <p class="text-xl text-white mb-4 leading-relaxed font-normal">
-            Your dreams. Scientifically decoded.
-          </p>
           <p
             class="text-lg text-gray-300 mb-4 leading-relaxed max-w-3xl mx-auto"
           >
@@ -1610,7 +1607,7 @@
               <span class="ethyria-gradient-text">Your Starter Package:</span>
             </h3>
             <div
-              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto mb-16"
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto mb-16 stagger-grid"
             >
               <div
                 class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
@@ -1643,7 +1640,7 @@
               We will unlock another 30 days of Premium if you briefly support
               us after your test:
             </p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 stagger-grid">
               <div
                 class="glass-card px-5 py-5 rounded-2xl text-sm text-gray-300 flex items-start gap-3"
               >
@@ -1748,7 +1745,7 @@
             </p>
           </div>
           <div
-            class="grid grid-cols-1 sm:grid-cols-2 gap-5 stagger-grid reveal"
+            class="grid grid-cols-1 sm:grid-cols-2 gap-5 stagger-grid"
           >
             <article class="glass-card px-6 py-6 rounded-3xl text-left">
               <h3 class="text-xl font-bold mb-3">Is Ethyria really free?</h3>
@@ -2106,7 +2103,7 @@
           });
         });
 
-        // Stagger-grid IntersectionObserver
+        // Stagger-grid IntersectionObserver — per-child reveal
         var grids = document.querySelectorAll(".stagger-grid");
         if (!grids.length) return;
         var io = new IntersectionObserver(
@@ -2118,10 +2115,12 @@
               }
             });
           },
-          { threshold: 0.12, rootMargin: "0px 0px -6% 0px" },
+          { threshold: 0.15, rootMargin: "0px 0px -6% 0px" },
         );
         grids.forEach(function (g) {
-          io.observe(g);
+          Array.prototype.forEach.call(g.children, function (child) {
+            io.observe(child);
+          });
         });
       })();
     </script>
