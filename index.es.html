@@ -919,7 +919,10 @@
                   <div class="mock-entry-label">
                     <span class="mock-entry-dot"></span>Descripción del Sueño
                   </div>
-                  <div class="mock-typewriter-wrap"><p id="dreamTypewriter" class="mock-typewriter"></p><span id="dreamCursor" class="mock-cursor"></span></div>
+                  <div class="mock-typewriter-wrap">
+                    <p id="dreamTypewriter" class="mock-typewriter"></p>
+                    <span id="dreamCursor" class="mock-cursor"></span>
+                  </div>
                 </div>
                 <!-- Mic Bar -->
                 <div class="mock-mic-bar">
@@ -2456,14 +2459,20 @@
           var slides = Array.from(
             track.querySelectorAll(".ethyria-slider__slide"),
           );
-          var prevBtn = root.querySelector(".ethyria-slider__nav--prev");
-          var nextBtn = root.querySelector(".ethyria-slider__nav--next");
-          var dotsWrap = root.querySelector(".ethyria-slider__dots");
-          var counterCur = root.querySelector(
-            ".ethyria-slider__counter-current",
+          var prevBtns = Array.from(
+            root.querySelectorAll(".ethyria-slider__nav--prev"),
           );
-          var counterTotal = root.querySelector(
-            ".ethyria-slider__counter-total",
+          var nextBtns = Array.from(
+            root.querySelectorAll(".ethyria-slider__nav--next"),
+          );
+          var dotsWraps = Array.from(
+            root.querySelectorAll(".ethyria-slider__dots"),
+          );
+          var counterCurs = Array.from(
+            root.querySelectorAll(".ethyria-slider__counter-current"),
+          );
+          var counterTotals = Array.from(
+            root.querySelectorAll(".ethyria-slider__counter-total"),
           );
           var current = 0;
           var total = slides.length;
@@ -2479,18 +2488,24 @@
           }
 
           // --- Build dots ---
+          var allDotSets = dotsWraps.map(function () {
+            return [];
+          });
           slides.forEach(function (slide, i) {
-            var dot = document.createElement("button");
-            dot.className =
-              "ethyria-slider__dot" + (i === 0 ? " is-active" : "");
-            dot.setAttribute("aria-label", "Slide " + (i + 1));
-            dot.setAttribute("role", "tab");
-            dot.setAttribute("aria-selected", i === 0 ? "true" : "false");
-            dot.addEventListener("click", function () {
-              goTo(i);
-              resetAutoplay();
+            dotsWraps.forEach(function (wrap, wi) {
+              var dot = document.createElement("button");
+              dot.className =
+                "ethyria-slider__dot" + (i === 0 ? " is-active" : "");
+              dot.setAttribute("aria-label", "Slide " + (i + 1));
+              dot.setAttribute("role", "tab");
+              dot.setAttribute("aria-selected", i === 0 ? "true" : "false");
+              dot.addEventListener("click", function () {
+                goTo(i);
+                resetAutoplay();
+              });
+              wrap.appendChild(dot);
+              allDotSets[wi].push(dot);
             });
-            dotsWrap.appendChild(dot);
 
             // ARIA for slides
             slide.setAttribute("role", "tabpanel");
@@ -2499,21 +2514,24 @@
               "Slide " + (i + 1) + " von " + total,
             );
           });
-          var dots = Array.from(dotsWrap.children);
 
           // --- Counter init ---
-          if (counterTotal) counterTotal.textContent = pad(total);
+          counterTotals.forEach(function (el) {
+            el.textContent = pad(total);
+          });
 
           // --- Update UI state ---
           function updateUI() {
-            prevBtn.disabled = current === 0;
-            nextBtn.disabled = current === total - 1;
-            dots.forEach(function (d, i) {
-              var active = i === current;
-              d.classList.toggle("is-active", active);
-              d.setAttribute("aria-selected", active ? "true" : "false");
+            prevBtns.forEach(function (btn) { btn.disabled = current === 0; });
+            nextBtns.forEach(function (btn) { btn.disabled = current === total - 1; });
+            allDotSets.forEach(function (dotSet) {
+              dotSet.forEach(function (d, i) {
+                var active = i === current;
+                d.classList.toggle("is-active", active);
+                d.setAttribute("aria-selected", active ? "true" : "false");
+              });
             });
-            if (counterCur) counterCur.textContent = pad(current + 1);
+            counterCurs.forEach(function (el) { el.textContent = pad(current + 1); });
           }
 
           // --- Core transition ---
@@ -2567,13 +2585,17 @@
           }
 
           // --- Navigation ---
-          prevBtn.addEventListener("click", function () {
-            goTo(current - 1);
-            resetAutoplay();
+          prevBtns.forEach(function (btn) {
+            btn.addEventListener("click", function () {
+              goTo(current - 1);
+              resetAutoplay();
+            });
           });
-          nextBtn.addEventListener("click", function () {
-            goTo(current + 1);
-            resetAutoplay();
+          nextBtns.forEach(function (btn) {
+            btn.addEventListener("click", function () {
+              goTo(current + 1);
+              resetAutoplay();
+            });
           });
 
           // --- Keyboard ---
