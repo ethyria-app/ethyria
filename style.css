@@ -1890,7 +1890,7 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   transform: scale(1.03);
 }
 .vision-card__body {
-  padding: var(--sp-4) var(--sp-1) 0;
+  padding: var(--sp-5) var(--sp-2) var(--sp-2);
   text-align: center;
 }
 .vision-card__tag {
@@ -1902,14 +1902,14 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   letter-spacing: 0.15em;
   text-transform: uppercase;
   font-weight: 400;
-  margin-bottom: var(--sp-1);
+  margin-bottom: var(--sp-2);
   color: var(--c-primary);
   background: rgba(1, 191, 255, 0.08);
 }
 .vision-card__title {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: var(--fs-lg);
+  font-size: var(--fs-xl);
   background: linear-gradient(
     90deg,
     #22d3ee 0%,
@@ -1921,12 +1921,12 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  margin: 0 0 var(--sp-1);
+  margin: 0 0 var(--sp-2);
   line-height: 1.25;
 }
 .vision-card__desc {
-  font-size: var(--fs-sm);
-  line-height: 1.5;
+  font-size: var(--fs-base);
+  line-height: 1.6;
   color: var(--c-text);
   margin: 0;
 }
@@ -2288,10 +2288,10 @@ header#hero > p {
   gap: var(--sp-5);
 }
 .vision-card__body {
-  padding: var(--sp-4) var(--sp-1) var(--sp-3);
+  padding: var(--sp-5) var(--sp-2) var(--sp-3);
 }
 .vision-card__title {
-  font-size: var(--fs-lg);
+  font-size: var(--fs-xl);
 }
 .vision-card__desc {
   font-size: var(--fs-base);
@@ -2387,13 +2387,13 @@ footer {
     gap: var(--sp-4);
   }
   .vision-card__body {
-    padding: var(--sp-4) var(--sp-1) 0;
+    padding: var(--sp-5) var(--sp-2) var(--sp-2);
   }
   .vision-card__title {
-    font-size: var(--fs-lg);
+    font-size: var(--fs-xl);
   }
   .vision-card__desc {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
   }
   .vision-card__tag {
     font-size: var(--fs-micro);
