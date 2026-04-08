@@ -291,7 +291,11 @@
         </p>
         <!-- Hero CTA — above the fold -->
         <div class="reveal mt-8" style="position: relative; z-index: 1">
-          <form onsubmit="handleHeroBottomSignup(event)" class="hero-form">
+          <form
+            onsubmit="handleHeroBottomSignup(event)"
+            class="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto mt-8 mb-4"
+          >
+            <label for="heroBottomEmail" class="sr-only">Correo Electrónico</label>
             <input
               type="email"
               id="heroBottomEmail"
@@ -299,6 +303,7 @@
               required
               autocomplete="email"
               placeholder="tu@email.com"
+              class="flex-1 px-5 py-4 rounded-full bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500/50 focus:bg-white/8 transition text-sm"
             />
             <input
               type="text"
@@ -308,10 +313,14 @@
               class="honeypot-field"
               aria-hidden="true"
             />
-            <button type="submit">Obtener Acceso ▸</button>
+            <button type="submit" class="glow-button">Obtener Acceso ▸</button>
           </form>
           <output id="heroBottomStatus" class="hidden text-sm mt-3"></output>
-          <p class="text-sm text-cyan-400/80 mt-4 mb-0">La app de interpretación de sueños para Android. Análisis según Jung &amp; Freud, diario visual de sueños e imágenes generadas por IA. Gratis.</p>
+          <p class="text-sm text-cyan-400/80 mt-4 mb-0">
+            La app de interpretación de sueños para Android. Análisis según Jung
+            &amp; Freud, diario visual de sueños e imágenes generadas por IA.
+            Gratis.
+          </p>
         </div>
       </header>
 
@@ -335,7 +344,9 @@
           <div class="section-pill section-pill--app ethyria-gradient-text">
             EN LA APP
           </div>
-          <h2 class="text-4xl sm:text-5xl md:text-5xl font-bold mb-4 leading-[1.15]">
+          <h2
+            class="text-4xl sm:text-5xl md:text-5xl font-bold mb-4 leading-[1.15]"
+          >
             Descubre <span class="ethyria-gradient-text">Ethyria</span>
           </h2>
           <p
@@ -352,13 +363,53 @@
           aria-roledescription="Carrusel"
           aria-label="App Screenshots"
         >
+          <div class="ethyria-slider__controls ethyria-slider__controls--top">
+            <button
+              class="ethyria-slider__nav ethyria-slider__nav--prev"
+              aria-label="Pantalla anterior"
+              disabled
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M14 6L8 12L14 18"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </button>
+            <div class="ethyria-slider__dots" role="tablist"></div>
+            <div class="ethyria-slider__counter" aria-hidden="true">
+              <span class="ethyria-slider__counter-current">01</span> /
+              <span class="ethyria-slider__counter-total">03</span>
+            </div>
+            <button
+              class="ethyria-slider__nav ethyria-slider__nav--next"
+              aria-label="Siguiente pantalla"
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M10 6L16 12L10 18"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </button>
+          </div>
           <div class="ethyria-slider__track">
             <article class="ethyria-slider__slide app-showcase-item is-active">
               <div class="app-showcase-copy">
                 <div class="app-showcase-icon bg-cyan-500/20 text-cyan-400">
                   <span aria-hidden="true">🔍</span>
                 </div>
-                <h3 class="text-2xl sm:text-3xl font-bold">Análisis de Sueños</h3>
+                <h3 class="text-2xl sm:text-3xl font-bold">
+                  Análisis de Sueños
+                </h3>
                 <p class="text-gray-300 leading-relaxed">
                   Describe tu sueño, elige tu perspectiva y recibe una
                   interpretación que realmente te hable.
@@ -428,7 +479,7 @@
             >
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path
-                  d="M8 12L16 6V18L8 12Z"
+                  d="M14 6L8 12L14 18"
                   stroke="currentColor"
                   stroke-width="2.2"
                   stroke-linecap="round"
@@ -448,7 +499,7 @@
             >
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path
-                  d="M16 12L8 6V18L16 12Z"
+                  d="M10 6L16 12L10 18"
                   stroke="currentColor"
                   stroke-width="2.2"
                   stroke-linecap="round"
@@ -475,7 +526,9 @@
             >
               Capas de Interpretación
             </div>
-            <h2 class="text-4xl sm:text-5xl md:text-5xl font-bold mb-4 leading-[1.15]">
+            <h2
+              class="text-4xl sm:text-5xl md:text-5xl font-bold mb-4 leading-[1.15]"
+            >
               5 Perspectivas de
               <span class="ethyria-gradient-text">Análisis</span>
             </h2>
@@ -492,6 +545,44 @@
             aria-roledescription="Carrusel"
             aria-label="Analysis Perspectives"
           >
+            <div class="ethyria-slider__controls ethyria-slider__controls--top">
+              <button
+                class="ethyria-slider__nav ethyria-slider__nav--prev"
+                aria-label="Perspectiva anterior"
+                disabled
+              >
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M14 6L8 12L14 18"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none"
+                  />
+                </svg>
+              </button>
+              <div class="ethyria-slider__dots" role="tablist"></div>
+              <div class="ethyria-slider__counter" aria-hidden="true">
+                <span class="ethyria-slider__counter-current">01</span> /
+                <span class="ethyria-slider__counter-total">05</span>
+              </div>
+              <button
+                class="ethyria-slider__nav ethyria-slider__nav--next"
+                aria-label="Siguiente perspectiva"
+              >
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M10 6L16 12L10 18"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none"
+                  />
+                </svg>
+              </button>
+            </div>
             <div class="ethyria-slider__track">
               <!-- General -->
               <div class="ethyria-slider__slide is-active">
@@ -666,7 +757,7 @@
               >
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path
-                    d="M8 12L16 6V18L8 12Z"
+                    d="M14 6L8 12L14 18"
                     stroke="currentColor"
                     stroke-width="2.2"
                     stroke-linecap="round"
@@ -686,7 +777,7 @@
               >
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path
-                    d="M16 12L8 6V18L16 12Z"
+                    d="M10 6L16 12L10 18"
                     stroke="currentColor"
                     stroke-width="2.2"
                     stroke-linecap="round"
@@ -714,7 +805,9 @@
           <div class="section-pill section-pill--vision ethyria-gradient-text">
             Modos Creativos
           </div>
-          <h2 class="text-4xl sm:text-5xl md:text-5xl font-bold mb-4 leading-[1.15]">
+          <h2
+            class="text-4xl sm:text-5xl md:text-5xl font-bold mb-4 leading-[1.15]"
+          >
             Ethyria <span class="ethyria-gradient-text">Vision</span>
           </h2>
           <p class="text-gray-300 max-w-2xl mx-auto text-base font-normal">
@@ -1457,7 +1550,9 @@
             >
               Por qué Ethyria es diferente
             </div>
-            <h2 class="text-4xl sm:text-5xl md:text-5xl font-bold mb-4 leading-[1.15]">
+            <h2
+              class="text-4xl sm:text-5xl md:text-5xl font-bold mb-4 leading-[1.15]"
+            >
               La ciencia se une a la <br /><span class="ethyria-gradient-text"
                 >Intuición.</span
               >
@@ -1589,7 +1684,9 @@
             Beta · Acceso Limitado
           </div>
 
-          <h2 class="text-6xl sm:text-7xl md:text-8xl font-bold mb-8 leading-[1.1]">
+          <h2
+            class="text-6xl sm:text-7xl md:text-8xl font-bold mb-8 leading-[1.1]"
+          >
             Todo comienza esta noche.
           </h2>
           <p
@@ -1733,7 +1830,9 @@
             >
               FAQ
             </p>
-            <h2 class="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 section-title">
+            <h2
+              class="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 section-title"
+            >
               Preguntas Frecuentes sobre la
               <span class="ethyria-gradient-text"
                 >Interpretación de Sueños</span
@@ -2504,8 +2603,12 @@
 
           // --- Update UI state ---
           function updateUI() {
-            prevBtns.forEach(function (btn) { btn.disabled = current === 0; });
-            nextBtns.forEach(function (btn) { btn.disabled = current === total - 1; });
+            prevBtns.forEach(function (btn) {
+              btn.disabled = current === 0;
+            });
+            nextBtns.forEach(function (btn) {
+              btn.disabled = current === total - 1;
+            });
             allDotSets.forEach(function (dotSet) {
               dotSet.forEach(function (d, i) {
                 var active = i === current;
@@ -2513,7 +2616,9 @@
                 d.setAttribute("aria-selected", active ? "true" : "false");
               });
             });
-            counterCurs.forEach(function (el) { el.textContent = pad(current + 1); });
+            counterCurs.forEach(function (el) {
+              el.textContent = pad(current + 1);
+            });
           }
 
           // --- Core transition ---
