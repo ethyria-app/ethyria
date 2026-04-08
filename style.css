@@ -1950,6 +1950,11 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   margin-top: var(--sp-5);
 }
 
+.ethyria-slider__controls--top {
+  margin-top: 0;
+  margin-bottom: var(--sp-5);
+}
+
 /* --- Navigation arrows --- */
 .ethyria-slider__nav {
   position: relative;
@@ -1962,10 +1967,8 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  transition:
-    color 0.25s var(--slider-ease),
-    transform 0.18s var(--slider-ease);
+  cursor: default;
+  pointer-events: none;
   flex-shrink: 0;
   padding: 0;
   outline: none;
@@ -1982,17 +1985,10 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   margin: auto;
 }
 .ethyria-slider__nav:hover {
-  color: #01bfff;
-  transform: scale(1.13);
 }
 .ethyria-slider__nav:focus-visible {
-  color: #01bfff;
-  outline: 2px solid #01bfff;
-  outline-offset: 2px;
 }
 .ethyria-slider__nav:active {
-  color: #01bfff;
-  transform: scale(0.93);
 }
 .ethyria-slider__nav:disabled {
   opacity: 0.1;
@@ -2013,7 +2009,8 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   border-radius: 100px;
   border: none;
   background: rgba(255, 255, 255, 0.18);
-  cursor: pointer;
+  cursor: default;
+  pointer-events: none;
   transition:
     width 0.45s var(--slider-ease),
     background 0.45s var(--slider-ease),
@@ -2027,11 +2024,8 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   background: var(--slider-accent);
 }
 .ethyria-slider__dot:hover:not(.is-active) {
-  background: rgba(255, 255, 255, 0.35);
 }
 .ethyria-slider__dot:focus-visible {
-  box-shadow: 0 0 0 2px
-    color-mix(in srgb, var(--slider-accent) 40%, transparent);
 }
 
 /* --- Slide counter --- */
