@@ -2224,9 +2224,6 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
     font-size: var(--fs-micro);
     letter-spacing: 0.2em;
   }
-  #beta h2 {
-    font-size: var(--fs-xl);
-  }
   .social-proof-bar {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -2311,9 +2308,6 @@ header#hero > p {
 #beta {
   padding-top: var(--sp-7);
   padding-bottom: var(--sp-7);
-}
-#beta h2 {
-  font-size: var(--fs-xl);
 }
 #faq .grid {
   gap: var(--sp-2);
@@ -2427,9 +2421,6 @@ footer {
     padding-top: var(--section-pad);
     padding-bottom: var(--section-pad);
   }
-  #beta h2 {
-    font-size: var(--fs-3xl);
-  }
   #faq .grid {
     gap: var(--sp-5);
   }
@@ -2474,9 +2465,6 @@ footer {
   #features h2,
   #vision h2,
   #science h2 {
-    font-size: var(--fs-4xl);
-  }
-  #beta h2 {
     font-size: var(--fs-4xl);
   }
   #insight-pfad h2 {
