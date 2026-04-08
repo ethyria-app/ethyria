@@ -504,6 +504,19 @@ body > main > header.container + section.container {
   height: 100%;
 }
 
+/* When the item IS the slider slide, it must fill the track fully;
+   the 23rem centering is then re-applied to each direct child. */
+.ethyria-slider__track > .ethyria-slider__slide.app-showcase-item {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+}
+.ethyria-slider__track > .ethyria-slider__slide.app-showcase-item > .app-showcase-copy,
+.ethyria-slider__track > .ethyria-slider__slide.app-showcase-item > .app-showcase-visual {
+  width: min(100%, 23rem);
+  margin-inline: auto;
+}
+
 .app-showcase-copy {
   display: flex;
   flex-direction: column;
@@ -1066,7 +1079,7 @@ section:not(#insight-pfad) .glass-card [class~="text-left"] {
 }
 
 .google-play-badge {
-  width: min(50%, 18rem);
+  width: min(100%, 12rem);
   height: auto;
   margin: var(--sp-2) auto 0;
   display: block;
@@ -1075,12 +1088,6 @@ section:not(#insight-pfad) .glass-card [class~="text-left"] {
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
-}
-
-@media (min-width: 768px) {
-  .google-play-badge {
-    width: min(100%, 18rem);
-  }
 }
 
 .google-play-badge:hover {
