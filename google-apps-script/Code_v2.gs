@@ -295,7 +295,7 @@ function getEmailTemplate_(locale) {
         '<table role="presentation" width="100%" cellpadding="0" cellspacing="0">' +
         "<tr>" +
         '<td width="24" valign="top" style="padding:2px 10px 0 0;color:#01bfff;font-size:16px;line-height:1;">&#9679;</td>' +
-        '<td style="font-size:14px;line-height:1.7;color:#d9e4ff;">' +
+        '<td style="font-family:Inter,Arial,Helvetica,sans-serif;font-size:14px;line-height:1.7;color:#d9e4ff;">' +
         item +
         "</td>" +
         "</tr>" +
@@ -337,7 +337,7 @@ function getEmailTemplate_(locale) {
     .join("\n");
 
   const html = [
-    '<!DOCTYPE html><html><head><meta charset="utf-8"></head>',
+    '<!DOCTYPE html><html><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet"></head>',
     '<body style="margin:0;padding:0;background-color:#100c1f;font-family:Inter,Arial,Helvetica,sans-serif;">',
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#100c1f" style="background-color:#100c1f;background-image:linear-gradient(135deg,#100c1f 0%,#08134e 55%,#001a79 100%);">',
     '<tr><td align="center" style="padding:34px 12px;">',
@@ -360,23 +360,23 @@ function getEmailTemplate_(locale) {
     "</td></tr>",
 
     '<tr><td align="center" style="padding:0 34px 26px;">',
-    '<p style="margin:0;font-size:15px;line-height:1.7;color:#9fdcff;">ostyles.github.io/ethyria</p>',
+    '<p style="margin:0;font-family:Inter,Arial,Helvetica,sans-serif;font-size:15px;line-height:1.7;color:#9fdcff;">ostyles.github.io/ethyria</p>',
     "</td></tr>",
     "</table>",
     "</td></tr>",
 
     // Thanks
-    '<tr><td style="padding:30px 34px 14px;font-size:15px;line-height:1.75;color:#d9e4ff;">',
+    '<tr><td style="padding:30px 34px 14px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:15px;line-height:1.75;color:#d9e4ff;">',
     '<p style="margin:0;">' + t.thanks + "</p>",
     "</td></tr>",
 
     // List thanks
-    '<tr><td style="padding:0 34px 14px;font-size:15px;line-height:1.75;color:#01bfff;font-weight:600;">',
+    '<tr><td style="padding:0 34px 14px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:15px;line-height:1.75;color:#01bfff;font-weight:600;">',
     t.listThanks,
     "</td></tr>",
 
     // Download info
-    '<tr><td style="padding:0 34px 24px;font-size:15px;line-height:1.75;color:#d9e4ff;">',
+    '<tr><td style="padding:0 34px 24px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:15px;line-height:1.75;color:#d9e4ff;">',
     '<p style="margin:0;">' + t.downloadInfo + "</p>",
     "</td></tr>",
 
@@ -395,7 +395,7 @@ function getEmailTemplate_(locale) {
     "</td></tr>",
 
     // Dev note
-    '<tr><td style="padding:0 34px 24px;font-size:14px;line-height:1.75;color:#d9e4ff;font-style:italic;">',
+    '<tr><td style="padding:0 34px 24px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:14px;line-height:1.75;color:#d9e4ff;font-style:italic;">',
     t.devNote,
     "</td></tr>",
 
@@ -405,14 +405,14 @@ function getEmailTemplate_(locale) {
     '<tr><td style="padding:20px 22px 8px;font-family:Poppins,Arial,Helvetica,sans-serif;font-size:16px;line-height:1.35;color:#ffffff;font-weight:700;">',
     t.privacyLead,
     "</td></tr>",
-    '<tr><td style="padding:0 22px 20px;font-size:14px;line-height:1.7;color:#d9e4ff;">',
+    '<tr><td style="padding:0 22px 20px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:14px;line-height:1.7;color:#d9e4ff;">',
     t.privacyText,
     "</td></tr>",
     "</table>",
     "</td></tr>",
 
     // Stay tuned
-    '<tr><td style="padding:0 34px 8px;font-size:15px;line-height:1.75;color:#9fdcff;font-weight:600;text-align:center;">',
+    '<tr><td style="padding:0 34px 8px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:15px;line-height:1.75;color:#9fdcff;font-weight:600;text-align:center;">',
     t.stayTuned,
     "</td></tr>",
 
@@ -420,10 +420,10 @@ function getEmailTemplate_(locale) {
     '<tr><td style="padding:8px 34px;"><hr style="border:none;border-top:1px solid rgba(255,255,255,0.08);margin:0;"></td></tr>',
 
     // Closing
-    '<tr><td style="padding:22px 34px 12px;font-size:14px;line-height:1.7;color:#d9e4ff;">',
+    '<tr><td style="padding:22px 34px 12px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:14px;line-height:1.7;color:#d9e4ff;">',
     t.closing,
     "</td></tr>",
-    '<tr><td style="padding:0 34px 30px;font-size:14px;line-height:1.7;color:#d9e4ff;">',
+    '<tr><td style="padding:0 34px 30px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:14px;line-height:1.7;color:#d9e4ff;">',
     t.signoff +
       '<br><strong style="color:#ffffff;">' +
       t.signatureName +
@@ -435,7 +435,7 @@ function getEmailTemplate_(locale) {
     // Footer
     '<tr><td align="center" style="padding:0 34px 22px;">',
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:rgba(255,255,255,0.03);border-top:1px solid rgba(255,255,255,0.06);">',
-    '<tr><td align="center" style="padding:18px 20px 20px;font-size:11px;line-height:1.7;color:#91a0c6;">',
+    '<tr><td align="center" style="padding:18px 20px 20px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:11px;line-height:1.7;color:#91a0c6;">',
     "Ethyria AI &middot; Beta Community &middot; Secure delivery via Gmail<br>",
     '<a href="' +
       siteUrl +
