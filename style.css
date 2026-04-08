@@ -2129,16 +2129,14 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
 }
 
 /* ---- Stagger Grid (per-child reveal) ---- */
-.stagger-grid > * {
+.stagger-grid > *:not(.is-visible) {
   opacity: 0;
   transform: translateY(16px);
+}
+.stagger-grid > * {
   transition:
     opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
     transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.stagger-grid > .is-visible {
-  opacity: 1;
-  transform: none;
 }
 
 /* ================================================================
@@ -2458,9 +2456,11 @@ footer {
   .vision-card__image {
     transition: none;
   }
-  .stagger-grid > * {
+  .stagger-grid > *:not(.is-visible) {
     opacity: 1;
     transform: none;
+  }
+  .stagger-grid > * {
     transition: none;
   }
 }
