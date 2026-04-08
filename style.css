@@ -965,15 +965,31 @@ section:not(#insight-pfad) .glass-card [class~="text-left"] {
 }
 
 .glow-button {
-  background: var(--ethyria-accent);
-  color: white;
+  background: linear-gradient(
+    90deg,
+    var(--ethyria-cyan) 0%,
+    var(--ethyria-accent) 50%,
+    var(--ethyria-purple) 100%
+  );
+  background-size: 170% 170%;
+  background-position: 0% 50%;
+  color: #ffffff;
   padding: var(--sp-4) var(--sp-6);
   border-radius: var(--r-pill);
-  font-weight: 400;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 0 15px rgba(49, 132, 255, 0.4);
-  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 16px 40px rgba(49, 132, 255, 0.24),
+    0 0 0 1px rgba(255, 255, 255, 0.12);
+  text-shadow: 0 1px 2px rgba(8, 19, 78, 0.28);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-position 0.35s ease,
+    filter 0.25s ease;
 }
 
 #beta .glow-button {
@@ -986,9 +1002,13 @@ section:not(#insight-pfad) .glass-card [class~="text-left"] {
 }
 
 .glow-button:hover {
-  box-shadow: 0 0 25px rgba(1, 191, 255, 0.7);
-  transform: scale(1.05);
-  background: var(--ethyria-cyan);
+  transform: translateY(-2px) scale(1.015);
+  background-position: 100% 50%;
+  filter: saturate(1.08) brightness(1.05);
+  box-shadow:
+    0 24px 54px rgba(49, 132, 255, 0.34),
+    0 0 24px rgba(1, 191, 255, 0.32),
+    0 0 0 1px rgba(255, 255, 255, 0.16);
 }
 
 #beta input[type="email"] {
@@ -1678,19 +1698,40 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
 }
 .hero-form button[type="submit"] {
   padding: var(--sp-3) var(--sp-5);
-  border-radius: var(--r-md);
-  background: var(--c-primary);
-  color: #0a0a1a;
-  font-weight: 400;
-  font-family: "Inter", sans-serif;
+  border-radius: var(--r-pill);
+  background: linear-gradient(
+    90deg,
+    var(--ethyria-cyan) 0%,
+    var(--ethyria-accent) 50%,
+    var(--ethyria-purple) 100%
+  );
+  background-size: 170% 170%;
+  background-position: 0% 50%;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
   font-size: var(--fs-base);
   white-space: nowrap;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   cursor: pointer;
-  transition: opacity 0.25s ease;
+  box-shadow:
+    0 16px 40px rgba(49, 132, 255, 0.24),
+    0 0 0 1px rgba(255, 255, 255, 0.12);
+  text-shadow: 0 1px 2px rgba(8, 19, 78, 0.28);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-position 0.35s ease,
+    filter 0.25s ease;
 }
 .hero-form button[type="submit"]:hover {
-  opacity: 0.85;
+  transform: translateY(-2px) scale(1.015);
+  background-position: 100% 50%;
+  filter: saturate(1.08) brightness(1.05);
+  box-shadow:
+    0 24px 54px rgba(49, 132, 255, 0.34),
+    0 0 24px rgba(1, 191, 255, 0.32),
+    0 0 0 1px rgba(255, 255, 255, 0.16);
 }
 .hero-form button[type="submit"]:disabled {
   opacity: 0.5;
