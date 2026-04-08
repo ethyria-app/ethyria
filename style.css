@@ -2394,7 +2394,7 @@ footer {
     font-size: var(--fs-3xl);
   }
   .live-dream-shell {
-    max-width: none;
+    max-width: 23rem;
   }
   .section-divider::before {
     width: min(40%, 16rem);
@@ -2579,7 +2579,6 @@ html {
   transform: none;
 }
 
-
 /* ================================================================
    COMPONENT CLASSES — Feature Cards, Phone Mockup (#5, #6)
    ================================================================ */
@@ -2623,7 +2622,11 @@ html {
 .mock-app-icon {
   width: 28px;
   height: 28px;
-  background: linear-gradient(135deg, rgba(1, 191, 255, 0.25), rgba(139, 92, 246, 0.25));
+  background: linear-gradient(
+    135deg,
+    rgba(1, 191, 255, 0.25),
+    rgba(139, 92, 246, 0.25)
+  );
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -2719,11 +2722,16 @@ html {
   box-shadow: 0 0 6px rgba(1, 191, 255, 0.5);
 }
 
+.mock-typewriter-wrap {
+  display: block;
+  min-height: 120px;
+}
+
 .mock-typewriter {
   font-size: 16px;
   line-height: 1.75;
   color: rgba(255, 255, 255, 0.75);
-  min-height: 120px;
+  display: inline;
 }
 
 .mock-cursor {
@@ -2731,14 +2739,18 @@ html {
   width: 2px;
   height: 14px;
   background: rgba(1, 191, 255, 0.9);
-  vertical-align: middle;
+  vertical-align: text-bottom;
   margin-left: 1px;
   animation: blink 1s step-end infinite;
 }
 
 .mock-mic-bar {
   margin: 0 16px 16px;
-  background: linear-gradient(135deg, rgba(1, 191, 255, 0.06), rgba(139, 92, 246, 0.06));
+  background: linear-gradient(
+    135deg,
+    rgba(1, 191, 255, 0.06),
+    rgba(139, 92, 246, 0.06)
+  );
   border: 1px solid rgba(1, 191, 255, 0.15);
   border-radius: 16px;
   padding: 12px 16px;
@@ -2767,7 +2779,11 @@ html {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(1, 191, 255, 0.3), rgba(139, 92, 246, 0.3));
+  background: linear-gradient(
+    135deg,
+    rgba(1, 191, 255, 0.3),
+    rgba(139, 92, 246, 0.3)
+  );
   border: 1px solid rgba(1, 191, 255, 0.4);
   display: flex;
   align-items: center;
@@ -2788,7 +2804,11 @@ html {
 }
 
 .mock-analyse-btn {
-  background: linear-gradient(135deg, rgba(1, 191, 255, 0.9), rgba(84, 88, 251, 0.8));
+  background: linear-gradient(
+    135deg,
+    rgba(1, 191, 255, 0.9),
+    rgba(84, 88, 251, 0.8)
+  );
   border-radius: var(--r-sm);
   padding: 13px;
   text-align: center;
