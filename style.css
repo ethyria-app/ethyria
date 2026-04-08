@@ -260,6 +260,7 @@ h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   letter-spacing: 0.01em;
+  padding-bottom: 0.1em;
   background: linear-gradient(
     90deg,
     #22d3ee 0%,
@@ -2258,8 +2259,14 @@ header#hero > p {
   font-size: var(--fs-base);
 }
 .hero-trust-line {
+  color: #67e8f9 !important; /* cyan-300, full brightness */
   font-size: var(--fs-sm);
   gap: 0.4rem 0.8rem;
+}
+
+/* SEO line directly below trust badges */
+.hero-trust-line + p {
+  color: #67e8f9 !important; /* cyan-300 */
 }
 /* section-shell mobile — handled by --section-pad clamp */
 .section-shell .text-center.mb-16 {
