@@ -97,11 +97,11 @@ html {
   --fs-4xl: 3rem;
 
   /* ── Border Radius Scale ── */
-  --r-xs: 4px;
-  --r-sm: 12px;
+  --r-xs: 10px;
+  --r-sm: 15px;
   --r-md: 20px;
-  --r-lg: 28px;
-  --r-xl: 36px;
+  --r-lg: 30px;
+  --r-xl: 30px;
   --r-pill: 9999px;
 
   /* ── Section Spacing ── */
@@ -2634,7 +2634,7 @@ html {
     rgba(1, 191, 255, 0.25),
     rgba(139, 92, 246, 0.25)
   );
-  border-radius: 8px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2704,7 +2704,7 @@ html {
   margin: 0 16px 14px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 18px;
+  border-radius: 20px;
   padding: 16px;
 }
 
@@ -2759,7 +2759,7 @@ html {
     rgba(139, 92, 246, 0.06)
   );
   border: 1px solid rgba(1, 191, 255, 0.15);
-  border-radius: 16px;
+  border-radius: 15px;
   padding: 12px 16px;
   display: flex;
   align-items: center;
@@ -2875,7 +2875,7 @@ html {
 }
 
 .roadmap-nlp-tag {
-  border-radius: 6px;
+  border-radius: 10px;
   padding: 1px 7px;
   font-size: 11px;
 }
@@ -2995,7 +2995,7 @@ html {
 .roadmap-reflection-box {
   background: rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(1, 191, 255, 0.15);
-  border-radius: 16px;
+  border-radius: 15px;
   padding: 18px 20px;
   text-align: left;
 }
