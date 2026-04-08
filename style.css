@@ -38,20 +38,13 @@ html {
 }
 
 #hero h1 {
-  font-size: 2.9rem; /* mobile base */
   margin-bottom: 1rem;
   line-height: 1.08;
 }
 @media (min-width: 641px) {
   #hero h1 {
-    font-size: 3.5rem; /* tablet */
     margin-bottom: 2rem;
     line-height: 1.1;
-  }
-}
-@media (min-width: 1024px) {
-  #hero h1 {
-    font-size: 6rem; /* desktop */
   }
 }
 
@@ -2210,9 +2203,6 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   html {
     font-size: 108%;
   }
-  #hero h1 {
-    font-size: 2rem;
-  }
   .hero-form button[type="submit"] {
     padding: var(--sp-3) var(--sp-4);
     font-size: var(--fs-sm);
@@ -2269,12 +2259,6 @@ header#hero > p {
 .section-shell .text-center.mb-16 {
   margin-bottom: 1.5rem;
 }
-#app-screens h2,
-#features h2,
-#vision h2,
-#science h2 {
-  font-size: var(--fs-2xl);
-}
 .section-pill {
   font-size: var(--fs-micro);
   padding: var(--sp-1) var(--sp-3);
@@ -2317,7 +2301,6 @@ header#hero > p {
   border-radius: var(--r-md);
 }
 #faq h3 {
-  font-size: var(--fs-base);
   margin-bottom: var(--sp-1);
 }
 #faq p {
@@ -2329,14 +2312,8 @@ header#hero > p {
 #science .glass-card {
   padding: var(--sp-4);
 }
-#science h4 {
-  font-size: var(--fs-base);
-}
 #insight-pfad .roadmap-steps {
   gap: var(--sp-5);
-}
-#insight-pfad h2 {
-  font-size: var(--fs-lg);
 }
 .live-dream-shell {
   max-width: 100%;
@@ -2381,12 +2358,6 @@ footer {
   .section-shell .text-center.mb-16 {
     margin-bottom: 4rem;
   }
-  #app-screens h2,
-  #features h2,
-  #vision h2,
-  #science h2 {
-    font-size: var(--fs-3xl);
-  }
   .section-pill {
     font-size: var(--fs-micro);
     padding: var(--sp-1) var(--sp-4);
@@ -2429,7 +2400,6 @@ footer {
     border-radius: var(--r-lg);
   }
   #faq h3 {
-    font-size: var(--fs-md);
     margin-bottom: var(--sp-2);
   }
   #faq p {
@@ -2441,14 +2411,8 @@ footer {
   #science .glass-card {
     padding: var(--sp-5);
   }
-  #science h4 {
-    font-size: var(--fs-md);
-  }
   #insight-pfad .roadmap-steps {
     gap: var(--sp-6);
-  }
-  #insight-pfad h2 {
-    font-size: var(--fs-3xl);
   }
   .live-dream-shell {
     max-width: 23rem;
@@ -2461,15 +2425,6 @@ footer {
   }
 }
 @media (min-width: 768px) {
-  #app-screens h2,
-  #features h2,
-  #vision h2,
-  #science h2 {
-    font-size: var(--fs-4xl);
-  }
-  #insight-pfad h2 {
-    font-size: var(--fs-4xl);
-  }
   #hero > p,
   header#hero > p {
     font-size: var(--fs-lg);
