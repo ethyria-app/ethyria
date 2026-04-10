@@ -495,6 +495,7 @@
           </div>
         </div>
       </section>
+  <script src="assets/faq-accordion.js"></script>
 
       <!-- Section Divider -->
       <div class="section-divider" aria-hidden="true"></div>
@@ -1827,156 +1828,121 @@
         class="container mx-auto px-6 section-shell relative z-10"
       >
         <div class="max-w-5xl mx-auto">
-          <div class="text-center mb-16 reveal">
-            <p
-              class="text-[10px] tracking-[0.3em] uppercase ethyria-gradient-text mb-3 section-eyebrow"
-            >
-              FAQ
-            </p>
-            <h2
-              class="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 section-title"
-            >
-              Häufige Fragen zur
-              <span class="ethyria-gradient-text">Traumdeutung</span>
-            </h2>
-            <p
-              class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed section-subtitle"
-            >
-              Transparente Antworten zu Traumdeutung per KI, Traumsymbolen,
-              Datenschutz, Freud vs. Jung und wie du ein digitales Traumtagebuch
-              führst.
-            </p>
+          <div class="faq-header text-center mb-16 reveal">
+            <p class="text-[10px] tracking-[0.3em] uppercase ethyria-gradient-text mb-3 section-eyebrow">FAQ</p>
+            <h2 class="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 section-title">Häufige Fragen zur <span class="ethyria-gradient-text">Traumdeutung</span></h2>
+            <p class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed section-subtitle">Transparente Antworten zu Traumdeutung per KI, Traumsymbolen, Datenschutz, Freud vs. Jung und wie du ein digitales Traumtagebuch führst.</p>
           </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 stagger-grid">
-            <article class="glass-card px-6 py-6 rounded-3xl text-left">
-              <h3 class="text-xl font-bold mb-3">
-                Ist Ethyria wirklich kostenlos?
-              </h3>
-              <p class="text-sm text-gray-300 leading-relaxed">
-                Ja. Du kannst Ethyria kostenlos nutzen. Optionale In-App-Käufe
-                schalten zusätzliche Premium-Funktionen wie PDF-Exporte und
-                erweiterte Analysen frei.
-              </p>
-            </article>
-            <article class="glass-card px-6 py-6 rounded-3xl text-left">
-              <h3 class="text-xl font-bold mb-3">
-                Wie sicher sind meine Traumdaten?
-              </h3>
-              <p class="text-sm text-gray-300 leading-relaxed">
-                Deine Privatsphäre steht an erster Stelle. Deine Traumdaten
-                bleiben auf deinem Gerät. Ohne Cloud Pflicht und ohne Tracking.
-              </p>
-            </article>
-            <article class="glass-card px-6 py-6 rounded-3xl text-left">
-              <h3 class="text-xl font-bold mb-3">
-                Wie funktioniert die KI-Traumdeutung?
-              </h3>
-              <p class="text-sm text-gray-300 leading-relaxed">
-                Ethyria nutzt fortschrittliche KI, um Symbole, emotionale Themen
-                und wiederkehrende Muster mithilfe psychologischer Ansätze nach
-                Jung und Freud einzuordnen.
-              </p>
-            </article>
-            <article class="glass-card px-6 py-6 rounded-3xl text-left">
-              <h3 class="text-xl font-bold mb-3">
-                Welche Analyse-Modi bietet Ethyria?
-              </h3>
-              <p class="text-sm text-gray-300 leading-relaxed">
-                Ethyria bietet fünf Analyse-Perspektiven: Allgemeine Deutung,
-                Freudsche Psychoanalyse, Jungsche Analytische Psychologie,
-                Spirituelle Reflexion und Biosynchrone Analyse.
-              </p>
-            </article>
-            <!-- ★ NEW: Export FAQ (replaces Export section) ★ -->
-            <article class="glass-card px-6 py-6 rounded-3xl text-left">
-              <h3 class="text-xl font-bold mb-3">
-                Kann ich meine Analysen exportieren?
-              </h3>
-              <p class="text-sm text-gray-300 leading-relaxed">
-                Ja. Als Premium-Nutzer kannst du jede Analyse und deine
-                monatlichen Statistiken als professionell gestaltetes
-                PDF-Dokument exportieren.
-              </p>
-            </article>
-            <article class="glass-card px-6 py-6 rounded-3xl text-left">
-              <h3 class="text-xl font-bold mb-3">
-                Für welche Geräte ist Ethyria verfügbar?
-              </h3>
-              <p class="text-sm text-gray-300 leading-relaxed">
-                Aktuell ist Ethyria für Android verfügbar. Eine iOS-Version ist
-                in Arbeit.
-              </p>
-            </article>
-
-            <!-- ★ NEW SEO FAQs ★ -->
-            <article class="glass-card px-6 py-6 rounded-3xl text-left">
-              <h3 class="text-xl font-bold mb-3">Was bedeutet mein Traum?</h3>
-              <p class="text-sm text-gray-300 leading-relaxed">
-                Träume sind hochindividuell. Ethyria analysiert deine
-                Traumsymbole, Emotionen und narrative Strukturen mit KI und
-                ordnet sie psychologisch ein. Nach Freud, Jung oder
-                biosynchronen Methoden. So erfährst du, was dein Traum über dein
-                Unterbewusstsein verrät.
-              </p>
-            </article>
-            <article class="glass-card px-6 py-6 rounded-3xl text-left">
-              <h3 class="text-xl font-bold mb-3">
-                Was ist der Unterschied zwischen Traumdeutung nach Freud und
-                Jung?
-              </h3>
-              <p class="text-sm text-gray-300 leading-relaxed">
-                Freud sieht Träume als Ausdruck verdrängter Wünsche und
-                unbewusster Konflikte. Jung hingegen betrachtet sie als
-                Botschaften des kollektiven Unbewussten und arbeitet mit
-                Archetypen. Ethyria bietet beide Ansätze als separate
-                Analyse-Perspektiven.
-              </p>
-            </article>
-            <article class="glass-card px-6 py-6 rounded-3xl text-left">
-              <h3 class="text-xl font-bold mb-3">
-                Kann KI Träume wirklich deuten?
-              </h3>
-              <p class="text-sm text-gray-300 leading-relaxed">
-                KI kann Muster erkennen, die dem menschlichen Auge entgehen.
-                wiederkehrende Symbole, emotionale Zusammenhänge und narrative
-                Strukturen. Ethyria nutzt dies als Werkzeug zur Selbstreflexion,
-                nicht als Ersatz für professionelle therapeutische Begleitung.
-              </p>
-            </article>
-            <article class="glass-card px-6 py-6 rounded-3xl text-left">
-              <h3 class="text-xl font-bold mb-3">
-                Wie führe ich ein digitales Traumtagebuch?
-              </h3>
-              <p class="text-sm text-gray-300 leading-relaxed">
-                Schreibe deinen Traum direkt nach dem Aufwachen auf. Am besten
-                mit der Ethyria-App. Notiere Symbole, Emotionen und Details. Die
-                App analysiert deine Einträge automatisch und zeigt dir über
-                Wochen hinweg Muster und wiederkehrende Themen.
-              </p>
-            </article>
-            <article class="glass-card px-6 py-6 rounded-3xl text-left">
-              <h3 class="text-xl font-bold mb-3">
-                Was bedeuten wiederkehrende Träume?
-              </h3>
-              <p class="text-sm text-gray-300 leading-relaxed">
-                Wiederkehrende Träume deuten oft auf ungelöste emotionale Themen
-                oder unbewusste Konflikte hin. Ethyria erkennt solche Muster
-                automatisch und hilft dir, die dahinterliegenden Botschaften
-                deines Unterbewusstseins zu verstehen.
-              </p>
-            </article>
-            <article class="glass-card px-6 py-6 rounded-3xl text-left">
-              <h3 class="text-xl font-bold mb-3">
-                Welche Traumsymbole kommen am häufigsten vor?
-              </h3>
-              <p class="text-sm text-gray-300 leading-relaxed">
-                Zu den häufigsten Traumsymbolen zählen Wasser (Emotionen),
-                Fallen (Kontrollverlust), Fliegen (Freiheit), Zähne (Angst),
-                Häuser (das Selbst) und Verfolgung (Vermeidung). Ethyria
-                analysiert diese Symbole im Kontext deiner persönlichen
-                Traumgeschichte.
-              </p>
-            </article>
+          <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh;">
+            <div class="faq-accordion" id="faqAccordion">
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="true" aria-controls="faq1" id="faq1-label">
+                  <span>Ist Ethyria wirklich kostenlos?</span>
+                  <svg class="faq-chevron" width="22" height="22" viewBox="0 0 22 22"><polyline points="6,9 11,14 16,9" stroke="#00CFFF" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer" id="faq1" role="region" aria-labelledby="faq1-label">
+                  Ja. Du kannst Ethyria kostenlos nutzen. Optionale In-App-Käufe schalten zusätzliche Premium-Funktionen wie PDF-Exporte und erweiterte Analysen frei.
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq2" id="faq2-label">
+                  <span>Wie sicher sind meine Traumdaten?</span>
+                  <svg class="faq-chevron" width="22" height="22" viewBox="0 0 22 22"><polyline points="6,9 11,14 16,9" stroke="#00CFFF" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer" id="faq2" role="region" aria-labelledby="faq2-label">
+                  Deine Privatsphäre steht an erster Stelle. Deine Traumdaten bleiben auf deinem Gerät. Ohne Cloud Pflicht und ohne Tracking.
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq3" id="faq3-label">
+                  <span>Wie funktioniert die KI-Traumdeutung?</span>
+                  <svg class="faq-chevron" width="22" height="22" viewBox="0 0 22 22"><polyline points="6,9 11,14 16,9" stroke="#00CFFF" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer" id="faq3" role="region" aria-labelledby="faq3-label">
+                  Ethyria nutzt fortschrittliche KI, um Symbole, emotionale Themen und wiederkehrende Muster mithilfe psychologischer Ansätze nach Jung und Freud einzuordnen.
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq4" id="faq4-label">
+                  <span>Welche Analyse-Modi bietet Ethyria?</span>
+                  <svg class="faq-chevron" width="22" height="22" viewBox="0 0 22 22"><polyline points="6,9 11,14 16,9" stroke="#00CFFF" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer" id="faq4" role="region" aria-labelledby="faq4-label">
+                  Ethyria bietet fünf Analyse-Perspektiven: Allgemeine Deutung, Freudsche Psychoanalyse, Jungsche Analytische Psychologie, Spirituelle Reflexion und Biosynchrone Analyse.
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq5" id="faq5-label">
+                  <span>Kann ich meine Analysen exportieren?</span>
+                  <svg class="faq-chevron" width="22" height="22" viewBox="0 0 22 22"><polyline points="6,9 11,14 16,9" stroke="#00CFFF" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer" id="faq5" role="region" aria-labelledby="faq5-label">
+                  Ja. Als Premium-Nutzer kannst du jede Analyse und deine monatlichen Statistiken als professionell gestaltetes PDF-Dokument exportieren.
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq6" id="faq6-label">
+                  <span>Für welche Geräte ist Ethyria verfügbar?</span>
+                  <svg class="faq-chevron" width="22" height="22" viewBox="0 0 22 22"><polyline points="6,9 11,14 16,9" stroke="#00CFFF" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer" id="faq6" role="region" aria-labelledby="faq6-label">
+                  Aktuell ist Ethyria für Android verfügbar. Eine iOS-Version ist in Arbeit.
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq7" id="faq7-label">
+                  <span>Was bedeutet mein Traum?</span>
+                  <svg class="faq-chevron" width="22" height="22" viewBox="0 0 22 22"><polyline points="6,9 11,14 16,9" stroke="#00CFFF" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer" id="faq7" role="region" aria-labelledby="faq7-label">
+                  Träume sind hochindividuell. Ethyria analysiert deine Traumsymbole, Emotionen und narrative Strukturen mit KI und ordnet sie psychologisch ein. Nach Freud, Jung oder biosynchronen Methoden. So erfährst du, was dein Traum über dein Unterbewusstsein verrät.
+                </div>
+              </div>
+                <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false" aria-controls="faq8" id="faq8-label">
+                    <span>Was ist der Unterschied zwischen Traumdeutung nach Freud und Jung?</span>
+                    <svg class="faq-chevron" width="22" height="22" viewBox="0 0 22 22"><polyline points="6,9 11,14 16,9" stroke="#00CFFF" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                  </button>
+                  <div class="faq-answer" id="faq8" role="region" aria-labelledby="faq8-label">
+                    Freud sieht Träume als Ausdruck verdrängter Wünsche und unbewusster Konflikte. Jung hingegen betrachtet sie als Botschaften des kollektiven Unbewussten und arbeitet mit Archetypen. Ethyria bietet beide Ansätze als separate Analyse-Perspektiven.
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false" aria-controls="faq9" id="faq9-label">
+                    <span>Kann KI Träume wirklich deuten?</span>
+                    <svg class="faq-chevron" width="22" height="22" viewBox="0 0 22 22"><polyline points="6,9 11,14 16,9" stroke="#00CFFF" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                  </button>
+                  <div class="faq-answer" id="faq9" role="region" aria-labelledby="faq9-label">
+                    KI kann Muster erkennen, die dem menschlichen Auge entgehen. Wiederkehrende Symbole, emotionale Zusammenhänge und narrative Strukturen. Ethyria nutzt dies als Werkzeug zur Selbstreflexion, nicht als Ersatz für professionelle therapeutische Begleitung.
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false" aria-controls="faq10" id="faq10-label">
+                    <span>Wie führe ich ein digitales Traumtagebuch?</span>
+                    <svg class="faq-chevron" width="22" height="22" viewBox="0 0 22 22"><polyline points="6,9 11,14 16,9" stroke="#00CFFF" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                  </button>
+                  <div class="faq-answer" id="faq10" role="region" aria-labelledby="faq10-label">
+                    Schreibe deinen Traum direkt nach dem Aufwachen auf. Am besten mit der Ethyria-App. Notiere Symbole, Emotionen und Details. Die App analysiert deine Einträge automatisch und zeigt dir über Wochen hinweg Muster und wiederkehrende Themen.
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false" aria-controls="faq11" id="faq11-label">
+                    <span>Was bedeuten wiederkehrende Träume?</span>
+                    <svg class="faq-chevron" width="22" height="22" viewBox="0 0 22 22"><polyline points="6,9 11,14 16,9" stroke="#00CFFF" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                  </button>
+                  <div class="faq-answer" id="faq11" role="region" aria-labelledby="faq11-label">
+                    Wiederkehrende Träume deuten oft auf ungelöste emotionale Themen oder unbewusste Konflikte hin. Ethyria erkennt solche Muster automatisch und hilft dir, die dahinterliegenden Botschaften deines Unterbewusstseins zu verstehen.
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false" aria-controls="faq12" id="faq12-label">
+                    <span>Welche Traumsymbole kommen am häufigsten vor?</span>
+                    <svg class="faq-chevron" width="22" height="22" viewBox="0 0 22 22"><polyline points="6,9 11,14 16,9" stroke="#00CFFF" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                  </button>
+                  <div class="faq-answer" id="faq12" role="region" aria-labelledby="faq12-label">
+                    Zu den häufigsten Traumsymbolen zählen Wasser (Emotionen), Fallen (Kontrollverlust), Fliegen (Freiheit), Zähne (Angst), Häuser (das Selbst) und Verfolgung (Vermeidung). Ethyria analysiert diese Symbole im Kontext deiner persönlichen Traumgeschichte.
+                  </div>
+                </div>
           </div>
         </div>
       </section>
