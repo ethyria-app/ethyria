@@ -2178,7 +2178,7 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
 /* --- Slider Hint Animation (on scroll-into-view) --- */
 @keyframes sliderNudge {
   0%   { transform: translateX(0) scale(1); }
-  25%  { transform: translateX(-48px) scale(0.97); }
+  25%  { transform: translateX(-96px) scale(0.97); }
   55%  { transform: translateX(18px) scale(1.01); }
   78%  { transform: translateX(-6px) scale(1); }
   100% { transform: translateX(0) scale(1); }
