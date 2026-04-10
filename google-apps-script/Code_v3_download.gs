@@ -75,6 +75,15 @@ function sendAllDownloadEmails() {
 }
 
 // ─────────────────────────────────────────────────────────────
+//  TEST: Run this from the script editor to send a test email.
+//  Change the email and locale below before running.
+// ─────────────────────────────────────────────────────────────
+
+function testSendDownloadEmail() {
+  sendSingleDownloadEmail("ethyria.app@gmail.com", "de");
+}
+
+// ─────────────────────────────────────────────────────────────
 //  Send a single download email (for manual/test use)
 // ─────────────────────────────────────────────────────────────
 
