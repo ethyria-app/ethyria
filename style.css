@@ -964,7 +964,7 @@ section:not(#insight-pfad) .glass-card [class~="text-left"] {
     0 0 72px rgba(1, 191, 255, 0.14),
     0 0 128px rgba(49, 132, 255, 0.08),
     0 30px 60px rgba(0, 0, 0, 0.62);
-  height: 840px;
+  height: 700px;
   position: relative;
 }
 
