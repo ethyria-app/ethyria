@@ -2,7 +2,7 @@ const CONFIG = Object.freeze({
   spreadsheetId: "13cqkjTZAUADUMl0_IiK01pd3ZFcO-BTXFJNFosNf_J8",
   sheetName: "beta_signups",
   senderName: "Ethyria",
-  replyTo: "ethyria.app@gmail.com",
+  replyTo: "support@ethyria.at",
   logoUrl: "https://ostyles.github.io/ethyria/assets/splahscreen.png",
 });
 
@@ -142,7 +142,6 @@ function checkMailAuthorization_() {
 }
 
 function getEmailTemplate_(locale) {
-  const siteUrl = "https://ostyles.github.io/ethyria/";
   const logoUrl = CONFIG.logoUrl;
 
   const i18n = {
@@ -355,9 +354,6 @@ function getEmailTemplate_(locale) {
       "</h1>",
     "</td></tr>",
 
-    '<tr><td align="center" style="padding:0 34px 26px;">',
-    '<p style="margin:0;font-family:Inter,Arial,Helvetica,sans-serif;font-size:15px;line-height:1.7;color:#9fdcff;">ostyles.github.io/ethyria</p>',
-    "</td></tr>",
     "</table>",
     "</td></tr>",
 
@@ -432,10 +428,10 @@ function getEmailTemplate_(locale) {
     '<tr><td align="center" style="padding:0 34px 22px;">',
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:rgba(255,255,255,0.03);border-top:1px solid rgba(255,255,255,0.06);">',
     '<tr><td align="center" style="padding:18px 20px 20px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:11px;line-height:1.7;color:#91a0c6;">',
-    "Ethyria AI &middot; Beta Community &middot; Secure delivery via Gmail<br>",
-    '<a href="' +
-      siteUrl +
-      '" style="color:#01bfff;text-decoration:none;">ostyles.github.io/ethyria</a>',
+    "Ethyria | Traumdeutung App mit KI &middot; Traumtagebuch &amp; Traumanalyse (Android)<br>",
+    '<a href="https://ethyria.at" style="color:#01bfff;text-decoration:none;">ethyria.at</a>',
+    " | ",
+    '<a href="mailto:support@ethyria.at" style="color:#01bfff;text-decoration:none;">support@ethyria.at</a>',
     "</td></tr>",
     "</table>",
     "</td></tr>",
