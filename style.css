@@ -73,6 +73,7 @@
 .faq-question[aria-expanded="true"] .faq-chevron {
   transform: rotate(180deg);
 }
+/* FAQ answer: fully hidden when closed, compact spacing */
 .faq-answer {
   max-height: 0;
   overflow: hidden;
@@ -81,15 +82,26 @@
   font-size: 0.95rem;
   padding: 0 1.5rem;
   margin-top: 0;
+  opacity: 0;
+  pointer-events: none;
   transition:
     max-height 0.35s cubic-bezier(0.4, 2, 0.6, 1),
     padding 0.2s,
-    margin-top 0.2s;
+    margin-top 0.2s,
+    opacity 0.2s;
 }
 .faq-question[aria-expanded="true"] + .faq-answer {
-  padding: 0 1.5rem 1.2rem 1.5rem;
+  padding: 0 1.5rem 1.1rem 1.5rem;
   max-height: 1000px;
-  margin-top: 1.2rem;
+  margin-top: 0.7rem;
+  opacity: 1;
+  pointer-events: auto;
+}
+.faq-accordion {
+  gap: 0.5rem;
+}
+.faq-item {
+  margin-bottom: 0;
 }
 @media (max-width: 600px) {
   .faq-question {
@@ -98,12 +110,20 @@
   }
   .faq-answer {
     font-size: 0.92rem;
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1rem;
     margin-top: 0;
+    opacity: 0;
+    pointer-events: none;
   }
   .faq-question[aria-expanded="true"] + .faq-answer {
     max-height: 1000px;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    padding: 0 1rem 0.9rem 1rem;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .faq-accordion {
+    gap: 0.35rem;
   }
 }
 /* --- Modern Price Label --- */
