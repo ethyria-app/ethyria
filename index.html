@@ -2925,23 +2925,25 @@
             observer.unobserve(slider);
             setTimeout(function () {
               if (typeof slider._sliderGoTo !== 'function') return;
-              // Phase 1: slide to 2 + arrow pulse
+              // Phase 1: slow swipe to slide 2 + arrow pulse
+              slider.classList.add('is-hint-slow');
               slider._sliderGoTo(1);
               slider.classList.add('is-hinting');
               setTimeout(function () {
                 slider.classList.remove('is-hinting');
               }, 600);
-              // Phase 2: slide back to 1 + arrow pulse again
+              // Phase 2: pause 500ms on slide 2, then swipe back + arrow pulse
               setTimeout(function () {
                 slider._sliderGoTo(0);
                 slider.classList.add('is-hinting');
                 setTimeout(function () {
                   slider.classList.remove('is-hinting');
+                  slider.classList.remove('is-hint-slow');
                   if (typeof slider._sliderResetAutoplay === 'function') {
                     slider._sliderResetAutoplay();
                   }
                 }, 600);
-              }, 1000);
+              }, 1500);
             }, 400);
           }
         });

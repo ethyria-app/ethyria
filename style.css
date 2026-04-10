@@ -2187,10 +2187,17 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
 .ethyria-slider.is-hinting .ethyria-slider__nav--next {
   animation: arrowPulse 0.55s ease-out 0.1s forwards;
 }
+/* Slower, more visible swipe during hint */
+.ethyria-slider.is-hint-slow {
+  --slider-duration: 1s;
+}
 @media (prefers-reduced-motion: reduce) {
   .ethyria-slider.is-hinting .ethyria-slider__nav--prev,
   .ethyria-slider.is-hinting .ethyria-slider__nav--next {
     animation: none !important;
+  }
+  .ethyria-slider.is-hint-slow {
+    --slider-duration: 0.01ms;
   }
 }
 
