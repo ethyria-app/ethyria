@@ -2772,6 +2772,10 @@
             obs.observe(root);
           }
 
+          // Expose goTo for external hint trigger
+          root._sliderGoTo = goTo;
+          root._sliderResetAutoplay = resetAutoplay;
+
           // --- Init ---
           updateUI();
           if (autoplayMs) startAutoplay();
@@ -2918,14 +2922,18 @@
           if (entry.isIntersecting && !hinted.has(entry.target)) {
             hinted.add(entry.target);
             var slider = entry.target;
-            // Small delay so user sees the slider before the nudge
-            setTimeout(function () {
-              slider.classList.add('is-hinting');
-              setTimeout(function () {
-                slider.classList.remove('is-hinting');
-              }, 900);
-            }, 350);
             observer.unobserve(slider);
+            // Wait for slider to be visible, then navigate to slide 2 and back
+            setTimeout(function () {
+              if (typeof slider._sliderGoTo !== 'function') return;
+              slider._sliderGoTo(1);
+              setTimeout(function () {
+                slider._sliderGoTo(0);
+                if (typeof slider._sliderResetAutoplay === 'function') {
+                  slider._sliderResetAutoplay();
+                }
+              }, 900);
+            }, 400);
           }
         });
       }, { threshold: 0.2 });

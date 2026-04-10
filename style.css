@@ -2175,38 +2175,6 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   }
 }
 
-/* --- Slider Hint Animation (on scroll-into-view) --- */
-@keyframes sliderNudge {
-  0%   { transform: translateX(0) scale(1); }
-  25%  { transform: translateX(-96px) scale(0.97); }
-  55%  { transform: translateX(18px) scale(1.01); }
-  78%  { transform: translateX(-6px) scale(1); }
-  100% { transform: translateX(0) scale(1); }
-}
-@keyframes arrowPulse {
-  0%   { transform: scale(1);    filter: drop-shadow(0 0 0px rgba(1,191,255,0)); }
-  40%  { transform: scale(1.35); filter: drop-shadow(0 0 10px rgba(1,191,255,0.7)); }
-  100% { transform: scale(1);    filter: drop-shadow(0 4px 14px rgba(2,8,32,0.42)); }
-}
-.ethyria-slider.is-hinting .ethyria-slider__slide.is-active {
-  animation: sliderNudge 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-.ethyria-slider.is-hinting .ethyria-slider__nav {
-  animation: arrowPulse 0.65s ease-out forwards;
-}
-.ethyria-slider.is-hinting .ethyria-slider__nav--prev {
-  animation-delay: 0.05s;
-}
-.ethyria-slider.is-hinting .ethyria-slider__nav--next {
-  animation-delay: 0.15s;
-}
-@media (prefers-reduced-motion: reduce) {
-  .ethyria-slider.is-hinting .ethyria-slider__slide.is-active,
-  .ethyria-slider.is-hinting .ethyria-slider__nav {
-    animation: none !important;
-  }
-}
-
 /* --- Controls bar --- */
 .ethyria-slider__controls {
   display: flex;
