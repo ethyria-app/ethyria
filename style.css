@@ -39,7 +39,7 @@
   grid-template-columns: 1fr auto;
   align-items: center;
   font-size: 0.92rem;
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: 700;
   color: #e6faff;
   padding: 1rem 1.5rem;
@@ -2172,6 +2172,38 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   .ethyria-slider__slide.is-exit-left,
   .ethyria-slider__slide.is-exit-right {
     transform: none !important;
+  }
+}
+
+/* --- Slider Hint Animation (on scroll-into-view) --- */
+@keyframes sliderNudge {
+  0%   { transform: translateX(0) scale(1); }
+  20%  { transform: translateX(-14px) scale(0.99); }
+  50%  { transform: translateX(8px) scale(1.005); }
+  75%  { transform: translateX(-4px) scale(1); }
+  100% { transform: translateX(0) scale(1); }
+}
+@keyframes arrowPulse {
+  0%   { transform: scale(1);    filter: drop-shadow(0 0 0px rgba(1,191,255,0)); }
+  40%  { transform: scale(1.35); filter: drop-shadow(0 0 10px rgba(1,191,255,0.7)); }
+  100% { transform: scale(1);    filter: drop-shadow(0 4px 14px rgba(2,8,32,0.42)); }
+}
+.ethyria-slider.is-hinting .ethyria-slider__slide.is-active {
+  animation: sliderNudge 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.ethyria-slider.is-hinting .ethyria-slider__nav {
+  animation: arrowPulse 0.65s ease-out forwards;
+}
+.ethyria-slider.is-hinting .ethyria-slider__nav--prev {
+  animation-delay: 0.05s;
+}
+.ethyria-slider.is-hinting .ethyria-slider__nav--next {
+  animation-delay: 0.15s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ethyria-slider.is-hinting .ethyria-slider__slide.is-active,
+  .ethyria-slider.is-hinting .ethyria-slider__nav {
+    animation: none !important;
   }
 }
 
