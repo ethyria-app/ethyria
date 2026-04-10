@@ -2923,16 +2923,25 @@
             hinted.add(entry.target);
             var slider = entry.target;
             observer.unobserve(slider);
-            // Wait for slider to be visible, then navigate to slide 2 and back
             setTimeout(function () {
               if (typeof slider._sliderGoTo !== 'function') return;
+              // Phase 1: slide to 2 + arrow pulse
               slider._sliderGoTo(1);
+              slider.classList.add('is-hinting');
+              setTimeout(function () {
+                slider.classList.remove('is-hinting');
+              }, 600);
+              // Phase 2: slide back to 1 + arrow pulse again
               setTimeout(function () {
                 slider._sliderGoTo(0);
-                if (typeof slider._sliderResetAutoplay === 'function') {
-                  slider._sliderResetAutoplay();
-                }
-              }, 900);
+                slider.classList.add('is-hinting');
+                setTimeout(function () {
+                  slider.classList.remove('is-hinting');
+                  if (typeof slider._sliderResetAutoplay === 'function') {
+                    slider._sliderResetAutoplay();
+                  }
+                }, 600);
+              }, 1000);
             }, 400);
           }
         });

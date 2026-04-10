@@ -2175,6 +2175,25 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   }
 }
 
+/* --- Slider Hint: Arrow Pulse --- */
+@keyframes arrowPulse {
+  0%   { transform: scale(1);    filter: drop-shadow(0 0 0px rgba(1,191,255,0)); }
+  40%  { transform: scale(1.45); filter: drop-shadow(0 0 12px rgba(1,191,255,0.85)); }
+  100% { transform: scale(1);    filter: drop-shadow(0 4px 14px rgba(2,8,32,0.42)); }
+}
+.ethyria-slider.is-hinting .ethyria-slider__nav--prev {
+  animation: arrowPulse 0.55s ease-out forwards;
+}
+.ethyria-slider.is-hinting .ethyria-slider__nav--next {
+  animation: arrowPulse 0.55s ease-out 0.1s forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ethyria-slider.is-hinting .ethyria-slider__nav--prev,
+  .ethyria-slider.is-hinting .ethyria-slider__nav--next {
+    animation: none !important;
+  }
+}
+
 /* --- Controls bar --- */
 .ethyria-slider__controls {
   display: flex;
