@@ -1,3 +1,57 @@
+/* --- Modern Price Label --- */
+.price-label-modern {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0.5rem;
+  background: rgba(255,255,255,0.04);
+  border-radius: 2.2rem;
+  padding: 0.7rem 1.2rem;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,207,255,0.10);
+  margin-bottom: 1.2rem;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.price-label-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 1.2rem;
+  background: rgba(0,207,255,0.07);
+  font-size: 1rem;
+  color: #e6faff;
+  font-weight: 400;
+  min-width: 0;
+}
+.price-label-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6em;
+  height: 1.6em;
+  min-width: 1.6em;
+  min-height: 1.6em;
+  background: none;
+}
+.price-label-text {
+  white-space: pre-line;
+  font-size: 0.98em;
+  color: #e6faff;
+  text-align: left;
+}
+@media (max-width: 600px) {
+  .price-label-modern {
+    padding: 0.7rem 0.5rem;
+  }
+  .price-label-item {
+    font-size: 0.98rem;
+    padding: 0.4rem 0.7rem;
+  }
+}
 /* ============================================================
    ETHYRIA — Production Build
    All audit fixes applied. Original files untouched.
