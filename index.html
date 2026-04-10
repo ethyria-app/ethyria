@@ -2464,14 +2464,39 @@
 
         // ---- Exit-Intent Popup ---- //
         var exitShown = false;
+        function showExitPopup() {
+          if (exitShown) return;
+          if (!document.getElementById("successOverlay").hidden) return;
+          exitShown = true;
+          document.getElementById("exitPopup").hidden = false;
+        }
+        // Desktop: mouseleave top
         document.addEventListener("mouseleave", function (e) {
-          if (e.clientY < 0 && !exitShown) {
-            // Don't show if user already signed up (success overlay was shown)
-            if (!document.getElementById("successOverlay").hidden) return;
-            exitShown = true;
-            document.getElementById("exitPopup").hidden = false;
-          }
+          if (e.clientY < 0) showExitPopup();
         });
+        // Mobile: 60s inactivity
+        var exitIdleTimer = null;
+        function resetExitIdle() {
+          clearTimeout(exitIdleTimer);
+          exitIdleTimer = setTimeout(showExitPopup, 60000);
+        }
+        if ("ontouchstart" in window) {
+          resetExitIdle();
+          ["touchstart", "scroll"].forEach(function (evt) {
+            document.addEventListener(evt, resetExitIdle, { passive: true });
+          });
+        }
+        // Mobile: fast scroll up
+        var lastScrollY = window.scrollY;
+        var lastScrollTime = Date.now();
+        window.addEventListener("scroll", function () {
+          var now = Date.now();
+          var dy = window.scrollY - lastScrollY;
+          var dt = now - lastScrollTime;
+          if (dy < -300 && dt < 400) showExitPopup();
+          lastScrollY = window.scrollY;
+          lastScrollTime = now;
+        }, { passive: true });
         // Close handlers
         var exitBackdrop = document.querySelector(".exit-popup__backdrop");
         var exitClose = document.querySelector(".exit-popup__close");
