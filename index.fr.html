@@ -894,7 +894,7 @@
           </div>
 
           <!-- Typewriter Phone Mockup -->
-          <div class="flex justify-center mb-20">
+          <div class="flex justify-center mb-2">
             <div class="w-full max-w-md relative live-dream-shell">
               <div class="text-center mb-5">
                 <span
@@ -956,7 +956,15 @@
                 <!-- Dream Title -->
                 <div style="padding: 16px 20px 8px">
                   <div class="mock-section-label">Titre du Rêve</div>
-                  <div class="mock-dream-title" style="font-family:'Poppins',Arial,sans-serif;font-weight:700;">La Maison aux Mille Portes</div>
+                  <div
+                    class="mock-dream-title"
+                    style="
+                      font-family: &quot;Poppins&quot;, Arial, sans-serif;
+                      font-weight: 700;
+                    "
+                  >
+                    La Maison aux Mille Portes
+                  </div>
                 </div>
                 <!-- Emotion Tags -->
                 <div class="mock-emotion-wrap">
@@ -981,16 +989,83 @@
                   </div>
                 </div>
                 <!-- Mic Bar + Analyse nebeneinander -->
-                <div style="margin-top:20px; padding:0 16px 20px; display:flex; gap:10px; align-items:stretch;">
-                  <div style="flex:1; min-width:0; background:linear-gradient(135deg,#22c55e,#16a34a); border-radius:14px; display:flex; align-items:center; justify-content:center; padding:0; height:48px;">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="9" y="2" width="6" height="12" rx="3" fill="white"/>
-                      <path d="M5 11a7 7 0 0 0 14 0" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                      <line x1="12" y1="18" x2="12" y2="22" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                      <line x1="9" y1="22" x2="15" y2="22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <div
+                  style="
+                    margin-top: 20px;
+                    padding: 0 16px 20px;
+                    display: flex;
+                    gap: 10px;
+                    align-items: stretch;
+                  "
+                >
+                  <div
+                    style="
+                      flex: 1;
+                      min-width: 0;
+                      background: linear-gradient(135deg, #22c55e, #16a34a);
+                      border-radius: 14px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      padding: 0;
+                      height: 48px;
+                    "
+                  >
+                    <svg
+                      width="26"
+                      height="26"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="9"
+                        y="2"
+                        width="6"
+                        height="12"
+                        rx="3"
+                        fill="white"
+                      />
+                      <path
+                        d="M5 11a7 7 0 0 0 14 0"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <line
+                        x1="12"
+                        y1="18"
+                        x2="12"
+                        y2="22"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <line
+                        x1="9"
+                        y1="22"
+                        x2="15"
+                        y2="22"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
                     </svg>
                   </div>
-                  <div class="mock-analyse-btn" style="flex:1; min-width:0; margin:0; height:48px; display:flex; align-items:center; justify-content:center;">Analyser</div>
+                  <div
+                    class="mock-analyse-btn"
+                    style="
+                      flex: 1;
+                      min-width: 0;
+                      margin: 0;
+                      height: 48px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    Analyser
+                  </div>
                 </div>
               </div>
               <!-- Arrow down -->
@@ -2895,68 +2970,71 @@
         ]
       }
     </script>
-  <script>
-    (function () {
-      function initFaqAccordion() {
-        var acc = document.getElementById('faqAccordion');
-        if (!acc) return;
-        var questions = acc.querySelectorAll('.faq-question');
-        questions.forEach(function (btn) {
-          btn.addEventListener('click', function () {
-            var expanded = this.getAttribute('aria-expanded') === 'true';
-            questions.forEach(function (b) {
-              b.setAttribute('aria-expanded', 'false');
+    <script>
+      (function () {
+        function initFaqAccordion() {
+          var acc = document.getElementById("faqAccordion");
+          if (!acc) return;
+          var questions = acc.querySelectorAll(".faq-question");
+          questions.forEach(function (btn) {
+            btn.addEventListener("click", function () {
+              var expanded = this.getAttribute("aria-expanded") === "true";
+              questions.forEach(function (b) {
+                b.setAttribute("aria-expanded", "false");
+              });
+              if (!expanded) {
+                this.setAttribute("aria-expanded", "true");
+              }
             });
-            if (!expanded) {
-              this.setAttribute('aria-expanded', 'true');
-            }
           });
-        });
-      }
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initFaqAccordion);
-      } else {
-        initFaqAccordion();
-      }
-    })();
-  </script>
-  <script>
-    (function () {
-      if (!('IntersectionObserver' in window)) return;
-      var hinted = new WeakSet();
-      var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting && !hinted.has(entry.target)) {
-            hinted.add(entry.target);
-            var slider = entry.target;
-            observer.unobserve(slider);
-            setTimeout(function () {
-              if (typeof slider._sliderGoTo !== 'function') return;
-              slider.classList.add('is-hint-slow');
-              slider._sliderGoTo(1);
-              slider.classList.add('is-hinting');
-              setTimeout(function () {
-                slider.classList.remove('is-hinting');
-              }, 600);
-              setTimeout(function () {
-                slider._sliderGoTo(0);
-                slider.classList.add('is-hinting');
+        }
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", initFaqAccordion);
+        } else {
+          initFaqAccordion();
+        }
+      })();
+    </script>
+    <script>
+      (function () {
+        if (!("IntersectionObserver" in window)) return;
+        var hinted = new WeakSet();
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting && !hinted.has(entry.target)) {
+                hinted.add(entry.target);
+                var slider = entry.target;
+                observer.unobserve(slider);
                 setTimeout(function () {
-                  slider.classList.remove('is-hinting');
-                  slider.classList.remove('is-hint-slow');
-                  if (typeof slider._sliderResetAutoplay === 'function') {
-                    slider._sliderResetAutoplay();
-                  }
-                }, 600);
-              }, 1500);
-            }, 400);
-          }
+                  if (typeof slider._sliderGoTo !== "function") return;
+                  slider.classList.add("is-hint-slow");
+                  slider._sliderGoTo(1);
+                  slider.classList.add("is-hinting");
+                  setTimeout(function () {
+                    slider.classList.remove("is-hinting");
+                  }, 600);
+                  setTimeout(function () {
+                    slider._sliderGoTo(0);
+                    slider.classList.add("is-hinting");
+                    setTimeout(function () {
+                      slider.classList.remove("is-hinting");
+                      slider.classList.remove("is-hint-slow");
+                      if (typeof slider._sliderResetAutoplay === "function") {
+                        slider._sliderResetAutoplay();
+                      }
+                    }, 600);
+                  }, 1500);
+                }, 400);
+              }
+            });
+          },
+          { threshold: 0.2 },
+        );
+        document.querySelectorAll(".ethyria-slider").forEach(function (el) {
+          observer.observe(el);
         });
-      }, { threshold: 0.2 });
-      document.querySelectorAll('.ethyria-slider').forEach(function (el) {
-        observer.observe(el);
-      });
-    })();
-  </script>
+      })();
+    </script>
   </body>
 </html>
