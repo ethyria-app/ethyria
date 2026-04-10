@@ -495,7 +495,6 @@
           </div>
         </div>
       </section>
-  <script src="assets/faq-accordion.js"></script>
 
       <!-- Section Divider -->
       <div class="section-divider" aria-hidden="true"></div>
@@ -2885,5 +2884,30 @@
         ]
       }
     </script>
+  <script>
+    (function () {
+      function initFaqAccordion() {
+        var acc = document.getElementById('faqAccordion');
+        if (!acc) return;
+        var questions = acc.querySelectorAll('.faq-question');
+        questions.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var expanded = this.getAttribute('aria-expanded') === 'true';
+            questions.forEach(function (b) {
+              b.setAttribute('aria-expanded', 'false');
+            });
+            if (!expanded) {
+              this.setAttribute('aria-expanded', 'true');
+            }
+          });
+        });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initFaqAccordion);
+      } else {
+        initFaqAccordion();
+      }
+    })();
+  </script>
   </body>
 </html>
