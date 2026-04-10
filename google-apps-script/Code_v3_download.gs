@@ -41,7 +41,7 @@ function sendAllDownloadEmails() {
   for (let i = 0; i < srcData.length; i += 1) {
     const email = normalizeDownloadEmail_(srcData[i][1]);
     const locale = sanitizeDownloadLocale_(srcData[i][2]);
-    const status = String(srcData[i][6]).toLowerCase();
+    const status = String(srcData[i][6]).toLowerCase().trim();
 
     if (!email || status !== "sent") {
       skipped += 1;
