@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethyria Pinterest Pin – EN</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        background: #1a1a2e;
+        padding: 40px 20px;
+        font-family: "Inter", Arial, sans-serif;
+      }
+
+      .pin {
+        width: 1000px;
+        height: 1500px;
+        background: linear-gradient(
+          160deg,
+          #100c1f 0%,
+          #08134e 50%,
+          #001a79 100%
+        );
+        border-radius: 32px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px 56px;
+        position: relative;
+      }
+
+      .pin::before {
+        content: "";
+        position: absolute;
+        top: -120px;
+        right: -80px;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(
+          circle,
+          rgba(1, 191, 255, 0.12) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+      .pin::after {
+        content: "";
+        position: absolute;
+        bottom: -100px;
+        left: -60px;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(
+          circle,
+          rgba(0, 102, 255, 0.1) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+
+      .pin-top {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+      }
+
+      .hook {
+        font-family: "Poppins", Arial, sans-serif;
+        font-weight: 800;
+        font-size: 52px;
+        line-height: 1.2;
+        color: #ffffff;
+        margin-bottom: 12px;
+        letter-spacing: -0.01em;
+      }
+
+      .hook em {
+        font-style: normal;
+        background: linear-gradient(135deg, #01bfff, #0066ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .subhook {
+        font-size: 22px;
+        color: #d9e4ff;
+        line-height: 1.5;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .logo-wrap {
+        position: relative;
+        z-index: 2;
+        margin: 30px 0;
+      }
+
+      .logo-wrap img {
+        width: 240px;
+        height: 240px;
+        border-radius: 40px;
+        box-shadow:
+          0 20px 80px rgba(1, 191, 255, 0.25),
+          0 0 60px rgba(1, 191, 255, 0.08);
+        display: block;
+      }
+
+      .features {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+        margin: 20px 0;
+      }
+
+      .feature-card {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 28px 24px;
+        text-align: center;
+        width: 260px;
+      }
+
+      .feature-icon {
+        font-size: 44px;
+        margin-bottom: 12px;
+        display: block;
+      }
+
+      .feature-title {
+        font-family: "Poppins", Arial, sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #ffffff;
+        margin-bottom: 6px;
+      }
+
+      .feature-desc {
+        font-size: 15px;
+        color: #91a0c6;
+        line-height: 1.5;
+      }
+
+      .cta-section {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+      }
+
+      .cta-btn {
+        display: inline-block;
+        padding: 22px 56px;
+        font-family: "Poppins", Arial, sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: #ffffff;
+        background: linear-gradient(135deg, #01bfff 0%, #0066ff 100%);
+        border-radius: 18px;
+        text-decoration: none;
+        letter-spacing: 0.02em;
+        box-shadow: 0 10px 40px rgba(1, 191, 255, 0.35);
+      }
+
+      .premium-badge {
+        display: inline-block;
+        margin-top: 16px;
+        padding: 10px 28px;
+        background: rgba(1, 191, 255, 0.1);
+        border: 1px solid rgba(1, 191, 255, 0.25);
+        border-radius: 50px;
+        font-size: 17px;
+        color: #01bfff;
+        font-weight: 600;
+      }
+
+      .bottom-badge {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .bottom-badge span {
+        font-size: 16px;
+        color: #91a0c6;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+
+      .android-badge {
+        display: inline-block;
+        padding: 6px 16px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        font-size: 14px;
+        color: #d9e4ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pin">
+      <div class="pin-top">
+        <h1 class="hook">Your Dreams Have<br />a <em>Meaning.</em></h1>
+        <p class="subhook">
+          Become a Beta Tester & decode them with AI — for free.
+        </p>
+      </div>
+
+      <div class="logo-wrap">
+        <img
+          src="../assets/splashscreen.png"
+          alt="Ethyria Logo"
+          onerror="
+            this.src =
+              'https://ostyles.github.io/ethyria/assets/splahscreen.png'
+          "
+        />
+      </div>
+
+      <div class="features">
+        <div class="feature-card">
+          <span class="feature-icon">🧠</span>
+          <div class="feature-title">AI Interpretation</div>
+          <div class="feature-desc">Freud, Jung & 3 more analysis models</div>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">📔</span>
+          <div class="feature-title">Dream Journal</div>
+          <div class="feature-desc">
+            Visual with pattern recognition & AI images
+          </div>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔒</span>
+          <div class="feature-title">100% Private</div>
+          <div class="feature-desc">Local encryption, no tracking</div>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <a href="https://ethyria.at/index.en.html" class="cta-btn">
+          ▸ Try it Free Now
+        </a>
+        <br />
+        <span class="premium-badge"
+          >🎁 30 Days Premium Free — No Subscription</span
+        >
+      </div>
+
+      <div class="bottom-badge">
+        <span>🚀 Limited Beta</span>
+        <span class="android-badge">Android</span>
+        <span style="color: #01bfff">ethyria.at</span>
+      </div>
+    </div>
+  </body>
+</html>

@@ -676,7 +676,7 @@ body > main > header.container + section.container {
   margin-inline: auto;
   text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   height: 100%;
 }
 
@@ -702,7 +702,8 @@ body > main > header.container + section.container {
   flex-direction: column;
   align-items: center;
   gap: var(--sp-4);
-  margin-bottom: var(--sp-5);
+  margin-bottom: 0;
+  margin-top: var(--sp-5);
   flex: 1;
 }
 
@@ -2125,6 +2126,28 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   border-color: rgba(1, 191, 255, 0.12);
 }
 
+/* Vision card as slider slide */
+.ethyria-slider__track > .ethyria-slider__slide.vision-card {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+}
+
+/* USP card as slider slide — inner wrapper fills slide */
+.ethyria-slider__slide > .usp-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+.ethyria-slider__track
+  > .ethyria-slider__slide.vision-card
+  > .vision-card__img-wrap,
+.ethyria-slider__track
+  > .ethyria-slider__slide.vision-card
+  > .vision-card__body {
+  width: min(100%, 28rem);
+  margin-inline: auto;
+}
+
 /* ---- Ethyria Slider v2 — World-Class ---- */
 .ethyria-slider {
   position: relative;
@@ -2545,6 +2568,18 @@ header#hero > p {
 #science .glass-card {
   padding: var(--sp-4);
 }
+/* Force correct slider transitions on USP cards — override glass-card competition */
+#science .ethyria-slider__slide {
+  transition:
+    opacity var(--slider-duration) var(--slider-ease),
+    transform var(--slider-duration) var(--slider-ease);
+  will-change: opacity, transform;
+}
+/* Prevent glass-card hover transform from fighting slider transitions */
+#science .ethyria-slider__slide > .glass-card:hover {
+  transform: none;
+  box-shadow: none;
+}
 #insight-pfad .roadmap-steps {
   gap: var(--sp-5);
 }
@@ -2685,6 +2720,12 @@ footer {
 }
 
 @media (min-width: 1024px) {
+  .vision-bento {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .vision-card:last-child {
+    grid-column: auto;
+  }
   .features-scroll {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

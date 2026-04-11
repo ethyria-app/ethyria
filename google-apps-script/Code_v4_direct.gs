@@ -16,7 +16,8 @@ const CONFIG = Object.freeze({
   senderName: "Ethyria",
   replyTo: "support@ethyria.at",
   logoUrl: "https://ethyria-app.github.io/ethyria/assets/splahscreen.png",
-  downloadUrl: "https://ethyria-app.github.io/ethyria/assets/Ethyria_Beta_V1.0.apk",
+  downloadUrl:
+    "https://ethyria-app.github.io/ethyria/assets/Ethyria_Beta_V1.0.apk",
 });
 
 // ─────────────────────────────────────────────────────────────

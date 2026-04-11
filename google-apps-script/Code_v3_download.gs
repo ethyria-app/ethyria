@@ -11,7 +11,7 @@ const DOWNLOAD_CONFIG = Object.freeze({
   senderName: "Ethyria",
   replyTo: "support@ethyria.at",
   logoUrl: "https://ostyles.github.io/ethyria/assets/splahscreen.png",
-  downloadUrl: "https://ostyles.github.io/ethyria/assets/ethyria_beta.apk",
+  downloadUrl: "https://ostyles.github.io/ethyria/assets/Ethyria_Beta_V1.0.apk",
 });
 
 // ─────────────────────────────────────────────────────────────
