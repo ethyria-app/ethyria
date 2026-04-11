@@ -2397,16 +2397,43 @@ input[type="email"]:not([type="password"]):not([readonly]):-moz-ui-invalid,
   }
 }
 
-/* Features slider: no peek-expansion on desktop — constrain to card width */
-[data-slider="features"] {
+/* Features / Vision / USP slider: no peek-expansion on desktop — constrain to card width */
+[data-slider="features"],
+[data-slider="vision"],
+[data-slider="usp"] {
   max-width: 32rem;
   margin-inline: auto;
 }
 @media (min-width: 1024px) {
-  [data-slider="features"] {
-    overflow: visible;
+  [data-slider="features"],
+  [data-slider="vision"],
+  [data-slider="usp"] {
+    overflow: hidden;
     margin-inline: auto;
     padding-inline: 0;
+  }
+  /* Keep track clipped so neighbouring slides don't bleed out */
+  [data-slider="features"] .ethyria-slider__track,
+  [data-slider="vision"] .ethyria-slider__track,
+  [data-slider="usp"] .ethyria-slider__track {
+    overflow: hidden;
+  }
+  /* Suppress peek-ghost for these constrained sliders */
+  [data-slider="features"]
+    .ethyria-slider__slide.is-active
+    + .ethyria-slider__slide,
+  [data-slider="vision"]
+    .ethyria-slider__slide.is-active
+    + .ethyria-slider__slide,
+  [data-slider="usp"] .ethyria-slider__slide.is-active + .ethyria-slider__slide,
+  [data-slider="features"]
+    .ethyria-slider__slide:has(+ .ethyria-slider__slide.is-active),
+  [data-slider="vision"]
+    .ethyria-slider__slide:has(+ .ethyria-slider__slide.is-active),
+  [data-slider="usp"]
+    .ethyria-slider__slide:has(+ .ethyria-slider__slide.is-active) {
+    opacity: 0;
+    filter: none;
   }
 }
 
