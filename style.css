@@ -494,7 +494,9 @@ h6 {
 
 /* ---- Headline overflow safety ---- */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   overflow-wrap: break-word;
 }
 

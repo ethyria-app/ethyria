@@ -1,6 +1,10 @@
 User-agent: *
 Allow: /
 Allow: /symbols/
+Allow: /symbols/en/
+Allow: /symbols/fr/
+Allow: /symbols/es/
+Allow: /symbols/ru/
 Disallow: /google-apps-script/
 Disallow: /scripts/
 Disallow: /backup_2026-04-12/

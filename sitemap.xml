@@ -67,102 +67,846 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Symbol Library -->
+  <!-- Symbol Hub Pages (5 languages) -->
   <url>
     <loc>https://ethyria.at/symbols/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/"/>
     <lastmod>2026-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ethyria.at/symbols/fallen.html</loc>
+    <loc>https://ethyria.at/symbols/en/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/"/>
     <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://ethyria.at/symbols/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/"/>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/es/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/"/>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/"/>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Symbol Detail: Fallen -->
+  <url>
+    <loc>https://ethyria.at/symbols/fallen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/fallen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/en/fallen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/fallen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/fr/fallen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/fallen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/es/fallen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/fallen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/ru/fallen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/fallen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/fallen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+
+  <!-- Symbol Detail: Zaehne-Verlieren -->
   <url>
     <loc>https://ethyria.at/symbols/zaehne-verlieren.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/zaehne-verlieren.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ethyria.at/symbols/en/zaehne-verlieren.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/zaehne-verlieren.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/fr/zaehne-verlieren.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/zaehne-verlieren.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/es/zaehne-verlieren.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/zaehne-verlieren.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/ru/zaehne-verlieren.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/zaehne-verlieren.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/zaehne-verlieren.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+
+  <!-- Symbol Detail: Verfolgt-Werden -->
   <url>
     <loc>https://ethyria.at/symbols/verfolgt-werden.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/verfolgt-werden.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ethyria.at/symbols/en/verfolgt-werden.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/verfolgt-werden.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/fr/verfolgt-werden.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/verfolgt-werden.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/es/verfolgt-werden.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/verfolgt-werden.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/ru/verfolgt-werden.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/verfolgt-werden.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/verfolgt-werden.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+
+  <!-- Symbol Detail: Fliegen -->
   <url>
     <loc>https://ethyria.at/symbols/fliegen.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/fliegen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ethyria.at/symbols/en/fliegen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/fliegen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/fr/fliegen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/fliegen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/es/fliegen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/fliegen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/ru/fliegen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/fliegen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/fliegen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+
+  <!-- Symbol Detail: Wasser -->
   <url>
     <loc>https://ethyria.at/symbols/wasser.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/wasser.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ethyria.at/symbols/en/wasser.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/wasser.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/fr/wasser.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/wasser.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/es/wasser.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/wasser.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/ru/wasser.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/wasser.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/wasser.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+
+  <!-- Symbol Detail: Tod -->
   <url>
     <loc>https://ethyria.at/symbols/tod.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/tod.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ethyria.at/symbols/en/tod.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/tod.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/fr/tod.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/tod.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/es/tod.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/tod.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/ru/tod.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/tod.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/tod.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+
+  <!-- Symbol Detail: Schlangen -->
   <url>
     <loc>https://ethyria.at/symbols/schlangen.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/schlangen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ethyria.at/symbols/en/schlangen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/schlangen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/fr/schlangen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/schlangen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/es/schlangen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/schlangen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/ru/schlangen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/schlangen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/schlangen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+
+  <!-- Symbol Detail: Spinnen -->
   <url>
     <loc>https://ethyria.at/symbols/spinnen.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/spinnen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ethyria.at/symbols/en/spinnen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/spinnen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/fr/spinnen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/spinnen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/es/spinnen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/spinnen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/ru/spinnen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/spinnen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/spinnen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+
+  <!-- Symbol Detail: Schwangerschaft -->
   <url>
     <loc>https://ethyria.at/symbols/schwangerschaft.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/schwangerschaft.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ethyria.at/symbols/en/schwangerschaft.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/schwangerschaft.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/fr/schwangerschaft.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/schwangerschaft.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/es/schwangerschaft.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/schwangerschaft.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/ru/schwangerschaft.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/schwangerschaft.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/schwangerschaft.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+
+  <!-- Symbol Detail: Auto-Unfall -->
   <url>
     <loc>https://ethyria.at/symbols/auto-unfall.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/auto-unfall.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ethyria.at/symbols/en/auto-unfall.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/auto-unfall.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/fr/auto-unfall.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/auto-unfall.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/es/auto-unfall.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/auto-unfall.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/ru/auto-unfall.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/auto-unfall.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/auto-unfall.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+
+  <!-- Symbol Detail: Nackt-Sein -->
   <url>
     <loc>https://ethyria.at/symbols/nackt-sein.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/nackt-sein.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ethyria.at/symbols/en/nackt-sein.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/nackt-sein.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/fr/nackt-sein.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/nackt-sein.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/es/nackt-sein.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/nackt-sein.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/ru/nackt-sein.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/nackt-sein.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/nackt-sein.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+
+  <!-- Symbol Detail: Pruefung -->
   <url>
     <loc>https://ethyria.at/symbols/pruefung.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/pruefung.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ethyria.at/symbols/en/pruefung.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/pruefung.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/fr/pruefung.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/pruefung.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/es/pruefung.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/pruefung.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/ru/pruefung.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/pruefung.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/pruefung.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+
+  <!-- Symbol Detail: Haus-Raeume -->
   <url>
     <loc>https://ethyria.at/symbols/haus-raeume.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/haus-raeume.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ethyria.at/symbols/en/haus-raeume.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/haus-raeume.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/fr/haus-raeume.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/haus-raeume.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/es/haus-raeume.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/haus-raeume.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/ru/haus-raeume.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/haus-raeume.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/haus-raeume.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+
+  <!-- Symbol Detail: Ex-Partner -->
   <url>
     <loc>https://ethyria.at/symbols/ex-partner.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/ex-partner.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
   </url>
   <url>
+    <loc>https://ethyria.at/symbols/en/ex-partner.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/ex-partner.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/fr/ex-partner.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/ex-partner.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/es/ex-partner.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/ex-partner.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/ru/ex-partner.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/ex-partner.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/ex-partner.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+
+  <!-- Symbol Detail: Hunde-Katzen -->
+  <url>
     <loc>https://ethyria.at/symbols/hunde-katzen.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/hunde-katzen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/en/hunde-katzen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/hunde-katzen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/fr/hunde-katzen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/hunde-katzen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/es/hunde-katzen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/hunde-katzen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ethyria.at/symbols/ru/hunde-katzen.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ethyria.at/symbols/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ethyria.at/symbols/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ethyria.at/symbols/en/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ethyria.at/symbols/fr/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ethyria.at/symbols/es/hunde-katzen.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ethyria.at/symbols/ru/hunde-katzen.html"/>
+    <lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
   </url>
 
 </urlset>
