@@ -851,7 +851,7 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10 reveal">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10 reveal mx-auto" style="max-width:512px">
           <a href="symbols/index.html" class="group block p-6 rounded-2xl transition-all duration-300 hover:scale-[1.02]" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.10)">
             <span class="text-4xl mb-3 block" aria-hidden="true">🌊</span>
             <h3 class="text-lg font-bold mb-1 text-cyan-300 group-hover:text-cyan-200" style="font-family:Poppins,Arial,sans-serif">Agua</h3>
@@ -3321,7 +3321,7 @@
     function closeSymbolPopup(){var p=document.getElementById('symbolPopup');p.hidden=true;document.body.style.overflow='';if(_spOrig){document.querySelector('.symbol-popup__card').innerHTML=_spOrig;_spOrig=null;}}
     function spBack(){if(_spOrig){var c=document.querySelector('.symbol-popup__card');c.innerHTML=_spOrig;c.scrollTop=0;_spOrig=null;}}
     function spLoadDetail(href){var c=document.querySelector('.symbol-popup__card');if(!_spOrig)_spOrig=c.innerHTML;c.innerHTML='<div style="text-align:center;padding:3rem;color:#9ca3af">⏳</div>';c.scrollTop=0;fetch(href).then(function(r){return r.text()}).then(function(t){var d=new DOMParser().parseFromString(t,'text/html');var m=d.querySelector('main');if(!m){window.location.href=href;return;}m.querySelectorAll('section').forEach(function(s){if(s.querySelector('a[href="/"]'))s.remove();});var rn=m.querySelector('#related-symbols');if(rn&&rn.closest('nav'))rn.closest('nav').remove();c.innerHTML='<button type="button" class="exit-popup__close" aria-label="'+_spClose+'" onclick="closeSymbolPopup()">&times;</button><button type="button" class="sp-back" onclick="spBack()">'+_spBack+'</button><div class="sp-detail">'+m.innerHTML+'</div>';c.scrollTop=0;}).catch(function(){window.location.href=href;});}
-    document.addEventListener('click',function(e){var a=e.target.closest('a[href*="symbols/"]');if(!a)return;var h=a.getAttribute('href');if(h.indexOf('index.html')>-1&&!a.closest('#symbolPopup')){e.preventDefault();openSymbolPopup();return;}if(a.closest('#symbolPopup')&&h.indexOf('index.html')===-1){e.preventDefault();spLoadDetail(h);return;}});
+    document.addEventListener('click',function(e){var a=e.target.closest('a[href*="symbols/"]');if(!a)return;var h=a.getAttribute('href');if(a.closest('#symbolPopup')&&a.classList.contains('sp-full-link'))return;if(h.indexOf('index.html')>-1&&!a.closest('#symbolPopup')){e.preventDefault();openSymbolPopup();return;}if(h.indexOf('index.html')===-1&&h.match(/symbols\/[a-z].*\.html/)){e.preventDefault();if(document.getElementById('symbolPopup').hidden)openSymbolPopup();spLoadDetail(h);return;}});
     document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!document.getElementById('symbolPopup').hidden)closeSymbolPopup();});
   </script>
   </body>
