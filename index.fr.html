@@ -3260,6 +3260,70 @@
       });
     }
   </script>
+
+  <!-- ============================================================
+       POPUP SYMBOLES DE RÊVE
+       ============================================================ -->
+  <div id="symbolPopup" class="exit-popup" hidden aria-modal="true" role="dialog" aria-label="Aperçu des symboles de rêve">
+    <div class="exit-popup__backdrop" onclick="closeSymbolPopup()"></div>
+    <div class="symbol-popup__card">
+      <button type="button" class="exit-popup__close" aria-label="Fermer" onclick="closeSymbolPopup()">&times;</button>
+      <div style="font-size:2rem;text-align:center;margin-bottom:0.5rem">🌙</div>
+      <h2 class="ethyria-gradient-text" style="font-family:Poppins,Arial,sans-serif;font-size:1.35rem;text-align:center;margin-bottom:1.25rem">Les 15 symboles de rêve les plus courants</h2>
+      <div class="sp-grid">
+        <a href="symbols/fallen.html" class="sp-card"><span class="sp-emoji">🕳️</span><div><strong class="sp-name">Chuter</strong><br><span class="sp-desc">Perte de contrôle, lâcher prise</span></div></a>
+        <a href="symbols/zaehne-verlieren.html" class="sp-card"><span class="sp-emoji">🦷</span><div><strong class="sp-name">Perdre ses dents</strong><br><span class="sp-desc">Crise d'identité, transformation</span></div></a>
+        <a href="symbols/verfolgt-werden.html" class="sp-card"><span class="sp-emoji">🏃</span><div><strong class="sp-name">Être poursuivi</strong><br><span class="sp-desc">Peurs refoulées, ombre</span></div></a>
+        <a href="symbols/fliegen.html" class="sp-card"><span class="sp-emoji">🕊️</span><div><strong class="sp-name">Voler</strong><br><span class="sp-desc">Liberté, créativité</span></div></a>
+        <a href="symbols/wasser.html" class="sp-card"><span class="sp-emoji">🌊</span><div><strong class="sp-name">Eau &amp; Mer</strong><br><span class="sp-desc">Émotions, inconscient</span></div></a>
+        <a href="symbols/tod.html" class="sp-card"><span class="sp-emoji">💀</span><div><strong class="sp-name">Mort</strong><br><span class="sp-desc">Transformation, renouveau</span></div></a>
+        <a href="symbols/schlangen.html" class="sp-card"><span class="sp-emoji">🐍</span><div><strong class="sp-name">Serpents</strong><br><span class="sp-desc">Guérison, danger, renouveau</span></div></a>
+        <a href="symbols/spinnen.html" class="sp-card"><span class="sp-emoji">🕷️</span><div><strong class="sp-name">Araignées</strong><br><span class="sp-desc">Créativité, contrôle</span></div></a>
+        <a href="symbols/schwangerschaft.html" class="sp-card"><span class="sp-emoji">🤰</span><div><strong class="sp-name">Grossesse</strong><br><span class="sp-desc">Nouveau départ, croissance</span></div></a>
+        <a href="symbols/auto-unfall.html" class="sp-card"><span class="sp-emoji">🚗</span><div><strong class="sp-name">Voiture &amp; Accident</strong><br><span class="sp-desc">Chemin de vie, perte de contrôle</span></div></a>
+        <a href="symbols/nackt-sein.html" class="sp-card"><span class="sp-emoji">😳</span><div><strong class="sp-name">Être nu</strong><br><span class="sp-desc">Vulnérabilité, honte</span></div></a>
+        <a href="symbols/pruefung.html" class="sp-card"><span class="sp-emoji">📝</span><div><strong class="sp-name">Examen &amp; Échec</strong><br><span class="sp-desc">Pression, anxiété</span></div></a>
+        <a href="symbols/haus-raeume.html" class="sp-card"><span class="sp-emoji">🏠</span><div><strong class="sp-name">Maison &amp; Pièces</strong><br><span class="sp-desc">Psyché, image de soi</span></div></a>
+        <a href="symbols/ex-partner.html" class="sp-card"><span class="sp-emoji">💔</span><div><strong class="sp-name">Ex-partenaire</strong><br><span class="sp-desc">Non-résolu, clôture</span></div></a>
+        <a href="symbols/hunde-katzen.html" class="sp-card"><span class="sp-emoji">🐾</span><div><strong class="sp-name">Chiens &amp; Chats</strong><br><span class="sp-desc">Fidélité, instinct, intuition</span></div></a>
+      </div>
+      <div style="text-align:center;margin-top:1.25rem">
+        <a href="symbols/index.html" class="sp-full-link" style="color:#22d3ee;font-family:Poppins,Arial,sans-serif;font-size:0.875rem">→ Ouvrir la page complète</a>
+      </div>
+    </div>
+  </div>
+  <style>
+    .symbol-popup__card{position:relative;background:linear-gradient(170deg,#07112b 0%,#0a1744 100%);border:1px solid rgba(1,191,255,0.18);border-radius:20px;padding:2rem 1.5rem;max-width:820px;width:100%;max-height:85vh;overflow-y:auto;box-shadow:0 0 60px rgba(1,191,255,0.12),0 20px 40px rgba(0,0,0,0.5);animation:exitPopupIn .35s ease-out;}
+    .sp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;}
+    @media(max-width:640px){.sp-grid{grid-template-columns:repeat(2,1fr);}}
+    .sp-card{display:flex;align-items:center;gap:0.75rem;padding:0.75rem;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);text-decoration:none;color:inherit;transition:all 0.2s;}
+    .sp-card:hover{background:rgba(1,191,255,0.08);border-color:rgba(1,191,255,0.3);transform:scale(1.02);}
+    .sp-emoji{font-size:1.75rem;flex-shrink:0;}
+    .sp-name{color:#22d3ee;font-size:0.875rem;font-family:Poppins,Arial,sans-serif;}
+    .sp-desc{color:#9ca3af;font-size:0.75rem;}
+    .symbol-popup__card::-webkit-scrollbar{width:6px;}
+    .symbol-popup__card::-webkit-scrollbar-track{background:transparent;}
+    .symbol-popup__card::-webkit-scrollbar-thumb{background:rgba(1,191,255,0.2);border-radius:3px;}
+    .sp-back{display:inline-flex;align-items:center;gap:0.35rem;margin-bottom:1rem;padding:0.5rem 1rem;border-radius:10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#22d3ee;font-family:Poppins,Arial,sans-serif;font-size:0.85rem;cursor:pointer;transition:all 0.2s;}
+    .sp-back:hover{background:rgba(1,191,255,0.1);border-color:rgba(1,191,255,0.3);}
+    .sp-detail{padding:0.5rem 0;}
+    .sp-detail header{margin-bottom:1.5rem;}
+    .sp-detail h1{font-size:1.5rem !important;}
+    .sp-detail .text-6xl{font-size:3rem !important;}
+    .sp-detail section{margin-bottom:1rem;}
+    .sp-detail section p{font-size:0.9rem;}
+  </style>
+  <script>
+    var _spOrig=null,_spLang=document.documentElement.lang||'en';
+    var _spBack={de:'← Zurück',en:'← Back',fr:'← Retour',es:'← Volver',ru:'← Назад'}[_spLang]||'← Back';
+    var _spClose={de:'Schließen',en:'Close',fr:'Fermer',es:'Cerrar',ru:'Закрыть'}[_spLang]||'Close';
+    function openSymbolPopup(){document.getElementById('symbolPopup').hidden=false;document.body.style.overflow='hidden';}
+    function closeSymbolPopup(){var p=document.getElementById('symbolPopup');p.hidden=true;document.body.style.overflow='';if(_spOrig){document.querySelector('.symbol-popup__card').innerHTML=_spOrig;_spOrig=null;}}
+    function spBack(){if(_spOrig){var c=document.querySelector('.symbol-popup__card');c.innerHTML=_spOrig;c.scrollTop=0;_spOrig=null;}}
+    function spLoadDetail(href){var c=document.querySelector('.symbol-popup__card');if(!_spOrig)_spOrig=c.innerHTML;c.innerHTML='<div style="text-align:center;padding:3rem;color:#9ca3af">⏳</div>';c.scrollTop=0;fetch(href).then(function(r){return r.text()}).then(function(t){var d=new DOMParser().parseFromString(t,'text/html');var m=d.querySelector('main');if(!m){window.location.href=href;return;}m.querySelectorAll('section').forEach(function(s){if(s.querySelector('a[href="/"]'))s.remove();});var rn=m.querySelector('#related-symbols');if(rn&&rn.closest('nav'))rn.closest('nav').remove();c.innerHTML='<button type="button" class="exit-popup__close" aria-label="'+_spClose+'" onclick="closeSymbolPopup()">&times;</button><button type="button" class="sp-back" onclick="spBack()">'+_spBack+'</button><div class="sp-detail">'+m.innerHTML+'</div>';c.scrollTop=0;}).catch(function(){window.location.href=href;});}
+    document.addEventListener('click',function(e){var a=e.target.closest('a[href*="symbols/"]');if(!a)return;var h=a.getAttribute('href');if(h.indexOf('index.html')>-1&&!a.closest('#symbolPopup')){e.preventDefault();openSymbolPopup();return;}if(a.closest('#symbolPopup')&&h.indexOf('index.html')===-1){e.preventDefault();spLoadDetail(h);return;}});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!document.getElementById('symbolPopup').hidden)closeSymbolPopup();});
+  </script>
   </body>
 </html>
 
