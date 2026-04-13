@@ -492,6 +492,20 @@ h6 {
   color: #ffffff;
 }
 
+/* ---- Headline overflow safety ---- */
+
+h1, h2, h3 {
+  overflow-wrap: break-word;
+}
+
+/* Fluid headline sizing on small viewports – prevents clipping of long
+   words like "Traumdeutung", "Interprétation", "Interpretación" etc. */
+@media (max-width: 639px) {
+  .section-shell h2 {
+    font-size: clamp(1.5rem, 8vw, 2.25rem);
+  }
+}
+
 /* ---- Section Shells & Pills ---- */
 
 .section-shell {
