@@ -165,12 +165,64 @@ The strongest position is a hybrid:
 
 The current landing page now covers the core intent clusters, but category leadership likely requires supporting pages or expanded blocks for:
 
-- dream symbolism library
+- ~~dream symbolism library~~ → **DONE** (15 symbol pages at `/symbols/`)
 - recurring dream patterns
 - lucid dreaming insights
 - offline/private dream journaling
 - Jung vs. Freud dream interpretation
 - sleep pattern interpretation
+
+---
+
+## Symbol Library Keywords (NEW – April 2026)
+
+Each symbol page targets high-volume informational queries in German.
+These funnel organic traffic to the main app CTA.
+
+### Symbol → Primary Keyword → Long-Tail Variants
+
+| Symbol Page                     | Primary Keyword (DE)         | Long-Tail Keywords                                                                               |
+| ------------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------ |
+| `symbols/fallen.html`           | Traumdeutung Fallen          | Traum vom Fallen, Stürzen im Traum, Fallen Traum Bedeutung, im Traum fallen Angst                |
+| `symbols/zaehne-verlieren.html` | Traumdeutung Zähne           | Zähne verlieren Traum, Traum Zähne fallen aus, Zahnverlust Traum Bedeutung, Zähne bröckeln Traum |
+| `symbols/verfolgt-werden.html`  | Traumdeutung Verfolgt werden | Verfolgungstraum Bedeutung, Traum verfolgt werden, Albtraum Verfolgung, im Traum gejagt werden   |
+| `symbols/fliegen.html`          | Traumdeutung Fliegen         | Traum vom Fliegen, Flugtraum Bedeutung, im Traum schweben, Fliegen im Traum                      |
+| `symbols/wasser.html`           | Traumdeutung Wasser          | Traum vom Meer, Überschwemmung Traum, Traumdeutung Fluss, Wasser im Traum Bedeutung              |
+| `symbols/tod.html`              | Traumdeutung Tod             | Traum vom Sterben, Tod im Traum Bedeutung, jemand stirbt im Traum, Traumdeutung Sterben          |
+| `symbols/schlangen.html`        | Traumdeutung Schlange        | Schlange im Traum, Schlangenbiss Traum, Traumdeutung Schlange Islam, Schlange Traum Bedeutung    |
+| `symbols/spinnen.html`          | Traumdeutung Spinne          | Spinne im Traum, Spinnweben Traum, große Spinne Traum Bedeutung, Traumdeutung Spinne Islam       |
+| `symbols/schwangerschaft.html`  | Traumdeutung Schwangerschaft | schwanger im Traum, Schwangerschaft Traum Bedeutung, Traumdeutung Baby, Geburt im Traum          |
+| `symbols/auto-unfall.html`      | Traumdeutung Auto            | Autounfall Traum, Auto fahren Traum Bedeutung, Bremsen versagen Traum, Unfall im Traum           |
+| `symbols/nackt-sein.html`       | Traumdeutung nackt           | nackt im Traum, Nacktheit Traum Bedeutung, nackt in der Öffentlichkeit Traum, Bloßstellung Traum |
+| `symbols/pruefung.html`         | Traumdeutung Prüfung         | Prüfung im Traum, Traum Versagen, Prüfungsangst Traum Bedeutung, zu spät zur Prüfung Traum       |
+| `symbols/haus-raeume.html`      | Traumdeutung Haus            | unbekannte Räume Traum, Haus im Traum, Traumdeutung Zimmer, Keller Traum Bedeutung               |
+| `symbols/ex-partner.html`       | Traumdeutung Ex-Partner      | Ex im Traum, Traum Ex-Freund Bedeutung, Ex-Partner Traum, alte Beziehung Traum                   |
+| `symbols/hunde-katzen.html`     | Traumdeutung Hund            | Hund im Traum, Katze im Traum Bedeutung, Traumdeutung Tiere, Haustier Traum                      |
+
+### Symbol Hub Page
+
+- **URL:** `symbols/index.html`
+- **Primary:** Traumdeutung Symbole, Traumsymbole Lexikon
+- **Long-Tail:** Traumdeutung A-Z, häufigste Traumsymbole, Traumsymbole Übersicht
+- **Intent:** Navigational + informational hub → link equity to all 15 child pages
+
+### Internal Linking Strategy
+
+- Each symbol page links to 5 random related symbols → distributes PageRank
+- Symbol hub links to all 15 pages → crawl depth = 2 from homepage
+- Homepage → Symbol hub (add link in `#discoverability` section)
+- Symbol pages → Homepage CTA → conversion funnel
+
+### ASO Crossover Keywords
+
+These keywords target both Google Search (symbol pages) and Google Play (app listing):
+
+- Traumdeutung App kostenlos
+- Traumdeutung nach Freud App
+- Traumdeutung nach Jung App
+- Traumdeutung islamisch App
+- Traumtagebuch mit Symbolen
+- KI Traumanalyse deutsch
 
 ## Usage Rule
 

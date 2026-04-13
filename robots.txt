@@ -1,4 +1,12 @@
 User-agent: *
 Allow: /
+Allow: /symbols/
 Disallow: /google-apps-script/
+Disallow: /scripts/
+Disallow: /backup_2026-04-12/
+Disallow: /migration_backup_2026-04-12/
+Disallow: /old_sites/
+Disallow: /old_sites_v2/
+Disallow: /old_sites_v3/
+Disallow: /old_sites_v4/
 Sitemap: https://ethyria.at/sitemap.xml

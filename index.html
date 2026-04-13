@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon -->
+    <!-- Favicon + PWA -->
     <link rel="icon" href="assets/Ethyria_new_app_icon.png" type="image/png" />
-    <link rel="apple-touch-icon" href="assets/Ethyria_new_app_icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-180.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Ethyria" />
 
     <!-- Font preload hints -->
     <link rel="preconnect" href="https://script.google.com" crossorigin />
@@ -464,14 +468,17 @@
                 </p>
               </div>
               <div class="app-showcase-visual">
-                <img
-                  src="assets/screenshots_new/analyse_de.jpg"
+                <picture>
+                  <source srcset="assets/screenshots_new/analyse_de.webp" type="image/webp" />
+                  <img
+                    src="assets/screenshots_new/analyse_de.jpg"
                   alt="Ethyria Traumdeutung App. KI Analyse nach Freud und Jung"
                   loading="lazy"
                   width="460"
                   height="920"
                   class="app-showcase-image"
                 />
+                </picture>
               </div>
             </article>
             <article class="ethyria-slider__slide app-showcase-item">
@@ -484,14 +491,17 @@
                 </p>
               </div>
               <div class="app-showcase-visual">
-                <img
-                  src="assets/screenshots_new/aether_de.jpg"
+                <picture>
+                  <source srcset="assets/screenshots_new/aether_de.webp" type="image/webp" />
+                  <img
+                    src="assets/screenshots_new/aether_de.jpg"
                   alt="Ethyria Äther. Globale Traum Community und geteilte Traumtrends"
                   loading="lazy"
                   width="460"
                   height="920"
                   class="app-showcase-image"
                 />
+                </picture>
               </div>
             </article>
             <article class="ethyria-slider__slide app-showcase-item">
@@ -504,14 +514,17 @@
                 </p>
               </div>
               <div class="app-showcase-visual">
-                <img
-                  src="assets/screenshots_new/statistic_de.jpg"
+                <picture>
+                  <source srcset="assets/screenshots_new/statistic_de.webp" type="image/webp" />
+                  <img
+                    src="assets/screenshots_new/statistic_de.jpg"
                   alt="Ethyria Statistiken. Schlafmuster und Traumtagebuch Analyse"
                   loading="lazy"
                   width="460"
                   height="920"
                   class="app-showcase-image"
                 />
+                </picture>
               </div>
             </article>
           </div>
@@ -818,6 +831,58 @@
               </button>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Section Divider -->
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <!-- ============================================================
+           TRAUMSYMBOLE — Teaser Section
+           ============================================================ -->
+      <section id="traumsymbole" class="container mx-auto px-6 section-shell relative z-10">
+        <div class="text-center mb-12 reveal">
+          <div class="section-pill ethyria-gradient-text">Traumsymbol-Lexikon</div>
+          <h2 class="text-4xl sm:text-5xl md:text-5xl font-bold mb-4 leading-[1.15]">
+            Verstehe deine <span class="ethyria-gradient-text">Traumsymbole</span>
+          </h2>
+          <p class="text-gray-300 max-w-2xl mx-auto text-base font-normal">
+            Wasser, Zähne, Fliegen, Verfolgt werden – jedes Symbol trägt eine Botschaft.
+            Entdecke die psychologische Tiefe hinter deinen Träumen.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10 reveal">
+          <!-- Wasser -->
+          <a href="symbols/index.html" class="group block p-6 rounded-2xl transition-all duration-300 hover:scale-[1.02]" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.10)">
+            <span class="text-4xl mb-3 block" aria-hidden="true">🌊</span>
+            <h3 class="text-lg font-bold mb-1 text-cyan-300 group-hover:text-cyan-200" style="font-family:Poppins,Arial,sans-serif">Wasser</h3>
+            <p class="text-gray-400 text-sm">Emotionen, Unbewusstes, innere Reinigung</p>
+          </a>
+          <!-- Zähne -->
+          <a href="symbols/index.html" class="group block p-6 rounded-2xl transition-all duration-300 hover:scale-[1.02]" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.10)">
+            <span class="text-4xl mb-3 block" aria-hidden="true">🦷</span>
+            <h3 class="text-lg font-bold mb-1 text-cyan-300 group-hover:text-cyan-200" style="font-family:Poppins,Arial,sans-serif">Zähne</h3>
+            <p class="text-gray-400 text-sm">Identitätskrise, Angst, Transformation</p>
+          </a>
+          <!-- Fliegen -->
+          <a href="symbols/index.html" class="group block p-6 rounded-2xl transition-all duration-300 hover:scale-[1.02]" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.10)">
+            <span class="text-4xl mb-3 block" aria-hidden="true">🕊️</span>
+            <h3 class="text-lg font-bold mb-1 text-cyan-300 group-hover:text-cyan-200" style="font-family:Poppins,Arial,sans-serif">Fliegen</h3>
+            <p class="text-gray-400 text-sm">Freiheit, Kreativität, Perspektivwechsel</p>
+          </a>
+          <!-- Verfolgt werden -->
+          <a href="symbols/index.html" class="group block p-6 rounded-2xl transition-all duration-300 hover:scale-[1.02]" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.10)">
+            <span class="text-4xl mb-3 block" aria-hidden="true">🏃</span>
+            <h3 class="text-lg font-bold mb-1 text-cyan-300 group-hover:text-cyan-200" style="font-family:Poppins,Arial,sans-serif">Verfolgt werden</h3>
+            <p class="text-gray-400 text-sm">Verdrängte Ängste, Schatten, Konfrontation</p>
+          </a>
+        </div>
+
+        <div class="text-center reveal">
+          <a href="symbols/index.html" class="inline-block px-8 py-4 font-bold text-white rounded-2xl text-lg transition-all duration-300 hover:scale-105" style="font-family:Poppins,Arial,sans-serif;background:linear-gradient(135deg,#01bfff 0%,#0066ff 100%);box-shadow:0 6px 24px rgba(1,191,255,0.3);">
+            ▸ Alle 15 Traumsymbole entdecken
+          </a>
         </div>
       </section>
 
@@ -2121,7 +2186,7 @@
                     <svg class="faq-chevron" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><polyline points="6,9 11,14 16,9" stroke="#00CFFF" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
                   </button>
                   <div class="faq-answer" id="faq12" role="region" aria-labelledby="faq12-label">
-                    Wasser steht für Emotionen. Fallen für Kontrollverlust. Fliegen für Freiheit. Zähne für Angst. Häuser für das Selbst. Verfolgung für Vermeidung. Ethyria analysiert diese Symbole im Kontext deiner persönlichen Traumgeschichte.
+                    Wasser steht für Emotionen. Fallen für Kontrollverlust. Fliegen für Freiheit. Zähne für Angst. Häuser für das Selbst. Verfolgung für Vermeidung. Ethyria analysiert diese Symbole im Kontext deiner persönlichen Traumgeschichte. <a href="symbols/index.html" class="text-cyan-400 hover:underline">→ Alle 15 Traumsymbole im Überblick</a>
                   </div>
                 </div>
                 <div class="faq-item">
@@ -2183,7 +2248,7 @@
           Visuelles Traumtagebuch, automatische Traumsymbol Erkennung und
           fundierte Traumanalysen in Sekunden. Ob Traumdeutung kostenlos,
           Traumdeutungs App mit KI oder Traumsymbole Lexikon. Ethyria ist
-          Traumdeutung für Android. Jetzt kostenlos downloaden.
+          Traumdeutung für Android. <a href="symbols/index.html" class="text-gray-500 hover:text-cyan-400">Traumsymbole A–Z entdecken.</a> Jetzt kostenlos downloaden.
         </p>
 
         <a
@@ -3090,7 +3155,7 @@
             "name": "Welche Traumsymbole kommen am häufigsten vor?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Wasser steht für Emotionen. Fallen für Kontrollverlust. Fliegen für Freiheit. Zähne für Angst. Häuser für das Selbst. Verfolgung für Vermeidung. Ethyria analysiert diese Symbole im Kontext deiner persönlichen Traumgeschichte."
+              "text": "Wasser steht für Emotionen. Fallen für Kontrollverlust. Fliegen für Freiheit. Zähne für Angst. Häuser für das Selbst. Verfolgung für Vermeidung. Ethyria analysiert diese Symbole im Kontext deiner persönlichen Traumgeschichte. Alle 15 Traumsymbole: https://ethyria.at/symbols/"
             }
           },
           {
@@ -3192,6 +3257,14 @@
         observer.observe(el);
       });
     })();
+  </script>
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js').catch(function () {});
+      });
+    }
   </script>
   </body>
 </html>

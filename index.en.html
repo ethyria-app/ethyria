@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon -->
+    <!-- Favicon + PWA -->
     <link rel="icon" href="assets/Ethyria_new_app_icon.png" type="image/png" />
-    <link rel="apple-touch-icon" href="assets/Ethyria_new_app_icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-180.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Ethyria" />
 
     <!-- Font preload hints -->
     <link rel="preconnect" href="https://script.google.com" crossorigin />
@@ -463,14 +467,17 @@
                 </p>
               </div>
               <div class="app-showcase-visual">
-                <img
-                  src="assets/screenshots_new/analyse_de.jpg"
+                <picture>
+                  <source srcset="assets/screenshots_new/analyse_en.webp" type="image/webp" />
+                  <img
+                    src="assets/screenshots_new/analyse_en.jpg"
                   alt="Ethyria dream interpretation app. AI analysis based on Freud and Jung"
                   loading="lazy"
                   width="460"
                   height="920"
                   class="app-showcase-image"
                 />
+                </picture>
               </div>
             </article>
             <article class="ethyria-slider__slide app-showcase-item">
@@ -483,14 +490,17 @@
                 </p>
               </div>
               <div class="app-showcase-visual">
-                <img
-                  src="assets/screenshots_new/aether_de.jpg"
+                <picture>
+                  <source srcset="assets/screenshots_new/aether_en.webp" type="image/webp" />
+                  <img
+                    src="assets/screenshots_new/aether_en.jpg"
                   alt="Ethyria Aether. Global dream community and shared dream trends"
                   loading="lazy"
                   width="460"
                   height="920"
                   class="app-showcase-image"
                 />
+                </picture>
               </div>
             </article>
             <article class="ethyria-slider__slide app-showcase-item">
@@ -502,14 +512,17 @@
                 </p>
               </div>
               <div class="app-showcase-visual">
-                <img
-                  src="assets/screenshots_new/statistic_de.jpg"
+                <picture>
+                  <source srcset="assets/screenshots_new/statistic_en.webp" type="image/webp" />
+                  <img
+                    src="assets/screenshots_new/statistic_en.jpg"
                   alt="Ethyria Statistics. Sleep patterns and dream journal analysis"
                   loading="lazy"
                   width="460"
                   height="920"
                   class="app-showcase-image"
                 />
+                </picture>
               </div>
             </article>
           </div>
@@ -814,6 +827,54 @@
               </button>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Section Divider -->
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <!-- ============================================================
+           DREAM SYMBOLS — Teaser Section
+           ============================================================ -->
+      <section id="dream-symbols" class="container mx-auto px-6 section-shell relative z-10">
+        <div class="text-center mb-12 reveal">
+          <div class="section-pill ethyria-gradient-text">Dream Symbol Guide</div>
+          <h2 class="text-4xl sm:text-5xl md:text-5xl font-bold mb-4 leading-[1.15]">
+            Understand your <span class="ethyria-gradient-text">Dream Symbols</span>
+          </h2>
+          <p class="text-gray-300 max-w-2xl mx-auto text-base font-normal">
+            Water, teeth, flying, being chased – every symbol carries a message.
+            Discover the psychological depth behind your dreams.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10 reveal">
+          <a href="symbols/index.html" class="group block p-6 rounded-2xl transition-all duration-300 hover:scale-[1.02]" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.10)">
+            <span class="text-4xl mb-3 block" aria-hidden="true">🌊</span>
+            <h3 class="text-lg font-bold mb-1 text-cyan-300 group-hover:text-cyan-200" style="font-family:Poppins,Arial,sans-serif">Water</h3>
+            <p class="text-gray-400 text-sm">Emotions, the unconscious, inner cleansing</p>
+          </a>
+          <a href="symbols/index.html" class="group block p-6 rounded-2xl transition-all duration-300 hover:scale-[1.02]" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.10)">
+            <span class="text-4xl mb-3 block" aria-hidden="true">🦷</span>
+            <h3 class="text-lg font-bold mb-1 text-cyan-300 group-hover:text-cyan-200" style="font-family:Poppins,Arial,sans-serif">Teeth</h3>
+            <p class="text-gray-400 text-sm">Identity crisis, anxiety, transformation</p>
+          </a>
+          <a href="symbols/index.html" class="group block p-6 rounded-2xl transition-all duration-300 hover:scale-[1.02]" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.10)">
+            <span class="text-4xl mb-3 block" aria-hidden="true">🕊️</span>
+            <h3 class="text-lg font-bold mb-1 text-cyan-300 group-hover:text-cyan-200" style="font-family:Poppins,Arial,sans-serif">Flying</h3>
+            <p class="text-gray-400 text-sm">Freedom, creativity, new perspectives</p>
+          </a>
+          <a href="symbols/index.html" class="group block p-6 rounded-2xl transition-all duration-300 hover:scale-[1.02]" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.10)">
+            <span class="text-4xl mb-3 block" aria-hidden="true">🏃</span>
+            <h3 class="text-lg font-bold mb-1 text-cyan-300 group-hover:text-cyan-200" style="font-family:Poppins,Arial,sans-serif">Being Chased</h3>
+            <p class="text-gray-400 text-sm">Repressed fears, shadow, confrontation</p>
+          </a>
+        </div>
+
+        <div class="text-center reveal">
+          <a href="symbols/index.html" class="inline-block px-8 py-4 font-bold text-white rounded-2xl text-lg transition-all duration-300 hover:scale-105" style="font-family:Poppins,Arial,sans-serif;background:linear-gradient(135deg,#01bfff 0%,#0066ff 100%);box-shadow:0 6px 24px rgba(1,191,255,0.3);">
+            ▸ Explore all 15 Dream Symbols
+          </a>
         </div>
       </section>
 
@@ -3185,6 +3246,14 @@
         observer.observe(el);
       });
     })();
+  </script>
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js').catch(function () {});
+      });
+    }
   </script>
   </body>
 </html>
