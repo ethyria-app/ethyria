@@ -432,14 +432,14 @@ function getEmailTemplate_(locale) {
   var html = [
     '<!DOCTYPE html><html><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet"></head>',
     '<body style="margin:0;padding:0;background-color:#100c1f;font-family:Inter,Arial,Helvetica,sans-serif;">',
-    '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#100c1f" style="background-color:#100c1f;background-image:linear-gradient(135deg,#100c1f 0%,#08134e 55%,#001a79 100%);">',
+    '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#100c1f" style="background-color:#100c1f;background-image:linear-gradient(135deg,#100c1f 0%,#07112b 50%,#001a79 100%);">',
     '<tr><td align="center" style="padding:34px 12px;">',
 
     // Card
-    '<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#101a3a;border:1px solid rgba(255,255,255,0.10);border-radius:24px;overflow:hidden;box-shadow:0 22px 60px rgba(0,0,0,0.38);">',
+    '<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:transparent;border-radius:24px;overflow:hidden;">',
 
     // Logo / Hero
-    '<tr><td align="center" style="padding:0;background-color:#08134e;background-image:linear-gradient(135deg,#100c1f 0%,#08134e 48%,#001a79 100%);">',
+    '<tr><td align="center" style="padding:0;">',
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0">',
     '<tr><td align="center" style="padding:30px 20px 10px;">',
     '<img src="' +
@@ -447,7 +447,7 @@ function getEmailTemplate_(locale) {
       '" alt="Ethyria" width="220" style="display:block;max-width:220px;width:100%;height:auto;border-radius:20px;" />',
     "</td></tr>",
     '<tr><td align="center" style="padding:14px 34px 8px;">',
-    '<h1 style="margin:0;font-family:Poppins,Arial,Helvetica,sans-serif;font-size:24px;line-height:1.3;color:#ffffff;font-weight:700;letter-spacing:0.01em;">' +
+    '<h1 style="margin:0;font-family:Poppins,Arial,Helvetica,sans-serif;font-size:24px;line-height:1.3;font-weight:700;letter-spacing:0.01em;background:linear-gradient(90deg,#22d3ee 0%,#60a5fa 35%,#a78bfa 70%,#f0abfc 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:#22d3ee;">' +
       t.headline +
       "</h1>",
     "</td></tr>",
@@ -473,7 +473,7 @@ function getEmailTemplate_(locale) {
     // Getting Started
     '<tr><td style="padding:0 34px 24px;">',
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.10);border-radius:20px;">',
-    '<tr><td style="padding:24px 24px 8px;font-family:Poppins,Arial,Helvetica,sans-serif;font-size:18px;line-height:1.35;color:#ffffff;font-weight:700;">' +
+    '<tr><td style="padding:24px 24px 8px;font-family:Poppins,Arial,Helvetica,sans-serif;font-size:18px;line-height:1.35;font-weight:700;background:linear-gradient(90deg,#22d3ee 0%,#60a5fa 35%,#a78bfa 70%,#f0abfc 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:#22d3ee;">' +
       t.stepsLead +
       "</td></tr>",
     '<tr><td style="padding:0 24px 16px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0">' +
@@ -484,7 +484,7 @@ function getEmailTemplate_(locale) {
     // Premium Benefits
     '<tr><td style="padding:0 34px 24px;">',
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.10);border-radius:20px;">',
-    '<tr><td style="padding:24px 24px 8px;font-family:Poppins,Arial,Helvetica,sans-serif;font-size:18px;line-height:1.35;color:#ffffff;font-weight:700;">' +
+    '<tr><td style="padding:24px 24px 8px;font-family:Poppins,Arial,Helvetica,sans-serif;font-size:18px;line-height:1.35;font-weight:700;background:linear-gradient(90deg,#22d3ee 0%,#60a5fa 35%,#a78bfa 70%,#f0abfc 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:#22d3ee;">' +
       t.benefitsLead +
       "</td></tr>",
     '<tr><td style="padding:0 24px 16px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0">' +
@@ -494,8 +494,8 @@ function getEmailTemplate_(locale) {
 
     // Bonus Box
     '<tr><td style="padding:0 34px 24px;">',
-    '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:rgba(1,191,255,0.06);border:1px solid rgba(1,191,255,0.18);border-radius:18px;">',
-    '<tr><td style="padding:20px 22px 8px;font-family:Poppins,Arial,Helvetica,sans-serif;font-size:16px;line-height:1.35;color:#ffffff;font-weight:700;">' +
+    '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.10);border-radius:18px;">',
+    '<tr><td style="padding:20px 22px 8px;font-family:Poppins,Arial,Helvetica,sans-serif;font-size:16px;line-height:1.35;font-weight:700;background:linear-gradient(90deg,#22d3ee 0%,#60a5fa 35%,#a78bfa 70%,#f0abfc 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:#22d3ee;">' +
       t.bonusLead +
       "</td></tr>",
     '<tr><td style="padding:0 22px 20px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:14px;line-height:1.7;color:#d9e4ff;">' +
@@ -506,7 +506,7 @@ function getEmailTemplate_(locale) {
     // Installation Note
     '<tr><td style="padding:0 34px 24px;">',
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:18px;">',
-    '<tr><td style="padding:20px 22px 8px;font-family:Poppins,Arial,Helvetica,sans-serif;font-size:16px;line-height:1.35;color:#ffffff;font-weight:700;">&#9881; ' +
+    '<tr><td style="padding:20px 22px 8px;font-family:Poppins,Arial,Helvetica,sans-serif;font-size:16px;line-height:1.35;font-weight:700;background:linear-gradient(90deg,#22d3ee 0%,#60a5fa 35%,#a78bfa 70%,#f0abfc 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:#22d3ee;">&#9881; ' +
       t.installLead +
       "</td></tr>",
     '<tr><td style="padding:0 22px 20px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:14px;line-height:1.7;color:#d9e4ff;">' +
@@ -516,8 +516,8 @@ function getEmailTemplate_(locale) {
 
     // Privacy Box
     '<tr><td style="padding:0 34px 24px;">',
-    '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#121a36;border:1px solid rgba(1,191,255,0.18);border-radius:18px;">',
-    '<tr><td style="padding:20px 22px 8px;font-family:Poppins,Arial,Helvetica,sans-serif;font-size:16px;line-height:1.35;color:#ffffff;font-weight:700;">&#128274; ' +
+    '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.10);border-radius:18px;">',
+    '<tr><td style="padding:20px 22px 8px;font-family:Poppins,Arial,Helvetica,sans-serif;font-size:16px;line-height:1.35;font-weight:700;background:linear-gradient(90deg,#22d3ee 0%,#60a5fa 35%,#a78bfa 70%,#f0abfc 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:#22d3ee;">&#128274; ' +
       t.privacyLead +
       "</td></tr>",
     '<tr><td style="padding:0 22px 20px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:14px;line-height:1.7;color:#d9e4ff;">' +
