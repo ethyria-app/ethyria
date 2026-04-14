@@ -1,13 +1,23 @@
-const sharp = require('sharp');
-const fs = require('fs');
-const path = require('path');
+const sharp = require("sharp");
+const fs = require("fs");
+const path = require("path");
 
 // Embed Poppins Bold font as base64 for SVG rendering
-const poppinsBoldPath = path.join(__dirname, '..', 'fonts', 'poppins_bold.woff2');
-const poppinsBoldBase64 = fs.readFileSync(poppinsBoldPath).toString('base64');
+const poppinsBoldPath = path.join(
+  __dirname,
+  "..",
+  "fonts",
+  "poppins_bold.woff2",
+);
+const poppinsBoldBase64 = fs.readFileSync(poppinsBoldPath).toString("base64");
 
-const interRegularPath = path.join(__dirname, '..', 'fonts', 'inter_regular.woff2');
-const interRegularBase64 = fs.readFileSync(interRegularPath).toString('base64');
+const interRegularPath = path.join(
+  __dirname,
+  "..",
+  "fonts",
+  "inter_regular.woff2",
+);
+const interRegularBase64 = fs.readFileSync(interRegularPath).toString("base64");
 
 const WIDTH = 1200;
 const HEIGHT = 630;
@@ -15,49 +25,55 @@ const HEIGHT = 630;
 // Localized content for each language
 const variants = [
   {
-    lang: 'de',
-    line1: 'Deine Träume.',
-    line2: 'Deine Analyse.',
-    subline: 'KI-Traumdeutung · Tagebuch · Statistik · Datenexport',
-    tagFree: '✓ 100% kostenlos',
-    tagAndroid: 'Android'
+    lang: "de",
+    line1: "Deine Träume.",
+    line2: "Deine Analyse.",
+    subline: "KI-Traumdeutung · Tagebuch · Statistik · Datenexport",
+    tagFree: "✓ 100% kostenlos",
+    tagAndroid: "Android",
   },
   {
-    lang: 'en',
-    line1: 'Your Dreams.',
-    line2: 'Your Analysis.',
-    subline: 'AI Dream Interpretation · Journal · Statistics · Data Export',
-    tagFree: '✓ 100% Free',
-    tagAndroid: 'Android'
+    lang: "en",
+    line1: "Your Dreams.",
+    line2: "Your Analysis.",
+    subline: "AI Dream Interpretation · Journal · Statistics · Data Export",
+    tagFree: "✓ 100% Free",
+    tagAndroid: "Android",
   },
   {
-    lang: 'fr',
-    line1: 'Vos Rêves.',
-    line2: 'Votre Analyse.',
-    subline: 'Interprétation des Rêves par IA · Journal · Statistiques · Export',
-    tagFree: '✓ 100% Gratuit',
-    tagAndroid: 'Android'
+    lang: "fr",
+    line1: "Vos Rêves.",
+    line2: "Votre Analyse.",
+    subline:
+      "Interprétation des Rêves par IA · Journal · Statistiques · Export",
+    tagFree: "✓ 100% Gratuit",
+    tagAndroid: "Android",
   },
   {
-    lang: 'es',
-    line1: 'Tus Sueños.',
-    line2: 'Tu Análisis.',
-    subline: 'Interpretación de Sueños con IA · Diario · Estadísticas · Exportación',
-    tagFree: '✓ 100% Gratis',
-    tagAndroid: 'Android'
+    lang: "es",
+    line1: "Tus Sueños.",
+    line2: "Tu Análisis.",
+    subline:
+      "Interpretación de Sueños con IA · Diario · Estadísticas · Exportación",
+    tagFree: "✓ 100% Gratis",
+    tagAndroid: "Android",
   },
   {
-    lang: 'ru',
-    line1: 'Ваши Сны.',
-    line2: 'Ваш Анализ.',
-    subline: 'ИИ-Толкование Снов · Дневник · Статистика · Экспорт',
-    tagFree: '✓ 100% Бесплатно',
-    tagAndroid: 'Android'
-  }
+    lang: "ru",
+    line1: "Ваши Сны.",
+    line2: "Ваш Анализ.",
+    subline: "ИИ-Толкование Снов · Дневник · Статистика · Экспорт",
+    tagFree: "✓ 100% Бесплатно",
+    tagAndroid: "Android",
+  },
 ];
 
 function escapeXml(str) {
-  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 }
 
 function createSvg(variant) {
@@ -184,15 +200,18 @@ function createSvg(variant) {
 }
 
 async function generateOgImages() {
-  const assetsDir = path.join(__dirname, '..', 'assets');
-  const logoPath = path.join(assetsDir, 'Logo_web.png');
+  const assetsDir = path.join(__dirname, "..", "assets");
+  const logoPath = path.join(assetsDir, "Logo_web.png");
 
   // Prepare the logo: resize to fit left column (wider infinity symbol)
   const logoWidth = 380;
   const logoHeight = Math.round(logoWidth * (578 / 1024)); // maintain aspect ratio ~214px
 
   const logoResized = await sharp(logoPath)
-    .resize(logoWidth, logoHeight, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
+    .resize(logoWidth, logoHeight, {
+      fit: "contain",
+      background: { r: 0, g: 0, b: 0, alpha: 0 },
+    })
     .png()
     .toBuffer();
 
@@ -208,9 +227,9 @@ async function generateOgImages() {
       .composite([
         {
           input: logoResized,
-          top: Math.round((HEIGHT - logoHeight) / 2),  // vertically centered
-          left: 50
-        }
+          top: Math.round((HEIGHT - logoHeight) / 2), // vertically centered
+          left: 50,
+        },
       ])
       .png({ quality: 95 })
       .toFile(outputPath);
@@ -218,10 +237,10 @@ async function generateOgImages() {
     console.log(`✅ Generated: og-image-${variant.lang}.png`);
   }
 
-  console.log('\nAll 5 OG images generated successfully!');
+  console.log("\nAll 5 OG images generated successfully!");
 }
 
-generateOgImages().catch(err => {
-  console.error('Error generating OG images:', err);
+generateOgImages().catch((err) => {
+  console.error("Error generating OG images:", err);
   process.exit(1);
 });
