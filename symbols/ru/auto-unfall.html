@@ -201,9 +201,9 @@
   </head>
   <body class="bg-[#100c1f] text-white min-h-screen">
     <nav class="sticky top-0 z-50 flex items-center px-6 py-3" style="backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);background:rgba(16,12,31,0.75);border-bottom:1px solid rgba(255,255,255,0.06);" aria-label="Navigation">
-      <a href="/symbols/ru/" class="text-gray-400 hover:text-white transition-colors" aria-label="Back">
+      <button type="button" onclick="openBetaPopup()" href="/symbols/ru/" class="text-gray-400 hover:text-white transition-colors" aria-label="Back">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6L8 12L14 18"/></svg>
-      </a>
+      </button>
       <span class="flex-1 text-center text-sm font-semibold tracking-wider uppercase text-gray-300" style="font-family:Poppins,Arial,sans-serif">Значение сна: Автомобиль и Авария</span>
       <span class="w-7" aria-hidden="true"></span>
     </nav>
@@ -330,7 +330,7 @@
           <summary class="text-xs text-gray-500 cursor-pointer hover:text-gray-400 transition-colors" style="font-family:Poppins,Arial,sans-serif;">📖 Показать источники</summary>
           <p class="text-xs text-gray-500 mt-2 leading-relaxed">Hartmann, E. (2010). <em>The Nature and Functions of Dreaming</em>. Oxford UP. · Levin, R. & Nielsen, T. (2007). Disturbed dreaming and emotion dysregulation. <em>Sleep Medicine Reviews</em>, 11(4).</p>
         </details>
-        <a href="/index.ru.html#beta" class="inline-block mt-4 text-sm font-semibold transition-colors hover:text-white" style="color:#22d3ee;font-family:Poppins,Arial,sans-serif;">→ Полный биосинхронный анализ в приложении</a>
+        <button type="button" onclick="openBetaPopup()" class="inline-block mt-4 text-sm font-semibold transition-colors hover:text-white" style="color:#22d3ee;font-family:Poppins,Arial,sans-serif;">→ Полный биосинхронный анализ в приложении</button>
       </section>
 
       <!-- Community Stats -->
@@ -355,10 +355,10 @@
         <div class="pt-3" style="border-top:1px solid rgba(255,255,255,0.06)">
           <p class="text-xs text-gray-500 mb-3 mt-1" style="font-family:Poppins,Arial,sans-serif;">Наиболее частые символы-спутники</p>
           <div class="flex flex-wrap gap-3 justify-center mt-3">
-            <a href="/symbols/ru/verfolgt-werden.html" class="text-xs px-4 py-2 rounded-full transition-colors hover:text-white" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);color:#9ca3af;">🏃 Преследование (21 %)</a>
-            <a href="/symbols/ru/wasser.html" class="text-xs px-4 py-2 rounded-full transition-colors hover:text-white" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);color:#9ca3af;">🌊 Вода и Океан (17 %)</a>
-            <a href="/symbols/ru/fallen.html" class="text-xs px-4 py-2 rounded-full transition-colors hover:text-white" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);color:#9ca3af;">🕳️ Падение (14 %)</a>
-            <a href="/symbols/ru/tod.html" class="text-xs px-4 py-2 rounded-full transition-colors hover:text-white" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);color:#9ca3af;">💀 Смерть и Умирание (12 %)</a>
+            <button type="button" onclick="openBetaPopup()" href="/symbols/ru/verfolgt-werden.html" class="text-xs px-4 py-2 rounded-full transition-colors hover:text-white" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);color:#9ca3af;">🏃 Преследование (21 %)</button>
+            <a href="/symbols/ru/wasser.html" class="text-xs px-4 py-2 rounded-full transition-colors hover:text-white" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);color:#9ca3af;">🌊 Вода и Океан (17 %)</button>
+            <a href="/symbols/ru/fallen.html" class="text-xs px-4 py-2 rounded-full transition-colors hover:text-white" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);color:#9ca3af;">🕳️ Падение (14 %)</button>
+            <a href="/symbols/ru/tod.html" class="text-xs px-4 py-2 rounded-full transition-colors hover:text-white" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);color:#9ca3af;">💀 Смерть и Умирание (12 %)</button>
           </div>
         </div>
       </section>
@@ -374,27 +374,27 @@
           <div class="px-6 pt-8 pb-6 rounded-2xl text-center" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);">
             <h3 class="text-lg font-bold text-cyan-300 mb-3" style="font-family:Poppins,Arial,sans-serif;">Вы за рулём</h3>
             <p class="text-gray-400 text-sm leading-relaxed mb-3">ответственность за направление жизни, уверенность или тревога по поводу принятых решений</p>
-            <div class="flex flex-wrap gap-3 justify-center mt-3 pt-3 pb-3" style="border-top:1px solid rgba(255,255,255,0.05);"><span class="text-xs text-gray-500 mr-1">Связано:</span><a href="/symbols/ru/verfolgt-werden.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">🏃 Преследование</a> <a href="/symbols/ru/wasser.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">🌊 Вода и Океан</a></div>
+            <div class="flex flex-wrap gap-3 justify-center mt-3 pt-3 pb-6" style="border-top:1px solid rgba(255,255,255,0.05);"><span class="text-xs text-gray-500 mr-1">Связано:</span><a href="/symbols/ru/verfolgt-werden.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">🏃 Преследование</button> <a href="/symbols/ru/wasser.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">🌊 Вода и Океан</button></div>
           </div>
           <div class="px-6 pt-8 pb-6 rounded-2xl text-center" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);">
             <h3 class="text-lg font-bold text-cyan-300 mb-3" style="font-family:Poppins,Arial,sans-serif;">Вы — пассажир</h3>
             <p class="text-gray-400 text-sm leading-relaxed mb-3">ощущение, что кто-то другой контролирует вашу судьбу, потеря агентности</p>
-            <div class="flex flex-wrap gap-3 justify-center mt-3 pt-3 pb-3" style="border-top:1px solid rgba(255,255,255,0.05);"><span class="text-xs text-gray-500 mr-1">Связано:</span><a href="/symbols/ru/haus-raeume.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">🏠 Дом и Комнаты</a> <a href="/symbols/ru/tod.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">💀 Смерть и Умирание</a></div>
+            <div class="flex flex-wrap gap-3 justify-center mt-3 pt-3 pb-6" style="border-top:1px solid rgba(255,255,255,0.05);"><span class="text-xs text-gray-500 mr-1">Связано:</span><a href="/symbols/ru/haus-raeume.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">🏠 Дом и Комнаты</button> <a href="/symbols/ru/tod.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">💀 Смерть и Умирание</button></div>
           </div>
           <div class="px-6 pt-8 pb-6 rounded-2xl text-center" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);">
             <h3 class="text-lg font-bold text-cyan-300 mb-3" style="font-family:Poppins,Arial,sans-serif;">Лобовое столкновение</h3>
             <p class="text-gray-400 text-sm leading-relaxed mb-3">конфронтация с неизбежной проблемой, столкновение противоположных намерений</p>
-            <div class="flex flex-wrap gap-3 justify-center mt-3 pt-3 pb-3" style="border-top:1px solid rgba(255,255,255,0.05);"><span class="text-xs text-gray-500 mr-1">Связано:</span><a href="/symbols/ru/fliegen.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">🕊️ Полёт</a> <a href="/symbols/ru/fallen.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">🕳️ Падение</a></div>
+            <div class="flex flex-wrap gap-3 justify-center mt-3 pt-3 pb-6" style="border-top:1px solid rgba(255,255,255,0.05);"><span class="text-xs text-gray-500 mr-1">Связано:</span><a href="/symbols/ru/fliegen.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">🕊️ Полёт</button> <a href="/symbols/ru/fallen.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">🕳️ Падение</button></div>
           </div>
           <div class="px-6 pt-8 pb-6 rounded-2xl text-center" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);">
             <h3 class="text-lg font-bold text-cyan-300 mb-3" style="font-family:Poppins,Arial,sans-serif;">Отказ тормозов</h3>
             <p class="text-gray-400 text-sm leading-relaxed mb-3">неспособность остановить нежелательные процессы, утрата самоконтроля</p>
-            <div class="flex flex-wrap gap-3 justify-center mt-3 pt-3 pb-3" style="border-top:1px solid rgba(255,255,255,0.05);"><span class="text-xs text-gray-500 mr-1">Связано:</span><a href="/symbols/ru/ex-partner.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">💔 Бывший партнёр</a> <a href="/symbols/ru/schlangen.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">🐍 Змеи</a></div>
+            <div class="flex flex-wrap gap-3 justify-center mt-3 pt-3 pb-6" style="border-top:1px solid rgba(255,255,255,0.05);"><span class="text-xs text-gray-500 mr-1">Связано:</span><a href="/symbols/ru/ex-partner.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">💔 Бывший партнёр</button> <a href="/symbols/ru/schlangen.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">🐍 Змеи</button></div>
           </div>
           <div class="px-6 pt-8 pb-6 rounded-2xl text-center" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);">
             <h3 class="text-lg font-bold text-cyan-300 mb-3" style="font-family:Poppins,Arial,sans-serif;">Съезд с дороги</h3>
             <p class="text-gray-400 text-sm leading-relaxed mb-3">отклонение от жизненного курса, потребность в переоценке целей</p>
-            <div class="flex flex-wrap gap-3 justify-center mt-3 pt-3 pb-3" style="border-top:1px solid rgba(255,255,255,0.05);"><span class="text-xs text-gray-500 mr-1">Связано:</span><a href="/symbols/ru/pruefung.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">📝 Экзамены и Провал</a> <a href="/symbols/ru/nackt-sein.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">😳 Быть голым</a></div>
+            <div class="flex flex-wrap gap-3 justify-center mt-3 pt-3 pb-6" style="border-top:1px solid rgba(255,255,255,0.05);"><span class="text-xs text-gray-500 mr-1">Связано:</span><a href="/symbols/ru/pruefung.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">📝 Экзамены и Провал</button> <a href="/symbols/ru/nackt-sein.html" class="text-xs text-cyan-400 hover:text-cyan-400 transition-colors px-2 py-1 rounded-md">😳 Быть голым</button></div>
           </div>
         </div>
       </section>
@@ -454,16 +454,14 @@
         <p class="text-lg text-gray-300 mb-4">
           Кто был за рулём в <em>вашем</em> сне? Расшифруйте послание дороги.
         </p>
-        <a
-          href="/index.ru.html#beta"
+        <button type="button" onclick="openBetaPopup()"
           class="inline-block px-8 py-4 font-bold text-white rounded-2xl text-lg transition-all duration-300 hover:scale-105"
           style="
             font-family: Poppins, Arial, sans-serif;
             background: linear-gradient(135deg, #01bfff 0%, #0066ff 100%);
             box-shadow: 0 6px 24px rgba(1, 191, 255, 0.3);
           "
-          >Проанализируйте свой сон с Ethyria</a
-        >
+          >Проанализируйте свой сон с Ethyria</button>
       </div>
 
       <nav class="mb-12">
@@ -535,5 +533,29 @@
         container.appendChild(a);
       });
     </script>
+
+    <!-- Beta Popup Modal -->
+    <div id="betaPopup" hidden role="dialog" aria-modal="true" aria-label="Ethyria Beta — Начать бесплатно" style="position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;">
+      <div onclick="closeBetaPopup()" style="position:absolute;inset:0;background:rgba(0,0,0,0.7);backdrop-filter:blur(6px);"></div>
+      <div style="position:relative;width:92%;max-width:420px;background:linear-gradient(135deg,#0d0a1f 0%,#111033 100%);border:1px solid rgba(1,191,255,0.2);border-radius:24px;padding:2rem 1.5rem;box-shadow:0 24px 80px rgba(0,0,0,0.6);">
+        <button type="button" onclick="closeBetaPopup()" aria-label="Закрыть" style="position:absolute;top:12px;right:16px;background:none;border:none;color:#9ca3af;font-size:24px;cursor:pointer;line-height:1;">×</button>
+        <h3 style="font-family:Poppins,Arial,sans-serif;font-size:1.25rem;font-weight:700;margin-bottom:0.5rem;background:linear-gradient(90deg,#22d3ee,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Ethyria Beta — Начать бесплатно</h3>
+        <p style="color:#d1d5db;font-size:0.875rem;margin-bottom:1.25rem;line-height:1.5;">Введите email. Ваша персональная ссылка придёт на почту.</p>
+        <form onsubmit="handleBetaSignup(event)" style="display:flex;flex-direction:column;gap:0.75rem;">
+          <label for="betaEmail" class="sr-only">Email адрес</label>
+          <input type="email" id="betaEmail" name="email" required autocomplete="email" placeholder="ваш@email.com" style="width:100%;padding:12px 16px;border-radius:12px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);color:#fff;font-size:0.875rem;outline:none;" onfocus="this.style.borderColor='rgba(1,191,255,0.5)'" onblur="this.style.borderColor='rgba(255,255,255,0.1)'" />
+          <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;" aria-hidden="true" />
+          <button type="submit" style="width:100%;padding:12px;border-radius:12px;font-family:Poppins,Arial,sans-serif;font-weight:700;font-size:0.95rem;color:#fff;border:none;cursor:pointer;background:linear-gradient(135deg,#01bfff 0%,#0066ff 100%);box-shadow:0 4px 16px rgba(1,191,255,0.3);">Получить доступ ▸</button>
+        </form>
+        <output id="betaStatus" class="hidden text-sm" style="display:block;margin-top:0.75rem;text-align:center;"></output>
+      </div>
+    </div>
+    <script>
+      window.ethyriaBetaConfig={endpoint:"https://script.google.com/macros/s/AKfycbzr-HrFfDis7ntvP-2cO-0K_VtuzISOGWrj2dxHiiKw8k4lFq9UCORGlgG_UQuGMOCr/exec",locale:"ru",sourcePage:location.pathname.split("/").pop(),messages:{"success":"Вы в списке! Проверьте почту.","alreadyRegistered":"Этот email уже зарегистрирован. Проверьте почту.","savedNoEmail":"Сохранено. Письмо подтверждения придёт скоро.","invalidEmail":"Пожалуйста, введите корректный email.","sending":"Сохраняем...","error":"Что-то пошло не так. Попробуйте снова.","setup":"Регистрация ещё не активна.","buttonIdle":"Получить доступ ▸","buttonLoading":"Сохраняем..."}};
+      function openBetaPopup(){var p=document.getElementById("betaPopup");p.hidden=false;p.querySelector("input[type=email]").focus();}
+      function closeBetaPopup(){document.getElementById("betaPopup").hidden=true;}
+      document.addEventListener("keydown",function(e){if(e.key==="Escape")closeBetaPopup();});
+    </script>
+    <script src="../../assets/beta-signup.js" defer></script>
 </body>
 </html>
