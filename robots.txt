@@ -13,7 +13,6 @@ Disallow: /old_sites/
 Disallow: /old_sites_v2/
 Disallow: /old_sites_v3/
 Disallow: /old_sites_v4/
-Disallow: /pinterest/
 
 # AI Crawlers – allowed, with llms.txt for context
 User-agent: GPTBot
