@@ -69,7 +69,7 @@ The strongest position is a hybrid:
 
 ### German Current Mapping
 
-- `index.de.html` Hero und Metadaten: KI-Traumdeutung, Traumtagebuch
+- `index.html` Hero und Metadaten: KI-Traumdeutung, Traumtagebuch
 - `#discoverability`: privates Traumtagebuch, Jung/Freud, visuelle Traum-Insights
 - `#faq`: kostenlos nutzbar, In-App-Käufe, Datenschutz, Android-Verfügbarkeit
 - `#beta`: Intent für Testzugang und frühe Nutzung

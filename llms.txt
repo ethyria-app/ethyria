@@ -1,0 +1,62 @@
+# Ethyria – AI Dream Interpretation App
+
+> Ethyria is a free Android app for AI-powered dream interpretation, dream journaling, and dream analysis.
+
+## What Ethyria Does
+
+Ethyria analyzes dreams using five psychological and scientific perspectives:
+
+1. **General Interpretation** – Symbol-based dream meaning
+2. **Freudian Analysis** – Psychoanalytic dream interpretation after Sigmund Freud
+3. **Jungian Analysis** – Analytical psychology and archetypes after Carl Gustav Jung
+4. **Spiritual Interpretation** – Cross-cultural and spiritual dream symbolism
+5. **Biosynchronous Analysis** – Body-mind connection and physiological dream triggers
+
+## Core Features
+
+- AI dream analysis with 5 interpretation modes
+- Private dream journal (all data stays on device)
+- Visual dream statistics and pattern recognition
+- AI-generated dream art
+- Dream symbol encyclopedia (15 symbols, 5 languages)
+- Community insights (Aether)
+- PDF export of analyses (Premium)
+- No tracking, no cloud storage, no ads
+
+## Languages
+
+German (default), English, French, Spanish, Russian
+
+## Platform
+
+Android (Google Play)
+
+## Website
+
+https://ethyria.at/
+
+## Dream Symbol Library
+
+Ethyria provides detailed dream interpretation pages for common symbols:
+
+- Falling (Traumdeutung Fallen)
+- Teeth falling out (Traumdeutung Zähne verlieren)
+- Being chased (Traumdeutung Verfolgt werden)
+- Flying (Traumdeutung Fliegen)
+- Water (Traumdeutung Wasser)
+- Death (Traumdeutung Tod)
+- Snakes (Traumdeutung Schlange)
+- Spiders (Traumdeutung Spinne)
+- Pregnancy (Traumdeutung Schwangerschaft)
+- Car accident (Traumdeutung Auto & Unfall)
+- Being naked (Traumdeutung Nackt sein)
+- Exams (Traumdeutung Prüfung)
+- Houses & Rooms (Traumdeutung Haus & Räume)
+- Ex-partner (Traumdeutung Ex-Partner)
+- Dogs & Cats (Traumdeutung Hunde & Katzen)
+
+Each symbol page includes Freud, Jung, spiritual, and biosynchronous interpretations, community statistics, deep variants with related symbols, and a FAQ section.
+
+## Contact
+
+support@ethyria.at

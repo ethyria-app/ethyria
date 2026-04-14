@@ -4,19 +4,20 @@ This file documents the recurring operational work required to turn the landing 
 
 ## Canonical Setup
 
-- Production domain: `https://ostyles.github.io/ethyria/`
-- Default English page canonical: `https://ostyles.github.io/ethyria/`
+- Production domain: `https://ethyria.at/`
+- Default German page canonical: `https://ethyria.at/`
 - Localized canonicals:
-  - `https://ostyles.github.io/ethyria/index.de.html`
-  - `https://ostyles.github.io/ethyria/index.fr.html`
-  - `https://ostyles.github.io/ethyria/index.es.html`
-  - `https://ostyles.github.io/ethyria/index.ru.html`
+  - `https://ethyria.at/` (German, default)
+  - `https://ethyria.at/index.en.html`
+  - `https://ethyria.at/index.fr.html`
+  - `https://ethyria.at/index.es.html`
+  - `https://ethyria.at/index.ru.html`
 
 ## Search Console Workflow
 
-1. Add the GitHub Pages URL property in Google Search Console.
-2. Verify ownership using the method you choose for GitHub Pages.
-3. Submit `https://ostyles.github.io/ethyria/sitemap.xml`.
+1. Add the production domain property in Google Search Console.
+2. Verify ownership via DNS or HTML file verification.
+3. Submit `https://ethyria.at/sitemap.xml`.
 4. Request indexing for:
    - root English page
    - German page
