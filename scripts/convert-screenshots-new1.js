@@ -35,7 +35,7 @@ async function run() {
 
       // 1. Convert to WebP with new name
       const webpDest = path.join(SRC_DIR, `${newName}_${lang}.webp`);
-      await sharp(srcFile).webp({ quality: 80 }).toFile(webpDest);
+      await sharp(srcFile).webp({ quality: 95 }).toFile(webpDest);
       console.log(
         `WEBP: ${path.basename(srcFile)} → ${path.basename(webpDest)}`,
       );
