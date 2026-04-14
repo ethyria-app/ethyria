@@ -61,12 +61,11 @@ function escapeXml(str) {
 }
 
 function createSvg(variant) {
-  // Layout constants
-  const textX = 430;
-  const brandY = 210;
-  const line1Y = 280;
-  const line2Y = 345;
-  const sublineY = 410;
+  // Layout: logo on the left (composited as image), text block right
+  const textX = 480;
+  const line1Y = 245;
+  const line2Y = 325;
+  const sublineY = 400;
   const tagsY = 470;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}">
@@ -107,29 +106,6 @@ function createSvg(variant) {
       <stop offset="100%" stop-color="transparent"/>
     </linearGradient>
 
-    <!-- Tag free border gradient -->
-    <linearGradient id="tagFreeGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="rgba(1,191,255,0.4)"/>
-      <stop offset="100%" stop-color="rgba(1,191,255,0.2)"/>
-    </linearGradient>
-
-    <!-- Tag android border gradient -->
-    <linearGradient id="tagAndroidGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="rgba(84,88,251,0.4)"/>
-      <stop offset="100%" stop-color="rgba(84,88,251,0.2)"/>
-    </linearGradient>
-
-    <!-- Icon glow filter -->
-    <filter id="iconGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="30" result="blur"/>
-      <feFlood flood-color="#01bfff" flood-opacity="0.2" result="color"/>
-      <feComposite in="color" in2="blur" operator="in" result="glow"/>
-      <feMerge>
-        <feMergeNode in="glow"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
     <!-- Radial gradient blobs matching landing page body::after -->
     <radialGradient id="blob1" cx="18%" cy="16%" r="30%" fx="18%" fy="16%">
       <stop offset="0%" stop-color="rgba(49,132,255,0.16)"/>
@@ -161,52 +137,44 @@ function createSvg(variant) {
   <!-- Subtle grid overlay -->
   <rect width="${WIDTH}" height="${HEIGHT}" fill="url(#grid)"/>
 
-  <!-- Brand text "ETHYRIA" with letter-spacing -->
-  <text x="${textX}" y="${brandY}"
-        font-family="Poppins, 'Segoe UI', Arial, sans-serif"
-        font-weight="700"
-        font-size="22"
-        letter-spacing="0.35em"
-        fill="url(#brandGrad)">E T H Y R I A</text>
-
-  <!-- Headline line 1 (white) -->
+  <!-- Headline line 1 (white) — larger -->
   <text x="${textX}" y="${line1Y}"
         font-family="Poppins, 'Segoe UI', Arial, sans-serif"
         font-weight="700"
-        font-size="56"
+        font-size="72"
         fill="#ffffff">${escapeXml(variant.line1)}</text>
 
-  <!-- Headline line 2 (gradient) -->
+  <!-- Headline line 2 (gradient) — larger -->
   <text x="${textX}" y="${line2Y}"
         font-family="Poppins, 'Segoe UI', Arial, sans-serif"
         font-weight="700"
-        font-size="56"
+        font-size="72"
         fill="url(#brandGrad)">${escapeXml(variant.line2)}</text>
 
-  <!-- Subline -->
+  <!-- Subline — larger -->
   <text x="${textX}" y="${sublineY}"
         font-family="Inter, 'Segoe UI', Arial, sans-serif"
         font-weight="400"
-        font-size="18"
-        fill="rgba(255,255,255,0.45)">${escapeXml(variant.subline)}</text>
+        font-size="22"
+        fill="rgba(255,255,255,0.50)">${escapeXml(variant.subline)}</text>
 
   <!-- Tag: free -->
-  <rect x="${textX}" y="${tagsY - 24}" width="${variant.tagFree.length * 10 + 36}" height="38" rx="19" ry="19"
+  <rect x="${textX}" y="${tagsY - 26}" width="${variant.tagFree.length * 11 + 40}" height="42" rx="21" ry="21"
         fill="rgba(1,191,255,0.08)" stroke="rgba(1,191,255,0.3)" stroke-width="1"/>
-  <text x="${textX + 18}" y="${tagsY + 1}"
+  <text x="${textX + 20}" y="${tagsY + 2}"
         font-family="Inter, 'Segoe UI', Arial, sans-serif"
         font-weight="600"
-        font-size="14"
+        font-size="16"
         letter-spacing="0.03em"
         fill="#01bfff">${escapeXml(variant.tagFree)}</text>
 
   <!-- Tag: Android -->
-  <rect x="${textX + variant.tagFree.length * 10 + 52}" y="${tagsY - 24}" width="120" height="38" rx="19" ry="19"
+  <rect x="${textX + variant.tagFree.length * 11 + 58}" y="${tagsY - 26}" width="130" height="42" rx="21" ry="21"
         fill="rgba(84,88,251,0.08)" stroke="rgba(84,88,251,0.3)" stroke-width="1"/>
-  <text x="${textX + variant.tagFree.length * 10 + 84}" y="${tagsY + 1}"
+  <text x="${textX + variant.tagFree.length * 11 + 90}" y="${tagsY + 2}"
         font-family="Inter, 'Segoe UI', Arial, sans-serif"
         font-weight="600"
-        font-size="14"
+        font-size="16"
         letter-spacing="0.03em"
         fill="#8b8dff">${escapeXml(variant.tagAndroid)}</text>
 
@@ -217,22 +185,14 @@ function createSvg(variant) {
 
 async function generateOgImages() {
   const assetsDir = path.join(__dirname, '..', 'assets');
-  const iconPath = path.join(assetsDir, 'Ethyria_new_app_icon.png');
+  const logoPath = path.join(assetsDir, 'Logo_web.png');
 
-  // Prepare the app icon: resize to 200×200 with rounded corners
-  const iconSize = 200;
-  const iconRoundedMask = Buffer.from(`
-    <svg width="${iconSize}" height="${iconSize}">
-      <rect width="${iconSize}" height="${iconSize}" rx="40" ry="40" fill="white"/>
-    </svg>
-  `);
+  // Prepare the logo: resize to fit left column (wider infinity symbol)
+  const logoWidth = 380;
+  const logoHeight = Math.round(logoWidth * (578 / 1024)); // maintain aspect ratio ~214px
 
-  const iconResized = await sharp(iconPath)
-    .resize(iconSize, iconSize, { fit: 'cover' })
-    .composite([{
-      input: iconRoundedMask,
-      blend: 'dest-in'
-    }])
+  const logoResized = await sharp(logoPath)
+    .resize(logoWidth, logoHeight, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
     .png()
     .toBuffer();
 
@@ -242,14 +202,14 @@ async function generateOgImages() {
 
     const outputPath = path.join(assetsDir, `og-image-${variant.lang}.png`);
 
-    // Render SVG background + text, then composite icon on top
+    // Render SVG background + text, then composite logo on top
     await sharp(svgBuffer)
       .resize(WIDTH, HEIGHT)
       .composite([
         {
-          input: iconResized,
-          top: Math.round((HEIGHT - iconSize) / 2),  // vertically centered
-          left: 100
+          input: logoResized,
+          top: Math.round((HEIGHT - logoHeight) / 2),  // vertically centered
+          left: 50
         }
       ])
       .png({ quality: 95 })
