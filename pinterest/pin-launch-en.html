@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethyria Pinterest Pin – Launch EN</title>
+
+  <style>
+    @font-face {
+      font-family: 'Poppins';
+      src: url('../fonts/poppins_bold.woff2') format('woff2'),
+           url('../fonts/poppins_bold.ttf') format('truetype');
+      font-weight: 700 900;
+      font-style: normal;
+      font-display: block;
+    }
+    @font-face {
+      font-family: 'Inter';
+      src: url('../fonts/inter_regular.woff2') format('woff2'),
+           url('../fonts/inter_regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: block;
+    }
+  </style>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      background: #050310;
+      padding: 40px 20px;
+      font-family: 'Inter', Arial, sans-serif;
+    }
+
+    body.screenshot-mode * {
+      animation: none !important;
+      transition: none !important;
+    }
+
+    .pin {
+      width: 1000px;
+      height: 1500px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      background:
+        radial-gradient(ellipse 90% 50% at 50% 0%,   rgba(34,211,238,0.14) 0%, transparent 60%),
+        radial-gradient(ellipse 80% 60% at 85% 30%,  rgba(96,165,250,0.10) 0%, transparent 55%),
+        radial-gradient(ellipse 70% 50% at 15% 60%,  rgba(167,139,250,0.09) 0%, transparent 55%),
+        radial-gradient(ellipse 90% 40% at 50% 100%, rgba(84,88,251,0.12) 0%, transparent 50%),
+        linear-gradient(170deg, #0e0b1e 0%, #060b22 40%, #080f2e 70%, #060918 100%);
+    }
+
+    .pin::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        145deg,
+        rgba(34,211,238,0.03) 0%,
+        rgba(96,165,250,0.04) 30%,
+        rgba(167,139,250,0.05) 65%,
+        rgba(240,171,252,0.03) 100%
+      );
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .stars { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
+    .star  { position: absolute; border-radius: 50%; animation: twinkle 4s ease-in-out infinite; will-change: opacity, transform; }
+    .star:nth-child(1)  { top:  3%; left:  8%; width: 4px; height: 4px; background: rgba(34,211,238,0.65);  animation-delay: 0s;   }
+    .star:nth-child(2)  { top:  6%; left: 84%; width: 2px; height: 2px; background: #fff; opacity: 0.35;    animation-delay: 1.4s; }
+    .star:nth-child(3)  { top: 12%; left: 52%; width: 3px; height: 3px; background: rgba(96,165,250,0.55);  animation-delay: 0.7s; }
+    .star:nth-child(4)  { top: 19%; left: 92%; width: 2px; height: 2px; background: #fff; opacity: 0.25;    animation-delay: 2.3s; }
+    .star:nth-child(5)  { top: 25%; left:  4%; width: 3px; height: 3px; background: rgba(167,139,250,0.45); animation-delay: 1.9s; }
+    .star:nth-child(6)  { top: 38%; left: 96%; width: 2px; height: 2px; background: #fff; opacity: 0.20;    animation-delay: 0.4s; }
+    .star:nth-child(7)  { top: 55%; left: 12%; width: 4px; height: 4px; background: rgba(34,211,238,0.40);  animation-delay: 2.7s; }
+    .star:nth-child(8)  { top: 67%; left: 78%; width: 2px; height: 2px; background: rgba(240,171,252,0.35); animation-delay: 1.1s; }
+    .star:nth-child(9)  { top: 80%; left: 35%; width: 2px; height: 2px; background: #fff; opacity: 0.18;    animation-delay: 3.2s; }
+    .star:nth-child(10) { top: 90%; left: 65%; width: 3px; height: 3px; background: rgba(96,165,250,0.35);  animation-delay: 0.9s; }
+    .star:nth-child(11) { top: 44%; left: 48%; width: 2px; height: 2px; background: #fff; opacity: 0.15;    animation-delay: 1.6s; }
+    .star:nth-child(12) { top: 73%; left: 88%; width: 3px; height: 3px; background: rgba(34,211,238,0.30);  animation-delay: 3.8s; }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.12; transform: scale(0.7); }
+      50%       { opacity: 0.85; transform: scale(1.6); }
+    }
+
+    @keyframes pulse-border {
+      0%, 100% { border-color: rgba(34,211,238,0.18); }
+      50%       { border-color: rgba(167,139,250,0.38); }
+    }
+
+    .g-text {
+      background: linear-gradient(90deg, #22d3ee 0%, #60a5fa 30%, #a78bfa 65%, #f0abfc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .top-pill {
+      position: relative; z-index: 2;
+      text-align: center;
+      padding: 36px 0 0;
+      flex: 0 0 auto;
+    }
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 28px;
+      border: 1px solid rgba(34,211,238,0.25);
+      border-radius: 9999px;
+      font-size: 13px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-family: 'Inter', Arial, sans-serif;
+      animation: pulse-border 3.5s ease-in-out infinite;
+      background: rgba(34,211,238,0.04);
+    }
+    .pill-dot {
+      display: inline-block;
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: #22d3ee;
+      box-shadow: 0 0 6px rgba(34,211,238,0.8);
+      flex: 0 0 auto;
+    }
+
+    .hero-section {
+      position: relative; z-index: 2;
+      text-align: center;
+      padding: 22px 64px 0;
+      flex: 0 0 auto;
+    }
+    .hero-headline {
+      font-family: 'Poppins', Arial, sans-serif;
+      font-weight: 900;
+      font-size: 100px;
+      line-height: 1.00;
+      letter-spacing: -0.035em;
+      margin-bottom: 0;
+      padding-bottom: 2px;
+      word-break: keep-all;
+    }
+
+    .hero-divider {
+      width: 72px;
+      height: 1px;
+      margin: 22px auto 0;
+      background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(34,211,238,0.70) 30%,
+        rgba(167,139,250,0.50) 70%,
+        transparent 100%
+      );
+    }
+
+    .hero-sub { display: none; }
+
+    .app-preview {
+      position: relative; z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 10px;
+      padding: 14px 16px 0;
+      flex: 1 1 auto;
+      perspective: 1400px;
+    }
+
+    .phone-orb {
+      position: absolute;
+      width: 840px; height: 600px;
+      left: 50%; top: 40%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(ellipse at center,
+        rgba(34,211,238,0.22) 0%,
+        rgba(84,88,251,0.17)  28%,
+        rgba(167,139,250,0.11) 52%,
+        transparent 72%
+      );
+      filter: blur(70px);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .phone-reflection {
+      position: absolute;
+      bottom: 0; left: 50%; transform: translateX(-50%);
+      width: 820px; height: 70px;
+      background: radial-gradient(ellipse at center,
+        rgba(34,211,238,0.12) 0%,
+        rgba(96,165,250,0.07) 40%,
+        transparent 70%
+      );
+      filter: blur(22px);
+      z-index: 1;
+    }
+
+    .phone-frame         { position: relative; z-index: 2; flex: 0 0 auto; }
+    .phone-frame--center { width: 420px; z-index: 3; transform: translateY(-28px); }
+    .phone-frame--side   { width: 295px; z-index: 2; opacity: 0.86; }
+    .phone-frame--left   { transform: rotateY(-7deg); }
+    .phone-frame--right  { transform: rotateY(7deg);  }
+
+    .phone-frame img {
+      width: 100%; height: auto;
+      border-radius: 30px;
+      border: 1.5px solid rgba(255,255,255,0.08);
+      box-shadow:
+        0 0 0 1px rgba(34,211,238,0.06),
+        0 24px 60px -16px rgba(1,191,255,0.16),
+        0 0 60px -20px rgba(84,88,251,0.10);
+    }
+    .phone-frame--center img {
+      border-radius: 34px;
+      border: 1.5px solid rgba(34,211,238,0.14);
+      box-shadow:
+        0 0 0 1px rgba(34,211,238,0.18),
+        0 0 0 12px rgba(34,211,238,0.03),
+        0 40px 90px -20px rgba(1,191,255,0.32),
+        0 0 100px -25px rgba(84,88,251,0.24),
+        0 0 50px -8px rgba(167,139,250,0.16);
+    }
+    .phone-label {
+      display: block;
+      text-align: center;
+      margin-top: 11px;
+      font-family: 'Poppins', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+
+    .feature-chips {
+      position: relative; z-index: 2;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 0 40px;
+      margin-top: 20px;
+      flex: 0 0 auto;
+      flex-wrap: wrap;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 18px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 9999px;
+      font-family: 'Inter', Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.80);
+      white-space: nowrap;
+      letter-spacing: 0.01em;
+    }
+    .chip-icon { font-size: 15px; }
+
+    .cta-area {
+      position: relative; z-index: 2;
+      text-align: center;
+      padding: 22px 60px 0;
+      flex: 0 0 auto;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 20px 68px;
+      font-family: 'Poppins', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      color: #ffffff;
+      background: linear-gradient(135deg, #22d3ee 0%, #60a5fa 30%, #5458fb 60%, #6d28d9 100%);
+      border-radius: 9999px;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      box-shadow:
+        0 0 0 1px rgba(34,211,238,0.20),
+        0 0 0 6px rgba(34,211,238,0.06),
+        0 12px 48px rgba(34,211,238,0.22),
+        0 4px 20px rgba(84,88,251,0.20);
+    }
+
+    .cta-checks {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      margin-top: 14px;
+    }
+    .cta-check {
+      font-family: 'Inter', Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.38);
+      letter-spacing: 0.03em;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .cta-check::before {
+      content: '✓';
+      color: rgba(34,211,238,0.60);
+      font-size: 12px;
+    }
+
+    .bottom-bar {
+      position: relative; z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 56px 30px;
+      flex: 0 0 auto;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      margin-top: 20px;
+    }
+    .bottom-left { display: flex; align-items: center; gap: 14px; }
+    .bottom-logo {
+      width: 44px; height: 44px; border-radius: 12px;
+      box-shadow: 0 0 18px rgba(34,211,238,0.16), 0 0 0 1px rgba(255,255,255,0.08);
+    }
+    .bottom-brand {
+      font-family: 'Poppins', Arial, sans-serif;
+      font-weight: 700; font-size: 21px;
+    }
+    .bottom-right { display: flex; align-items: center; gap: 18px; }
+    .bottom-tag {
+      font-family: 'Inter', Arial, sans-serif;
+      font-size: 11px; letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.28); font-weight: 600;
+    }
+    .bottom-url {
+      font-family: 'Poppins', Arial, sans-serif;
+      font-weight: 700; font-size: 17px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="pin">
+
+  <div class="stars">
+    <div class="star"></div><div class="star"></div><div class="star"></div>
+    <div class="star"></div><div class="star"></div><div class="star"></div>
+    <div class="star"></div><div class="star"></div><div class="star"></div>
+    <div class="star"></div><div class="star"></div><div class="star"></div>
+  </div>
+
+  <!-- ░░ 1. PILL ░░ -->
+  <div class="top-pill">
+    <span class="pill-badge">
+      <span class="pill-dot"></span>
+      <span class="g-text" data-pin="pill">Now in Beta · Limited Access</span>
+    </span>
+  </div>
+
+  <!-- ░░ 2. HERO ░░ -->
+  <div class="hero-section">
+    <h1 class="hero-headline g-text" data-pin="headline">Dreams don't<br>lie.</h1>
+    <div class="hero-divider"></div>
+  </div>
+
+  <!-- ░░ 3. PHONES ░░ -->
+  <div class="app-preview">
+    <div class="phone-orb"></div>
+    <div class="phone-reflection"></div>
+
+    <div class="phone-frame phone-frame--side phone-frame--left">
+      <img src="../assets/screenshots_new/aether_en.jpg"
+           alt="Ethyria Aether Community"
+           data-pin-src="left" />
+      <span class="phone-label g-text">Aether</span>
+    </div>
+
+    <div class="phone-frame phone-frame--center">
+      <img src="../assets/screenshots_new/analyse_en.jpg"
+           alt="Ethyria Dream Analysis"
+           data-pin-src="center" />
+      <span class="phone-label g-text">Analysis</span>
+    </div>
+
+    <div class="phone-frame phone-frame--side phone-frame--right">
+      <img src="../assets/screenshots_new/statistic_en.jpg"
+           alt="Ethyria Statistics"
+           data-pin-src="right" />
+      <span class="phone-label g-text">Statistics</span>
+    </div>
+  </div>
+
+  <!-- ░░ 4. CHIPS ░░ -->
+  <div class="feature-chips">
+    <div class="chip" data-pin="chip-0"><span class="chip-icon">🔍</span> 5 Perspectives · Freud &amp; Jung</div>
+    <div class="chip" data-pin="chip-1"><span class="chip-icon">🎨</span> AI Dream Images</div>
+    <div class="chip" data-pin="chip-2"><span class="chip-icon">🔒</span> Local &amp; private</div>
+  </div>
+
+  <!-- ░░ 5. CTA ░░ -->
+  <div class="cta-area">
+    <a href="https://ethyria.at" class="cta-button" data-pin="cta">Secure Access ▸</a>
+    <div class="cta-checks">
+      <span class="cta-check" data-pin="check-0">Free</span>
+      <span class="cta-check" data-pin="check-1">No Subscription</span>
+      <span class="cta-check" data-pin="check-2">No Tracking</span>
+    </div>
+  </div>
+
+  <!-- ░░ 6. BOTTOM ░░ -->
+  <div class="bottom-bar">
+    <div class="bottom-left">
+      <img src="../assets/Ethyria_symbol.png" alt="Ethyria" class="bottom-logo" />
+      <span class="bottom-brand g-text">Ethyria</span>
+    </div>
+    <div class="bottom-right">
+      <span class="bottom-tag">Android</span>
+      <a href="https://ethyria.at" class="bottom-url g-text">ethyria.at</a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  var params = new URLSearchParams(globalThis.location.search);
+  if (params.get('screenshot') === '1') {
+    document.body.classList.add('screenshot-mode');
+  }
+
+  var hash = globalThis.location.hash.slice(1);
+  if (!hash) return;
+
+  // Hash is always generated by generate-pinterest-pins.js — no user input
+  var data = JSON.parse(atob(hash));
+
+  function inject(attr, value) {
+    if (value == null) return;
+    var el = document.querySelector('[data-pin="' + attr + '"]');
+    if (el) el.innerHTML = value;
+  }
+
+  inject('pill',    data.pill);
+  inject('headline',data.headline);
+  inject('sub',     data.sub);
+  inject('cta',     data.cta);
+  inject('check-0', data.check0);
+  inject('check-1', data.check1);
+  inject('check-2', data.check2);
+  if (Array.isArray(data.chips)) {
+    data.chips.forEach(function (c, i) { inject('chip-' + i, c); });
+  }
+  if (data.screenshot_center) document.querySelector('[data-pin-src="center"]').src = data.screenshot_center;
+  if (data.screenshot_left)   document.querySelector('[data-pin-src="left"]').src   = data.screenshot_left;
+  if (data.screenshot_right)  document.querySelector('[data-pin-src="right"]').src  = data.screenshot_right;
+}());
+</script>
+
+</body>
+</html>

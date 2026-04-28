@@ -1,0 +1,250 @@
+{
+  "name": "Ethyria — Pinterest Auto-Post",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 8 * * *"
+            }
+          ]
+        }
+      },
+      "id": "node-schedule",
+      "name": "Schedule (täglich 08:00)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 300],
+      "notes": "Täglich um 08:00. Für Tests: 'Manual Trigger' verwenden."
+    },
+    {
+      "parameters": {
+        "operation": "read",
+        "filePath": "={{ $env.PROJECT_PATH }}/pinterest/pins.json",
+        "options": {}
+      },
+      "id": "node-read-pins",
+      "name": "Pins JSON lesen",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nächsten 'generated' Pin auswählen (frühestes scheduled_at)\nconst raw = items[0].binary?.data?.data || items[0].json?.data;\nlet pinsData;\ntry {\n  const str = Buffer.isBuffer(raw) ? raw.toString('utf8') : JSON.stringify(raw);\n  pinsData = JSON.parse(str);\n} catch(e) {\n  throw new Error('pins.json konnte nicht geparst werden: ' + e.message);\n}\n\nconst pin = pinsData.pins\n  .filter(p => p.status === 'generated')\n  .sort((a, b) => new Date(a.scheduled_at) - new Date(b.scheduled_at))[0];\n\nif (!pin) {\n  return [{ json: { found: false, message: 'Kein generierter Pin in der Queue.' } }];\n}\n\nreturn [{\n  json: {\n    found: true,\n    id: pin.id,\n    template: pin.template,\n    lang: pin.lang,\n    board_id: pin.board_id,\n    link: pin.pinterest.link,\n    title: pin.pinterest.title,\n    description: pin.pinterest.description + '\\n\\n' + pin.pinterest.hashtags,\n    png_path: $env.PROJECT_PATH + '/pinterest/generated/' + pin.id + '.png',\n    pins_json_path: $env.PROJECT_PATH + '/pinterest/pins.json',\n    pins_data: JSON.stringify(pinsData)\n  }\n}];"
+      },
+      "id": "node-select-pin",
+      "name": "Nächsten Pin auswählen",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true },
+          "conditions": [
+            {
+              "id": "cond-found",
+              "leftValue": "={{ $json.found }}",
+              "rightValue": true,
+              "operator": { "type": "boolean", "operation": "equals" }
+            }
+          ]
+        },
+        "combineOperation": "all"
+      },
+      "id": "node-if-found",
+      "name": "Pin gefunden?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "operation": "read",
+        "filePath": "={{ $json.png_path }}",
+        "options": {}
+      },
+      "id": "node-read-png",
+      "name": "PNG lesen",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [1120, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "// PNG binary → base64 string für Pinterest API\nconst binaryKey = Object.keys(items[0].binary || {})[0];\nif (!binaryKey) throw new Error('Keine Binärdaten gefunden');\n\nconst buf = Buffer.from(items[0].binary[binaryKey].data, 'base64');\nconst base64png = buf.toString('base64');\n\nreturn [{\n  json: {\n    ...items[0].json,\n    image_base64: base64png\n  },\n  binary: items[0].binary\n}];"
+      },
+      "id": "node-to-base64",
+      "name": "PNG → Base64",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1340, 200]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.pinterest.com/v5/pins",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth2Api",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Content-Type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "board_id",
+              "value": "={{ $json.board_id }}"
+            },
+            {
+              "name": "link",
+              "value": "={{ $json.link }}"
+            },
+            {
+              "name": "title",
+              "value": "={{ $json.title }}"
+            },
+            {
+              "name": "description",
+              "value": "={{ $json.description }}"
+            },
+            {
+              "name": "media_source",
+              "value": "={{ JSON.stringify({ source_type: 'image_base64', content_type: 'image/png', data: $json.image_base64 }) }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "node-pinterest-post",
+      "name": "Pinterest API — Pin erstellen",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1560, 200],
+      "notes": "Credential: Pinterest OAuth2 — in n8n Credentials anlegen.\nScopes benötigt: boards:read, pins:read, pins:write"
+    },
+    {
+      "parameters": {
+        "jsCode": "// pins.json aktualisieren: status → posted\nconst pinId     = $('Nächsten Pin auswählen').first().json.id;\nconst pinsRaw   = $('Nächsten Pin auswählen').first().json.pins_data;\nconst pinsData  = JSON.parse(pinsRaw);\nconst pinPinId  = items[0].json?.id || null;\n\nconst pin = pinsData.pins.find(p => p.id === pinId);\nif (pin) {\n  pin.status           = 'posted';\n  pin.posted_at        = new Date().toISOString();\n  pin.pinterest_pin_id = pinPinId;\n}\n\n// Prüfen ob Queue niedrig ist (< 2 generierte Pins übrig)\nconst remaining = pinsData.pins.filter(p => p.status === 'generated').length;\n\nreturn [{\n  json: {\n    pins_json_updated: JSON.stringify(pinsData, null, 2),\n    pins_json_path: $('Nächsten Pin auswählen').first().json.pins_json_path,\n    queue_low: remaining < 2,\n    remaining_generated: remaining,\n    posted_id: pinId\n  }\n}];"
+      },
+      "id": "node-update-status",
+      "name": "Status auf 'posted' setzen",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1780, 200]
+    },
+    {
+      "parameters": {
+        "operation": "write",
+        "filePath": "={{ $json.pins_json_path }}",
+        "dataPropertyName": "pins_json_updated",
+        "options": { "append": false }
+      },
+      "id": "node-write-pins",
+      "name": "pins.json speichern",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [2000, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true },
+          "conditions": [
+            {
+              "id": "cond-low",
+              "leftValue": "={{ $json.queue_low }}",
+              "rightValue": true,
+              "operator": { "type": "boolean", "operation": "equals" }
+            }
+          ]
+        }
+      },
+      "id": "node-if-low",
+      "name": "Queue niedrig?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [2220, 200]
+    },
+    {
+      "parameters": {
+        "command": "cd {{ $env.PROJECT_PATH }} && node scripts/generate-pinterest-pins.js"
+      },
+      "id": "node-generate",
+      "name": "Neue PNGs generieren",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [2440, 120],
+      "notes": "Generiert alle pending Pins in pinterest/generated/.\nLäuft auf 192.168.8.104 — PROJECT_PATH muss als n8n Env-Variable gesetzt sein."
+    },
+    {
+      "parameters": {
+        "content": "## ✅ Kein Pin in Queue\n\nKein generierter Pin gefunden.\nFühre zuerst aus:\n```\nnode scripts/generate-pinterest-pins.js\n```",
+        "height": 160,
+        "width": 300
+      },
+      "id": "node-no-pin",
+      "name": "Hinweis: Keine Pins",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [900, 480]
+    }
+  ],
+  "connections": {
+    "Schedule (täglich 08:00)": {
+      "main": [[{ "node": "Pins JSON lesen", "type": "main", "index": 0 }]]
+    },
+    "Pins JSON lesen": {
+      "main": [[{ "node": "Nächsten Pin auswählen", "type": "main", "index": 0 }]]
+    },
+    "Nächsten Pin auswählen": {
+      "main": [[{ "node": "Pin gefunden?", "type": "main", "index": 0 }]]
+    },
+    "Pin gefunden?": {
+      "main": [
+        [{ "node": "PNG lesen", "type": "main", "index": 0 }],
+        []
+      ]
+    },
+    "PNG lesen": {
+      "main": [[{ "node": "PNG → Base64", "type": "main", "index": 0 }]]
+    },
+    "PNG → Base64": {
+      "main": [[{ "node": "Pinterest API — Pin erstellen", "type": "main", "index": 0 }]]
+    },
+    "Pinterest API — Pin erstellen": {
+      "main": [[{ "node": "Status auf 'posted' setzen", "type": "main", "index": 0 }]]
+    },
+    "Status auf 'posted' setzen": {
+      "main": [[{ "node": "pins.json speichern", "type": "main", "index": 0 }]]
+    },
+    "pins.json speichern": {
+      "main": [[{ "node": "Queue niedrig?", "type": "main", "index": 0 }]]
+    },
+    "Queue niedrig?": {
+      "main": [
+        [{ "node": "Neue PNGs generieren", "type": "main", "index": 0 }],
+        []
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "errorWorkflow": ""
+  },
+  "meta": {
+    "instanceId": "ethyria-pinterest-auto-post",
+    "notes": "SETUP CHECKLIST:\n1. n8n Env-Variable setzen: PROJECT_PATH = absoluter Pfad zu Ethyria_LandingPage\n2. Pinterest OAuth2 Credential in n8n anlegen (developers.pinterest.com → App → Scopes: boards:read, pins:read, pins:write)\n3. board_id in pins.json eintragen (aus Pinterest Business Account)\n4. Erst lokal testen: node scripts/generate-pinterest-pins.js\n5. Workflow aktivieren"
+  },
+  "tags": ["pinterest", "ethyria", "social-media"]
+}

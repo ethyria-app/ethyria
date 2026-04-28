@@ -193,10 +193,12 @@ function processFile(filePath) {
     html = html.replace(betaLinkRegex, (match) => {
       return match
         .replace(/<a([\s\S]*?)>/, (tag, attrs) => {
-          const cleaned = attrs.replace(/href="[^"]*#beta"\s*/g, '');
-          return '<button type="button" onclick="openBetaPopup()"' + cleaned + '>';
+          const cleaned = attrs.replace(/href="[^"]*#beta"\s*/g, "");
+          return (
+            '<button type="button" onclick="openBetaPopup()"' + cleaned + ">"
+          );
         })
-        .replace(/<\/a\s*>/gi, '</button>');
+        .replace(/<\/a\s*>/gi, "</button>");
     });
     changes.push(`${betaMatches.length}x #beta link→button popup`);
   }

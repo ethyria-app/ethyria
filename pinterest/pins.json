@@ -1,0 +1,271 @@
+{
+  "_comment": "Ethyria Pinterest Pin Content Database. Status flow: pending → generated → posted",
+  "_server": "192.168.8.104",
+  "pins": [
+
+    {
+      "id": "launch-de-001",
+      "template": "pin-launch-de.html",
+      "lang": "de",
+      "status": "pending",
+      "scheduled_at": "2026-04-28T08:00:00",
+      "board_id": "DEIN_BOARD_ID_HIER",
+      "content": {
+        "pill": "★ Jetzt in der Beta · Limitierter Zugang",
+        "headline": "Träume lügen<br>nicht.",
+        "sub": "Jeder Traum erzählt dir etwas über dich.<br><strong>Ethyria</strong> übersetzt, was dein Unterbewusstsein sagen will —<br>als Bild. Als Erkenntnis. Als Impuls.",
+        "features": [
+          "5 Perspektiven · Freud &amp; Jung · Islamisch · Spirituell · Kreativ",
+          "KI-Traumbilder · Visuelles Traumtagebuch · Muster-Erkennung",
+          "Lokale Verschlüsselung · Kein Tracking · Kein Abo"
+        ],
+        "cta": "Zugang sichern ▸",
+        "premium": "30 Tage Premium · Kostenlos · Kein Abo",
+        "screenshot_center": "../assets/screenshots_new/analyse_de.jpg",
+        "screenshot_left":   "../assets/screenshots_new/aether_de.jpg",
+        "screenshot_right":  "../assets/screenshots_new/statistic_de.jpg"
+      },
+      "pinterest": {
+        "title": "Träume deuten mit KI — Werde kostenlos Beta-Tester | Ethyria App",
+        "description": "Was will dir dein Unterbewusstsein sagen? 🌙\n\nEthyria ist die neue KI-gestützte Traumdeutung-App für Android — und du kannst sie als einer der Ersten testen.\n\n✨ Was dich erwartet:\n▸ KI-Traumanalyse nach Freud, Jung & weiteren Modellen\n▸ Visuelles Traumtagebuch mit Muster-Erkennung\n▸ KI-generierte Traumbilder\n▸ 5 verschiedene Analyse-Perspektiven\n▸ PDF-Export deiner Analysen\n\n🎁 30 Tage Premium — komplett kostenlos. Keine Kreditkarte, kein Abo.\n\n🔒 Lokale Verschlüsselung, kein Tracking.\n\nJetzt kostenlos anmelden ▸ ethyria.at",
+        "link": "https://ethyria.at?utm_source=pinterest&utm_medium=social&utm_campaign=beta_launch",
+        "hashtags": "#Traumdeutung #DreamJournal #KI #AI #SelfCare #Psychologie #Traumtagebuch #AndroidApp #BetaTesting #Ethyria #Träume #DreamInterpretation #FreudJung #Unterbewusstsein #MentalHealth"
+      },
+      "generated_at": null,
+      "posted_at": null,
+      "pinterest_pin_id": null
+    },
+
+    {
+      "id": "launch-de-002",
+      "template": "pin-launch-de.html",
+      "lang": "de",
+      "status": "pending",
+      "scheduled_at": "2026-04-29T12:00:00",
+      "board_id": "DEIN_BOARD_ID_HIER",
+      "content": {
+        "pill": "★ Letzte Nacht geträumt?",
+        "headline": "Dein Traum<br>hat eine Botschaft.",
+        "sub": "Hast du dich heute Morgen auch gefragt, was dieser eine Traum zu bedeuten hatte?<br><strong>Ethyria</strong> analysiert wissenschaftlich fundiert — mit KI nach Jung, Freud & mehr.",
+        "features": [
+          "KI-gestützte Analyse in Sekunden",
+          "Traumtagebuch mit automatischer Muster-Erkennung",
+          "Emotionales Schlafmuster-Tracking"
+        ],
+        "cta": "Träume entschlüsseln ▸",
+        "premium": "30 Tage gratis · Kein Abo · Kein Tracking",
+        "screenshot_center": "../assets/screenshots_new/analyse_de.jpg",
+        "screenshot_left":   "../assets/screenshots_new/aether_de.jpg",
+        "screenshot_right":  "../assets/screenshots_new/statistic_de.jpg"
+      },
+      "pinterest": {
+        "title": "Letzte Nacht geträumt? Dein Traum hat eine Botschaft | Ethyria",
+        "description": "Hast du dich heute Morgen auch gefragt, was dieser eine Traum zu bedeuten hatte? 🌙✨\n\nEthyria analysiert deine Träume wissenschaftlich fundiert — mit KI nach C.G. Jung, Freud und 3 weiteren Modellen.\n\n🧠 Was Ethyria kann:\n▸ KI-gestützte Analyse in Sekunden\n▸ Traumtagebuch mit automatischer Muster-Erkennung\n▸ KI-generierte visuelle Traumbilder\n▸ Emotionales Schlafmuster-Tracking\n▸ Alles verschlüsselt & nur auf deinem Gerät\n\n🎁 Als Beta-Tester bekommst du 30 Tage Premium gratis.\n\nEntschlüssle deine Träume ▸ ethyria.at",
+        "link": "https://ethyria.at?utm_source=pinterest&utm_medium=social&utm_campaign=beta_launch",
+        "hashtags": "#WasBedeutetMeinTraum #Traumdeutung #Psychologie #KI #SelfCare #Traumtagebuch #AndroidApp #Ethyria #Träume #Unterbewusstsein #MentalHealth #SelfDiscovery"
+      },
+      "generated_at": null,
+      "posted_at": null,
+      "pinterest_pin_id": null
+    },
+
+    {
+      "id": "launch-de-003",
+      "template": "pin-launch-de.html",
+      "lang": "de",
+      "status": "pending",
+      "scheduled_at": "2026-04-30T20:00:00",
+      "board_id": "DEIN_BOARD_ID_HIER",
+      "content": {
+        "pill": "★ Das Traumtagebuch, das mitdenkt",
+        "headline": "Mehr als nur<br>aufschreiben.",
+        "sub": "Ethyria versteht deine Träume. Die erste Traumdeutung-App mit echtem KI-Verstand —<br>5 Perspektiven, visuelle Traumbilder, Muster über Wochen.",
+        "features": [
+          "🧠 5 Analyse-Perspektiven (Freud, Jung, Islamisch, Spirituell, Kreativ)",
+          "🎨 KI-generierte Traumbilder — dein Traum wird sichtbar",
+          "📊 Biosynchrone Multimodal-Analyse · Muster-Erkennung"
+        ],
+        "cta": "Kostenlos testen ▸",
+        "premium": "Beta-Phase · 30 Tage Premium gratis · ethyria.at",
+        "screenshot_center": "../assets/screenshots_new/analyse_de.jpg",
+        "screenshot_left":   "../assets/screenshots_new/aether_de.jpg",
+        "screenshot_right":  "../assets/screenshots_new/statistic_de.jpg"
+      },
+      "pinterest": {
+        "title": "Dein Traumtagebuch, das mitdenkt — Ethyria App kostenlos testen",
+        "description": "Mehr als nur aufschreiben — Ethyria versteht deine Träume. 📔✨\n\n🧠 5 Analyse-Perspektiven (Freud, Jung, Islamisch, Spirituell, Kreativ)\n🎨 KI-generierte Traumbilder — dein Traum wird sichtbar\n📊 Muster-Erkennung über Wochen & Monate\n🔒 Verschlüsselt & lokal gespeichert\n\nAktuell in der Beta-Phase — teste kostenlos mit 30 Tagen Premium!\n\nJetzt starten ▸ ethyria.at",
+        "link": "https://ethyria.at?utm_source=pinterest&utm_medium=social&utm_campaign=beta_launch",
+        "hashtags": "#Traumtagebuch #DreamJournal #KI #AppDesign #AndroidApp #Ethyria #Traumdeutung #Psychologie #SelfCare #FreudJung #MentalHealth"
+      },
+      "generated_at": null,
+      "posted_at": null,
+      "pinterest_pin_id": null
+    },
+
+    {
+      "id": "launch-de-004",
+      "template": "pin-launch-de.html",
+      "lang": "de",
+      "status": "pending",
+      "scheduled_at": "2026-05-01T08:00:00",
+      "board_id": "DEIN_BOARD_ID_HIER",
+      "content": {
+        "pill": "★ Freud & Jung in deiner Tasche",
+        "headline": "KI-Traumdeutung.<br>Kostenlos.",
+        "sub": "Was bedeutet dein Traum? Finde es heraus — in Sekunden.<br><strong>Ethyria</strong> kombiniert klassische Deutung mit moderner KI.",
+        "features": [
+          "5 Analyse-Modelle · Freud · Jung · Islamisch · Kreativ",
+          "Visuelles Traumtagebuch · KI-Bilder",
+          "Android · Kein Abo · Keine Werbung"
+        ],
+        "cta": "Jetzt gratis testen ▸",
+        "premium": "30 Tage Premium als Beta-Tester · ethyria.at",
+        "screenshot_center": "../assets/screenshots_new/analyse_de.jpg",
+        "screenshot_left":   "../assets/screenshots_new/aether_de.jpg",
+        "screenshot_right":  "../assets/screenshots_new/statistic_de.jpg"
+      },
+      "pinterest": {
+        "title": "Freud & Jung in deiner Tasche — KI-Traumdeutung gratis",
+        "description": "Was bedeutet dein Traum? Finde es heraus — in Sekunden. 🌙\n\nEthyria kombiniert klassische Traumdeutung mit moderner KI. 5 Analyse-Modelle, visuelles Traumtagebuch, KI-Bilder — alles verschlüsselt auf deinem Gerät.\n\n🎁 30 Tage Premium gratis als Beta-Tester.\n📱 Android · Kein Abo · Keine Werbung\n\n▸ ethyria.at",
+        "link": "https://ethyria.at?utm_source=pinterest&utm_medium=social&utm_campaign=beta_launch",
+        "hashtags": "#Traumdeutung #Freud #Jung #KI #AI #DreamAnalysis #Android #Ethyria #SelfCare #Psychologie #MentalHealth"
+      },
+      "generated_at": null,
+      "posted_at": null,
+      "pinterest_pin_id": null
+    },
+
+    {
+      "id": "launch-de-005",
+      "template": "pin-launch-de.html",
+      "lang": "de",
+      "status": "pending",
+      "scheduled_at": "2026-05-02T20:00:00",
+      "board_id": "DEIN_BOARD_ID_HIER",
+      "content": {
+        "pill": "★ Was steckt hinter deinem Traum?",
+        "headline": "Dein Schlaf<br>erzählt Geschichten.",
+        "sub": "Wasser bedeutet Emotion. Fallen bedeutet Kontrollverlust. Fliegen bedeutet Freiheit.<br><strong>Ethyria</strong> analysiert deine Traumsymbole im Kontext deiner persönlichen Geschichte.",
+        "features": [
+          "15 Traumsymbole mit KI-Deutung — kostenlos",
+          "Persönliche Muster erkennen · Wochen & Monate tracken",
+          "Freud · Jung · Islamisch · Spirituell · Kreativ"
+        ],
+        "cta": "Jetzt entdecken ▸",
+        "premium": "Beta · 30 Tage Premium gratis · ethyria.at",
+        "screenshot_center": "../assets/screenshots_new/analyse_de.jpg",
+        "screenshot_left":   "../assets/screenshots_new/aether_de.jpg",
+        "screenshot_right":  "../assets/screenshots_new/statistic_de.jpg"
+      },
+      "pinterest": {
+        "title": "Was bedeuten deine Traumsymbole? Ethyria App — KI-Deutung kostenlos",
+        "description": "Wasser steht für Emotionen. Fallen für Kontrollverlust. Fliegen für Freiheit. 🌙\n\nEthyria analysiert deine Traumsymbole im Kontext deiner persönlichen Traumgeschichte — mit KI nach Freud, Jung und mehr.\n\n✨ 15 Traumsymbole mit KI-Deutung\n📊 Persönliche Muster über Wochen erkennen\n🔒 Alles lokal & verschlüsselt\n\n30 Tage Premium gratis als Beta-Tester ▸ ethyria.at",
+        "link": "https://ethyria.at?utm_source=pinterest&utm_medium=social&utm_campaign=beta_launch",
+        "hashtags": "#Traumsymbole #Traumdeutung #WasBedeutetMeinTraum #KI #Psychologie #Freud #Jung #Ethyria #SelfCare #DreamJournal #MentalHealth"
+      },
+      "generated_at": null,
+      "posted_at": null,
+      "pinterest_pin_id": null
+    },
+
+    {
+      "id": "launch-en-001",
+      "template": "pin-launch-en.html",
+      "lang": "en",
+      "status": "pending",
+      "scheduled_at": "2026-04-28T14:00:00",
+      "board_id": "DEIN_BOARD_ID_HIER",
+      "content": {
+        "pill": "★ Now in Beta · Limited Access",
+        "headline": "Dreams don't<br>lie.",
+        "sub": "Every dream tells you something about yourself.<br><strong>Ethyria</strong> translates what your subconscious is trying to say —<br>as an image. As insight. As impulse.",
+        "features": [
+          "5 Perspectives · Freud &amp; Jung · Islamic · Spiritual · Creative",
+          "AI Dream Images · Visual Dream Journal · Pattern Recognition",
+          "Local Encryption · No Tracking · No Subscription"
+        ],
+        "cta": "Secure Access ▸",
+        "premium": "30 Days Premium · Free · No Subscription",
+        "screenshot_center": "../assets/screenshots_new/analyse_en.jpg",
+        "screenshot_left":   "../assets/screenshots_new/aether_en.jpg",
+        "screenshot_right":  "../assets/screenshots_new/statistic_en.jpg"
+      },
+      "pinterest": {
+        "title": "AI Dream Interpretation App — Free Beta Access | Ethyria",
+        "description": "What is your subconscious trying to tell you? 🌙\n\nEthyria is a new AI-powered dream analysis app for Android — and you can be one of the first to try it.\n\n✨ What you get:\n▸ AI dream analysis using Freud, Jung & more\n▸ Visual dream journal with pattern recognition\n▸ AI-generated dream images\n▸ 5 interpretation perspectives\n▸ PDF export of your analyses\n\n🎁 30 days Premium — completely free. No credit card, no subscription.\n\n🔒 Local encryption, no tracking, no third-party sharing.\n\nSign up as a free beta tester ▸ ethyria.at",
+        "link": "https://ethyria.at/index.en.html?utm_source=pinterest&utm_medium=social&utm_campaign=beta_launch_en",
+        "hashtags": "#DreamInterpretation #DreamJournal #AI #SelfCare #Psychology #AndroidApp #BetaTesting #Ethyria #Dreams #FreudJung #Subconscious #MentalHealth #DreamAnalysis #AIDreams"
+      },
+      "generated_at": null,
+      "posted_at": null,
+      "pinterest_pin_id": null
+    },
+
+    {
+      "id": "launch-en-002",
+      "template": "pin-launch-en.html",
+      "lang": "en",
+      "status": "pending",
+      "scheduled_at": "2026-04-30T14:00:00",
+      "board_id": "DEIN_BOARD_ID_HIER",
+      "content": {
+        "pill": "★ Had a dream last night?",
+        "headline": "Your dream has<br>a message.",
+        "sub": "Ever woken up wondering what that dream meant?<br><strong>Ethyria</strong> decodes your dreams using AI — based on Freud, Jung, and 3 more models.",
+        "features": [
+          "AI-powered analysis in seconds",
+          "Dream journal with automatic pattern recognition",
+          "Emotional sleep pattern tracking · Everything encrypted locally"
+        ],
+        "cta": "Decode Your Dreams ▸",
+        "premium": "30 Days Premium Free · No Hidden Costs",
+        "screenshot_center": "../assets/screenshots_new/analyse_en.jpg",
+        "screenshot_left":   "../assets/screenshots_new/aether_en.jpg",
+        "screenshot_right":  "../assets/screenshots_new/statistic_en.jpg"
+      },
+      "pinterest": {
+        "title": "Had a Dream Last Night? It Has a Message for You | Ethyria",
+        "description": "Ever woken up wondering what that dream meant? 🌙✨\n\nEthyria decodes your dreams using AI — based on Freud, Jung, and 3 more analysis models.\n\n🧠 What Ethyria does:\n▸ AI-powered analysis in seconds\n▸ Dream journal with automatic pattern recognition\n▸ AI-generated visual dream art\n▸ Emotional sleep pattern tracking\n▸ Everything encrypted & stored locally\n\n🎁 Beta testers get 30 days Premium free — no hidden costs.\n\nDecode your dreams ▸ ethyria.at",
+        "link": "https://ethyria.at/index.en.html?utm_source=pinterest&utm_medium=social&utm_campaign=beta_launch_en",
+        "hashtags": "#WhatDoesMyDreamMean #DreamInterpretation #Psychology #AI #SelfCare #DreamJournal #AndroidApp #Ethyria #Dreams #Subconscious #MentalHealth #SelfDiscovery"
+      },
+      "generated_at": null,
+      "posted_at": null,
+      "pinterest_pin_id": null
+    },
+
+    {
+      "id": "launch-en-003",
+      "template": "pin-launch-en.html",
+      "lang": "en",
+      "status": "pending",
+      "scheduled_at": "2026-05-01T14:00:00",
+      "board_id": "DEIN_BOARD_ID_HIER",
+      "content": {
+        "pill": "★ Freud & Jung in Your Pocket",
+        "headline": "AI Dream<br>Analysis. Free.",
+        "sub": "What does your dream mean? Find out — in seconds.<br><strong>Ethyria</strong> combines classic interpretation with modern AI. 5 models. Visual journal. AI images.",
+        "features": [
+          "5 Analysis Models · Freud · Jung · Islamic · Creative",
+          "Visual Dream Journal · AI-Generated Dream Art",
+          "Android · No Subscription · No Ads"
+        ],
+        "cta": "Try for Free ▸",
+        "premium": "30 Days Premium as Beta Tester · ethyria.at",
+        "screenshot_center": "../assets/screenshots_new/analyse_en.jpg",
+        "screenshot_left":   "../assets/screenshots_new/aether_en.jpg",
+        "screenshot_right":  "../assets/screenshots_new/statistic_en.jpg"
+      },
+      "pinterest": {
+        "title": "Freud & Jung in Your Pocket — AI Dream Analysis Free",
+        "description": "What does your dream mean? Find out — in seconds. 🌙\n\nEthyria combines classic dream interpretation with modern AI. 5 analysis models, visual dream journal, AI images — all encrypted on your device.\n\n🎁 30 days Premium free as a beta tester.\n📱 Android · No subscription · No ads\n\n▸ ethyria.at",
+        "link": "https://ethyria.at/index.en.html?utm_source=pinterest&utm_medium=social&utm_campaign=beta_launch_en",
+        "hashtags": "#DreamInterpretation #Freud #Jung #AI #DreamAnalysis #Android #Ethyria #SelfCare #Psychology #MentalHealth #DreamJournal"
+      },
+      "generated_at": null,
+      "posted_at": null,
+      "pinterest_pin_id": null
+    }
+
+  ]
+}
